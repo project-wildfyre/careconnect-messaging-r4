@@ -47,12 +47,12 @@ For systems supporting child health data. Consideration should be given to suppo
 
 Many organisations and systems will require clinical information to be exchanged on document formats. The documents will most likely be in a unstrcutured format (PDF) with some systems requiring structured formats (FHIR Documents).
 
-#### HL7v2 Documents (Unstructured)
+#### HL7v2 Messaging (Unstructured Documents)
 
 Systems **SHOULD** support [MDM^T02](http://www.hl7.eu/refactored/msgMDM_T02.html) this should support metadata requirements of most systems and [IHE XDS](https://wiki.ihe.net/index.php/Cross-Enterprise_Document_Sharing)
 
 
-#### FHIR Documents (Unstrcutured)
+#### FHIR Messaging (Unstrcutured Documents)
 
 The emerging standard in a number of Local Health and Care Record Exemplars (LHCR) is the [IHE MHD format](https://build.fhir.org/ig/IHE/ITI.MHD), the recommendation is this **SHOULD** be followed.
 

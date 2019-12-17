@@ -1,0 +1,63 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "careconnect-messaging-stu3",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Messaing</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>\n</div></div>"
+  },
+  "url": "https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3",
+  "name": "Care Connect Messaing",
+  "status": "draft",
+  "experimental": false,
+  "date": "2019-12-17T09:53:40+00:00",
+  "publisher": "mayfield-is.co.uk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kevin.mayfield@mayfield-is.co.uk"
+        }
+      ]
+    }
+  ],
+  "description": "Demonstration of Care Connect STU3 Implementation Guide to support Messaging",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "3.0.2",
+  "page": {
+    "source": "toc.html",
+    "title": "Table of Contents",
+    "kind": "page",
+    "page": [
+      {
+        "source": "index.html",
+        "title": "Care Connect Messaging",
+        "kind": "resource"
+      },
+      {
+        "source": "hl7v2tofhir.html",
+        "title": "HL7v2 to FHIR Conversion",
+        "kind": "resource"
+      },
+      {
+        "source": "downloads.html",
+        "title": "Useful Downloads",
+        "kind": "resource"
+      },
+      {
+        "source": "changes.html",
+        "title": "IG Change History",
+        "kind": "resource"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3",
+  "name": "Care Connect Messaing",
+  "package-id": "careconnect.messaging.stu3",
+  "date": "Tue, 17 Dec, 2019 09:53:40 +0000",
+  "errs": 6,
+  "warnings": 0,
+  "hints": 0,
+  "version": "3.0.2",
+  "tool": "4.1.0 (3)"
+}

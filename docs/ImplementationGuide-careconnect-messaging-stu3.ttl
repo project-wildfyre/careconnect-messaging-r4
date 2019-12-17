@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "careconnect-messaging-stu3"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Messaing</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3"];
+  fhir:ImplementationGuide.name [ fhir:value "Care Connect Messaing"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ImplementationGuide.date [ fhir:value "2019-12-17T09:53:40+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "mayfield-is.co.uk"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Demonstration of Care Connect STU3 Implementation Guide to support Messaging"];
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "826" ]
+     ]
+  ];
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "3.0.2"];
+  fhir:ImplementationGuide.page [
+     fhir:ImplementationGuide.page.source [ fhir:value "toc.html" ];
+     fhir:ImplementationGuide.page.title [ fhir:value "Table of Contents" ];
+     fhir:ImplementationGuide.page.kind [ fhir:value "page" ];
+     fhir:ImplementationGuide.page.page [
+       fhir:index 0;
+       fhir:ImplementationGuide.page.source [ fhir:value "index.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Care Connect Messaging" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.page.source [ fhir:value "hl7v2tofhir.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "HL7v2 to FHIR Conversion" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.page.source [ fhir:value "downloads.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Useful Downloads" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.page.source [ fhir:value "changes.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "IG Change History" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

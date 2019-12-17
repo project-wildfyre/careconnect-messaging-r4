@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="careconnect-messaging-stu3"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Messaing</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>
+</div></div>
+  </text>
+  <url value="https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3"/>
+  <name value="Care Connect Messaing"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2019-12-17T09:53:40+00:00"/>
+  <publisher value="mayfield-is.co.uk"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+    </telecom>
+  </contact>
+  <description value="Demonstration of Care Connect STU3 Implementation Guide to support Messaging"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="826"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="3.0.2"/>
+  <page>
+    <source value="toc.html"/>
+    <title value="Table of Contents"/>
+    <kind value="page"/>
+    <page>
+      <source value="index.html"/>
+      <title value="Care Connect Messaging"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="hl7v2tofhir.html"/>
+      <title value="HL7v2 to FHIR Conversion"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="downloads.html"/>
+      <title value="Useful Downloads"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="changes.html"/>
+      <title value="IG Change History"/>
+      <kind value="resource"/>
+    </page>
+  </page>
+</ImplementationGuide>

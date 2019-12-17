@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
+  <id value="careconnect-messaging-stu3"/>
+  <url value="https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3"/>
+  <name value="Care Connect Messaing"/>
+  <title value="Care Connect Messaging"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="mayfield-is.co.uk"/>
+  <contact>
+    <telecom>
+      <!-- Or whatever URL and/or email address(es) are appropriate -->
+      <system value="email"/>
+      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+    </telecom>
+  </contact>
+  <description value="Demonstration of Care Connect STU3 Implementation Guide to support Messaging"/>
+  <jurisdiction>
+    <!-- This will drive SNOMED release used -->
+    <coding>
+      <!-- This is the code for universal -->
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="826"/>
+      <!-- Change to this if the IG is country-specific
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      -->
+    </coding>
+  </jurisdiction>
+  <packageId value="careconnect.messaging.stu3"/>
+  <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
+  <fhirVersion value="3.0.2"/>
+  <definition>
+    <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
+      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+    <!--    <resource>
+      <reference>
+        <reference value="StructureDefinition/structuredefinition-somePatientProfile"/>
+      </reference>
+      <name value="Name you want in artifact list"/>
+      <description value="Description you want in artifact list"/>
+    </resource>-->
+    <page>
+      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Care Connect Messaging"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="hl7v2tofhir.html"/>
+        <title value="HL7v2 to FHIR Conversion"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>

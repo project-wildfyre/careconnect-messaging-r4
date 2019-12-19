@@ -32,15 +32,37 @@
   <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="3.0.2"/>
   <definition>
-    <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
-      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-    <!--    <resource>
+    <grouping id="uk-examples">
+      <name value="CareConnect Examples"></name>
+      <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"></description>
+    </grouping>
+    <resource>
       <reference>
-        <reference value="StructureDefinition/structuredefinition-somePatientProfile"/>
+        <reference value="Bundle/adta02"></reference>
       </reference>
-      <name value="Name you want in artifact list"/>
-      <description value="Description you want in artifact list"/>
-    </resource>-->
+      <name value="ADT^A02 FHIR Message"></name>
+      <description value="ADT^A02 FHIR Message - Transfer a patient"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/adta28"></reference>
+      </reference>
+      <name value="ADT^A28 FHIR Message"></name>
+      <description value="ADT^A28 FHIR Message - Add person information"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/orur01"></reference>
+      </reference>
+      <name value="ORU^R01 FHIR Message"></name>
+      <description value="ORU^R01 FHIR Message - Unsolicited Transmission Of Requested Information"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

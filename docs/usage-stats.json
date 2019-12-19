@@ -4,5 +4,12 @@
   "jurisdiction": "826",
   "extensions": [],
   "profiles": {},
-  "usage": {}
+  "usage": {
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.package.resource"
+    ],
+    "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1": [
+      "Bundle.entry.resource.identifier"
+    ]
+  }
 }

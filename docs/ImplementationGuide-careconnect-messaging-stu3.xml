@@ -10,7 +10,7 @@
   <name value="Care Connect Messaing"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-12-17T10:04:59+00:00"/>
+  <date value="2019-12-19T16:34:56+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -26,6 +26,52 @@
     </coding>
   </jurisdiction>
   <fhirVersion value="3.0.2"/>
+  <package id="uk-examples">
+    <name value="CareConnect Examples"/>
+    <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-adta02.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="ADT^A02 FHIR Message"/>
+      <description value="ADT^A02 FHIR Message - Transfer a patient"/>
+      <sourceReference>
+        <reference value="Bundle/adta02"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-adta28.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="ADT^A28 FHIR Message"/>
+      <description value="ADT^A28 FHIR Message - Add person information"/>
+      <sourceReference>
+        <reference value="Bundle/adta28"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-orur01.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="ORU^R01 FHIR Message"/>
+      <description value="ORU^R01 FHIR Message - Unsolicited Transmission Of Requested Information"/>
+      <sourceReference>
+        <reference value="Bundle/orur01"/>
+      </sourceReference>
+    </resource>
+  </package>
   <page>
     <source value="toc.html"/>
     <title value="Table of Contents"/>

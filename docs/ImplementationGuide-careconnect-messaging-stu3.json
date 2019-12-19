@@ -9,7 +9,7 @@
   "name": "Care Connect Messaing",
   "status": "draft",
   "experimental": false,
-  "date": "2019-12-17T10:04:59+00:00",
+  "date": "2019-12-19T16:34:56+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -33,6 +33,69 @@
     }
   ],
   "fhirVersion": "3.0.2",
+  "package": [
+    {
+      "id": "uk-examples",
+      "name": "CareConnect Examples",
+      "description": "These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+              "valueString": "Bundle"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Bundle-adta02.html"
+            }
+          ],
+          "example": true,
+          "name": "ADT^A02 FHIR Message",
+          "description": "ADT^A02 FHIR Message - Transfer a patient",
+          "sourceReference": {
+            "reference": "Bundle/adta02"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+              "valueString": "Bundle"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Bundle-adta28.html"
+            }
+          ],
+          "example": true,
+          "name": "ADT^A28 FHIR Message",
+          "description": "ADT^A28 FHIR Message - Add person information",
+          "sourceReference": {
+            "reference": "Bundle/adta28"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+              "valueString": "Bundle"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Bundle-orur01.html"
+            }
+          ],
+          "example": true,
+          "name": "ORU^R01 FHIR Message",
+          "description": "ORU^R01 FHIR Message - Unsolicited Transmission Of Requested Information",
+          "sourceReference": {
+            "reference": "Bundle/orur01"
+          }
+        }
+      ]
+    }
+  ],
   "page": {
     "source": "toc.html",
     "title": "Table of Contents",

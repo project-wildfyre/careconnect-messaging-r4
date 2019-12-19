@@ -1,0 +1,233 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/orur01> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "orur01"];
+  fhir:Bundle.identifier [
+     fhir:Identifier.value [ fhir:value "3629" ]
+  ];
+  fhir:Bundle.type [ fhir:value "message"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:84483699-723c-415e-9daa-95bdf7fea3ad" ];
+     fhir:Bundle.entry.resource <urn:oid:84483699-723c-415e-9daa-95bdf7fea3ad>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071" ];
+     fhir:Bundle.entry.resource <urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a" ];
+     fhir:Bundle.entry.resource <urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8" ];
+     fhir:Bundle.entry.resource <urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e" ];
+     fhir:Bundle.entry.resource <urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8" ];
+     fhir:Bundle.entry.resource <urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b" ];
+     fhir:Bundle.entry.resource <urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b>
+  ] .
+
+<urn:oid:84483699-723c-415e-9daa-95bdf7fea3ad> a fhir:MessageHeader;
+  fhir:Resource.id [ fhir:value "84483699-723c-415e-9daa-95bdf7fea3ad"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 84483699-723c-415e-9daa-95bdf7fea3ad</p><p><b>event</b>: ORU^R01 (Details: [not stated] code ORU^R01 = 'ORU^R01', stated as 'ORU^R01')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>LIS</td></tr></table><p><b>sender</b>: LCA</p><p><b>timestamp</b>: 31-Jul-1998 15:32:00</p><p><b>focus</b>: </p><ul><li><a href=\"urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071\">urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071</a></li><li><a href=\"urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8\">urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8</a></li></ul></div>"
+  ];
+  fhir:MessageHeader.event [
+     fhir:Coding.code [ fhir:value "ORU^R01" ];
+     fhir:Coding.display [ fhir:value "ORU^R01" ]
+  ];
+  fhir:MessageHeader.destination [
+     fhir:index 0;
+     fhir:MessageHeader.destination.name [ fhir:value "LIS" ]
+  ];
+  fhir:MessageHeader.sender [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/ods-organization-code" ];
+       fhir:Identifier.value [ fhir:value "LCA" ]
+     ];
+     fhir:Reference.display [ fhir:value "LCA" ]
+  ];
+  fhir:MessageHeader.timestamp [ fhir:value "1998-07-31T15:32:00.000+01:00"^^xsd:dateTime];
+  fhir:MessageHeader.focus [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.reference [ fhir:value "urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8" ]
+  ] .
+
+<urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071> a fhir:DiagnosticReport;
+  fhir:Resource.id [ fhir:value "039e5ed2-da83-46b1-bcaa-e07220122071"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 039e5ed2-da83-46b1-bcaa-e07220122071</p><p><b>code</b>: 008342 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '008342' = '008342)</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>result</b>: <a href=\"urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a\">urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a</a></p></div>"
+  ];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "008342" ]
+     ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:Reference.reference [ fhir:value "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b" ]
+  ];
+  fhir:DiagnosticReport.effectivePeriod [
+     fhir:Period.start [ fhir:value "1998-07-27T17:58:00+01:00"^^xsd:dateTime ]
+  ];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a" ]
+  ] .
+
+<urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "a39e07de-6eb8-4557-af8c-6d43c8f3ab7a"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a39e07de-6eb8-4557-af8c-6d43c8f3ab7a</p><p><b>status</b>: final</p><p><b>code</b>: UPPER RESPIRATORY CULTURE <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '008342' = '008342', given as 'UPPER RESPIRATORY CULTURE'})</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>value</b>: FINALREPORT</p><p><b>comment</b>:  /r</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "008342" ];
+       fhir:Coding.display [ fhir:value "UPPER RESPIRATORY CULTURE" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:Reference.reference [ fhir:value "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b" ]
+  ];
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "1998-07-27T17:58:00+01:00"^^xsd:dateTime ]
+  ];
+  fhir:Observation.valueString [ fhir:value "FINALREPORT"];
+  fhir:Observation.comment [ fhir:value " /r"] .
+
+<urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8> a fhir:DiagnosticReport;
+  fhir:Resource.id [ fhir:value "b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8</p><p><b>code</b>: 997602 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '997602' = '997602)</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>result</b>: </p><ul><li><a href=\"urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e\">urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e</a></li><li><a href=\"urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8\">urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8</a></li></ul></div>"
+  ];
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "997602" ]
+     ]
+  ];
+  fhir:DiagnosticReport.subject [
+     fhir:Reference.reference [ fhir:value "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b" ]
+  ];
+  fhir:DiagnosticReport.effectivePeriod [
+     fhir:Period.start [ fhir:value "1998-07-27T17:58:00+01:00"^^xsd:dateTime ]
+  ];
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.reference [ fhir:value "urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8" ]
+  ] .
+
+<urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "3d3bfd89-2a56-4495-8d5f-b1b844c0596e"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d3bfd89-2a56-4495-8d5f-b1b844c0596e</p><p><b>status</b>: final</p><p><b>code</b>: RESULT 1 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '997231' = '997231', given as 'RESULT 1'})</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>value</b>: M415 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'M415' = 'M415)</span></p><p><b>comment</b>: MORAXELLA (BRANHAMELLA) CATARRHALIS /r HEAVY GROWTH /r BETA LACTAMASE POSITIVE /r</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "997231" ];
+       fhir:Coding.display [ fhir:value "RESULT 1" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:Reference.reference [ fhir:value "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b" ]
+  ];
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "1998-07-27T17:58:00+01:00"^^xsd:dateTime ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "M415" ]
+     ]
+  ];
+  fhir:Observation.comment [ fhir:value "MORAXELLA (BRANHAMELLA) CATARRHALIS /r HEAVY GROWTH /r BETA LACTAMASE POSITIVE /r"] .
+
+<urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "a2f30382-2191-4a83-8082-f3fdc4e1afe8"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a2f30382-2191-4a83-8082-f3fdc4e1afe8</p><p><b>status</b>: final</p><p><b>code</b>: RESULT 2 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '997232' = '997232', given as 'RESULT 2'})</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>value</b>: MR105 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'MR105' = 'MR105)</span></p><p><b>comment</b>: ROUTINE RESPIRATORY FLORA /r</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "997232" ];
+       fhir:Coding.display [ fhir:value "RESULT 2" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:Reference.reference [ fhir:value "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b" ]
+  ];
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "1998-07-27T17:58:00+01:00"^^xsd:dateTime ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "MR105" ]
+     ]
+  ];
+  fhir:Observation.comment [ fhir:value "ROUTINE RESPIRATORY FLORA /r"] .
+
+<urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "f5f98b12-9b34-402c-a01c-3a446bf2447b"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f5f98b12-9b34-402c-a01c-3a446bf2447b</p><p><b>identifier</b>: 20809880170</p><p><b>name</b>: TESTPAT 20809880170 </p><p><b>birthDate</b>: 1976-09-24</p><p><b>address</b>: 00000-0000 </p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "20809880170" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "20809880170" ];
+     fhir:HumanName.given [
+       fhir:value "TESTPAT";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.birthDate [ fhir:value "1976-09-24"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.postalCode [ fhir:value "00000-0000" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/orur01.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

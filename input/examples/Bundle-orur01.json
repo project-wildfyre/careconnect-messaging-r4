@@ -2,203 +2,345 @@
     "resourceType": "Bundle",
     "id" : "orur01",
     "identifier": {
-        "value": "3629"
+        "value": "14038913245354"
     },
     "type": "message",
     "entry": [
         {
-            "fullUrl": "urn:oid:84483699-723c-415e-9daa-95bdf7fea3ad",
+            "fullUrl": "urn:oid:de23904a-291c-4e15-adce-da8bb9f36fc9",
             "resource": {
                 "resourceType": "MessageHeader",
-                "id": "84483699-723c-415e-9daa-95bdf7fea3ad",
+                "id": "de23904a-291c-4e15-adce-da8bb9f36fc9",
                 "event": {
                     "code": "ORU^R01",
                     "display": "ORU^R01"
                 },
                 "destination": [
                     {
-                        "name": "LIS"
+                        "name": "ROUTE"
                     }
                 ],
                 "sender": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "LCA"
+                        "value": "RCB"
                     },
-                    "display": "LCA"
+                    "display": "RCB"
                 },
-                "timestamp": "1998-07-31T15:32:00.000+01:00",
+                "timestamp": "2018-05-21T13:45:12.000+01:00",
                 "focus": [
                     {
-                        "reference": "urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071"
-                    },
-                    {
-                        "reference": "urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8"
+                        "reference": "urn:oid:6510c08d-785e-44bd-9006-5e813347cb15"
                     }
                 ]
             }
         },
         {
-            "fullUrl": "urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071",
+            "fullUrl": "urn:oid:6510c08d-785e-44bd-9006-5e813347cb15",
             "resource": {
                 "resourceType": "DiagnosticReport",
-                "id": "039e5ed2-da83-46b1-bcaa-e07220122071",
+                "id": "6510c08d-785e-44bd-9006-5e813347cb15",
+                "identifier": [
+                    {
+                        "value": "108512374"
+                    }
+                ],
+                "status": "?",
                 "code": {
                     "coding": [
                         {
-                            "code": "008342"
+                            "system": "http://snomed.info/sct",
+                            "code": "859261000000108",
+                            "display": "NEWS2"
                         }
                     ]
                 },
                 "subject": {
-                    "reference": "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b"
+                    "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
                 },
                 "effectivePeriod": {
-                    "start": "1998-07-27T17:58:00+01:00"
+                    "start": "2018-05-21T13:45:05+01:00"
                 },
                 "result": [
                     {
-                        "reference": "urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a"
+                        "reference": "urn:oid:692a2d90-78c8-4dfd-bd75-f6fe96df1b90"
+                    },
+                    {
+                        "reference": "urn:oid:e9ebdbe9-591e-44ec-971f-038b18a10c4e"
+                    },
+                    {
+                        "reference": "urn:oid:eaad7cf1-a541-4c77-9aa1-3297346d8ef9"
+                    },
+                    {
+                        "reference": "urn:oid:8a240bc7-0d43-43b4-97cc-940a3ed7d67c"
+                    },
+                    {
+                        "reference": "urn:oid:82f5ec88-8423-49bd-816a-9341c2f75ab6"
+                    },
+                    {
+                        "reference": "urn:oid:e41e5ce2-cd35-4541-9cfe-091935dd45c6"
+                    },
+                    {
+                        "reference": "urn:oid:a4a9d515-fa61-4945-8147-7c138bd9698e"
                     }
                 ]
             }
         },
         {
-            "fullUrl": "urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a",
+            "fullUrl": "urn:oid:692a2d90-78c8-4dfd-bd75-f6fe96df1b90",
             "resource": {
                 "resourceType": "Observation",
-                "id": "a39e07de-6eb8-4557-af8c-6d43c8f3ab7a",
+                "id": "692a2d90-78c8-4dfd-bd75-f6fe96df1b90",
                 "status": "final",
                 "code": {
                     "coding": [
                         {
-                            "code": "008342",
-                            "display": "UPPER RESPIRATORY CULTURE"
+                            "system": "http://snomed.info/sct",
+                            "code": "364075005",
+                            "display": "Heart Rate"
                         }
                     ]
                 },
                 "subject": {
-                    "reference": "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b"
+                    "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
                 },
-                "effectivePeriod": {
-                    "start": "1998-07-27T17:58:00+01:00"
+                "valueQuantity": {
+                    "value": 73.0,
+                    "unit": "/min"
                 },
-                "valueString": "FINALREPORT",
                 "comment": " /r"
             }
         },
         {
-            "fullUrl": "urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8",
+            "fullUrl": "urn:oid:e9ebdbe9-591e-44ec-971f-038b18a10c4e",
             "resource": {
-                "resourceType": "DiagnosticReport",
-                "id": "b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8",
+                "resourceType": "Observation",
+                "id": "e9ebdbe9-591e-44ec-971f-038b18a10c4e",
+                "status": "final",
                 "code": {
                     "coding": [
                         {
-                            "code": "997602"
+                            "system": "http://snomed.info/sct",
+                            "code": "103228002",
+                            "display": "Blood oxygen saturation"
                         }
                     ]
                 },
                 "subject": {
-                    "reference": "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b"
+                    "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
                 },
-                "effectivePeriod": {
-                    "start": "1998-07-27T17:58:00+01:00"
+                "valueQuantity": {
+                    "value": 98.0,
+                    "unit": "%"
                 },
-                "result": [
+                "comment": " /r"
+            }
+        },
+        {
+            "fullUrl": "urn:oid:eaad7cf1-a541-4c77-9aa1-3297346d8ef9",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "eaad7cf1-a541-4c77-9aa1-3297346d8ef9",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "722742002",
+                            "display": "Breathing room air"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+                },
+                "comment": " /r"
+            }
+        },
+        {
+            "fullUrl": "urn:oid:8a240bc7-0d43-43b4-97cc-940a3ed7d67c",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "8a240bc7-0d43-43b4-97cc-940a3ed7d67c",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1104441000000107",
+                            "display": "ACVPU (Alert Confusion Voice Pain Unresponsive) scale score"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "248234008",
+                            "display": "Mentally alert"
+                        }
+                    ]
+                },
+                "comment": " /r"
+            }
+        },
+        {
+            "fullUrl": "urn:oid:82f5ec88-8423-49bd-816a-9341c2f75ab6",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "82f5ec88-8423-49bd-816a-9341c2f75ab6",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "86290005",
+                            "display": "Respiratory rate"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+                },
+                "valueQuantity": {
+                    "value": 20.0,
+                    "unit": "/min"
+                },
+                "comment": " /r"
+            }
+        },
+        {
+            "fullUrl": "urn:oid:e41e5ce2-cd35-4541-9cfe-091935dd45c6",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "e41e5ce2-cd35-4541-9cfe-091935dd45c6",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72313002",
+                            "display": "Systolic arterial pressure"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+                },
+                "effectiveDateTime": "2018-05-11T22:05:25+01:00",
+                "valueQuantity": {
+                    "value": 132.0,
+                    "unit": "mm[Hg]"
+                },
+                "comment": " /r",
+                "referenceRange": [
                     {
-                        "reference": "urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e"
-                    },
-                    {
-                        "reference": "urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8"
+                        "text": "90-120"
                     }
                 ]
             }
         },
         {
-            "fullUrl": "urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e",
+            "fullUrl": "urn:oid:a4a9d515-fa61-4945-8147-7c138bd9698e",
             "resource": {
                 "resourceType": "Observation",
-                "id": "3d3bfd89-2a56-4495-8d5f-b1b844c0596e",
+                "id": "a4a9d515-fa61-4945-8147-7c138bd9698e",
                 "status": "final",
                 "code": {
                     "coding": [
                         {
-                            "code": "997231",
-                            "display": "RESULT 1"
+                            "system": "http://snomed.info/sct",
+                            "code": "1091811000000102",
+                            "display": "Diastolic arterial pressure"
                         }
                     ]
                 },
                 "subject": {
-                    "reference": "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b"
+                    "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
                 },
-                "effectivePeriod": {
-                    "start": "1998-07-27T17:58:00+01:00"
+                "effectiveDateTime": "2018-05-11T22:05:25+01:00",
+                "valueQuantity": {
+                    "value": 86.0,
+                    "unit": "mm[Hg]"
                 },
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "M415"
-                        }
-                    ]
-                },
-                "comment": "MORAXELLA (BRANHAMELLA) CATARRHALIS /r HEAVY GROWTH /r BETA LACTAMASE POSITIVE /r"
+                "comment": " /r",
+                "referenceRange": [
+                    {
+                        "text": "60-80"
+                    }
+                ]
             }
         },
         {
-            "fullUrl": "urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8",
-            "resource": {
-                "resourceType": "Observation",
-                "id": "a2f30382-2191-4a83-8082-f3fdc4e1afe8",
-                "status": "final",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "997232",
-                            "display": "RESULT 2"
-                        }
-                    ]
-                },
-                "subject": {
-                    "reference": "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b"
-                },
-                "effectivePeriod": {
-                    "start": "1998-07-27T17:58:00+01:00"
-                },
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "MR105"
-                        }
-                    ]
-                },
-                "comment": "ROUTINE RESPIRATORY FLORA /r"
-            }
-        },
-        {
-            "fullUrl": "urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b",
+            "fullUrl": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3",
             "resource": {
                 "resourceType": "Patient",
-                "id": "f5f98b12-9b34-402c-a01c-3a446bf2447b",
+                "id": "e91866d4-062e-4bda-8f08-9ec331395cf3",
                 "identifier": [
                     {
-                        "value": "20809880170"
+                        "extension": [
+                            {
+                                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                                            "code": "01"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "3333333333"
                     }
                 ],
                 "name": [
                     {
-                        "family": "20809880170",
+                        "family": "SMITH",
                         "given": [
-                            "TESTPAT"
+                            "FREDRICA"
+                        ],
+                        "prefix": [
+                            "MRS"
                         ]
                     }
                 ],
-                "birthDate": "1976-09-24",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+441234567890",
+                        "use": "home"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1965-12-13",
                 "address": [
                     {
-                        "postalCode": "00000-0000"
+                        "use": "home",
+                        "city": "MALTON",
+                        "district": "NORTH YORKSHIRE",
+                        "postalCode": "YO32 5TT"
                     }
-                ]
+                ],
+                "generalPractitioner": [
+                    {
+                        "identifier": {
+                            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                            "value": "G5612908"
+                        },
+                        "display": "Dr Gregory Townley"
+                    }
+                ],
+                "managingOrganization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "Y06601"
+                    },
+                    "display": "MALTON GP PRACTICE"
+                }
             }
         }
     ]

@@ -98,3 +98,12 @@ v: {
   "error" : "The code system \"\" is not known (encountered paired with code = \"997602\"); The code provided (#997602) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "72313002"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"72313002\"); The code provided (#72313002) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

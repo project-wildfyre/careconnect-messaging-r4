@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 19, errors = 15, warn = 1, info = 3 -->
+<!-- broken links = 36, errors = 18, warn = 7, info = 2 -->
 <head>
   <title>Care Connect Messaing : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Care Connect Messaing</h1>
- <p>Generated Fri Dec 20 07:53:11 GMT 2019, FHIR version 3.0.2 for careconnect.messaging.stu3# (canonical = <a href="https://kevinmayfield.github.io/careconnect-api-stu3">https://kevinmayfield.github.io/careconnect-api-stu3</a> (<a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">history</a>))</p>
-<p>IG Publisher Version: v1.0.30-SNAPSHOT</p>
+ <p>Generated Fri Dec 20 16:29:21 GMT 2019, FHIR version 3.0.2 for careconnect.messaging.stu3# (canonical = <a href="https://kevinmayfield.github.io/careconnect-api-stu3">https://kevinmayfield.github.io/careconnect-api-stu3</a> (<a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">history</a>))</p>
+<p style="background-color: #ffcccc">IG Publisher Version: v1.0.29-SNAPSHOT, which is out of date. The current version is v1.0.30-SNAPSHOT <a hhef="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar">Download Latest</a></p>
 <p><a href="#suppressed">5 Suppressed Errors</a></p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
@@ -17,19 +17,19 @@
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>18</b></td><td><b>1</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>34</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta02"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta02</b></a></td><td><b>5</b></td><td><b>1</b></td>
+     <td><a href="#C__Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta02"><b>C:\Development\kevinmayfield\careconnect-messaging\input\examples\bundle-adta02</b></a></td><td><b>5</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta28"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta28</b></a></td><td><b>3</b></td><td><b>0</b></td>
+     <td><a href="#C__Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta28"><b>C:\Development\kevinmayfield\careconnect-messaging\input\examples\bundle-adta28</b></a></td><td><b>3</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-orur01"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-orur01</b></a></td><td><b>4</b></td><td><b>3</b></td>
+     <td><a href="#C__Development_kevinmayfield_careconnect-messaging_input_examples_bundle-orur01"><b>C:\Development\kevinmayfield\careconnect-messaging\input\examples\bundle-orur01</b></a></td><td><b>7</b></td><td><b>8</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_careconnect-messaging-ig"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/careconnect-messaging-ig</b></a></td><td><b>3</b></td><td><b>0</b></td>
+     <td><a href="#C__Development_kevinmayfield_careconnect-messaging_input_resources_careconnect-messaging-ig"><b>C:\Development\kevinmayfield\careconnect-messaging\input\resources\careconnect-messaging-ig</b></a></td><td><b>3</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -37,66 +37,117 @@
 <h2><a href="">n/a</a></h2>
  <table class="grid">
    <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>The IGPublisher used is not up-to-date.  Published content might not be properly checked and/or rendered.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td><b>The Implementation Guide Resource id should be careconnect.messaging.stu3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta02.html#302e0e84-2d8d-4fae-bc58-ea4d05a39b19">Bundle-adta02.html#/html/body/div/div/div/p/a at Line 160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta02.html#b1044a6b-7306-46f9-9e09-f65ae3f2e492">Bundle-adta02.html#/html/body/div/div/div/p/a at Line 160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta02.json.html#f541253e-a1c9-4566-ba83-2f5fab285ee5">Bundle-adta02.json.html#/html/body/div/div/div/p/a at Line 456, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta02.json.html#638f093f-933b-4125-9a2d-487bd5706639">Bundle-adta02.json.html#/html/body/div/div/div/p/a at Line 456, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta02.ttl.html#f4d6db14-6e65-4a05-9584-7774099b8bd3">Bundle-adta02.ttl.html#/html/body/div/div/div/p/a at Line 417, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta02.ttl.html#12ca96f3-f803-409a-948e-a81ed8635a73">Bundle-adta02.ttl.html#/html/body/div/div/div/p/a at Line 417, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta02.xml.html#1e0c8c88-d39f-42ec-b454-ed97c794b186">Bundle-adta02.xml.html#/html/body/div/div/div/p/a at Line 410, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta02.xml.html#260f8eaf-28a0-4b89-9b3d-297691be6815">Bundle-adta02.xml.html#/html/body/div/div/div/p/a at Line 410, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta28.html#f4ead234-5602-421d-aa0b-440c29d7d993">Bundle-adta28.html#/html/body/div/div/div/p/a at Line 160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta28.html#e9f95998-df00-4d0b-87ad-7d1d232c01ad">Bundle-adta28.html#/html/body/div/div/div/p/a at Line 160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta28.json.html#968c8e62-ffe5-4bf1-93d6-1d5fb17c6b4a">Bundle-adta28.json.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta28.json.html#852e92ed-e152-4fab-ac3d-9a9eed96ca7b">Bundle-adta28.json.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta28.ttl.html#43fe4749-2cff-443d-bda7-8c39b836ad68">Bundle-adta28.ttl.html#/html/body/div/div/div/p/a at Line 275, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta28.ttl.html#2aa393cb-abd8-4210-8c41-b279a925e191">Bundle-adta28.ttl.html#/html/body/div/div/div/p/a at Line 275, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta28.xml.html#771920c5-de5e-4287-a479-a852c4c77c0f">Bundle-adta28.xml.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta28.xml.html#72cfc1de-9114-4800-a695-b0b124d04c78">Bundle-adta28.xml.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#c7c422d4-e0c6-495f-a395-092913c57b36">Bundle-orur01.html#/html/body/div/div/div/p/a at Line 160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#5730b929-d4a2-4853-9f88-01c029134efe">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 415</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:6510c08d-785e-44bd-9006-5e813347cb15' for &quot;urn:oid:6510c08d-785e-44bd-9006-5e813347cb15&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.json.html#e09d7c01-2303-445f-94b1-9e4b77d1779f">Bundle-orur01.json.html#/html/body/div/div/div/p/a at Line 377, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#5278db77-a1fa-4716-8d4f-7c7f6ce1131d">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 868</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3' for &quot;urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.ttl.html#a7892be5-607f-484c-aa47-20567cecc282">Bundle-orur01.ttl.html#/html/body/div/div/div/p/a at Line 368, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#7de4cd96-4bf2-44d7-8ff9-4f525a59dec1">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 145, column 1067</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:692a2d90-78c8-4dfd-bd75-f6fe96df1b90' for &quot;urn:oid:692a2d90-78c8-4dfd-bd75-f6fe96df1b90&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.xml.html#36b37a71-9577-4f74-a5eb-d1f203ab1567">Bundle-orur01.xml.html#/html/body/div/div/div/p/a at Line 353, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#09179004-6bc4-4676-ba06-0d8f824205ed">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 145, column 1179</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e9ebdbe9-591e-44ec-971f-038b18a10c4e' for &quot;urn:oid:e9ebdbe9-591e-44ec-971f-038b18a10c4e&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#ab3ae7e6-949b-4f82-8047-4e891c31094d">artifacts.html#/html/body/div/div/div/p/a at Line 172, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#1462cf97-b469-41e2-9e41-650b28c6da23">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 145, column 1291</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:eaad7cf1-a541-4c77-9aa1-3297346d8ef9' for &quot;urn:oid:eaad7cf1-a541-4c77-9aa1-3297346d8ef9&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="changes.html#bab21a8f-208b-46d6-b594-461b76462ead">changes.html#/html/body/div/div/div/p/a at Line 153, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#35f46ca2-4ba9-43e8-ad67-e2cae55bfb18">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 145, column 1403</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:8a240bc7-0d43-43b4-97cc-940a3ed7d67c' for &quot;urn:oid:8a240bc7-0d43-43b4-97cc-940a3ed7d67c&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="downloads.html#c34c7028-e7c7-4738-ba96-db389ee47e41">downloads.html#/html/body/div/div/div/p/a at Line 148, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#57d98c74-aec5-4fb9-a78b-97628ccb38b6">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 145, column 1515</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:82f5ec88-8423-49bd-816a-9341c2f75ab6' for &quot;urn:oid:82f5ec88-8423-49bd-816a-9341c2f75ab6&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="hl7v2tofhir.html#915e3570-8d6f-434f-a1ab-787658f29b38">hl7v2tofhir.html#/html/body/div/div/div/p/a at Line 148, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#86980265-302e-4dbd-9654-2c286501d90a">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 145, column 1627</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e41e5ce2-cd35-4541-9cfe-091935dd45c6' for &quot;urn:oid:e41e5ce2-cd35-4541-9cfe-091935dd45c6&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#e1ef7273-f112-4fd4-bc7b-986b373eba3d">index.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#7cab1474-fa31-4fd0-abb6-662dd0fd049d">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 145, column 1739</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:a4a9d515-fa61-4945-8147-7c138bd9698e' for &quot;urn:oid:a4a9d515-fa61-4945-8147-7c138bd9698e&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#0f36e8ea-579b-4766-97f7-7da77baa2e26">toc.html#/html/body/div/div/div/p/a at Line 134, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#4b0612cf-547c-499b-b283-d8ab850ba398">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 2166</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3' for &quot;urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#cd89ddc4-42dc-40ad-b753-315d12a5c3d1">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 2692</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3' for &quot;urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#c0ccc73f-a276-4daf-9054-86243d5fae21">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 3200</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3' for &quot;urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#5b5b2c52-21df-4d01-a189-f2e81dddab8a">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 3758</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3' for &quot;urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#40363e51-ba63-43a7-b83e-af5aadaad220">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 4398</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3' for &quot;urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#2126d8ff-7d77-48b4-b191-ad6e0a476495">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 4907</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3' for &quot;urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#3ff32a96-8282-4094-bce1-bff49f47e82c">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 5604</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3' for &quot;urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#325b3a06-2280-466d-805c-61f40731f53c">Bundle-orur01.html#/html/body/div/div/div/p/a at Line 160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.json.html#35299961-3890-47b5-86d6-f5881729ea8d">Bundle-orur01.json.html#/html/body/div/div/div/p/a at Line 531, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.ttl.html#da27575d-76c7-498a-bf92-e0b94b2039c4">Bundle-orur01.ttl.html#/html/body/div/div/div/p/a at Line 516, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.xml.html#d11833de-4961-4853-b41a-e1fcaa7d71d4">Bundle-orur01.xml.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#8a64e8bb-87a3-4ae4-97a8-edaf0fc22d7e">artifacts.html#/html/body/div/div/div/p/a at Line 172, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="changes.html#af88e198-85f6-49f0-8f07-d5f75bb08de5">changes.html#/html/body/div/div/div/p/a at Line 153, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#c6a59c18-94da-4e45-9450-397e8e568563">downloads.html#/html/body/div/div/div/p/a at Line 148, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="hl7v2tofhir.html#c8dcdd03-db68-4753-abfc-6884d42a5c80">hl7v2tofhir.html#/html/body/div/div/div/p/a at Line 148, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#4e465295-03c0-4d39-96ce-ba80adf9d61e">index.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#f34891e1-cefc-44bc-8429-f7145061a238">toc.html#/html/body/div/div/div/p/a at Line 134, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta02"> </a>
-<h2><a href="Bundle-adta02.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta02.json</a></h2>
+<a name="C__Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta02"> </a>
+<h2><a href="Bundle-adta02.html">C:\Development\kevinmayfield\careconnect-messaging\input\examples\Bundle-adta02.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -121,8 +172,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta28"> </a>
-<h2><a href="Bundle-adta28.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta28.json</a></h2>
+<a name="C__Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta28"> </a>
+<h2><a href="Bundle-adta28.html">C:\Development\kevinmayfield\careconnect-messaging\input\examples\Bundle-adta28.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -138,8 +189,8 @@
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-orur01"> </a>
-<h2><a href="Bundle-orur01.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-orur01.json</a></h2>
+<a name="C__Development_kevinmayfield_careconnect-messaging_input_examples_bundle-orur01"> </a>
+<h2><a href="Bundle-orur01.html">C:\Development\kevinmayfield\careconnect-messaging\input\examples\Bundle-orur01.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -151,24 +202,48 @@
      <td><b>Bundle/orur01: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle/orur01: Bundle.entry[1].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/DiagnosticReport, Element 'Bundle.entry[1].resource.status': minimum required = 1, but only found 0</b></td>
+     <td><b>Bundle/orur01: Bundle.entry[1].resource.status</b></td><td><b>error</b></td><td><b>The value provided ('?') is not in the value set http://hl7.org/fhir/ValueSet/diagnostic-report-status (http://hl7.org/fhir/ValueSet/diagnostic-report-status, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/diagnostic-report-status#? in http://hl7.org/fhir/diagnostic-report-status)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle/orur01: Bundle.entry[1].resource.code</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes, and a code is recommended to come from this value set) (codes = null#008342)</b></td>
+     <td><b>Bundle/orur01: Bundle.entry[1].resource.code</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes, and a code is recommended to come from this value set) (codes = http://snomed.info/sct#859261000000108)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/orur01: Bundle.entry[1].resource.code.coding[0]</b></td><td><b>error</b></td><td><b>unable to find code 859261000000108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731) for 'http://snomed.info/sct#859261000000108'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle/orur01: Bundle.entry[2].resource.comment</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle/orur01: Bundle.entry[3].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/DiagnosticReport, Element 'Bundle.entry[3].resource.status': minimum required = 1, but only found 0</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/orur01: Bundle.entry[3].resource.comment</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle/orur01: Bundle.entry[3].resource.code</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes, and a code is recommended to come from this value set) (codes = null#997602)</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/orur01: Bundle.entry[4].resource.comment</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/orur01: Bundle.entry[5].resource.code.coding[0]</b></td><td><b>error</b></td><td><b>unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731) for 'http://snomed.info/sct#1104441000000107'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/orur01: Bundle.entry[5].resource.comment</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/orur01: Bundle.entry[6].resource.comment</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/orur01: Bundle.entry[7].resource.comment</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/orur01: Bundle.entry[8].resource.code.coding[0]</b></td><td><b>error</b></td><td><b>unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731) for 'http://snomed.info/sct#1091811000000102'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/orur01: Bundle.entry[8].resource.comment</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/orur01: Bundle.entry[9].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_careconnect-messaging-ig"> </a>
-<h2><a href="ImplementationGuide-careconnect-messaging-stu3.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/careconnect-messaging-ig.xml</a></h2>
+<a name="C__Development_kevinmayfield_careconnect-messaging_input_resources_careconnect-messaging-ig"> </a>
+<h2><a href="ImplementationGuide-careconnect-messaging-stu3.html">C:\Development\kevinmayfield\careconnect-messaging\input\resources\careconnect-messaging-ig.xml</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>

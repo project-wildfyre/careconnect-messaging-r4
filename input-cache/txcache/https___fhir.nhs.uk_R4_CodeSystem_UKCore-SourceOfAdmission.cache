@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission",
+  "code" : "51"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission\" is not known (encountered paired with code = \"51\"); The code provided (https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#51) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission",
+  "code" : "51"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission\" is not known (encountered paired with code = \"51\"); The code provided (https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#51) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

@@ -2,47 +2,47 @@
 =========================================
 
 err = 30, warn = 2, info = 6
-IG Publisher Version: v1.0.29-SNAPSHOT
-Generated Thu Dec 19 16:35:40 GMT 2019. FHIR version 3.0.2 for careconnect.messaging.stu3# (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
+IG Publisher Version: v1.0.30-SNAPSHOT
+Generated Fri Dec 20 07:53:12 GMT 2019. FHIR version 3.0.2 for careconnect.messaging.stu3# (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
 
  Build Errors : 18 / 1
- C:\Development\kevinmayfield\careconnect-messaging\input\examples\bundle-adta02 : 5 / 1
- C:\Development\kevinmayfield\careconnect-messaging\input\examples\bundle-adta28 : 3 / 0
- C:\Development\kevinmayfield\careconnect-messaging\input\examples\bundle-orur01 : 4 / 3
- C:\Development\kevinmayfield\careconnect-messaging\input\resources\careconnect-messaging-ig : 3 / 0
+ /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta02 : 5 / 1
+ /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta28 : 3 / 0
+ /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-orur01 : 4 / 3
+ /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/careconnect-messaging-ig : 3 / 0
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be careconnect.messaging.stu3
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-adta02.html#/html/body/div/div/div/p/a at Line 160, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-adta02.json.html#/html/body/div/div/div/p/a at Line 456, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-adta02.ttl.html#/html/body/div/div/div/p/a at Line 417, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-adta02.xml.html#/html/body/div/div/div/p/a at Line 410, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-adta28.html#/html/body/div/div/div/p/a at Line 160, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-adta28.json.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-adta28.ttl.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-adta28.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-orur01.html#/html/body/div/div/div/p/a at Line 160, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-orur01.json.html#/html/body/div/div/div/p/a at Line 377, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-orur01.ttl.html#/html/body/div/div/div/p/a at Line 368, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\Bundle-orur01.xml.html#/html/body/div/div/div/p/a at Line 353, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\artifacts.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\changes.html#/html/body/div/div/div/p/a at Line 153, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\downloads.html#/html/body/div/div/div/p/a at Line 148, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\hl7v2tofhir.html#/html/body/div/div/div/p/a at Line 148, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\index.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: C:\Development\kevinmayfield\careconnect-messaging\output\toc.html#/html/body/div/div/div/p/a at Line 134, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-== C:\Development\kevinmayfield\careconnect-messaging\input\examples\Bundle-adta02.json ==
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta02.html#/html/body/div/div/div/p/a at Line 160, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta02.json.html#/html/body/div/div/div/p/a at Line 456, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta02.ttl.html#/html/body/div/div/div/p/a at Line 417, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta02.xml.html#/html/body/div/div/div/p/a at Line 410, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta28.html#/html/body/div/div/div/p/a at Line 160, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta28.json.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta28.ttl.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta28.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-orur01.html#/html/body/div/div/div/p/a at Line 160, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-orur01.json.html#/html/body/div/div/div/p/a at Line 377, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-orur01.ttl.html#/html/body/div/div/div/p/a at Line 368, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-orur01.xml.html#/html/body/div/div/div/p/a at Line 353, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/artifacts.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/changes.html#/html/body/div/div/div/p/a at Line 153, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/downloads.html#/html/body/div/div/div/p/a at Line 148, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/hl7v2tofhir.html#/html/body/div/div/div/p/a at Line 148, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/index.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/toc.html#/html/body/div/div/div/p/a at Line 134, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+== /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta02.json ==
 ERROR: Bundle/adta02: Bundle.entry[0].resource: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0
 ERROR: Bundle/adta02: Bundle.entry[0].resource.destination[0]: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0
 INFORMATION: Bundle/adta02: Bundle.entry[1].resource.hospitalization.admitSource: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#51)
 ERROR: Bundle/adta02: Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
 ERROR: Bundle/adta02: Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 ERROR: Bundle/adta02: Bundle.entry[4].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference
-== C:\Development\kevinmayfield\careconnect-messaging\input\examples\Bundle-adta28.json ==
+== /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta28.json ==
 ERROR: Bundle/adta28: Bundle.entry[0].resource: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0
 ERROR: Bundle/adta28: Bundle.entry[0].resource.destination[0]: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0
 ERROR: Bundle/adta28: Bundle.entry[1].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
-== C:\Development\kevinmayfield\careconnect-messaging\input\examples\Bundle-orur01.json ==
+== /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-orur01.json ==
 ERROR: Bundle/orur01: Bundle.entry[0].resource: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0
 ERROR: Bundle/orur01: Bundle.entry[0].resource.destination[0]: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0
 ERROR: Bundle/orur01: Bundle.entry[1].resource: Profile http://hl7.org/fhir/StructureDefinition/DiagnosticReport, Element 'Bundle.entry[1].resource.status': minimum required = 1, but only found 0
@@ -50,7 +50,7 @@ INFORMATION: Bundle/orur01: Bundle.entry[1].resource.code: None of the codes pro
 WARNING: Bundle/orur01: Bundle.entry[2].resource.comment: value should not start or finish with whitespace
 ERROR: Bundle/orur01: Bundle.entry[3].resource: Profile http://hl7.org/fhir/StructureDefinition/DiagnosticReport, Element 'Bundle.entry[3].resource.status': minimum required = 1, but only found 0
 INFORMATION: Bundle/orur01: Bundle.entry[3].resource.code: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes, and a code is recommended to come from this value set) (codes = null#997602)
-== C:\Development\kevinmayfield\careconnect-messaging\input\resources\careconnect-messaging-ig.xml ==
+== /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/careconnect-messaging-ig.xml ==
 ERROR: /f:ImplementationGuide: Undefined element 'title'
 ERROR: /f:ImplementationGuide: Undefined element 'packageId'
 ERROR: /f:ImplementationGuide: Undefined element 'definition'

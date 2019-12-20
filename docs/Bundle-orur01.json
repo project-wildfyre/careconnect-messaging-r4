@@ -13,7 +13,7 @@
         "id": "84483699-723c-415e-9daa-95bdf7fea3ad",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 84483699-723c-415e-9daa-95bdf7fea3ad</p><p><b>event</b>: ORU^R01 (Details: [not stated] code ORU^R01 = 'ORU^R01', stated as 'ORU^R01')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>LIS</td></tr></table><p><b>sender</b>: LCA</p><p><b>timestamp</b>: 31-Jul-1998 15:32:00</p><p><b>focus</b>: </p><ul><li><a href=\"urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071\">urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071</a></li><li><a href=\"urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8\">urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8</a></li></ul></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 84483699-723c-415e-9daa-95bdf7fea3ad</p><p><b>event</b>: ORU^R01 (Details: [not stated] code ORU^R01 = 'ORU^R01', stated as 'ORU^R01')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>LIS</td></tr></table><p><b>sender</b>: LCA</p><p><b>timestamp</b>: 31 Jul 1998, 15:32:00</p><p><b>focus</b>: </p><ul><li><a href=\"urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071\">urn:oid:039e5ed2-da83-46b1-bcaa-e07220122071</a></li><li><a href=\"urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8\">urn:oid:b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8</a></li></ul></div>"
         },
         "event": {
           "code": "ORU^R01",
@@ -49,7 +49,7 @@
         "id": "039e5ed2-da83-46b1-bcaa-e07220122071",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 039e5ed2-da83-46b1-bcaa-e07220122071</p><p><b>code</b>: 008342 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '008342' = '008342)</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>result</b>: <a href=\"urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a\">urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 039e5ed2-da83-46b1-bcaa-e07220122071</p><p><b>code</b>: 008342 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '008342' = '008342)</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27 Jul 1998, 17:58:00 --&gt; (ongoing)</p><p><b>result</b>: <a href=\"urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a\">urn:oid:a39e07de-6eb8-4557-af8c-6d43c8f3ab7a</a></p></div>"
         },
         "code": {
           "coding": [
@@ -78,7 +78,7 @@
         "id": "a39e07de-6eb8-4557-af8c-6d43c8f3ab7a",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a39e07de-6eb8-4557-af8c-6d43c8f3ab7a</p><p><b>status</b>: final</p><p><b>code</b>: UPPER RESPIRATORY CULTURE <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '008342' = '008342', given as 'UPPER RESPIRATORY CULTURE'})</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>value</b>: FINALREPORT</p><p><b>comment</b>:  /r</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a39e07de-6eb8-4557-af8c-6d43c8f3ab7a</p><p><b>status</b>: final</p><p><b>code</b>: UPPER RESPIRATORY CULTURE <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '008342' = '008342', given as 'UPPER RESPIRATORY CULTURE'})</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27 Jul 1998, 17:58:00 --&gt; (ongoing)</p><p><b>value</b>: FINALREPORT</p><p><b>comment</b>:  /r</p></div>"
         },
         "status": "final",
         "code": {
@@ -106,7 +106,7 @@
         "id": "b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8</p><p><b>code</b>: 997602 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '997602' = '997602)</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>result</b>: </p><ul><li><a href=\"urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e\">urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e</a></li><li><a href=\"urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8\">urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8</a></li></ul></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: b7ef0d3b-d797-4a8d-8cd7-2643537ee2d8</p><p><b>code</b>: 997602 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '997602' = '997602)</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27 Jul 1998, 17:58:00 --&gt; (ongoing)</p><p><b>result</b>: </p><ul><li><a href=\"urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e\">urn:oid:3d3bfd89-2a56-4495-8d5f-b1b844c0596e</a></li><li><a href=\"urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8\">urn:oid:a2f30382-2191-4a83-8082-f3fdc4e1afe8</a></li></ul></div>"
         },
         "code": {
           "coding": [
@@ -138,7 +138,7 @@
         "id": "3d3bfd89-2a56-4495-8d5f-b1b844c0596e",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d3bfd89-2a56-4495-8d5f-b1b844c0596e</p><p><b>status</b>: final</p><p><b>code</b>: RESULT 1 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '997231' = '997231', given as 'RESULT 1'})</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>value</b>: M415 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'M415' = 'M415)</span></p><p><b>comment</b>: MORAXELLA (BRANHAMELLA) CATARRHALIS /r HEAVY GROWTH /r BETA LACTAMASE POSITIVE /r</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d3bfd89-2a56-4495-8d5f-b1b844c0596e</p><p><b>status</b>: final</p><p><b>code</b>: RESULT 1 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '997231' = '997231', given as 'RESULT 1'})</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27 Jul 1998, 17:58:00 --&gt; (ongoing)</p><p><b>value</b>: M415 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'M415' = 'M415)</span></p><p><b>comment</b>: MORAXELLA (BRANHAMELLA) CATARRHALIS /r HEAVY GROWTH /r BETA LACTAMASE POSITIVE /r</p></div>"
         },
         "status": "final",
         "code": {
@@ -172,7 +172,7 @@
         "id": "a2f30382-2191-4a83-8082-f3fdc4e1afe8",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a2f30382-2191-4a83-8082-f3fdc4e1afe8</p><p><b>status</b>: final</p><p><b>code</b>: RESULT 2 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '997232' = '997232', given as 'RESULT 2'})</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27-Jul-1998 17:58:00 --&gt; (ongoing)</p><p><b>value</b>: MR105 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'MR105' = 'MR105)</span></p><p><b>comment</b>: ROUTINE RESPIRATORY FLORA /r</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a2f30382-2191-4a83-8082-f3fdc4e1afe8</p><p><b>status</b>: final</p><p><b>code</b>: RESULT 2 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '997232' = '997232', given as 'RESULT 2'})</span></p><p><b>subject</b>: <a href=\"urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b\">urn:oid:f5f98b12-9b34-402c-a01c-3a446bf2447b</a></p><p><b>effective</b>: 27 Jul 1998, 17:58:00 --&gt; (ongoing)</p><p><b>value</b>: MR105 <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'MR105' = 'MR105)</span></p><p><b>comment</b>: ROUTINE RESPIRATORY FLORA /r</p></div>"
         },
         "status": "final",
         "code": {

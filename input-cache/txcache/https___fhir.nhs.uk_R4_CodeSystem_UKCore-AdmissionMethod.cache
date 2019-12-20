@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod",
+  "code" : "21"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod\" is not known (encountered paired with code = \"21\"); The code provided (https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod#21) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

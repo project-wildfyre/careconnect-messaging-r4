@@ -124,6 +124,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#hl7v2-to-fhir-mapping" id="markdown-toc-hl7v2-to-fhir-mapping">HL7v2 to FHIR Mapping</a></li>
+  <li><a href="#unsolicited-transmission-of-requested-information" id="markdown-toc-unsolicited-transmission-of-requested-information">Unsolicited Transmission Of Requested Information</a>    <ul>
+      <li><a href="#hl7v2" id="markdown-toc-hl7v2">HL7v2</a></li>
+      <li><a href="#hl7-fhir" id="markdown-toc-hl7-fhir">HL7 FHIR</a></li>
+    </ul>
+  </li>
 </ul>
 
 </div>
@@ -132,6 +137,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Work In Progress</p>
 
 <p>For mappings see <a href="https://docs.google.com/spreadsheets/d/1PaFYPSSq4oplTvw_4OgOn6h2Bs_CMvCAU9CqC4tPBgk">v2-to-FHIR Map Inventory</a></p>
+
+<h3 id="unsolicited-transmission-of-requested-information">Unsolicited Transmission Of Requested Information</h3>
+
+<h4 id="hl7v2">HL7v2</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|PAS|RCB|ROUTE|ROUTE|20180521134512||ORU^R01|14038913245354|P|2.4||201011011512|||GBR|UNICODE|EN||
+PID|1||3333333333^^^NHS||SMITH^FREDRICA^J^^MRS^^L|SCHMIDT^HELGAR^Y|196512131515|2|||29 WEST AVENUE^BURYTHORPE^MALTON^NORTH YORKSHIRE^YO32 5TT^GBR^H||+441234567890||EN|M|C22|||||A|Berlin|||GBR||DEU
+PD1|||MALTON GP PRACTICE^^Y06601|G5612908^Townley^Gregory^^^Dr^^^GMC
+OBR|1||108512374|118227000^Vital Signs^SNM||20180519140034|20180521134505|||||||||||||||||||||||||||||||||||
+OBX|1|NM|364075005^Heart Rate^SNM||73|/min|60-100|N|||F|||20180511220525
+OBX|2|NM|103228002^Blood oxygen saturation^SNM||98|%|94-100|L|||F|||20180511220525
+OBX|3|CE|722742002^Breathing room air^SNM||||||||F|||
+OBX|4|CE|1104441000000107^ACVPU (Alert Confusion Voice Pain Unresponsive) scale score^SNM||248234008^Mentally alert^SNM||||||F|||
+OBX|5|NM|86290005^Respiratory rate^SNM||20|/min|||||F|||
+OBX|6|NM|72313002^Systolic arterial pressure^SNOMED-CT|BP|132|mm[Hg]|90-120|H|||F|||20180511220525
+OBX|7|NM|1091811000000102^Diastolic arterial pressure^SNM|BP|86|mm[Hg]|60-80|H|||F|||20180511220525
+</code></pre></div></div>
+
+<h4 id="hl7-fhir">HL7 FHIR</h4>
+
+<p><a href="Bundle-orur01.html">ORU^R01 FHIR Message</a></p>
 
 
 </div>
@@ -144,8 +170,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="c8dcdd03-db68-4753-abfc-6884d42a5c80">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.messaging.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 20, 2019 16:29+0000">2019-12-20</span>
+        <p><a name="067ae419-7e3d-495a-a488-913c63945f56">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.messaging.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Dec 20, 2019 20:26+0000">2019-12-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

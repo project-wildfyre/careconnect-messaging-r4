@@ -12,7 +12,7 @@
       <MessageHeader>
         <id value="f3dc4d1d-75c4-453c-8bf0-5769e97aba3e"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f3dc4d1d-75c4-453c-8bf0-5769e97aba3e</p><p><b>event</b>: ADT^A28 (Details: [not stated] code ADT^A28 = 'ADT^A28', stated as 'ADT^A28')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 02-Jan-2010 12:15:00</p><p><b>focus</b>: <a href="urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785">urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f3dc4d1d-75c4-453c-8bf0-5769e97aba3e</p><p><b>event</b>: ADT^A28 (Details: [not stated] code ADT^A28 = 'ADT^A28', stated as 'ADT^A28')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 2 Jan 2010, 12:15:00</p><p><b>focus</b>: <a href="urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785">urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785</a></p></div>
         </text>
         <event>
           <code value="ADT^A28"/>

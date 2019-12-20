@@ -50,8 +50,8 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "859261000000108",
-                            "display": "NEWS2"
+                            "code": "118227000",
+                            "display": "Vital Signs"
                         }
                     ]
                 },

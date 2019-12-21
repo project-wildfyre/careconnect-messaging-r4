@@ -7,13 +7,13 @@
   "type": "message",
   "entry": [
     {
-      "fullUrl": "urn:oid:de23904a-291c-4e15-adce-da8bb9f36fc9",
+      "fullUrl": "urn:oid:e4e19085-ce42-4346-9a47-0e379292974b",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "de23904a-291c-4e15-adce-da8bb9f36fc9",
+        "id": "e4e19085-ce42-4346-9a47-0e379292974b",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: de23904a-291c-4e15-adce-da8bb9f36fc9</p><p><b>event</b>: ORU^R01 (Details: [not stated] code ORU^R01 = 'ORU^R01', stated as 'ORU^R01')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 21 May 2018, 13:45:12</p><p><b>focus</b>: <a href=\"urn:oid:6510c08d-785e-44bd-9006-5e813347cb15\">urn:oid:6510c08d-785e-44bd-9006-5e813347cb15</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e4e19085-ce42-4346-9a47-0e379292974b</p><p><b>event</b>: ORU^R01 (Details: [not stated] code ORU^R01 = 'ORU^R01', stated as 'ORU^R01')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 21 May 2018, 13:45:12</p><p><b>focus</b>: <a href=\"urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653\">urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653</a></p></div>"
         },
         "event": {
           "code": "ORU^R01",
@@ -34,19 +34,19 @@
         "timestamp": "2018-05-21T13:45:12.000+01:00",
         "focus": [
           {
-            "reference": "urn:oid:6510c08d-785e-44bd-9006-5e813347cb15"
+            "reference": "urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653"
           }
         ]
       }
     },
     {
-      "fullUrl": "urn:oid:6510c08d-785e-44bd-9006-5e813347cb15",
+      "fullUrl": "urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653",
       "resource": {
         "resourceType": "DiagnosticReport",
-        "id": "6510c08d-785e-44bd-9006-5e813347cb15",
+        "id": "e0956326-29b1-4218-a2a0-8a457b7a4653",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6510c08d-785e-44bd-9006-5e813347cb15</p><p><b>identifier</b>: 108512374</p><p><b>status</b>: ?</p><p><b>code</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '118227000' = 'Vital signs finding', given as 'Vital Signs'})</span></p><p><b>subject</b>: <a href=\"urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3\">urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3</a></p><p><b>effective</b>: 21 May 2018, 13:45:05 --&gt; (ongoing)</p><p><b>result</b>: </p><ul><li><a href=\"urn:oid:692a2d90-78c8-4dfd-bd75-f6fe96df1b90\">urn:oid:692a2d90-78c8-4dfd-bd75-f6fe96df1b90</a></li><li><a href=\"urn:oid:e9ebdbe9-591e-44ec-971f-038b18a10c4e\">urn:oid:e9ebdbe9-591e-44ec-971f-038b18a10c4e</a></li><li><a href=\"urn:oid:eaad7cf1-a541-4c77-9aa1-3297346d8ef9\">urn:oid:eaad7cf1-a541-4c77-9aa1-3297346d8ef9</a></li><li><a href=\"urn:oid:8a240bc7-0d43-43b4-97cc-940a3ed7d67c\">urn:oid:8a240bc7-0d43-43b4-97cc-940a3ed7d67c</a></li><li><a href=\"urn:oid:82f5ec88-8423-49bd-816a-9341c2f75ab6\">urn:oid:82f5ec88-8423-49bd-816a-9341c2f75ab6</a></li><li><a href=\"urn:oid:e41e5ce2-cd35-4541-9cfe-091935dd45c6\">urn:oid:e41e5ce2-cd35-4541-9cfe-091935dd45c6</a></li><li><a href=\"urn:oid:a4a9d515-fa61-4945-8147-7c138bd9698e\">urn:oid:a4a9d515-fa61-4945-8147-7c138bd9698e</a></li></ul></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e0956326-29b1-4218-a2a0-8a457b7a4653</p><p><b>identifier</b>: 108512374</p><p><b>status</b>: ?</p><p><b>code</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '118227000' = 'Vital signs finding', given as 'Vital Signs'})</span></p><p><b>subject</b>: <a href=\"urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e\">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>effective</b>: 21 May 2018, 13:45:05 --&gt; (ongoing)</p><p><b>result</b>: </p><ul><li><a href=\"urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a\">urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a</a></li><li><a href=\"urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41\">urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41</a></li><li><a href=\"urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6\">urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6</a></li><li><a href=\"urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c\">urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c</a></li><li><a href=\"urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c\">urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c</a></li><li><a href=\"urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f\">urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f</a></li></ul></div>"
         },
         "identifier": [
           {
@@ -64,44 +64,41 @@
           ]
         },
         "subject": {
-          "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+          "reference": "urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e"
         },
         "effectivePeriod": {
           "start": "2018-05-21T13:45:05+01:00"
         },
         "result": [
           {
-            "reference": "urn:oid:692a2d90-78c8-4dfd-bd75-f6fe96df1b90"
+            "reference": "urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a"
           },
           {
-            "reference": "urn:oid:e9ebdbe9-591e-44ec-971f-038b18a10c4e"
+            "reference": "urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41"
           },
           {
-            "reference": "urn:oid:eaad7cf1-a541-4c77-9aa1-3297346d8ef9"
+            "reference": "urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6"
           },
           {
-            "reference": "urn:oid:8a240bc7-0d43-43b4-97cc-940a3ed7d67c"
+            "reference": "urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c"
           },
           {
-            "reference": "urn:oid:82f5ec88-8423-49bd-816a-9341c2f75ab6"
+            "reference": "urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c"
           },
           {
-            "reference": "urn:oid:e41e5ce2-cd35-4541-9cfe-091935dd45c6"
-          },
-          {
-            "reference": "urn:oid:a4a9d515-fa61-4945-8147-7c138bd9698e"
+            "reference": "urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f"
           }
         ]
       }
     },
     {
-      "fullUrl": "urn:oid:692a2d90-78c8-4dfd-bd75-f6fe96df1b90",
+      "fullUrl": "urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a",
       "resource": {
         "resourceType": "Observation",
-        "id": "692a2d90-78c8-4dfd-bd75-f6fe96df1b90",
+        "id": "42bf5804-4b10-424c-a880-6b0321137b9a",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 692a2d90-78c8-4dfd-bd75-f6fe96df1b90</p><p><b>status</b>: final</p><p><b>code</b>: Heart Rate <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '364075005' = 'Heart rate', given as 'Heart Rate'})</span></p><p><b>subject</b>: <a href=\"urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3\">urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3</a></p><p><b>value</b>: 73.0 /min</p><p><b>comment</b>:  /r</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 42bf5804-4b10-424c-a880-6b0321137b9a</p><p><b>status</b>: final</p><p><b>code</b>: Heart Rate <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '364075005' = 'Heart rate', given as 'Heart Rate'})</span></p><p><b>subject</b>: <a href=\"urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e\">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 73.0 /min</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>60-100</td></tr></table></div>"
         },
         "status": "final",
         "code": {
@@ -114,23 +111,28 @@
           ]
         },
         "subject": {
-          "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+          "reference": "urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e"
         },
+        "effectiveDateTime": "2018-05-11T22:05:25+01:00",
         "valueQuantity": {
           "value": 73.0,
           "unit": "/min"
         },
-        "comment": " /r"
+        "referenceRange": [
+          {
+            "text": "60-100"
+          }
+        ]
       }
     },
     {
-      "fullUrl": "urn:oid:e9ebdbe9-591e-44ec-971f-038b18a10c4e",
+      "fullUrl": "urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41",
       "resource": {
         "resourceType": "Observation",
-        "id": "e9ebdbe9-591e-44ec-971f-038b18a10c4e",
+        "id": "52bb8b6e-a554-42f9-964e-4a8cda265d41",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e9ebdbe9-591e-44ec-971f-038b18a10c4e</p><p><b>status</b>: final</p><p><b>code</b>: Blood oxygen saturation <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '103228002' = 'Hemoglobin saturation with oxygen', given as 'Blood oxygen saturation'})</span></p><p><b>subject</b>: <a href=\"urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3\">urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3</a></p><p><b>value</b>: 98.0 %</p><p><b>comment</b>:  /r</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 52bb8b6e-a554-42f9-964e-4a8cda265d41</p><p><b>status</b>: final</p><p><b>code</b>: Blood oxygen saturation <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '103228002' = 'Hemoglobin saturation with oxygen', given as 'Blood oxygen saturation'})</span></p><p><b>subject</b>: <a href=\"urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e\">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 98.0 %</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>94-100</td></tr></table></div>"
         },
         "status": "final",
         "code": {
@@ -143,23 +145,28 @@
           ]
         },
         "subject": {
-          "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+          "reference": "urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e"
         },
+        "effectiveDateTime": "2018-05-11T22:05:25+01:00",
         "valueQuantity": {
           "value": 98.0,
           "unit": "%"
         },
-        "comment": " /r"
+        "referenceRange": [
+          {
+            "text": "94-100"
+          }
+        ]
       }
     },
     {
-      "fullUrl": "urn:oid:eaad7cf1-a541-4c77-9aa1-3297346d8ef9",
+      "fullUrl": "urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6",
       "resource": {
         "resourceType": "Observation",
-        "id": "eaad7cf1-a541-4c77-9aa1-3297346d8ef9",
+        "id": "0474a71e-2ff5-4405-a859-f4f261886de6",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eaad7cf1-a541-4c77-9aa1-3297346d8ef9</p><p><b>status</b>: final</p><p><b>code</b>: Breathing room air <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '722742002' = 'Breathing room air (finding)', given as 'Breathing room air'})</span></p><p><b>subject</b>: <a href=\"urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3\">urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3</a></p><p><b>comment</b>:  /r</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0474a71e-2ff5-4405-a859-f4f261886de6</p><p><b>status</b>: final</p><p><b>code</b>: Breathing room air <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '722742002' = 'Breathing room air (finding)', given as 'Breathing room air'})</span></p><p><b>subject</b>: <a href=\"urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e\">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p></div>"
         },
         "status": "final",
         "code": {
@@ -172,19 +179,18 @@
           ]
         },
         "subject": {
-          "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
-        },
-        "comment": " /r"
+          "reference": "urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e"
+        }
       }
     },
     {
-      "fullUrl": "urn:oid:8a240bc7-0d43-43b4-97cc-940a3ed7d67c",
+      "fullUrl": "urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c",
       "resource": {
         "resourceType": "Observation",
-        "id": "8a240bc7-0d43-43b4-97cc-940a3ed7d67c",
+        "id": "c648924f-cc6c-46be-93dc-9115d1e91c0c",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 8a240bc7-0d43-43b4-97cc-940a3ed7d67c</p><p><b>status</b>: final</p><p><b>code</b>: ACVPU (Alert Confusion Voice Pain Unresponsive) scale score <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '1104441000000107' = '1104441000000107', given as 'ACVPU (Alert Confusion Voice Pain Unresponsive) scale score'})</span></p><p><b>subject</b>: <a href=\"urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3\">urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3</a></p><p><b>value</b>: Mentally alert <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '248234008' = 'Mentally alert', given as 'Mentally alert'})</span></p><p><b>comment</b>:  /r</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c648924f-cc6c-46be-93dc-9115d1e91c0c</p><p><b>status</b>: final</p><p><b>code</b>: ACVPU (Alert Confusion Voice Pain Unresponsive) scale score <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '1104441000000107' = '1104441000000107', given as 'ACVPU (Alert Confusion Voice Pain Unresponsive) scale score'})</span></p><p><b>subject</b>: <a href=\"urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e\">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>value</b>: Mentally alert <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '248234008' = 'Mentally alert', given as 'Mentally alert'})</span></p></div>"
         },
         "status": "final",
         "code": {
@@ -197,7 +203,7 @@
           ]
         },
         "subject": {
-          "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+          "reference": "urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e"
         },
         "valueCodeableConcept": {
           "coding": [
@@ -207,18 +213,17 @@
               "display": "Mentally alert"
             }
           ]
-        },
-        "comment": " /r"
+        }
       }
     },
     {
-      "fullUrl": "urn:oid:82f5ec88-8423-49bd-816a-9341c2f75ab6",
+      "fullUrl": "urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c",
       "resource": {
         "resourceType": "Observation",
-        "id": "82f5ec88-8423-49bd-816a-9341c2f75ab6",
+        "id": "952d3ab9-7223-4bcb-be62-1480bbede61c",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 82f5ec88-8423-49bd-816a-9341c2f75ab6</p><p><b>status</b>: final</p><p><b>code</b>: Respiratory rate <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '86290005' = 'Respiratory rate', given as 'Respiratory rate'})</span></p><p><b>subject</b>: <a href=\"urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3\">urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3</a></p><p><b>value</b>: 20.0 /min</p><p><b>comment</b>:  /r</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 952d3ab9-7223-4bcb-be62-1480bbede61c</p><p><b>status</b>: final</p><p><b>code</b>: Respiratory rate <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '86290005' = 'Respiratory rate', given as 'Respiratory rate'})</span></p><p><b>subject</b>: <a href=\"urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e\">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>value</b>: 20.0 /min</p></div>"
         },
         "status": "final",
         "code": {
@@ -231,92 +236,78 @@
           ]
         },
         "subject": {
-          "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+          "reference": "urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e"
         },
         "valueQuantity": {
           "value": 20.0,
           "unit": "/min"
-        },
-        "comment": " /r"
+        }
       }
     },
     {
-      "fullUrl": "urn:oid:e41e5ce2-cd35-4541-9cfe-091935dd45c6",
+      "fullUrl": "urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f",
       "resource": {
         "resourceType": "Observation",
-        "id": "e41e5ce2-cd35-4541-9cfe-091935dd45c6",
+        "id": "57dbba71-56b5-4fca-affe-bb3fa673381f",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e41e5ce2-cd35-4541-9cfe-091935dd45c6</p><p><b>status</b>: final</p><p><b>code</b>: Systolic arterial pressure <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code '72313002' = '72313002', given as 'Systolic arterial pressure'})</span></p><p><b>subject</b>: <a href=\"urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3\">urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 132.0 mm[Hg]</p><p><b>comment</b>:  /r</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>90-120</td></tr></table></div>"
-        },
-        "status": "final",
-        "code": {
-          "coding": [
-            {
-              "code": "72313002",
-              "display": "Systolic arterial pressure"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
-        },
-        "effectiveDateTime": "2018-05-11T22:05:25+01:00",
-        "valueQuantity": {
-          "value": 132.0,
-          "unit": "mm[Hg]"
-        },
-        "comment": " /r",
-        "referenceRange": [
-          {
-            "text": "90-120"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:oid:a4a9d515-fa61-4945-8147-7c138bd9698e",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "a4a9d515-fa61-4945-8147-7c138bd9698e",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a4a9d515-fa61-4945-8147-7c138bd9698e</p><p><b>status</b>: final</p><p><b>code</b>: Diastolic arterial pressure <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '1091811000000102' = '1091811000000102', given as 'Diastolic arterial pressure'})</span></p><p><b>subject</b>: <a href=\"urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3\">urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 86.0 mm[Hg]</p><p><b>comment</b>:  /r</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>60-80</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 57dbba71-56b5-4fca-affe-bb3fa673381f</p><p><b>status</b>: final</p><p><b>code</b>: Blood Pressure <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '75367002' = 'Blood pressure', given as 'Blood Pressure'})</span></p><p><b>subject</b>: <a href=\"urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e\">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic arterial pressure <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '72313002' = 'Systolic arterial pressure', given as 'Systolic arterial pressure'})</span></p><p><b>value</b>: 132.0 mm[Hg]</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic arterial pressure <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '1091811000000102' = '1091811000000102', given as 'Diastolic arterial pressure'})</span></p><p><b>value</b>: 86.0 mm[Hg]</p></blockquote></div>"
         },
         "status": "final",
         "code": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "1091811000000102",
-              "display": "Diastolic arterial pressure"
+              "code": "75367002",
+              "display": "Blood Pressure"
             }
           ]
         },
         "subject": {
-          "reference": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3"
+          "reference": "urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e"
         },
-        "effectiveDateTime": "2018-05-11T22:05:25+01:00",
-        "valueQuantity": {
-          "value": 86.0,
-          "unit": "mm[Hg]"
-        },
-        "comment": " /r",
-        "referenceRange": [
+        "component": [
           {
-            "text": "60-80"
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "72313002",
+                  "display": "Systolic arterial pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 132.0,
+              "unit": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1091811000000102",
+                  "display": "Diastolic arterial pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 86.0,
+              "unit": "mm[Hg]"
+            }
           }
         ]
       }
     },
     {
-      "fullUrl": "urn:oid:e91866d4-062e-4bda-8f08-9ec331395cf3",
+      "fullUrl": "urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e",
       "resource": {
         "resourceType": "Patient",
-        "id": "e91866d4-062e-4bda-8f08-9ec331395cf3",
+        "id": "7dd62c99-357d-4da9-81db-70b26f35c95e",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e91866d4-062e-4bda-8f08-9ec331395cf3</p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-12-13</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><p><b>generalPractitioner</b>: Dr Gregory Townley</p><p><b>managingOrganization</b>: MALTON GP PRACTICE</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 7dd62c99-357d-4da9-81db-70b26f35c95e</p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-12-13</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><p><b>generalPractitioner</b>: Dr Gregory Townley</p><p><b>managingOrganization</b>: MALTON GP PRACTICE</p></div>"
         },
         "identifier": [
           {

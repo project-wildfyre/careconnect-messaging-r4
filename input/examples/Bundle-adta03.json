@@ -1,0 +1,268 @@
+{
+    "resourceType": "Bundle",
+    "id": "adta03",
+    "identifier": {
+        "value": "13403891320453338089"
+    },
+    "type": "message",
+    "entry": [
+        {
+            "fullUrl": "urn:oid:05b6baed-1a2d-4712-9a0b-ee8b76307535",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "05b6baed-1a2d-4712-9a0b-ee8b76307535",
+                "event": {
+                    "code": "ADT^A03",
+                    "display": "ADT^A03"
+                },
+                "destination": [
+                    {
+                        "name": "PAS"
+                    }
+                ],
+                "sender": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RCB"
+                    },
+                    "display": "RCB"
+                },
+                "timestamp": "2010-03-31T17:30:00.000+01:00",
+                "focus": [
+                    {
+                        "reference": "urn:oid:d5d605f0-d39b-461d-b73c-f9bdba240e58"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:d5d605f0-d39b-461d-b73c-f9bdba240e58",
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "d5d605f0-d39b-461d-b73c-f9bdba240e58",
+                "identifier": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "value": "11554"
+                    }
+                ],
+                "status": "finished",
+                "class": {
+                    "system": "http://hl7.org/fhir/v3/ActCode",
+                    "code": "SS",
+                    "display": "short stay"
+                },
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod",
+                                "code": "82"
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
+                                "code": "500"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "urn:oid:9d484b53-dc19-42f0-b59e-b52464fd2ef4"
+                },
+                "participant": [
+                    {
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/ParticipationType",
+                                        "code": "ATND",
+                                        "display": "attender"
+                                    }
+                                ]
+                            }
+                        ],
+                        "individual": {
+                            "identifier": {
+                                "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                                "value": "C3456789"
+                            },
+                            "display": "Dr Samuel Darwin"
+                        }
+                    },
+                    {
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/ParticipationType",
+                                        "code": "ADM",
+                                        "display": "admitter"
+                                    }
+                                ]
+                            }
+                        ],
+                        "individual": {
+                            "identifier": {
+                                "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                                "value": "C3456789"
+                            },
+                            "display": "Dr Samuel Darwin"
+                        }
+                    },
+                    {
+                        "type": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/v3/ParticipationType",
+                                        "code": "CON",
+                                        "display": "consultant"
+                                    }
+                                ]
+                            }
+                        ],
+                        "individual": {
+                            "identifier": {
+                                "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                                "value": "C3456789"
+                            },
+                            "display": "Dr Samuel Darwin"
+                        }
+                    }
+                ],
+                "period": {
+                    "start": "2010-03-30T11:00:00+01:00",
+                    "end": "2010-03-31T17:15:00+01:00"
+                },
+                "hospitalization": {
+                    "admitSource": {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission",
+                                "code": "79"
+                            }
+                        ]
+                    },
+                    "dischargeDisposition": {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod",
+                                "code": "19"
+                            }
+                        ]
+                    }
+                },
+                "location": [
+                    {
+                        "location": {
+                            "reference": "urn:oid:a7d2a902-723b-4c78-ac58-d1a9a6e914ab",
+                            "display": "MATWRD"
+                        },
+                        "status": "active"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:9d484b53-dc19-42f0-b59e-b52464fd2ef4",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "9d484b53-dc19-42f0-b59e-b52464fd2ef4",
+                "identifier": [
+                    {
+                        "extension": [
+                            {
+                                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                                            "code": "01"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "3333333333"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "SMITH",
+                        "given": [
+                            "FREDRICA"
+                        ],
+                        "prefix": [
+                            "MRS"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+441234567890",
+                        "use": "home"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1965-12-13",
+                "address": [
+                    {
+                        "use": "home",
+                        "city": "MALTON",
+                        "district": "NORTH YORKSHIRE",
+                        "postalCode": "YO32 5TT"
+                    }
+                ],
+                "generalPractitioner": [
+                    {
+                        "identifier": {
+                            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                            "value": "G5612908"
+                        },
+                        "display": "Dr Gregory Townley"
+                    }
+                ],
+                "managingOrganization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "Y06601"
+                    },
+                    "display": "MALTON GP PRACTICE"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:oid:a7d2a902-723b-4c78-ac58-d1a9a6e914ab",
+            "resource": {
+                "resourceType": "Location",
+                "id": "a7d2a902-723b-4c78-ac58-d1a9a6e914ab",
+                "identifier": [
+                    {
+                        "system": "htttps://fhir.xgenome.co.uk/Id/Ward",
+                        "value": "MATWRD"
+                    }
+                ],
+                "name": "MATWRD",
+                "managingOrganization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RCB"
+                    }
+                },
+                "partOf": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-site-code",
+                        "value": "RCB55"
+                    }
+                }
+            }
+        }
+    ]
+}

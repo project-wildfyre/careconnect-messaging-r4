@@ -10,7 +10,7 @@
   <name value="Care Connect Messaing"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-12-21T09:16:51+00:00"/>
+  <date value="2019-12-21T16:33:52+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -34,6 +34,20 @@
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-adta01.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="ADT^A01 FHIR Message"/>
+      <description value="ADT^A01 FHIR Message - Admit a patient"/>
+      <sourceReference>
+        <reference value="Bundle/adta01"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Bundle-adta02.html"/>
       </extension>
       <example value="true"/>
@@ -41,6 +55,48 @@
       <description value="ADT^A02 FHIR Message - Transfer a patient"/>
       <sourceReference>
         <reference value="Bundle/adta02"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-adta03.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="ADT^A03 FHIR Message"/>
+      <description value="ADT^A03 FHIR Message - Discharge a patient"/>
+      <sourceReference>
+        <reference value="Bundle/adta03"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-adta04.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="ADT^A04 FHIR Message"/>
+      <description value="ADT^A04 FHIR Message - Register a patient"/>
+      <sourceReference>
+        <reference value="Bundle/adta04"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-adta05.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="ADT^A05 FHIR Message"/>
+      <description value="ADT^A05 FHIR Message - Pre-Admit a patient"/>
+      <sourceReference>
+        <reference value="Bundle/adta05"/>
       </sourceReference>
     </resource>
     <resource>
@@ -65,10 +121,24 @@
         <valueUri value="Bundle-orur01.html"/>
       </extension>
       <example value="true"/>
-      <name value="ORU^R01 FHIR Message"/>
-      <description value="ORU^R01 FHIR Message - Unsolicited Transmission Of Requested Information"/>
+      <name value="ORU^R01 NEWS2 FHIR Message"/>
+      <description value="ORU^R01 NEWS2 FHIR Message - Unsolicited Transmission Of Requested Information"/>
       <sourceReference>
         <reference value="Bundle/orur01"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-orur01-path.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="ORU^R01 Pathology FHIR Message"/>
+      <description value="ORU^R01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information"/>
+      <sourceReference>
+        <reference value="Bundle/orur01-path"/>
       </sourceReference>
     </resource>
   </package>

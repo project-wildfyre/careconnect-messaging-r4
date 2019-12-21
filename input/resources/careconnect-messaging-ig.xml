@@ -38,10 +38,46 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="Bundle/adta01"></reference>
+      </reference>
+      <name value="ADT^A01 FHIR Message"></name>
+      <description value="ADT^A01 FHIR Message - Admit a patient"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Bundle/adta02"></reference>
       </reference>
       <name value="ADT^A02 FHIR Message"></name>
       <description value="ADT^A02 FHIR Message - Transfer a patient"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/adta03"></reference>
+      </reference>
+      <name value="ADT^A03 FHIR Message"></name>
+      <description value="ADT^A03 FHIR Message - Discharge a patient"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/adta04"></reference>
+      </reference>
+      <name value="ADT^A04 FHIR Message"></name>
+      <description value="ADT^A04 FHIR Message - Register a patient"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/adta05"></reference>
+      </reference>
+      <name value="ADT^A05 FHIR Message"></name>
+      <description value="ADT^A05 FHIR Message - Pre-Admit a patient"></description>
       <exampleBoolean value="true"/>
       <groupingId value="uk-examples"></groupingId>
     </resource>
@@ -58,8 +94,17 @@
       <reference>
         <reference value="Bundle/orur01"></reference>
       </reference>
-      <name value="ORU^R01 FHIR Message"></name>
-      <description value="ORU^R01 FHIR Message - Unsolicited Transmission Of Requested Information"></description>
+      <name value="ORU^R01 NEWS2 FHIR Message"></name>
+      <description value="ORU^R01 NEWS2 FHIR Message - Unsolicited Transmission Of Requested Information"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/orur01-path"></reference>
+      </reference>
+      <name value="ORU^R01 Pathology FHIR Message"></name>
+      <description value="ORU^R01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information"></description>
       <exampleBoolean value="true"/>
       <groupingId value="uk-examples"></groupingId>
     </resource>

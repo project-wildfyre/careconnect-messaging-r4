@@ -1,0 +1,224 @@
+{
+  "resourceType": "Bundle",
+  "id": "orur01-path",
+  "identifier": {
+    "value": "3629"
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "urn:oid:3ad25644-379e-4c15-86ad-1ea7fe517a12",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "3ad25644-379e-4c15-86ad-1ea7fe517a12",
+        "event": {
+          "code": "ORU^R01",
+          "display": "ORU^R01"
+        },
+        "destination": [
+          {
+            "name": "LIS"
+          }
+        ],
+        "sender": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "LCA"
+          },
+          "display": "LCA"
+        },
+        "timestamp": "1998-07-31T15:32:00.000+01:00",
+        "focus": [
+          {
+            "reference": "urn:oid:fc2beec5-8f54-4b1f-b578-7e4f8745dc2c"
+          },
+          {
+            "reference": "urn:oid:5f16117e-6b4d-4cfb-8589-266949c24d52"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:oid:fc2beec5-8f54-4b1f-b578-7e4f8745dc2c",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "fc2beec5-8f54-4b1f-b578-7e4f8745dc2c",
+        "identifier": [
+          {
+            "system": "LIS",
+            "value": "8642753100012"
+          },
+          {
+            "system": "LCS",
+            "value": "20809880170"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "008342",
+              "display": "UPPER RESPIRATORYCULTURE"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:oid:0c7313f5-64ea-49f2-8c56-0c01b6f3c74e"
+        },
+        "effectivePeriod": {
+          "start": "1998-07-27T17:58:00+01:00"
+        },
+        "result": [
+          {
+            "reference": "urn:oid:8cadb998-af3d-48f3-94c5-cb954d5ddc14"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:oid:8cadb998-af3d-48f3-94c5-cb954d5ddc14",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8cadb998-af3d-48f3-94c5-cb954d5ddc14",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "008342",
+              "display": "UPPER RESPIRATORY CULTURE"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:oid:0c7313f5-64ea-49f2-8c56-0c01b6f3c74e"
+        },
+        "effectivePeriod": {
+          "start": "1998-07-27T17:58:00+01:00"
+        },
+        "valueString": "FINALREPORT"
+      }
+    },
+    {
+      "fullUrl": "urn:oid:5f16117e-6b4d-4cfb-8589-266949c24d52",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "5f16117e-6b4d-4cfb-8589-266949c24d52",
+        "identifier": [
+          {
+            "system": "LIS",
+            "value": "8642753100012"
+          },
+          {
+            "system": "LCS",
+            "value": "20809880170"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "997602",
+              "display": "."
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:oid:0c7313f5-64ea-49f2-8c56-0c01b6f3c74e"
+        },
+        "effectivePeriod": {
+          "start": "1998-07-27T17:58:00+01:00"
+        },
+        "result": [
+          {
+            "reference": "urn:oid:8fdd63ca-b364-4aed-9345-7631b1a0cf1f"
+          },
+          {
+            "reference": "urn:oid:14173bed-c7fa-4be5-84e9-9d394053b436"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:oid:8fdd63ca-b364-4aed-9345-7631b1a0cf1f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8fdd63ca-b364-4aed-9345-7631b1a0cf1f",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "997231",
+              "display": "RESULT 1"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:oid:0c7313f5-64ea-49f2-8c56-0c01b6f3c74e"
+        },
+        "effectiveDateTime": "1998-07-29T16:05:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "M415"
+            }
+          ]
+        },
+        "comment": "MORAXELLA (BRANHAMELLA) CATARRHALIS \r HEAVY GROWTH\r BETA LACTAMASE POSITIVE \r"
+      }
+    },
+    {
+      "fullUrl": "urn:oid:14173bed-c7fa-4be5-84e9-9d394053b436",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "14173bed-c7fa-4be5-84e9-9d394053b436",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "997232",
+              "display": "RESULT 2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:oid:0c7313f5-64ea-49f2-8c56-0c01b6f3c74e"
+        },
+        "effectiveDateTime": "1998-07-29T16:05:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "MR105"
+            }
+          ]
+        },
+        "comment": "ROUTINE RESPIRATORY FLORA\r"
+      }
+    },
+    {
+      "fullUrl": "urn:oid:0c7313f5-64ea-49f2-8c56-0c01b6f3c74e",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "0c7313f5-64ea-49f2-8c56-0c01b6f3c74e",
+        "identifier": [
+          {
+            "value": "20809880170"
+          }
+        ],
+        "name": [
+          {
+            "family": "20809880170",
+            "given": [
+              "TESTPAT"
+            ]
+          }
+        ],
+        "birthDate": "1976-09-24",
+        "address": [
+          {
+            "postalCode": "00000-0000"
+          }
+        ]
+      }
+    }
+  ]
+}

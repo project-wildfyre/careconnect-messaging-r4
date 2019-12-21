@@ -2,16 +2,17 @@
 =========================================
 
 err = 34, warn = 16, info = 4
-IG Publisher Version: v1.0.30-SNAPSHOT
-Generated Fri Dec 20 20:26:25 GMT 2019. FHIR version 3.0.2 for careconnect.messaging.stu3# (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
+IG Publisher Version: v1.0.30-SNAPSHOT Out of date - current version is v1.0.32-SNAPSHOT
+Generated Sat Dec 21 05:42:32 GMT 2019. FHIR version 3.0.2 for careconnect.messaging.stu3# (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
 
- Build Errors : 34 / 1
+ Build Errors : 34 / 2
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta02 : 5 / 1
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta28 : 3 / 0
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-orur01 : 6 / 9
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/careconnect-messaging-ig : 3 / 0
 </table>
 == n/a ==
+WARNING: The IGPublisher used is not up-to-date.  Published content might not be properly checked and/or rendered.
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be careconnect.messaging.stu3
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta02.html#/html/body/div/div/div/p/a at Line 160, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Bundle-adta02.json.html#/html/body/div/div/div/p/a at Line 456, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
@@ -44,7 +45,7 @@ ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/outp
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/artifacts.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/changes.html#/html/body/div/div/div/p/a at Line 153, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/downloads.html#/html/body/div/div/div/p/a at Line 148, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/hl7v2tofhir.html#/html/body/div/div/div/p/a at Line 174, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/hl7v2tofhir.html#/html/body/div/div/div/p/a at Line 196, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/index.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/toc.html#/html/body/div/div/div/p/a at Line 134, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "" cannot be resolved
 == /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta02.json ==

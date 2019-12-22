@@ -10,7 +10,7 @@
   <name value="Care Connect Messaing"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-12-21T16:33:52+00:00"/>
+  <date value="2019-12-22T08:42:51+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -37,8 +37,8 @@
         <valueUri value="Bundle-adta01.html"/>
       </extension>
       <example value="true"/>
-      <name value="ADT^A01 FHIR Message"/>
-      <description value="ADT^A01 FHIR Message - Admit a patient"/>
+      <name value="ADT_A01 FHIR Message"/>
+      <description value="ADT_A01 FHIR Message - Admit a patient"/>
       <sourceReference>
         <reference value="Bundle/adta01"/>
       </sourceReference>
@@ -51,8 +51,8 @@
         <valueUri value="Bundle-adta02.html"/>
       </extension>
       <example value="true"/>
-      <name value="ADT^A02 FHIR Message"/>
-      <description value="ADT^A02 FHIR Message - Transfer a patient"/>
+      <name value="ADT_A02 FHIR Message"/>
+      <description value="ADT_A02 FHIR Message - Transfer a patient"/>
       <sourceReference>
         <reference value="Bundle/adta02"/>
       </sourceReference>
@@ -65,8 +65,8 @@
         <valueUri value="Bundle-adta03.html"/>
       </extension>
       <example value="true"/>
-      <name value="ADT^A03 FHIR Message"/>
-      <description value="ADT^A03 FHIR Message - Discharge a patient"/>
+      <name value="ADT_A03 FHIR Message"/>
+      <description value="ADT_A03 FHIR Message - Discharge a patient"/>
       <sourceReference>
         <reference value="Bundle/adta03"/>
       </sourceReference>
@@ -79,8 +79,8 @@
         <valueUri value="Bundle-adta04.html"/>
       </extension>
       <example value="true"/>
-      <name value="ADT^A04 FHIR Message"/>
-      <description value="ADT^A04 FHIR Message - Register a patient"/>
+      <name value="ADT_A04 FHIR Message"/>
+      <description value="ADT_A04 FHIR Message - Register a patient"/>
       <sourceReference>
         <reference value="Bundle/adta04"/>
       </sourceReference>
@@ -93,8 +93,8 @@
         <valueUri value="Bundle-adta05.html"/>
       </extension>
       <example value="true"/>
-      <name value="ADT^A05 FHIR Message"/>
-      <description value="ADT^A05 FHIR Message - Pre-Admit a patient"/>
+      <name value="ADT_A05 FHIR Message"/>
+      <description value="ADT_A05 FHIR Message - Pre-Admit a patient"/>
       <sourceReference>
         <reference value="Bundle/adta05"/>
       </sourceReference>
@@ -107,8 +107,8 @@
         <valueUri value="Bundle-adta28.html"/>
       </extension>
       <example value="true"/>
-      <name value="ADT^A28 FHIR Message"/>
-      <description value="ADT^A28 FHIR Message - Add person information"/>
+      <name value="ADT_A28 FHIR Message"/>
+      <description value="ADT_A28 FHIR Message - Add person information"/>
       <sourceReference>
         <reference value="Bundle/adta28"/>
       </sourceReference>
@@ -121,8 +121,8 @@
         <valueUri value="Bundle-orur01.html"/>
       </extension>
       <example value="true"/>
-      <name value="ORU^R01 NEWS2 FHIR Message"/>
-      <description value="ORU^R01 NEWS2 FHIR Message - Unsolicited Transmission Of Requested Information"/>
+      <name value="ORU_R01 NEWS2 FHIR Message"/>
+      <description value="ORU_R01 NEWS2 FHIR Message - Unsolicited Transmission Of Requested Information"/>
       <sourceReference>
         <reference value="Bundle/orur01"/>
       </sourceReference>
@@ -135,10 +135,24 @@
         <valueUri value="Bundle-orur01-path.html"/>
       </extension>
       <example value="true"/>
-      <name value="ORU^R01 Pathology FHIR Message"/>
-      <description value="ORU^R01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information"/>
+      <name value="ORU_R01 Pathology FHIR Message"/>
+      <description value="ORU_R01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information"/>
       <sourceReference>
         <reference value="Bundle/orur01-path"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-ormo01.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="ORM_O01 Order FHIR Message"/>
+      <description value="ORM_O01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information"/>
+      <sourceReference>
+        <reference value="Bundle/ormo01"/>
       </sourceReference>
     </resource>
   </package>
@@ -154,6 +168,21 @@
     <page>
       <source value="hl7v2tofhir.html"/>
       <title value="HL7v2 to FHIR Conversion"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="adt.html"/>
+      <title value="HL7 v2 and FHIR Admission, Discharge and Transfers"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="orders.html"/>
+      <title value="HL7 v2 and FHIR Orders"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="results.html"/>
+      <title value="HL7 v2 and FHIR Results"/>
       <kind value="resource"/>
     </page>
     <page>

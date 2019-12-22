@@ -9,7 +9,7 @@
   "name": "Care Connect Messaing",
   "status": "draft",
   "experimental": false,
-  "date": "2019-12-21T16:33:52+00:00",
+  "date": "2019-12-22T08:42:51+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -51,8 +51,8 @@
             }
           ],
           "example": true,
-          "name": "ADT^A01 FHIR Message",
-          "description": "ADT^A01 FHIR Message - Admit a patient",
+          "name": "ADT_A01 FHIR Message",
+          "description": "ADT_A01 FHIR Message - Admit a patient",
           "sourceReference": {
             "reference": "Bundle/adta01"
           }
@@ -69,8 +69,8 @@
             }
           ],
           "example": true,
-          "name": "ADT^A02 FHIR Message",
-          "description": "ADT^A02 FHIR Message - Transfer a patient",
+          "name": "ADT_A02 FHIR Message",
+          "description": "ADT_A02 FHIR Message - Transfer a patient",
           "sourceReference": {
             "reference": "Bundle/adta02"
           }
@@ -87,8 +87,8 @@
             }
           ],
           "example": true,
-          "name": "ADT^A03 FHIR Message",
-          "description": "ADT^A03 FHIR Message - Discharge a patient",
+          "name": "ADT_A03 FHIR Message",
+          "description": "ADT_A03 FHIR Message - Discharge a patient",
           "sourceReference": {
             "reference": "Bundle/adta03"
           }
@@ -105,8 +105,8 @@
             }
           ],
           "example": true,
-          "name": "ADT^A04 FHIR Message",
-          "description": "ADT^A04 FHIR Message - Register a patient",
+          "name": "ADT_A04 FHIR Message",
+          "description": "ADT_A04 FHIR Message - Register a patient",
           "sourceReference": {
             "reference": "Bundle/adta04"
           }
@@ -123,8 +123,8 @@
             }
           ],
           "example": true,
-          "name": "ADT^A05 FHIR Message",
-          "description": "ADT^A05 FHIR Message - Pre-Admit a patient",
+          "name": "ADT_A05 FHIR Message",
+          "description": "ADT_A05 FHIR Message - Pre-Admit a patient",
           "sourceReference": {
             "reference": "Bundle/adta05"
           }
@@ -141,8 +141,8 @@
             }
           ],
           "example": true,
-          "name": "ADT^A28 FHIR Message",
-          "description": "ADT^A28 FHIR Message - Add person information",
+          "name": "ADT_A28 FHIR Message",
+          "description": "ADT_A28 FHIR Message - Add person information",
           "sourceReference": {
             "reference": "Bundle/adta28"
           }
@@ -159,8 +159,8 @@
             }
           ],
           "example": true,
-          "name": "ORU^R01 NEWS2 FHIR Message",
-          "description": "ORU^R01 NEWS2 FHIR Message - Unsolicited Transmission Of Requested Information",
+          "name": "ORU_R01 NEWS2 FHIR Message",
+          "description": "ORU_R01 NEWS2 FHIR Message - Unsolicited Transmission Of Requested Information",
           "sourceReference": {
             "reference": "Bundle/orur01"
           }
@@ -177,10 +177,28 @@
             }
           ],
           "example": true,
-          "name": "ORU^R01 Pathology FHIR Message",
-          "description": "ORU^R01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information",
+          "name": "ORU_R01 Pathology FHIR Message",
+          "description": "ORU_R01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information",
           "sourceReference": {
             "reference": "Bundle/orur01-path"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+              "valueString": "Bundle"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Bundle-ormo01.html"
+            }
+          ],
+          "example": true,
+          "name": "ORM_O01 Order FHIR Message",
+          "description": "ORM_O01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information",
+          "sourceReference": {
+            "reference": "Bundle/ormo01"
           }
         }
       ]
@@ -199,6 +217,21 @@
       {
         "source": "hl7v2tofhir.html",
         "title": "HL7v2 to FHIR Conversion",
+        "kind": "resource"
+      },
+      {
+        "source": "adt.html",
+        "title": "HL7 v2 and FHIR Admission, Discharge and Transfers",
+        "kind": "resource"
+      },
+      {
+        "source": "orders.html",
+        "title": "HL7 v2 and FHIR Orders",
+        "kind": "resource"
+      },
+      {
+        "source": "results.html",
+        "title": "HL7 v2 and FHIR Results",
         "kind": "resource"
       },
       {

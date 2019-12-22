@@ -163,3 +163,30 @@ v: {
   "error" : "The code system \"\" is not known (encountered paired with code = \"997602\"); The code provided (#997602) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "ORM^O01"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"ORM^O01\"); The code provided (#ORM^O01) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "394720003"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"394720003\"); The code provided (#394720003) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "313299006"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"313299006\"); The code provided (#313299006) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

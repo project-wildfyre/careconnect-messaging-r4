@@ -16,6 +16,8 @@ This IG does not describe an OPEN API (RESTful API). This can be found here: [Ca
 * 3.1.4 Patient Identity Management
 * 3.1.1 Basic Inpatient / Outpatient Encounter Management
 
+[HL7 UK Standard for Use of HL7 Version 2 in the UK](https://www.hl7.org.uk/wp-content/uploads/HL7UK_Media/Documents/Standards/HL72UKA.3-v2.pdf)
+
 This is in order to support syncronisation with the Hospital Patient Administration Systems or LHCR Master Patient Index (MPI)
 
 #### FHIR Messaging

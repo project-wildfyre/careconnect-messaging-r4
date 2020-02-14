@@ -1,5 +1,6 @@
 {
+  "version": "3.0.0",
   "fhirVersion": "[3.0.2]",
-  "date": "20191222084226",
+  "date": "20200214130121",
   "name": "careconnect.messaging.stu3"
 }

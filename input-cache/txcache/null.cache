@@ -11,7 +11,7 @@
       "system" : "http://loinc.org"
     }]
   }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -30,7 +30,7 @@ v: {
       "system" : "http://loinc.org"
     }]
   }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY"}####
 v: {
   "display" : "",
   "severity" : "error",

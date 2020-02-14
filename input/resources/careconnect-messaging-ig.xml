@@ -3,8 +3,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
   <id value="careconnect-messaging-stu3"/>
   <url value="https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3"/>
-  <name value="Care Connect Messaing"/>
-  <title value="Care Connect Messaging"/>
+  <version value="3.0.0"/>
+  <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="mayfield-is.co.uk"/>
@@ -38,10 +38,19 @@
     </grouping>
     <resource>
       <reference>
-        <reference value="Bundle/adta01"></reference>
+        <reference value="Bundle/notification-admit"></reference>
       </reference>
-      <name value="ADT_A01 FHIR Message"></name>
-      <description value="ADT_A01 FHIR Message - Admit a patient"></description>
+      <name value="notification-admit"></name>
+      <description value="Notifiation Admission FHIR Message - Admit a patient"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/notification-admit-transaction"></reference>
+      </reference>
+      <name value="notification-admit-transaction"></name>
+      <description value="Notifiation Admission FHIR Transaction - Admit a patient"></description>
       <exampleBoolean value="true"/>
       <groupingId value="uk-examples"></groupingId>
     </resource>
@@ -56,10 +65,19 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/adta03"></reference>
+        <reference value="Bundle/notification-discharge"></reference>
       </reference>
-      <name value="ADT_A03 FHIR Message"></name>
-      <description value="ADT_A03 FHIR Message - Discharge a patient"></description>
+      <name value="Notification Discharge FHIR Message"></name>
+      <description value="Notification Discharge FHIR Message - Discharge a patient"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/notification-discharge-transaction"></reference>
+      </reference>
+      <name value="Notification Discharge FHIR Transaction"></name>
+      <description value="Notification Discharge FHIR Transaction - Discharge a patient"></description>
       <exampleBoolean value="true"/>
       <groupingId value="uk-examples"></groupingId>
     </resource>
@@ -83,10 +101,19 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/adta28"></reference>
+        <reference value="Bundle/patient-create"></reference>
       </reference>
-      <name value="ADT_A28 FHIR Message"></name>
-      <description value="ADT_A28 FHIR Message - Add person information"></description>
+      <name value="Patient Create FHIR Message"></name>
+      <description value="Patient Create FHIR Message - Add person information"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/patient-create-transaction"></reference>
+      </reference>
+      <name value="Patient Create FHIR Transaction"></name>
+      <description value="Patient Create FHIR Transaction - Add person information"></description>
       <exampleBoolean value="true"/>
       <groupingId value="uk-examples"></groupingId>
     </resource>
@@ -117,6 +144,63 @@
       <exampleBoolean value="true"/>
       <groupingId value="uk-examples"></groupingId>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/patient-referral"></reference>
+      </reference>
+      <name value="Patient Referral Example"></name>
+      <description value="Patient Referral Example"></description>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/patient-referral"/>
+      </reference>
+      <name value="Patient Referral"/>
+      <description value="Patient Referral"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/response-patient-referral"/>
+      </reference>
+      <name value="Response Patient Referral"/>
+      <description value="Response Patient Referral"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/modify-patient-referral"/>
+      </reference>
+      <name value="Modify Patient Referral"/>
+      <description value="Modify Patient Referral"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/cancel-patient-referral"/>
+      </reference>
+      <name value="Cancel Patient Referral"/>
+      <description value="Cancel Patient Referral"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/notification-admit"/>
+      </reference>
+      <name value="Notitification Admission"/>
+      <description value="Admission Notification - care provision started"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/notification-discharge"/>
+      </reference>
+      <name value="Notitification Discharge"/>
+      <description value="Discharge Notification - patient handed over."/>
+    </resource>
+    <resource>
+    <reference>
+      <reference value="GraphDefinition/patient-referral-message"/>
+    </reference>
+    <name value="Patient Referral Message Definition"/>
+    <description value="For handover, service request or referral"/>
+  </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -148,6 +232,21 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="messagedefinitions.html"/>
+        <title value="Message Definitions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+      <nameUrl value="examples.html"/>
+      <title value="Examples"/>
+      <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="graphdefinitions.html"/>
+        <title value="Graph Definitions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="downloads.html"/>
         <title value="Useful Downloads"/>
         <generation value="markdown"/>
@@ -158,5 +257,18 @@
         <generation value="markdown"/>
       </page>
     </page>
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2020+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="CI Build"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
   </definition>
 </ImplementationGuide>

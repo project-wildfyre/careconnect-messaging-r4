@@ -1,8 +1,18 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod",
+  "code" : "82"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod\" is not known (encountered paired with code = \"82\"); The code provided (https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod#82) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod",
   "code" : "21"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -12,20 +22,10 @@ v: {
 {"code" : {
   "system" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod",
   "code" : "13"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",
   "error" : "The code system \"https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod\" is not known (encountered paired with code = \"13\"); The code provided (https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod#13) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod",
-  "code" : "82"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod\" is not known (encountered paired with code = \"82\"); The code provided (https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod#82) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------

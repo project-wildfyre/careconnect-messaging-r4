@@ -7,9 +7,9 @@
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-  
+
     <link rel="stylesheet" href="fhir.css"/>
-      
+     
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-
       <!-- Placeholder for child template CSS declarations -->
-  
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -32,18 +33,18 @@
     <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"8.9"}
-    h3,h4,h5,h6{--heading-prefix:"8.9"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.12"}
+    h3,h4,h5,h6{--heading-prefix:"11.12"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Care Connect Messaging</span><br/> - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>3.0.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -63,7 +64,7 @@
             </button>
             <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <ul class="nav navbar-nav">
   <li><a href="index.html">Care Connect Messaging</a></li>
   <!-- <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">MyIg Background<b class="caret">
@@ -93,7 +94,23 @@
             <a href="results.html">Results</a>
         </li>
     </ul>
-  </li> 
+  </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts<b class="caret">
+        </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="messagedefinitions.html">Message Definitions</a>
+            </li>
+            <li>
+                <a href="graphdefinitions.html">Graph Definitions</a>
+            </li>
+            <li>
+                <a href="examples.html">Examples</a>
+            </li>
+        </ul>
+    </li>
   <li><a href="downloads.html">Associated Specifications</a></li>
   <li><a href="artifacts.html">Artifact Summary</a></li>
 </ul>      
@@ -121,7 +138,7 @@
 
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (vnull). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v3.0.0). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
   <h2 id="root">ORM_O01 Order FHIR Message</h2>
   <p>
@@ -151,7 +168,7 @@
   <p>
     <b>Narrative view</b>
   </p>
-  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e32bbfd3-4c05-441c-aa00-e557c0dfe9c6</p><p><b>event</b>: ORM^O01 (Details: [not stated] code ORM^O01 = 'ORM^O01', stated as 'ORM^O01')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>Y06601</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 10 Oct 2010, 14:18:00</p><p><a name="73e79a09-5ca5-4aa2-853d-69a0c9624a7c">​</a><b>focus</b>: <a href="urn:oid:97aa3d54-5ffe-456e-b865-4ac925c1bfdf">urn:oid:97aa3d54-5ffe-456e-b865-4ac925c1bfdf</a></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 97aa3d54-5ffe-456e-b865-4ac925c1bfdf</p><p><b>identifier</b>: 20060307110114</p><p><b>code</b>: Asthma medication review <span style="background: LightGoldenRodYellow">(Details : {[not stated] code '394720003' = '394720003', given as 'Asthma medication review'})</span></p><p><a name="88744ac7-b58f-4107-86fa-2be08c3d479e">​</a><b>subject</b>: <a href="urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc">urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc</a></p><p><b>occurrence</b>: 7 Mar 2006, 11:01:14</p><p><a name="4d07671b-87a9-4272-b2a6-9104b9eaaeae">​</a><b>reasonReference</b>: <a href="urn:oid:339d27fd-d02c-4fb2-80d0-cf249661a1f0">urn:oid:339d27fd-d02c-4fb2-80d0-cf249661a1f0</a></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 339d27fd-d02c-4fb2-80d0-cf249661a1f0</p><p><b>code</b>: Severe chronic obstructive pulmonary disease <span style="background: LightGoldenRodYellow">(Details : {[not stated] code '313299006' = '313299006', given as 'Severe chronic obstructive pulmonary disease'})</span></p><p><a name="21508bef-2881-4d4b-b1cf-cbac95a7254a">​</a><b>subject</b>: <a href="urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc">urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc</a></p><p><b>onset</b>: 9 Oct 2010, 09:00:00</p><p><b>asserter</b>: Dr Samuel Darwin</p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a7fbd3dc-d994-4be1-8e02-d34655b954fc</p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-12-13</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c8ccff63-899d-41f3-8fc0-faba55f47c86</p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'emergency')</p><p><b>type</b>: 13 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><a name="865856c6-d697-4d8b-93af-dc0eb1ce8c6e">​</a><b>subject</b>: <a href="urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc">urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a name="4c41b3f8-6621-46b4-a11a-bff46309af40">​</a><a href="urn:oid:8f7b818f-3dc9-42fb-8758-dd62d7fd693b">ED</a></td><td>active</td></tr></table><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 8f7b818f-3dc9-42fb-8758-dd62d7fd693b</p><p><b>identifier</b>: ED</p><p><b>name</b>: ED</p><p><b>managingOrganization</b>: </p><p><b>partOf</b>: </p><hr/></div>
+  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e32bbfd3-4c05-441c-aa00-e557c0dfe9c6</p><p><b>event</b>: ORM^O01 (Details: [not stated] code ORM^O01 = 'ORM^O01', stated as 'ORM^O01')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>Y06601</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 10 Oct 2010, 14:18:00</p><p><a name="a40e043c-0468-40bf-989f-496083f44801">​</a><b>focus</b>: <a href="urn:oid:97aa3d54-5ffe-456e-b865-4ac925c1bfdf">urn:oid:97aa3d54-5ffe-456e-b865-4ac925c1bfdf</a></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 97aa3d54-5ffe-456e-b865-4ac925c1bfdf</p><p><b>identifier</b>: 20060307110114</p><p><b>code</b>: Asthma medication review <span style="background: LightGoldenRodYellow">(Details : {[not stated] code '394720003' = '394720003', given as 'Asthma medication review'})</span></p><p><a name="da8a229b-6636-4c00-b8d8-bef950fcafff">​</a><b>subject</b>: <a href="urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc">urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc</a></p><p><b>occurrence</b>: 7 Mar 2006, 11:01:14</p><p><a name="4815e63f-b444-4bd2-8dae-b00e06ec8d13">​</a><b>reasonReference</b>: <a href="urn:oid:339d27fd-d02c-4fb2-80d0-cf249661a1f0">urn:oid:339d27fd-d02c-4fb2-80d0-cf249661a1f0</a></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 339d27fd-d02c-4fb2-80d0-cf249661a1f0</p><p><b>code</b>: Severe chronic obstructive pulmonary disease <span style="background: LightGoldenRodYellow">(Details : {[not stated] code '313299006' = '313299006', given as 'Severe chronic obstructive pulmonary disease'})</span></p><p><a name="3da0c924-2cbf-48fd-a23f-2e80d45f6fe9">​</a><b>subject</b>: <a href="urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc">urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc</a></p><p><b>onset</b>: 9 Oct 2010, 09:00:00</p><p><b>asserter</b>: Dr Samuel Darwin</p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a7fbd3dc-d994-4be1-8e02-d34655b954fc</p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-12-13</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c8ccff63-899d-41f3-8fc0-faba55f47c86</p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: emergency (Details: http://hl7.org/fhir/v3/ActCode code EMER = 'emergency', stated as 'emergency')</p><p><b>type</b>: 13 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><a name="6619c7df-fb66-496b-9ef8-4f13692f9ff7">​</a><b>subject</b>: <a href="urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc">urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a name="ecd4e128-25e7-4cb6-8b43-b80e0a28876a">​</a><a href="urn:oid:8f7b818f-3dc9-42fb-8758-dd62d7fd693b">ED</a></td><td>active</td></tr></table><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 8f7b818f-3dc9-42fb-8758-dd62d7fd693b</p><p><b>identifier</b>: ED</p><p><b>name</b>: ED</p><p><b>managingOrganization</b>: </p><p><b>partOf</b>: </p><hr/></div>
 
   
   
@@ -165,8 +182,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="289e9dbd-f6a6-4719-a1f1-1f9e031fa9aa">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.messaging.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, Dec 22, 2019 08:42+0000">2019-12-22</span>
+        <p><a name="581bdff0-993b-49b0-aa3c-da952518b22e">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.stu3#3.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Feb 14, 2020 13:01+0000">2020-02-14</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -189,7 +206,6 @@
   <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/fhir.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>

@@ -1,5 +1,6 @@
 {
   "package": "careconnect.messaging.stu3",
+  "version": "3.0.0",
   "fhirVersion": "3.0.2",
   "jurisdiction": "826",
   "extensions": [],
@@ -10,6 +11,9 @@
     ],
     "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1": [
       "Bundle.entry.resource.identifier"
+    ],
+    "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId": [
+      "GraphDefinition.link.target.link.target"
     ]
   }
 }

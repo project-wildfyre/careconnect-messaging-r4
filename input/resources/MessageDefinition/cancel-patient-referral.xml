@@ -1,0 +1,27 @@
+<MessageDefinition xmlns="http://hl7.org/fhir">
+    <id value="cancel-patient-referral"></id>
+    <url value="https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral"></url>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"></system>
+        <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664"></value>
+    </identifier>
+    <version value="1.0.0"></version>
+    <title value="Cancel Patient Referral"></title>
+    <status value="active"></status>
+    <date value="2019-08-22T12:49:51.688+01:00"></date>
+    <copyright value="Copyright © 2020 NHS Digital"></copyright>
+    <event>
+        <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"></system>
+        <code value="cancel-patient-referral"></code>
+        <display value="cancel-patient-referral"></display>
+    </event>
+    <category value="Notification"></category>
+    <focus>
+        <code value="ReferralRequest"></code>
+        <profile>
+            <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"/>
+        </profile>
+        <min value="1"/>
+        <max value="1"/>
+    </focus>
+</MessageDefinition>

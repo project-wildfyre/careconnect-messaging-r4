@@ -1,14 +1,30 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 67, errors = 46, warn = 3, info = 9 -->
+<!-- broken links = 132, errors = 89, warn = 5, info = 93 -->
 <head>
-  <title>Care Connect Messaing : Validation Results</title>
+  <title>Care Connect Messaging : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Validation Results for Care Connect Messaing</h1>
- <p>Generated Sun Dec 22 08:43:17 GMT 2019, FHIR version 3.0.2 for careconnect.messaging.stu3# (canonical = <a href="https://kevinmayfield.github.io/careconnect-api-stu3">https://kevinmayfield.github.io/careconnect-api-stu3</a> (<a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">history</a>))</p>
-<p style="background-color: #ffcccc">IG Publisher Version: v1.0.30-SNAPSHOT, which is out of date. The current version is v1.0.33-SNAPSHOT <a hhef="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar">Download Latest</a></p>
+ <h1>Validation Results for Care Connect Messaging</h1>
+ <p>Generated Fri Feb 14 13:02:02 GMT 2020, FHIR version 3.0.2 for careconnect.messaging.stu3#3.0.0 (canonical = <a href="https://kevinmayfield.github.io/careconnect-api-stu3">https://kevinmayfield.github.io/careconnect-api-stu3</a> (<a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">history</a>))</p>
+<p style="background-color: #ffcccc">IG Publisher Version: v1.0.62-SNAPSHOT, which is out of date. The current version is v1.0.64-SNAPSHOT <a href="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar">Download Latest</a></p>
 <p><a href="#suppressed">5 Suppressed Errors</a></p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
@@ -17,37 +33,70 @@
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>65</b></td><td><b>2</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>131</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta01"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta01</b></a></td><td><b>4</b></td><td><b>1</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-adta02"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta02</b></a></td><td><b>5</b></td><td><b>8</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta02"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta02</b></a></td><td><b>5</b></td><td><b>1</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-adta04"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta04</b></a></td><td><b>4</b></td><td><b>7</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta03"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta03</b></a></td><td><b>4</b></td><td><b>1</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-adta05"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta05</b></a></td><td><b>4</b></td><td><b>7</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta04"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta04</b></a></td><td><b>4</b></td><td><b>1</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-notification-admit"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-admit</b></a></td><td><b>4</b></td><td><b>7</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta05"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta05</b></a></td><td><b>4</b></td><td><b>1</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-notification-admit-transaction"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-admit-transaction</b></a></td><td><b>2</b></td><td><b>9</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta28"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-adta28</b></a></td><td><b>3</b></td><td><b>0</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-notification-discharge"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-discharge</b></a></td><td><b>4</b></td><td><b>8</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-ormo01"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-ormo01</b></a></td><td><b>7</b></td><td><b>1</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-notification-discharge-transaction"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-discharge-transaction</b></a></td><td><b>1</b></td><td><b>7</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-orur01"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-orur01</b></a></td><td><b>6</b></td><td><b>2</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-ormo01"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-ormo01</b></a></td><td><b>7</b></td><td><b>10</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-orur01-path"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/bundle-orur01-path</b></a></td><td><b>6</b></td><td><b>4</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-orur01"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-orur01</b></a></td><td><b>6</b></td><td><b>12</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_careconnect-messaging-ig"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/careconnect-messaging-ig</b></a></td><td><b>3</b></td><td><b>0</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-orur01-path"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-orur01-path</b></a></td><td><b>6</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-patient-create"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-patient-create</b></a></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-patient-create-transaction"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-patient-create-transaction</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-patient-referral"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-patient-referral</b></a></td><td><b>5</b></td><td><b>10</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_careconnect-messaging-ig"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/careconnect-messaging-ig</b></a></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_graphdefinition_patient-referral-message"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/graphdefinition/patient-referral-message</b></a></td><td><b>17</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_cancel-patient-referral"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/cancel-patient-referral</b></a></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_modify-patient-referral"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/modify-patient-referral</b></a></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_notification-admit"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/notification-admit</b></a></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_notification-discharge"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/notification-discharge</b></a></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_patient-referral"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/patient-referral</b></a></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_response-patient-referral"><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/response-patient-referral</b></a></td><td><b>3</b></td><td><b>1</b></td>
    </tr>
 </table>
 <hr/>
@@ -55,232 +104,404 @@
 <h2><a href="">n/a</a></h2>
  <table class="grid">
    <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td><b>The IGPublisher used is not up-to-date.  Published content might not be properly checked and/or rendered.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td><b>The Implementation Guide Resource id should be careconnect.messaging.stu3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta01.html#0c3a43cd-0c16-42b9-a62c-56bbbca4fe36">Bundle-adta01.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta02.html#5d24ed64-a017-4f35-80ba-aaffedb27bd7">Bundle-adta02.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta01.json.html#488a808a-4066-457a-b982-3fdc2f5f4ebc">Bundle-adta01.json.html#/html/body/div/div/div/p/a at Line 447, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta02.json.html#59db3b97-b8c1-4e84-a3c8-8a735f11bf84">Bundle-adta02.json.html#/html/body/div/div/div/p/a at Line 482, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta01.ttl.html#19756acc-8b3c-4ce1-8583-42eeb610bddb">Bundle-adta01.ttl.html#/html/body/div/div/div/p/a at Line 409, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta02.ttl.html#f8314f75-9ad0-4103-9b21-f0f0a00c1b53">Bundle-adta02.ttl.html#/html/body/div/div/div/p/a at Line 443, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta01.xml.html#987f1d91-1e6b-4661-b330-04790330ce6c">Bundle-adta01.xml.html#/html/body/div/div/div/p/a at Line 396, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta02.xml.html#d45a650a-46d4-437d-b68c-f7c5eb755fd8">Bundle-adta02.xml.html#/html/body/div/div/div/p/a at Line 436, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta02.html#10ee5bbf-8aad-423f-8a5f-dfd9487cd181">Bundle-adta02.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta04.html#4a49e0bc-0719-4f81-8232-061cd72c079e">Bundle-adta04.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta02.json.html#42e54c75-491a-4dfd-b0c6-fb5ea7df6441">Bundle-adta02.json.html#/html/body/div/div/div/p/a at Line 465, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta04.json.html#c872803d-fb53-41b8-bff9-f39c43ac5b0c">Bundle-adta04.json.html#/html/body/div/div/div/p/a at Line 484, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta02.ttl.html#6f073177-969a-411b-b97a-466faf2bd194">Bundle-adta02.ttl.html#/html/body/div/div/div/p/a at Line 426, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta04.ttl.html#13c22d54-63da-455b-baaf-60a2142c5db1">Bundle-adta04.ttl.html#/html/body/div/div/div/p/a at Line 440, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta02.xml.html#aa100a5f-477f-41b2-8f29-ccb888ee11d2">Bundle-adta02.xml.html#/html/body/div/div/div/p/a at Line 419, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta04.xml.html#cd08a25c-cdf0-4c85-abe9-48732b45ffb5">Bundle-adta04.xml.html#/html/body/div/div/div/p/a at Line 429, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta03.html#2e0666e0-2e21-4095-a984-f8ca18acc64c">Bundle-adta03.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta05.html#7857c68e-3db1-4139-9dbe-94504a1fa6c3">Bundle-adta05.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta03.json.html#3bed34c5-ce20-46d2-a656-fd7b3743e0bf">Bundle-adta03.json.html#/html/body/div/div/div/p/a at Line 437, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta05.json.html#08dccd49-f6ea-4ecd-ba56-391f6cf68285">Bundle-adta05.json.html#/html/body/div/div/div/p/a at Line 484, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta03.ttl.html#38c333fd-f609-4d7b-805b-9b404966fe6f">Bundle-adta03.ttl.html#/html/body/div/div/div/p/a at Line 399, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta05.ttl.html#668a9b70-09a9-4a48-891e-26332b145825">Bundle-adta05.ttl.html#/html/body/div/div/div/p/a at Line 440, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta03.xml.html#1fedb1d5-5e9c-4da0-8346-3c93b3df413a">Bundle-adta03.xml.html#/html/body/div/div/div/p/a at Line 391, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-adta05.xml.html#6ae72bd4-99a9-45b6-8a85-e1d0e305b3f8">Bundle-adta05.xml.html#/html/body/div/div/div/p/a at Line 429, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta04.html#f4f21ca5-9a64-4df3-98a6-4722fbb5bad7">Bundle-adta04.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#2f7789e9-df6d-4b41-8260-c3a5c39286f2">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 171, column 369</a></b></td><td><b>error</b></td><td><b>The link 'ROUTE' for &quot;ROUTE&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta04.json.html#f76705ef-d12d-4beb-9c3b-56d82f051ba8">Bundle-adta04.json.html#/html/body/div/div/div/p/a at Line 467, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#10954192-b836-4acf-b822-9bf06aa36966">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 171, column 612</a></b></td><td><b>error</b></td><td><b>The link 'PAS' for &quot;PAS&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta04.ttl.html#f51195a8-3b4e-421b-ae09-fd57d361a7ef">Bundle-adta04.ttl.html#/html/body/div/div/div/p/a at Line 423, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#6d38d63d-1e09-4583-8f39-b94dbdf4787f">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 171, column 680</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0' for &quot;urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta04.xml.html#df4a5be5-10a9-4b65-9000-c8e01abaaa9e">Bundle-adta04.xml.html#/html/body/div/div/div/p/a at Line 412, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#d756148b-6dc9-4656-bdc6-8a8191b5a403">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 171, column 792</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca' for &quot;urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta05.html#26bb0c4b-83d1-442a-a5b1-69a0fe2d0f9b">Bundle-adta05.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#3da5a107-2f39-43fe-a0e1-fbaef3603727">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 171, column 904</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9' for &quot;urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta05.json.html#7fff0871-077a-4df5-bffd-2ecd5c7bfb70">Bundle-adta05.json.html#/html/body/div/div/div/p/a at Line 467, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#e9bf1e3f-ed2a-42df-9a0d-9b9a3201cdb0">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 1602</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575' for &quot;urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta05.ttl.html#365341f9-f390-418a-bc4c-e80d2063f6cb">Bundle-adta05.ttl.html#/html/body/div/div/div/p/a at Line 423, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#3929bb82-3164-461a-8e03-b66760a86e9e">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 171, column 2992</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7fe49ce2-6aba-4630-9bd2-f89244c9b799' for &quot;OBS1&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta05.xml.html#d5c0b163-916a-45ac-82cd-0141f1ec3753">Bundle-adta05.xml.html#/html/body/div/div/div/p/a at Line 412, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#5e386097-86fd-4109-90c0-7cc141f8f268">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 4148</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575' for &quot;urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta28.html#4386614d-0ab5-4571-aaab-24b6c7d046b5">Bundle-adta28.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#65a051f8-c35e-4abb-9fe4-31c797c437f8">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 4274</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0' for &quot;urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta28.json.html#e3b12a0e-531b-4848-a9d8-944c9362546b">Bundle-adta28.json.html#/html/body/div/div/div/p/a at Line 289, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#2bcf3aaf-ee4b-4f73-bd97-4fa03dc2bd8d">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 4788</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575' for &quot;urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta28.ttl.html#0f0ba05f-0f48-4bbe-af78-7e348f8ba9be">Bundle-adta28.ttl.html#/html/body/div/div/div/p/a at Line 284, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#9472ca32-349d-4803-9480-051b744c4f0d">Bundle-notification-admit-transaction.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 4914</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0' for &quot;urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-adta28.xml.html#a88c31bc-66c7-407a-a612-0ac0e5a15578">Bundle-adta28.xml.html#/html/body/div/div/div/p/a at Line 262, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.html#8b7fdf51-5559-4bbc-a0b8-39a77b88b66e">Bundle-notification-admit-transaction.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.html#73e79a09-5ca5-4aa2-853d-69a0c9624a7c">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 417</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:97aa3d54-5ffe-456e-b865-4ac925c1bfdf' for &quot;urn:oid:97aa3d54-5ffe-456e-b865-4ac925c1bfdf&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.json.html#36f24fe7-3657-459f-9e25-0b2cf19df768">Bundle-notification-admit-transaction.json.html#/html/body/div/div/div/p/a at Line 588, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.html#88744ac7-b58f-4107-86fa-2be08c3d479e">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 881</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc' for &quot;urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.ttl.html#32d61b4e-d261-4ec7-8723-fafc3e8a4afc">Bundle-notification-admit-transaction.ttl.html#/html/body/div/div/div/p/a at Line 533, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.html#4d07671b-87a9-4272-b2a6-9104b9eaaeae">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 1061</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:339d27fd-d02c-4fb2-80d0-cf249661a1f0' for &quot;urn:oid:339d27fd-d02c-4fb2-80d0-cf249661a1f0&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit-transaction.xml.html#bc3c7797-f0b6-4ba4-b04d-c9474520dc72">Bundle-notification-admit-transaction.xml.html#/html/body/div/div/div/p/a at Line 534, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.html#21508bef-2881-4d4b-b1cf-cbac95a7254a">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 1525</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc' for &quot;urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit.html#4811acf0-1f2c-4f0b-8520-a821ebe37b3d">Bundle-notification-admit.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.html#865856c6-d697-4d8b-93af-dc0eb1ce8c6e">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 2653</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc' for &quot;urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit.json.html#cefff20c-9976-4833-8ecc-4f4a9f2e012a">Bundle-notification-admit.json.html#/html/body/div/div/div/p/a at Line 464, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.html#4c41b3f8-6621-46b4-a11a-bff46309af40">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 154, column 4043</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:8f7b818f-3dc9-42fb-8758-dd62d7fd693b' for &quot;ED&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit.ttl.html#aacc5df8-cb1b-41b0-bf36-160e189e9c00">Bundle-notification-admit.ttl.html#/html/body/div/div/div/p/a at Line 426, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.html#289e9dbd-f6a6-4719-a1f1-1f9e031fa9aa">Bundle-ormo01.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-admit.xml.html#0cf21e7a-0a6c-46d6-b1d5-0e72543098e8">Bundle-notification-admit.xml.html#/html/body/div/div/div/p/a at Line 413, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.json.html#9345beaf-4d21-43ef-bf64-3f5bce37421a">Bundle-ormo01.json.html#/html/body/div/div/div/p/a at Line 475, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-discharge-transaction.html#29e6467c-f481-4d19-a34a-36b9a46e9eee">Bundle-notification-discharge-transaction.html#/html/body/div/div/div/p/a at Line 193, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.ttl.html#f3e4140e-0306-432c-9fac-35c133140b55">Bundle-ormo01.ttl.html#/html/body/div/div/div/p/a at Line 436, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-discharge-transaction.json.html#9325476d-5467-4dcd-ac54-991a505d7214">Bundle-notification-discharge-transaction.json.html#/html/body/div/div/div/p/a at Line 478, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-ormo01.xml.html#fdcfd913-52e3-40a4-9e9a-91c04b7f6922">Bundle-ormo01.xml.html#/html/body/div/div/div/p/a at Line 426, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-discharge-transaction.ttl.html#7e681fee-0a0f-4053-964b-47c4c96429b3">Bundle-notification-discharge-transaction.ttl.html#/html/body/div/div/div/p/a at Line 435, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01-path.html#c3c0ddf3-58a5-4525-bc3b-49b626da94b4">Bundle-orur01-path.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-discharge-transaction.xml.html#fda053b8-f210-4746-90f3-6a8411b2100c">Bundle-notification-discharge-transaction.xml.html#/html/body/div/div/div/p/a at Line 435, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01-path.json.html#284abbbd-6b20-42a0-8700-09dd43a82a32">Bundle-orur01-path.json.html#/html/body/div/div/div/p/a at Line 405, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-discharge.html#84bcfa58-8260-4a96-a768-0aca8d047cac">Bundle-notification-discharge.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01-path.ttl.html#fdeb0fc5-5d9c-40fa-99e4-6deacb723e20">Bundle-orur01-path.ttl.html#/html/body/div/div/div/p/a at Line 394, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-discharge.json.html#0b8072d3-70fa-4ba4-97cf-1431e6c3bc11">Bundle-notification-discharge.json.html#/html/body/div/div/div/p/a at Line 454, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01-path.xml.html#d5fa4d7a-6b2c-4259-bcec-62980fe3e2eb">Bundle-orur01-path.xml.html#/html/body/div/div/div/p/a at Line 385, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-discharge.ttl.html#4e7e8f7d-bdb6-415b-a04d-ab8e343b73ef">Bundle-notification-discharge.ttl.html#/html/body/div/div/div/p/a at Line 416, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#54b89ff0-79d8-4022-ab9f-77fcd571c5de">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 416</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653' for &quot;urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-notification-discharge.xml.html#fd4a2719-c8b9-4276-a06a-6c40ecaaf01c">Bundle-notification-discharge.xml.html#/html/body/div/div/div/p/a at Line 408, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#87e211b4-3193-45af-8c12-d8491f3ac017">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 879</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.html#a40e043c-0468-40bf-989f-496083f44801">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 417</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:97aa3d54-5ffe-456e-b865-4ac925c1bfdf' for &quot;urn:oid:97aa3d54-5ffe-456e-b865-4ac925c1bfdf&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#3f57ac6b-3f79-44f1-a41e-b48232c26c30">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 154, column 1079</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a' for &quot;urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.html#da8a229b-6636-4c00-b8d8-bef950fcafff">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 881</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc' for &quot;urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#56fb9f82-3de8-47c2-9f70-c7a6bc727e35">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 154, column 1191</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41' for &quot;urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.html#4815e63f-b444-4bd2-8dae-b00e06ec8d13">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 1061</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:339d27fd-d02c-4fb2-80d0-cf249661a1f0' for &quot;urn:oid:339d27fd-d02c-4fb2-80d0-cf249661a1f0&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#93292b9c-7abf-4a25-8faa-85f644c38167">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 154, column 1303</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6' for &quot;urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.html#3da0c924-2cbf-48fd-a23f-2e80d45f6fe9">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 1525</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc' for &quot;urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#05579491-aaf5-4538-9b61-9e093be9fdc0">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 154, column 1415</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c' for &quot;urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.html#6619c7df-fb66-496b-9ef8-4f13692f9ff7">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 2653</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc' for &quot;urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#b6627185-fbec-4283-bcc1-0def825776e2">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 154, column 1527</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c' for &quot;urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.html#ecd4e128-25e7-4cb6-8b43-b80e0a28876a">Bundle-ormo01.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 171, column 4043</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:8f7b818f-3dc9-42fb-8758-dd62d7fd693b' for &quot;ED&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#82b5ee06-396d-42a5-8919-d59f585c1003">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 154, column 1639</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f' for &quot;urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.html#581bdff0-993b-49b0-aa3c-da952518b22e">Bundle-ormo01.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#42a6a759-0d9c-46e2-ab70-ddfb1470f357">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 2066</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.json.html#fb83a6f3-13a7-47fd-a205-4e0e6f9446a3">Bundle-ormo01.json.html#/html/body/div/div/div/p/a at Line 492, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#f623735d-8be7-4a4c-8648-7afd551d5784">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 2737</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.ttl.html#ee76faac-ebb1-4b1f-8cf8-f923d4d032a9">Bundle-ormo01.ttl.html#/html/body/div/div/div/p/a at Line 453, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#966f2849-3566-4e5f-a8f4-b1a4b701b4ce">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 3390</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-ormo01.xml.html#dc84367a-2345-4089-8e9f-410c7ea827b7">Bundle-ormo01.xml.html#/html/body/div/div/div/p/a at Line 443, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#6ae90219-37db-4ef0-a46b-ad3551293b80">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 3922</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01-path.html#6b35f3a5-acb1-4879-b24c-b7af80ef6947">Bundle-orur01-path.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#ad6220f2-8dd7-40b5-b66a-18dfb5cb6c3f">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 4536</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01-path.json.html#6750e749-4fcc-41e5-a9c2-8a1fd351d422">Bundle-orur01-path.json.html#/html/body/div/div/div/p/a at Line 422, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#1e5b9a67-cbdc-43b4-b41f-51a837bd751c">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 154, column 4998</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01-path.ttl.html#7f58bf7e-d03e-4275-acec-90d3cd5398c6">Bundle-orur01-path.ttl.html#/html/body/div/div/div/p/a at Line 411, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.html#728885f7-43d3-43c0-9ef2-7cd8d420d8ed">Bundle-orur01.html#/html/body/div/div/div/p/a at Line 169, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01-path.xml.html#eb269b8b-c3bf-43da-8d86-706517a4344c">Bundle-orur01-path.xml.html#/html/body/div/div/div/p/a at Line 402, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.json.html#301a19bc-8a5d-4ff6-b7d4-0dec02ba0b30">Bundle-orur01.json.html#/html/body/div/div/div/p/a at Line 531, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#55fc0791-31a1-4e4a-9594-d5669000307f">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 416</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653' for &quot;urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.ttl.html#af932daf-bad2-4edf-a1af-6d7f8a99ef54">Bundle-orur01.ttl.html#/html/body/div/div/div/p/a at Line 511, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#b03310e1-a6e0-4774-82a0-f83c93f7038b">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 879</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-orur01.xml.html#313d7fb6-b78c-438c-badd-22c2878eb9d7">Bundle-orur01.xml.html#/html/body/div/div/div/p/a at Line 488, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#3d645ec4-6649-4fcf-8c35-3bfba866f9b4">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 171, column 1079</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a' for &quot;urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="adt.html#b801b10d-e80c-40f0-9822-b6c269fc4876">adt.html#/html/body/div/div/div/p/a at Line 177, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#1f476eb7-3ae4-40b9-bf2a-46886dbb6e4f">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 171, column 1191</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41' for &quot;urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#776aff8f-65d1-4c36-ab6c-bdf3743254a8">artifacts.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#8d8764d6-7708-44a6-b15b-cb1fa95570bf">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 171, column 1303</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6' for &quot;urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="changes.html#32afac9b-c2e0-4475-864d-2327f13149c1">changes.html#/html/body/div/div/div/p/a at Line 162, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#fe5422ff-adb4-4965-8ddb-98c23845dbe3">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 171, column 1415</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c' for &quot;urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="downloads.html#be2b02f0-cb9d-406d-840a-7aedb6da0ac4">downloads.html#/html/body/div/div/div/p/a at Line 159, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#574175a0-25a2-4843-bac4-fdfbd6285a43">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 171, column 1527</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c' for &quot;urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="hl7v2tofhir.html#ad60fbb3-ab0e-4212-abd7-3ce3e31d2ca5">hl7v2tofhir.html#/html/body/div/div/div/p/a at Line 158, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#6f14d6b8-721a-4b23-8b3d-4fed9fddabf6">Bundle-orur01.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 171, column 1639</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f' for &quot;urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#331eeac1-f5f3-4b06-9903-772f56b2a7b2">index.html#/html/body/div/div/div/p/a at Line 243, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#3b93e0b9-9a34-4581-baa6-2ad38962bc9a">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 2066</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="orders.html#435e404c-7544-417f-9bee-bd74d2656f72">orders.html#/html/body/div/div/div/p/a at Line 176, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#3a2cfb9b-5cfb-475f-a9e0-318f6e66e5db">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 2737</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="results.html#83f3f79a-5a3c-42b6-8538-21f8b1c427bc">results.html#/html/body/div/div/div/p/a at Line 181, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#cdf9782f-0a0b-4a61-958a-8f4a0126ac08">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 3390</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#33b9579a-ef66-4e09-b48e-817cf98c2cc1">toc.html#/html/body/div/div/div/p/a at Line 143, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-orur01.html#4f4d31bf-2ebf-428e-86da-f3f75fa641ee">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 3922</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#f2cb0a3e-1d16-4493-a95d-aecb2f5854f9">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 4536</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#2d19a4a3-7940-46ea-8c4d-8a5f21a9f13c">Bundle-orur01.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 4998</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e' for &quot;urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.html#20c926b3-236f-47c2-ab29-84062f7d82fa">Bundle-orur01.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.json.html#492b4e68-159b-473f-bae8-2074fa7c0a4c">Bundle-orur01.json.html#/html/body/div/div/div/p/a at Line 548, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.ttl.html#5e0b3d31-6043-4c1b-9600-7a064ec763a1">Bundle-orur01.ttl.html#/html/body/div/div/div/p/a at Line 528, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-orur01.xml.html#6f5e3f26-3b03-437e-bf92-ee6183df26fa">Bundle-orur01.xml.html#/html/body/div/div/div/p/a at Line 505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-create-transaction.html#8cf1ed47-1f31-4216-9f88-2ce61e6243a7">Bundle-patient-create-transaction.html#/html/body/div/div/div/p/a at Line 189, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-create-transaction.json.html#a846d809-45ce-4a61-894d-e2df18cf89c6">Bundle-patient-create-transaction.json.html#/html/body/div/div/div/p/a at Line 322, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-create-transaction.ttl.html#904f8211-f792-445b-9234-e3197558bb01">Bundle-patient-create-transaction.ttl.html#/html/body/div/div/div/p/a at Line 314, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-create-transaction.xml.html#470fc67c-d3fd-4806-ab44-94418f673d1a">Bundle-patient-create-transaction.xml.html#/html/body/div/div/div/p/a at Line 296, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-create.html#432ed8aa-29b8-488a-9372-7a7793ad8f3d">Bundle-patient-create.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-create.json.html#06f72e03-f0f9-4f5a-bf3f-9fd045b22ab3">Bundle-patient-create.json.html#/html/body/div/div/div/p/a at Line 306, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-create.ttl.html#be42f884-c519-40d2-967e-c337fdbdba4f">Bundle-patient-create.ttl.html#/html/body/div/div/div/p/a at Line 301, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-create.xml.html#035169e1-493f-4424-b368-2b70c77540d6">Bundle-patient-create.xml.html#/html/body/div/div/div/p/a at Line 279, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-referral.html#01697b04-7a22-44a6-978a-a94354185a2f">Bundle-patient-referral.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 530</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be' for &quot;urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-referral.html#50632696-37f4-4ec9-bb1f-786694f969ac">Bundle-patient-referral.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 1355</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4' for &quot;MRS FREDICA SMITH&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-referral.html#05677407-7239-4c64-854c-8078c51ade0e">Bundle-patient-referral.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 1454</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c' for &quot;urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-referral.html#62c67e6f-56b7-4a57-a298-1ef31d213547">Bundle-patient-referral.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 2891</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4' for &quot;urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-referral.html#56b2a96f-c4aa-41b3-b7b9-a56e860149d5">Bundle-patient-referral.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 171, column 4615</a></b></td><td><b>error</b></td><td><b>The link 'urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc' for &quot;South Yorks 999&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-referral.html#22e2cf27-d2ce-4b06-b6fe-cc6dd3809971">Bundle-patient-referral.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-referral.json.html#31c801e7-8889-4d07-b658-60383be57c6c">Bundle-patient-referral.json.html#/html/body/div/div/div/p/a at Line 581, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-referral.ttl.html#124c4e35-f08e-4537-8fa5-31d894bdbfea">Bundle-patient-referral.ttl.html#/html/body/div/div/div/p/a at Line 524, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-patient-referral.xml.html#b8181e06-db03-45f5-8475-59433a005fae">Bundle-patient-referral.xml.html#/html/body/div/div/div/p/a at Line 511, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="GraphDefinition-patient-referral-message.html#7f23b7c8-5e08-4f00-ab6b-c2abc7a06ad5">GraphDefinition-patient-referral-message.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="GraphDefinition-patient-referral-message.json.html#48bae513-36ae-4ff2-8d2f-d03bd325a32b">GraphDefinition-patient-referral-message.json.html#/html/body/div/div/div/p/a at Line 561, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="GraphDefinition-patient-referral-message.ttl.html#86a04ab2-d73c-40c6-afce-db98b80c9cd5">GraphDefinition-patient-referral-message.ttl.html#/html/body/div/div/div/p/a at Line 486, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="GraphDefinition-patient-referral-message.xml.html#fa1d7d66-cf6b-4794-994e-f0465763ca83">GraphDefinition-patient-referral-message.xml.html#/html/body/div/div/div/p/a at Line 489, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-cancel-patient-referral.html#46d70ba7-3e91-49a0-adaf-7b051b129390">MessageDefinition-cancel-patient-referral.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-cancel-patient-referral.json.html#7852963a-df3f-41a8-8920-af730509d970">MessageDefinition-cancel-patient-referral.json.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-cancel-patient-referral.ttl.html#cd067ca0-6d57-4c77-8940-1928dc02b498">MessageDefinition-cancel-patient-referral.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-cancel-patient-referral.xml.html#32831422-490d-4b40-9c36-3fbdb0d945e5">MessageDefinition-cancel-patient-referral.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-modify-patient-referral.html#f5c6dfed-f681-4b06-b2e4-a2e0392212c8">MessageDefinition-modify-patient-referral.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-modify-patient-referral.json.html#344feacb-d501-4c29-bdd6-21dccb63ca9e">MessageDefinition-modify-patient-referral.json.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-modify-patient-referral.ttl.html#66056555-c95f-4a59-aab4-701ae8b03939">MessageDefinition-modify-patient-referral.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-modify-patient-referral.xml.html#bdbb111f-6498-4477-bfae-8f882187f571">MessageDefinition-modify-patient-referral.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-notification-admit.html#584aa953-5f79-4246-b5d7-72a490990823">MessageDefinition-notification-admit.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-notification-admit.json.html#51c2e5a9-9b8f-4eea-858d-fcbeb5300696">MessageDefinition-notification-admit.json.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-notification-admit.ttl.html#c0c04c4c-bcd5-4adb-8656-47e8b06e071c">MessageDefinition-notification-admit.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-notification-admit.xml.html#2a034b71-660c-4383-b498-33de081a9ac4">MessageDefinition-notification-admit.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-notification-discharge.html#2c65e04c-3564-4037-b079-ce1131347875">MessageDefinition-notification-discharge.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-notification-discharge.json.html#69018ec3-3b80-48c9-8cf7-4bde29d1b695">MessageDefinition-notification-discharge.json.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-notification-discharge.ttl.html#dfb7a4a0-4893-4fb9-8e1f-ab1194614517">MessageDefinition-notification-discharge.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-notification-discharge.xml.html#bd81ea21-0b43-4fa4-86bd-931843d646b5">MessageDefinition-notification-discharge.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-patient-referral.html#5fa8c62f-6598-4d28-8de5-e08aaf4fca58">MessageDefinition-patient-referral.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-patient-referral.json.html#ab80c187-c810-4975-a4c0-c9a27f683460">MessageDefinition-patient-referral.json.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-patient-referral.ttl.html#139ad187-abf0-435c-8b73-9fa51a3865c3">MessageDefinition-patient-referral.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-patient-referral.xml.html#9798dbb1-e338-4785-b9b4-2af1f8017358">MessageDefinition-patient-referral.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-response-patient-referral.html#4edb0417-9794-4bd8-b938-ddbf85cc1f66">MessageDefinition-response-patient-referral.html#/html/body/div/div/div/p/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-response-patient-referral.json.html#399e6db2-e34c-455e-a501-cf283b0e1472">MessageDefinition-response-patient-referral.json.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-response-patient-referral.ttl.html#0695cb30-7d53-4eff-9aa3-1956c1e88a52">MessageDefinition-response-patient-referral.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="MessageDefinition-response-patient-referral.xml.html#5a3cafbc-2994-450e-bb8c-0ca3a9da5c68">MessageDefinition-response-patient-referral.xml.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="adt.html#5b574742-a9ff-41d7-92d9-c0de45a45c6f">adt.html#/html/body/div/div/div/p/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#338d49ee-56a1-4fad-8e60-0c3b47a3039b">artifacts.html#/html/body/div/div/div/p/a at Line 356, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="changes.html#dadff1e3-9655-4ea0-9e39-8ba8e4a5a540">changes.html#/html/body/div/div/div/p/a at Line 179, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#b784d1ce-edac-44c1-9c75-e4f3d5313561">downloads.html#/html/body/div/div/div/div/div/p/a at Line 158, column 5</a></b></td><td><b>error</b></td><td><b>The link 'downloads/HSCIC ITK HL7 V2 Message Specifications.pdf' for &quot;HSCIC ITK HL7 V2 Message Specifications&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#fed40343-b3d8-42d6-8c86-43a565af7699">downloads.html#/html/body/div/div/div/div/div/p/a at Line 160, column 5</a></b></td><td><b>error</b></td><td><b>The link 'downloads/HSCIC ITK HL7 V2 Reference Tables.pdf' for &quot;HSCIC ITK HL7 V2 Reference Tables&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#2c6c04b8-d088-4fed-a3d4-fb792331481e">downloads.html#/html/body/div/div/div/p/a at Line 176, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="examples.html#2e87fd11-9205-42bd-a721-ea24f351ce22">examples.html#/html/body/div/div/div/p/a at Line 172, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="graphdefinitions.html#e962fd01-a28d-4de8-8346-fd3e5662479a">graphdefinitions.html#/html/body/div/div/div/p/a at Line 175, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="hl7v2tofhir.html#c751efd7-b264-4d22-89a2-f548ecefc115">hl7v2tofhir.html#/html/body/div/div/div/p/a at Line 175, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#6dc3a7d9-d2b9-4849-8726-405813791dee">index.html#/html/body/div/div/div/div/div/p/a at Line 172, column 5</a></b></td><td><b>error</b></td><td><b>The link 'downloads/HSCIC ITK HL7 V2 Message Specifications.pdf' for &quot;HSCIC HL7v2&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#898f23f0-225a-423f-915e-279ad5da494d">index.html#/html/body/div/div/div/p/a at Line 247, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="messagedefinitions.html#d994a174-cab3-42d2-9a87-20e725b8914b">messagedefinitions.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="orders.html#ed0e4207-5382-4e32-97ab-375fd5d99e99">orders.html#/html/body/div/div/div/p/a at Line 189, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="results.html#bf92052d-fc90-4ba0-9f5d-848df98d927d">results.html#/html/body/div/div/div/p/a at Line 194, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#0cef3a11-1687-4efb-87b6-36062eac77f1">toc.html#/html/body/div/div/div/p/a at Line 160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'kevin.mayfield@mayfield-is.co.uk' for &quot;mayfield-is.co.uk&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta01"> </a>
-<h2><a href="Bundle-adta01.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta01.json</a></h2>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta01: Bundle.entry[0].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta01: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle/adta01: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta01: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta01: Bundle.entry[3].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta02"> </a>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-adta02"> </a>
 <h2><a href="Bundle-adta02.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta02.json</a></h2>
  <table class="grid">
    <tr>
@@ -293,10 +514,31 @@
      <td><b>Bundle/adta02: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta02: Bundle.entry[1].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta02: Bundle.entry[1].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'http://terminology.hl7.org.uk/CodeSystem/v2-0069' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/adta02: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:14e04822-9fd2-4343-8b27-b00d80588772 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl136" class="flip" onclick="flip('l136')">Show Reasoning</span><div id="l136" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
      <td><b>Bundle/adta02: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#51)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta02: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/adta02: Bundle.entry[1].resource.location[0].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:6297eed2-7dcb-48c2-8340-738308a1999d matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl139" class="flip" onclick="flip('l139')">Show Reasoning</span><div id="l139" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/adta02: Bundle.entry[1].resource.location[1].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:7e72be04-056b-4179-8ab1-4b5043fd0eb6 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl140" class="flip" onclick="flip('l140')">Show Reasoning</span><div id="l140" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[4].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/adta02: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta02: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/adta02: Bundle.entry[3].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
@@ -306,30 +548,7 @@
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta03"> </a>
-<h2><a href="Bundle-adta03.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta03.json</a></h2>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta03: Bundle.entry[0].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta03: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Bundle/adta03: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#79)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta03: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta03: Bundle.entry[3].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta04"> </a>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-adta04"> </a>
 <h2><a href="Bundle-adta04.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta04.json</a></h2>
  <table class="grid">
    <tr>
@@ -342,17 +561,35 @@
      <td><b>Bundle/adta04: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta04: Bundle.entry[1].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta04: Bundle.entry[1].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/adta04: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl149" class="flip" onclick="flip('l149')">Show Reasoning</span><div id="l149" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
      <td><b>Bundle/adta04: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta04: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/adta04: Bundle.entry[1].resource.location[0].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl152" class="flip" onclick="flip('l152')">Show Reasoning</span><div id="l152" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/adta04: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta04: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/adta04: Bundle.entry[3].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta05"> </a>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-adta05"> </a>
 <h2><a href="Bundle-adta05.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta05.json</a></h2>
  <table class="grid">
    <tr>
@@ -365,34 +602,193 @@
      <td><b>Bundle/adta05: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta05: Bundle.entry[1].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta05: Bundle.entry[1].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/adta05: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:5ea57010-3f7f-4752-8e37-283703faba41 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl160" class="flip" onclick="flip('l160')">Show Reasoning</span><div id="l160" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
      <td><b>Bundle/adta05: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta05: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/adta05: Bundle.entry[1].resource.location[0].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:1a018b5f-4ea2-4237-9075-da36b8a73338 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl163" class="flip" onclick="flip('l163')">Show Reasoning</span><div id="l163" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/adta05: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/adta05: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/adta05: Bundle.entry[3].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-adta28"> </a>
-<h2><a href="Bundle-adta28.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta28.json</a></h2>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-notification-admit"> </a>
+<h2><a href="Bundle-notification-admit.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-admit.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta28: Bundle.entry[0].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0</b></td>
+     <td><b>Bundle/notification-admit: Bundle.entry[0].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta28: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
+     <td><b>Bundle/notification-admit: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[1].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[1].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-admit: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:e6067c8e-e14d-4f71-a97a-0b1d31e50c7a matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl171" class="flip" onclick="flip('l171')">Show Reasoning</span><div id="l171" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-admit: Bundle.entry[1].resource.location[0].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:1ddefce3-d054-46f3-9558-9706d04c7d2d matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl174" class="flip" onclick="flip('l174')">Show Reasoning</span><div id="l174" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle/adta28: Bundle.entry[1].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+     <td><b>Bundle/notification-admit: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-admit: Bundle.entry[3].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-ormo01"> </a>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-notification-admit-transaction"> </a>
+<h2><a href="Bundle-notification-admit-transaction.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-admit-transaction.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit-transaction: Bundle.entry[1].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit-transaction: Bundle.entry[1].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-admit-transaction: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl180" class="flip" onclick="flip('l180')">Show Reasoning</span><div id="l180" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit-transaction: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit-transaction: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-admit-transaction: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit-transaction: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-admit-transaction: Bundle.entry[4].resource.code.coding[0]</b></td><td><b>error</b></td><td><b>Code &quot;N39.3&quot; not found; The code &quot;N39.3&quot; is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#N39.3) is not  valid in the value set All codes known to the system for 'http://hl7.org/fhir/sid/icd-10#N39.3'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-admit-transaction: Bundle.entry[4].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl186" class="flip" onclick="flip('l186')">Show Reasoning</span><div id="l186" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit-transaction: Bundle.entry[5].resource.code.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/Id/opcs-4' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-admit-transaction: Bundle.entry[5].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl188" class="flip" onclick="flip('l188')">Show Reasoning</span><div id="l188" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-notification-discharge"> </a>
+<h2><a href="Bundle-notification-discharge.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-discharge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-discharge: Bundle.entry[0].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-discharge: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-discharge: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:9d484b53-dc19-42f0-b59e-b52464fd2ef4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl193" class="flip" onclick="flip('l193')">Show Reasoning</span><div id="l193" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#79)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.hospitalization.dischargeDisposition.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-discharge: Bundle.entry[1].resource.location[0].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:a7d2a902-723b-4c78-ac58-d1a9a6e914ab matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl197" class="flip" onclick="flip('l197')">Show Reasoning</span><div id="l197" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-discharge: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-discharge: Bundle.entry[3].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-notification-discharge-transaction"> </a>
+<h2><a href="Bundle-notification-discharge-transaction.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-discharge-transaction.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge-transaction: Bundle.entry[1].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge-transaction: Bundle.entry[1].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-discharge-transaction: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:45fe8f76-8f1f-4b26-bac8-5c5127a6ff66 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl203" class="flip" onclick="flip('l203')">Show Reasoning</span><div id="l203" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge-transaction: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#79)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge-transaction: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge-transaction: Bundle.entry[1].resource.hospitalization.dischargeDisposition.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-discharge-transaction: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge-transaction: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-ormo01"> </a>
 <h2><a href="Bundle-ormo01.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-ormo01.json</a></h2>
  <table class="grid">
    <tr>
@@ -410,21 +806,48 @@
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/ormo01: Bundle.entry[1].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/ProcedureRequest, Element 'Bundle.entry[1].resource.intent': minimum required = 1, but only found 0</b></td>
    </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/ormo01: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl213" class="flip" onclick="flip('l213')">Show Reasoning</span><div id="l213" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/ormo01: Bundle.entry[1].resource.reasonReference[0]</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:339d27fd-d02c-4fb2-80d0-cf249661a1f0 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Condition</b> <span id="sl214" class="flip" onclick="flip('l214')">Show Reasoning</span><div id="l214" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource: con-3: Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error [(verificationStatus = 'entered-in-error') or clinicalStatus.exists()]</li>, <li>Bundle.entry[2].resource.subject: <ul><li>Bundle.entry[3].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></li></ul></div></td>
+   </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/ormo01: Bundle.entry[2].resource</b></td><td><b>error</b></td><td><b>con-3: Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error [(verificationStatus = 'entered-in-error') or clinicalStatus.exists()]</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/ormo01: Bundle.entry[2].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl216" class="flip" onclick="flip('l216')">Show Reasoning</span><div id="l216" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/ormo01: Bundle.entry[3].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
+     <td><b>Bundle/ormo01: Bundle.entry[3].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/ormo01: Bundle.entry[4].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/ormo01: Bundle.entry[4].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/ormo01: Bundle.entry[4].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:a7fbd3dc-d994-4be1-8e02-d34655b954fc matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl221" class="flip" onclick="flip('l221')">Show Reasoning</span><div id="l221" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
      <td><b>Bundle/ormo01: Bundle.entry[4].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/ormo01: Bundle.entry[4].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/ormo01: Bundle.entry[4].resource.location[0].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:8f7b818f-3dc9-42fb-8758-dd62d7fd693b matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl224" class="flip" onclick="flip('l224')">Show Reasoning</span><div id="l224" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[5].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/ormo01: Bundle.entry[5].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-orur01"> </a>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-orur01"> </a>
 <h2><a href="Bundle-orur01.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-orur01.json</a></h2>
  <table class="grid">
    <tr>
@@ -445,8 +868,35 @@
    <tr style="background-color: #ffebcc">
      <td><b>Bundle/orur01: Bundle.entry[1].resource.code.coding[0]</b></td><td><b>warning</b></td><td><b>The display &quot;Vital Signs&quot; is not a valid display for the code {http://snomed.info/sct}118227000 - should be one of [&quot;Vital signs finding&quot;,&quot;Vital signs finding (finding)&quot;]</b></td>
    </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/orur01: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl231" class="flip" onclick="flip('l231')">Show Reasoning</span><div id="l231" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/orur01: Bundle.entry[1].resource.result[3]</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation</b> <span id="sl232" class="flip" onclick="flip('l232')">Show Reasoning</span><div id="l232" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[5].resource.code.coding[0]: unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731) for 'http://snomed.info/sct#1104441000000107'</li>, <li>Bundle.entry[5].resource.subject: <ul><li>Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/orur01: Bundle.entry[1].resource.result[5]</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation</b> <span id="sl233" class="flip" onclick="flip('l233')">Show Reasoning</span><div id="l233" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[7].resource.subject: <ul><li>Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></li>, <li>Bundle.entry[7].resource.component[1].code.coding[0]: unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731) for 'http://snomed.info/sct#1091811000000102'</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/orur01: Bundle.entry[2].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl234" class="flip" onclick="flip('l234')">Show Reasoning</span><div id="l234" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/orur01: Bundle.entry[3].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl235" class="flip" onclick="flip('l235')">Show Reasoning</span><div id="l235" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/orur01: Bundle.entry[4].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl236" class="flip" onclick="flip('l236')">Show Reasoning</span><div id="l236" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/orur01: Bundle.entry[5].resource.code.coding[0]</b></td><td><b>error</b></td><td><b>unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731) for 'http://snomed.info/sct#1104441000000107'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/orur01: Bundle.entry[5].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl238" class="flip" onclick="flip('l238')">Show Reasoning</span><div id="l238" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/orur01: Bundle.entry[6].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl239" class="flip" onclick="flip('l239')">Show Reasoning</span><div id="l239" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/orur01: Bundle.entry[7].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl240" class="flip" onclick="flip('l240')">Show Reasoning</span><div id="l240" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/orur01: Bundle.entry[7].resource.component[1].code.coding[0]</b></td><td><b>error</b></td><td><b>unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731) for 'http://snomed.info/sct#1091811000000102'</b></td>
@@ -454,9 +904,12 @@
    <tr style="background-color: #ffcccc">
      <td><b>Bundle/orur01: Bundle.entry[8].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
    </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/orur01: Bundle.entry[8].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_bundle-orur01-path"> </a>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-orur01-path"> </a>
 <h2><a href="Bundle-orur01-path.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-orur01-path.json</a></h2>
  <table class="grid">
    <tr>
@@ -494,6 +947,93 @@
    </tr>
 </table>
 <hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-patient-create"> </a>
+<h2><a href="Bundle-patient-create.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-patient-create.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patient-create: Bundle.entry[0].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patient-create: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patient-create: Bundle.entry[1].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patient-create: Bundle.entry[1].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-patient-create-transaction"> </a>
+<h2><a href="Bundle-patient-create-transaction.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-patient-create-transaction.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patient-create-transaction: Bundle.entry[1].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patient-create-transaction: Bundle.entry[1].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_examples_Bundle-patient-referral"> </a>
+<h2><a href="Bundle-patient-referral.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-patient-referral.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patient-referral: Bundle.entry[0].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patient-referral: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/patient-referral: Bundle.entry[1].resource.serviceRequested[0].coding[0]</b></td><td><b>warning</b></td><td><b>The display &quot;Surgical-Accident &amp; emergency&quot; is not a valid display for the code {http://snomed.info/sct}394576009 - should be one of [&quot;Accident &amp; emergency (qualifier value)&quot;,&quot;Accident &amp; emergency&quot;]</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/patient-referral: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl263" class="flip" onclick="flip('l263')">Show Reasoning</span><div id="l263" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patient-referral: Bundle.entry[1].resource.requester</b></td><td><b>error</b></td><td><b>rfr-1: onBehalfOf can only be specified if agent is practitioner or device [(agent.resolve() is Device) or (agent.resolve() is Practitioner) or onBehalfOf.exists().not()]</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patient-referral: Bundle.entry[1].resource.specialty.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patient-referral: Bundle.entry[2].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patient-referral: Bundle.entry[2].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/patient-referral: Bundle.entry[2].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl268" class="flip" onclick="flip('l268')">Show Reasoning</span><div id="l268" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patient-referral: Bundle.entry[2].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patient-referral: Bundle.entry[2].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/patient-referral: Bundle.entry[2].resource.location[0].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl271" class="flip" onclick="flip('l271')">Show Reasoning</span><div id="l271" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[4].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patient-referral: Bundle.entry[3].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/patient-referral: Bundle.entry[3].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/patient-referral: Bundle.entry[4].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_careconnect-messaging-ig"> </a>
 <h2><a href="ImplementationGuide-careconnect-messaging-stu3.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/careconnect-messaging-ig.xml</a></h2>
  <table class="grid">
@@ -501,13 +1041,192 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:ImplementationGuide</b></td><td><b>error</b></td><td><b>Undefined element 'title'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
      <td><b>/f:ImplementationGuide</b></td><td><b>error</b></td><td><b>Undefined element 'packageId'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/f:ImplementationGuide</b></td><td><b>error</b></td><td><b>Undefined element 'definition'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_graphdefinition_patient-referral-message"> </a>
+<h2><a href="GraphDefinition-patient-referral-message.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/GraphDefinition/patient-referral-message.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>http://fhir.nhs.uk/GraphDefinition/patient-referral-message</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/GraphDefinition/patient-referral-message.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/GraphDefinition/patient-referral-message) does not match the URL (http://fhir.nhs.uk/GraphDefinition/patient-referral-message)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[0].target[0].link[0].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[0].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[1].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[2].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[2].target[0].extension[0].value.ofType(string)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[3].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[4].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[5].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[5].target[0].profile</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[6].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[6].target[0].profile</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/STU3/StructureDefinition/Consent' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[7].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[7].target[0].profile</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/STU3/StructureDefinition/Composition' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[2].target[0].link[0].target[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[9].target[0].profile</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>GraphDefinition/patient-referral-message: GraphDefinition.link[10].target[0].profile</b></td><td><b>error</b></td><td><b>URL value 'http://hl7.org/fhir/STU3/StructureDefinition/Composition' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/graphdefinition/patient-referral-message</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/GraphDefinition/patient-referral-message vs http://fhir.nhs.uk/GraphDefinition/patient-referral-message</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_cancel-patient-referral"> </a>
+<h2><a href="MessageDefinition-cancel-patient-referral.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/cancel-patient-referral.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/cancel-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/cancel-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/cancel-patient-referral: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageDefinition/cancel-patient-referral: MessageDefinition.focus[0].profile</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/cancel-patient-referral</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/cancel-patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_modify-patient-referral"> </a>
+<h2><a href="MessageDefinition-modify-patient-referral.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/modify-patient-referral.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/modify-patient-referral</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/modify-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/modify-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/modify-patient-referral)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/modify-patient-referral: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageDefinition/modify-patient-referral: MessageDefinition.focus[0].profile</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/modify-patient-referral</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/modify-patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/modify-patient-referral</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_notification-admit"> </a>
+<h2><a href="MessageDefinition-notification-admit.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/notification-admit.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/notification-admit.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-admit) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/notification-admit: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageDefinition/notification-admit: MessageDefinition.focus[0].profile</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/notification-admit</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-admit vs https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_notification-discharge"> </a>
+<h2><a href="MessageDefinition-notification-discharge.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/notification-discharge.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/notification-discharge.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-discharge) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/notification-discharge: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageDefinition/notification-discharge: MessageDefinition.focus[0].profile</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/notification-discharge</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-discharge vs https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_patient-referral"> </a>
+<h2><a href="MessageDefinition-patient-referral.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/patient-referral.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/patient-referral: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageDefinition/patient-referral: MessageDefinition.focus[0].profile</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/patient-referral</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_kevinmayfield_careconnect-messaging_input_resources_messagedefinition_response-patient-referral"> </a>
+<h2><a href="MessageDefinition-response-patient-referral.html">/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/response-patient-referral.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/MessageDefinition/response-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/response-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/response-patient-referral: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageDefinition/response-patient-referral: MessageDefinition.focus[0].profile</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/messagedefinition/response-patient-referral</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/response-patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>

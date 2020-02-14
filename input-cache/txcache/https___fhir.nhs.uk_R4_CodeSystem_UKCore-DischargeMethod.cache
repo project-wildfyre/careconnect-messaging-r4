@@ -2,7 +2,7 @@
 {"code" : {
   "system" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod",
   "code" : "19"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",

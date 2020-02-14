@@ -10,13 +10,14 @@
   fhir:Resource.id [ fhir:value "careconnect-messaging-stu3"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Messaing</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3"];
-  fhir:ImplementationGuide.name [ fhir:value "Care Connect Messaing"];
+  fhir:ImplementationGuide.version [ fhir:value "3.0.0"];
+  fhir:ImplementationGuide.name [ fhir:value "Care Connect Messaging"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2019-12-22T08:42:51+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-02-14T13:01:42+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "mayfield-is.co.uk"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -50,17 +51,35 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Bundle-adta01.html" ]
+         fhir:Extension.valueUri [ fhir:value "Bundle-notification-admit.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "ADT_A01 FHIR Message" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "ADT_A01 FHIR Message - Admit a patient" ];
+       fhir:ImplementationGuide.package.resource.name [ fhir:value "notification-admit" ];
+       fhir:ImplementationGuide.package.resource.description [ fhir:value "Notifiation Admission FHIR Message - Admit a patient" ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/adta01>;
-         fhir:Reference.reference [ fhir:value "Bundle/adta01" ]
+         fhir:link <https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/notification-admit>;
+         fhir:Reference.reference [ fhir:value "Bundle/notification-admit" ]
        ]
      ], [
        fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-notification-admit-transaction.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.name [ fhir:value "notification-admit-transaction" ];
+       fhir:ImplementationGuide.package.resource.description [ fhir:value "Notifiation Admission FHIR Transaction - Admit a patient" ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/notification-admit-transaction>;
+         fhir:Reference.reference [ fhir:value "Bundle/notification-admit-transaction" ]
+       ]
+     ], [
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -78,7 +97,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/adta02" ]
        ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -86,17 +105,35 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Bundle-adta03.html" ]
+         fhir:Extension.valueUri [ fhir:value "Bundle-notification-discharge.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "ADT_A03 FHIR Message" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "ADT_A03 FHIR Message - Discharge a patient" ];
+       fhir:ImplementationGuide.package.resource.name [ fhir:value "Notification Discharge FHIR Message" ];
+       fhir:ImplementationGuide.package.resource.description [ fhir:value "Notification Discharge FHIR Message - Discharge a patient" ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/adta03>;
-         fhir:Reference.reference [ fhir:value "Bundle/adta03" ]
+         fhir:link <https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/notification-discharge>;
+         fhir:Reference.reference [ fhir:value "Bundle/notification-discharge" ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-notification-discharge-transaction.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.name [ fhir:value "Notification Discharge FHIR Transaction" ];
+       fhir:ImplementationGuide.package.resource.description [ fhir:value "Notification Discharge FHIR Transaction - Discharge a patient" ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/notification-discharge-transaction>;
+         fhir:Reference.reference [ fhir:value "Bundle/notification-discharge-transaction" ]
+       ]
+     ], [
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -114,7 +151,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/adta04" ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -132,7 +169,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/adta05" ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -140,17 +177,35 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Bundle-adta28.html" ]
+         fhir:Extension.valueUri [ fhir:value "Bundle-patient-create.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "ADT_A28 FHIR Message" ];
-       fhir:ImplementationGuide.package.resource.description [ fhir:value "ADT_A28 FHIR Message - Add person information" ];
+       fhir:ImplementationGuide.package.resource.name [ fhir:value "Patient Create FHIR Message" ];
+       fhir:ImplementationGuide.package.resource.description [ fhir:value "Patient Create FHIR Message - Add person information" ];
        fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/adta28>;
-         fhir:Reference.reference [ fhir:value "Bundle/adta28" ]
+         fhir:link <https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/patient-create>;
+         fhir:Reference.reference [ fhir:value "Bundle/patient-create" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-patient-create-transaction.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.name [ fhir:value "Patient Create FHIR Transaction" ];
+       fhir:ImplementationGuide.package.resource.description [ fhir:value "Patient Create FHIR Transaction - Add person information" ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/patient-create-transaction>;
+         fhir:Reference.reference [ fhir:value "Bundle/patient-create-transaction" ]
+       ]
+     ], [
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -168,7 +223,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/orur01" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -186,7 +241,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/orur01-path" ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -236,11 +291,26 @@
        fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
      ], [
        fhir:index 5;
+       fhir:ImplementationGuide.page.source [ fhir:value "messagedefinitions.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Message Definitions" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.page.source [ fhir:value "examples.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Examples" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.page.source [ fhir:value "graphdefinitions.html" ];
+       fhir:ImplementationGuide.page.title [ fhir:value "Graph Definitions" ];
+       fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
+     ], [
+       fhir:index 8;
        fhir:ImplementationGuide.page.source [ fhir:value "downloads.html" ];
        fhir:ImplementationGuide.page.title [ fhir:value "Useful Downloads" ];
        fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]
      ], [
-       fhir:index 6;
+       fhir:index 9;
        fhir:ImplementationGuide.page.source [ fhir:value "changes.html" ];
        fhir:ImplementationGuide.page.title [ fhir:value "IG Change History" ];
        fhir:ImplementationGuide.page.kind [ fhir:value "resource" ]

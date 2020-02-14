@@ -7,9 +7,9 @@
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-  
+
     <link rel="stylesheet" href="fhir.css"/>
-      
+     
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="assets/css/project.css"/>
     <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-
       <!-- Placeholder for child template CSS declarations -->
-  
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -32,18 +33,18 @@
     <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"8.7"}
-    h3,h4,h5,h6{--heading-prefix:"8.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"11.10"}
+    h3,h4,h5,h6{--heading-prefix:"11.10"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Care Connect Messaging</span><br/> - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>3.0.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -63,7 +64,7 @@
             </button>
             <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <ul class="nav navbar-nav">
   <li><a href="index.html">Care Connect Messaging</a></li>
   <!-- <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">MyIg Background<b class="caret">
@@ -93,7 +94,23 @@
             <a href="results.html">Results</a>
         </li>
     </ul>
-  </li> 
+  </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts<b class="caret">
+        </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="messagedefinitions.html">Message Definitions</a>
+            </li>
+            <li>
+                <a href="graphdefinitions.html">Graph Definitions</a>
+            </li>
+            <li>
+                <a href="examples.html">Examples</a>
+            </li>
+        </ul>
+    </li>
   <li><a href="downloads.html">Associated Specifications</a></li>
   <li><a href="artifacts.html">Artifact Summary</a></li>
 </ul>      
@@ -121,7 +138,7 @@
 
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (vnull). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v3.0.0). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
   <h2 id="root">ORU_R01 NEWS2 FHIR Message</h2>
   <p>
@@ -151,7 +168,7 @@
   <p>
     <b>Narrative view</b>
   </p>
-  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e4e19085-ce42-4346-9a47-0e379292974b</p><p><b>event</b>: ORU^R01 (Details: [not stated] code ORU^R01 = 'ORU^R01', stated as 'ORU^R01')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 21 May 2018, 13:45:12</p><p><a name="54b89ff0-79d8-4022-ab9f-77fcd571c5de">​</a><b>focus</b>: <a href="urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653">urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653</a></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e0956326-29b1-4218-a2a0-8a457b7a4653</p><p><b>identifier</b>: 108512374</p><p><b>status</b>: ?</p><p><b>code</b>: Vital Signs <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '118227000' = 'Vital signs finding', given as 'Vital Signs'})</span></p><p><a name="87e211b4-3193-45af-8c12-d8491f3ac017">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>effective</b>: 21 May 2018, 13:45:05 --&gt; (ongoing)</p><p><b>result</b>: </p><ul><li><a name="3f57ac6b-3f79-44f1-a41e-b48232c26c30">​</a><a href="urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a">urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a</a></li><li><a name="56fb9f82-3de8-47c2-9f70-c7a6bc727e35">​</a><a href="urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41">urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41</a></li><li><a name="93292b9c-7abf-4a25-8faa-85f644c38167">​</a><a href="urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6">urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6</a></li><li><a name="05579491-aaf5-4538-9b61-9e093be9fdc0">​</a><a href="urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c">urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c</a></li><li><a name="b6627185-fbec-4283-bcc1-0def825776e2">​</a><a href="urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c">urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c</a></li><li><a name="82b5ee06-396d-42a5-8919-d59f585c1003">​</a><a href="urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f">urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f</a></li></ul><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 42bf5804-4b10-424c-a880-6b0321137b9a</p><p><b>status</b>: final</p><p><b>code</b>: Heart Rate <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '364075005' = 'Heart rate', given as 'Heart Rate'})</span></p><p><a name="42a6a759-0d9c-46e2-ab70-ddfb1470f357">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 73.0 /min</p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>60-100</td></tr></table><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 52bb8b6e-a554-42f9-964e-4a8cda265d41</p><p><b>status</b>: final</p><p><b>code</b>: Blood oxygen saturation <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '103228002' = 'Hemoglobin saturation with oxygen', given as 'Blood oxygen saturation'})</span></p><p><a name="f623735d-8be7-4a4c-8648-7afd551d5784">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 98.0 %</p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>94-100</td></tr></table><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0474a71e-2ff5-4405-a859-f4f261886de6</p><p><b>status</b>: final</p><p><b>code</b>: Breathing room air <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '722742002' = 'Breathing room air (finding)', given as 'Breathing room air'})</span></p><p><a name="966f2849-3566-4e5f-a8f4-b1a4b701b4ce">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c648924f-cc6c-46be-93dc-9115d1e91c0c</p><p><b>status</b>: final</p><p><b>code</b>: ACVPU (Alert Confusion Voice Pain Unresponsive) scale score <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '1104441000000107' = '1104441000000107', given as 'ACVPU (Alert Confusion Voice Pain Unresponsive) scale score'})</span></p><p><a name="6ae90219-37db-4ef0-a46b-ad3551293b80">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>value</b>: Mentally alert <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '248234008' = 'Mentally alert', given as 'Mentally alert'})</span></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 952d3ab9-7223-4bcb-be62-1480bbede61c</p><p><b>status</b>: final</p><p><b>code</b>: Respiratory rate <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '86290005' = 'Respiratory rate', given as 'Respiratory rate'})</span></p><p><a name="ad6220f2-8dd7-40b5-b66a-18dfb5cb6c3f">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>value</b>: 20.0 /min</p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 57dbba71-56b5-4fca-affe-bb3fa673381f</p><p><b>status</b>: final</p><p><b>code</b>: Blood Pressure <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '75367002' = 'Blood pressure', given as 'Blood Pressure'})</span></p><p><a name="1e5b9a67-cbdc-43b4-b41f-51a837bd751c">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic arterial pressure <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '72313002' = 'Systolic arterial pressure', given as 'Systolic arterial pressure'})</span></p><p><b>value</b>: 132.0 mm[Hg]</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic arterial pressure <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '1091811000000102' = '1091811000000102', given as 'Diastolic arterial pressure'})</span></p><p><b>value</b>: 86.0 mm[Hg]</p></blockquote><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 7dd62c99-357d-4da9-81db-70b26f35c95e</p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-12-13</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><p><b>generalPractitioner</b>: Dr Gregory Townley</p><p><b>managingOrganization</b>: MALTON GP PRACTICE</p><hr/></div>
+  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e4e19085-ce42-4346-9a47-0e379292974b</p><p><b>event</b>: ORU^R01 (Details: [not stated] code ORU^R01 = 'ORU^R01', stated as 'ORU^R01')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 21 May 2018, 13:45:12</p><p><a name="55fc0791-31a1-4e4a-9594-d5669000307f">​</a><b>focus</b>: <a href="urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653">urn:oid:e0956326-29b1-4218-a2a0-8a457b7a4653</a></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e0956326-29b1-4218-a2a0-8a457b7a4653</p><p><b>identifier</b>: 108512374</p><p><b>status</b>: ?</p><p><b>code</b>: Vital Signs <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '118227000' = 'Vital signs finding', given as 'Vital Signs'})</span></p><p><a name="b03310e1-a6e0-4774-82a0-f83c93f7038b">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>effective</b>: 21 May 2018, 13:45:05 --&gt; (ongoing)</p><p><b>result</b>: </p><ul><li><a name="3d645ec4-6649-4fcf-8c35-3bfba866f9b4">​</a><a href="urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a">urn:oid:42bf5804-4b10-424c-a880-6b0321137b9a</a></li><li><a name="1f476eb7-3ae4-40b9-bf2a-46886dbb6e4f">​</a><a href="urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41">urn:oid:52bb8b6e-a554-42f9-964e-4a8cda265d41</a></li><li><a name="8d8764d6-7708-44a6-b15b-cb1fa95570bf">​</a><a href="urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6">urn:oid:0474a71e-2ff5-4405-a859-f4f261886de6</a></li><li><a name="fe5422ff-adb4-4965-8ddb-98c23845dbe3">​</a><a href="urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c">urn:oid:c648924f-cc6c-46be-93dc-9115d1e91c0c</a></li><li><a name="574175a0-25a2-4843-bac4-fdfbd6285a43">​</a><a href="urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c">urn:oid:952d3ab9-7223-4bcb-be62-1480bbede61c</a></li><li><a name="6f14d6b8-721a-4b23-8b3d-4fed9fddabf6">​</a><a href="urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f">urn:oid:57dbba71-56b5-4fca-affe-bb3fa673381f</a></li></ul><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 42bf5804-4b10-424c-a880-6b0321137b9a</p><p><b>status</b>: final</p><p><b>code</b>: Heart Rate <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '364075005' = 'Heart rate', given as 'Heart Rate'})</span></p><p><a name="3b93e0b9-9a34-4581-baa6-2ad38962bc9a">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 73.0 /min</p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>60-100</td></tr></table><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 52bb8b6e-a554-42f9-964e-4a8cda265d41</p><p><b>status</b>: final</p><p><b>code</b>: Blood oxygen saturation <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '103228002' = 'Hemoglobin saturation with oxygen', given as 'Blood oxygen saturation'})</span></p><p><a name="3a2cfb9b-5cfb-475f-a9e0-318f6e66e5db">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 98.0 %</p><h3>ReferenceRanges</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>94-100</td></tr></table><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0474a71e-2ff5-4405-a859-f4f261886de6</p><p><b>status</b>: final</p><p><b>code</b>: Breathing room air <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '722742002' = 'Breathing room air (finding)', given as 'Breathing room air'})</span></p><p><a name="cdf9782f-0a0b-4a61-958a-8f4a0126ac08">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c648924f-cc6c-46be-93dc-9115d1e91c0c</p><p><b>status</b>: final</p><p><b>code</b>: ACVPU (Alert Confusion Voice Pain Unresponsive) scale score <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '1104441000000107' = '1104441000000107', given as 'ACVPU (Alert Confusion Voice Pain Unresponsive) scale score'})</span></p><p><a name="4f4d31bf-2ebf-428e-86da-f3f75fa641ee">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>value</b>: Mentally alert <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '248234008' = 'Mentally alert', given as 'Mentally alert'})</span></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 952d3ab9-7223-4bcb-be62-1480bbede61c</p><p><b>status</b>: final</p><p><b>code</b>: Respiratory rate <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '86290005' = 'Respiratory rate', given as 'Respiratory rate'})</span></p><p><a name="f2cb0a3e-1d16-4493-a95d-aecb2f5854f9">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><p><b>value</b>: 20.0 /min</p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 57dbba71-56b5-4fca-affe-bb3fa673381f</p><p><b>status</b>: final</p><p><b>code</b>: Blood Pressure <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '75367002' = 'Blood pressure', given as 'Blood Pressure'})</span></p><p><a name="2d19a4a3-7940-46ea-8c4d-8a5f21a9f13c">​</a><b>subject</b>: <a href="urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e">urn:oid:7dd62c99-357d-4da9-81db-70b26f35c95e</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic arterial pressure <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '72313002' = 'Systolic arterial pressure', given as 'Systolic arterial pressure'})</span></p><p><b>value</b>: 132.0 mm[Hg]</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic arterial pressure <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '1091811000000102' = '1091811000000102', given as 'Diastolic arterial pressure'})</span></p><p><b>value</b>: 86.0 mm[Hg]</p></blockquote><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 7dd62c99-357d-4da9-81db-70b26f35c95e</p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-12-13</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><p><b>generalPractitioner</b>: Dr Gregory Townley</p><p><b>managingOrganization</b>: MALTON GP PRACTICE</p><hr/></div>
 
   
   
@@ -165,8 +182,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="728885f7-43d3-43c0-9ef2-7cd8d420d8ed">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk"></a>mayfield-is.co.uk.  Package careconnect.messaging.stu3# based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, Dec 22, 2019 08:42+0000">2019-12-22</span>
+        <p><a name="20c926b3-236f-47c2-ab29-84062f7d82fa">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.stu3#3.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Feb 14, 2020 13:01+0000">2020-02-14</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -189,7 +206,6 @@
   <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/fhir.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>

@@ -1,7 +1,16 @@
 -------------------------------------------------------------------------------------
 {"code" : {
+  "code" : "notification-discharge"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"notification-discharge\"); The code provided (#notification-discharge) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
   "code" : "ADT^A02"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -9,163 +18,8 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "code" : "ADT^A28"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"ADT^A28\"); The code provided (#ADT^A28) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "ORU^R01"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"ORU^R01\"); The code provided (#ORU^R01) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "008342"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"008342\"); The code provided (#008342) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "997602"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"997602\"); The code provided (#997602) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "997231"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"997231\"); The code provided (#997231) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "M415"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"M415\"); The code provided (#M415) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "997232"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"997232\"); The code provided (#997232) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "MR105"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"MR105\"); The code provided (#MR105) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "008342"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"008342\"); The code provided (#008342) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "997602"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"997602\"); The code provided (#997602) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "72313002"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"72313002\"); The code provided (#72313002) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "ADT^A01"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"ADT^A01\"); The code provided (#ADT^A01) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "ADT^A03"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"ADT^A03\"); The code provided (#ADT^A03) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "ADT^A04"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"ADT^A04\"); The code provided (#ADT^A04) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "ADT^A05"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"ADT^A05\"); The code provided (#ADT^A05) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "008342",
-  "display" : "UPPER RESPIRATORYCULTURE"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"008342\"); The code provided (#008342) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "997602",
-  "display" : "."
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"\" is not known (encountered paired with code = \"997602\"); The code provided (#997602) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
   "code" : "ORM^O01"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -174,7 +28,7 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "394720003"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -183,10 +37,127 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "313299006"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",
   "error" : "The code system \"\" is not known (encountered paired with code = \"313299006\"); The code provided (#313299006) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "ADT^A05"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"ADT^A05\"); The code provided (#ADT^A05) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "ORU^R01"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"ORU^R01\"); The code provided (#ORU^R01) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "ADT^A28"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"ADT^A28\"); The code provided (#ADT^A28) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "ADT^A04"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"ADT^A04\"); The code provided (#ADT^A04) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "008342"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"008342\"); The code provided (#008342) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "997602"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"997602\"); The code provided (#997602) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "997231"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"997231\"); The code provided (#997231) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "M415"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"M415\"); The code provided (#M415) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "997232"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"997232\"); The code provided (#997232) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "MR105"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"MR105\"); The code provided (#MR105) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "patient-referral"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"patient-referral\"); The code provided (#patient-referral) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "notification-admit"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"notification-admit\"); The code provided (#notification-admit) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "patient-create"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"patient-create\"); The code provided (#patient-create) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------

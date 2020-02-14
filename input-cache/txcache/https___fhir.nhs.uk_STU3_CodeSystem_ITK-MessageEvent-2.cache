@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
+  "code" : "patient-referral"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2\" is not known (encountered paired with code = \"patient-referral\"); The code provided (https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2#patient-referral) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
+  "code" : "response-patient-referral"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2\" is not known (encountered paired with code = \"response-patient-referral\"); The code provided (https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2#response-patient-referral) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
+  "code" : "modify-patient-referral"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2\" is not known (encountered paired with code = \"modify-patient-referral\"); The code provided (https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2#modify-patient-referral) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
+  "code" : "cancel-patient-referral"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2\" is not known (encountered paired with code = \"cancel-patient-referral\"); The code provided (https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2#cancel-patient-referral) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
+  "code" : "notification-discharge"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2\" is not known (encountered paired with code = \"notification-discharge\"); The code provided (https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2#notification-discharge) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

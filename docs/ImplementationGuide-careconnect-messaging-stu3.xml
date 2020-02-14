@@ -3,14 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="careconnect-messaging-stu3"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Messaing</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>
 </div></div>
   </text>
   <url value="https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3"/>
-  <name value="Care Connect Messaing"/>
+  <version value="3.0.0"/>
+  <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2019-12-22T08:42:51+00:00"/>
+  <date value="2020-02-14T13:01:42+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -34,13 +35,27 @@
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-adta01.html"/>
+        <valueUri value="Bundle-notification-admit.html"/>
       </extension>
       <example value="true"/>
-      <name value="ADT_A01 FHIR Message"/>
-      <description value="ADT_A01 FHIR Message - Admit a patient"/>
+      <name value="notification-admit"/>
+      <description value="Notifiation Admission FHIR Message - Admit a patient"/>
       <sourceReference>
-        <reference value="Bundle/adta01"/>
+        <reference value="Bundle/notification-admit"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-notification-admit-transaction.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="notification-admit-transaction"/>
+      <description value="Notifiation Admission FHIR Transaction - Admit a patient"/>
+      <sourceReference>
+        <reference value="Bundle/notification-admit-transaction"/>
       </sourceReference>
     </resource>
     <resource>
@@ -62,13 +77,27 @@
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-adta03.html"/>
+        <valueUri value="Bundle-notification-discharge.html"/>
       </extension>
       <example value="true"/>
-      <name value="ADT_A03 FHIR Message"/>
-      <description value="ADT_A03 FHIR Message - Discharge a patient"/>
+      <name value="Notification Discharge FHIR Message"/>
+      <description value="Notification Discharge FHIR Message - Discharge a patient"/>
       <sourceReference>
-        <reference value="Bundle/adta03"/>
+        <reference value="Bundle/notification-discharge"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-notification-discharge-transaction.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="Notification Discharge FHIR Transaction"/>
+      <description value="Notification Discharge FHIR Transaction - Discharge a patient"/>
+      <sourceReference>
+        <reference value="Bundle/notification-discharge-transaction"/>
       </sourceReference>
     </resource>
     <resource>
@@ -104,13 +133,27 @@
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-adta28.html"/>
+        <valueUri value="Bundle-patient-create.html"/>
       </extension>
       <example value="true"/>
-      <name value="ADT_A28 FHIR Message"/>
-      <description value="ADT_A28 FHIR Message - Add person information"/>
+      <name value="Patient Create FHIR Message"/>
+      <description value="Patient Create FHIR Message - Add person information"/>
       <sourceReference>
-        <reference value="Bundle/adta28"/>
+        <reference value="Bundle/patient-create"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-patient-create-transaction.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="Patient Create FHIR Transaction"/>
+      <description value="Patient Create FHIR Transaction - Add person information"/>
+      <sourceReference>
+        <reference value="Bundle/patient-create-transaction"/>
       </sourceReference>
     </resource>
     <resource>
@@ -183,6 +226,21 @@
     <page>
       <source value="results.html"/>
       <title value="HL7 v2 and FHIR Results"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="messagedefinitions.html"/>
+      <title value="Message Definitions"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="examples.html"/>
+      <title value="Examples"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="graphdefinitions.html"/>
+      <title value="Graph Definitions"/>
       <kind value="resource"/>
     </page>
     <page>

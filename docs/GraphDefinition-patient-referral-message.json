@@ -1,0 +1,391 @@
+{
+  "resourceType": "GraphDefinition",
+  "id": "patient-referral-message",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patient-referral-message</p><p><b>url</b>: <a href=\"http://fhir.nhs.uk/GraphDefinition/patient-referral-message\">http://fhir.nhs.uk/GraphDefinition/patient-referral-message</a></p><p><b>version</b>: 3.0.0</p><p><b>name</b>: Encounter Report FHIR Graph Definition</p><p><b>status</b>: draft</p><p><b>date</b>: 3 Mar 2019, 00:00:00</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: Encounter Report Graph</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>start</b>: MessageHeader</p><blockquote><p><b>link</b></p><p><b>id</b>: #message</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: MessageHeader. Where the coding and display for the event element is fixed to ‘CH005 - Birth Details’</p><blockquote><p><b>target</b></p><p><b>type</b>: MessageHeader</p><p><b>profile</b>: <a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1\">https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #referralRequest</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK ServiceRequest - This is a section in a FHIR Document</p><blockquote><p><b>target</b></p><p><b>type</b>: ReferralRequest</p><p><b>profile</b>: <a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #encounter</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: ITK EncompassingEncounter</p><blockquote><p><b>target</b></p><p><b>type</b>: Encounter</p><p><b>profile</b>: <a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #recipientOrganisation</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Organisation</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Organization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #recipientService</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Healthcare Service</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>HealthcareService</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #location</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Delivery Location</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Location</td><td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1\">https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #patient</p><p><b>path</b>: Bundle.entry.resource[0]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Patient</p><blockquote><p><b>target</b></p><p><b>type</b>: Patient</p><p><b>profile</b>: <a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #requestor</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: Author or Consultant</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Practitioner</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #consent</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK Consent / ITK Permission to View Section</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Consent</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Consent-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Consent-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #questionnaireResponse</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK Triage Attachment - this is a blob not questionnaire response</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>QuestionnaireResponse</td><td><a href=\"http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse\">http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #composition</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: Clinical Document</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Composition</td><td><a href=\"http://hl7.org/fhir/STU3/StructureDefinition/Composition\">http://hl7.org/fhir/STU3/StructureDefinition/Composition</a></td></tr></table></blockquote></div>"
+  },
+  "url": "http://fhir.nhs.uk/GraphDefinition/patient-referral-message",
+  "version": "3.0.0",
+  "name": "Encounter Report FHIR Graph Definition",
+  "status": "draft",
+  "date": "2019-03-03T00:00:00+00:00",
+  "publisher": "mayfield-is.co.uk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kevin.mayfield@mayfield-is.co.uk"
+        }
+      ]
+    }
+  ],
+  "description": "Encounter Report Graph",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "start": "MessageHeader",
+  "link": [
+    {
+      "id": "#message",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "1",
+      "description": "MessageHeader. Where the coding and display for the event element is fixed to ‘CH005 - Birth Details’",
+      "target": [
+        {
+          "type": "MessageHeader",
+          "profile": "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1",
+          "link": [
+            {
+              "path": "MessageHeader.focus",
+              "min": 1,
+              "max": "1",
+              "description": "The focus of the message",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#referralRequest"
+                    }
+                  ],
+                  "type": "ReferralRequest",
+                  "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "#referralRequest",
+      "path": "Bundle.entry.resource[x]",
+      "min": 0,
+      "max": "*",
+      "description": "ITK ServiceRequest - This is a section in a FHIR Document",
+      "target": [
+        {
+          "type": "ReferralRequest",
+          "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1",
+          "link": [
+            {
+              "path": "ReferralRequest.subject",
+              "min": 1,
+              "max": "1",
+              "description": "The patient",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#patient"
+                    }
+                  ],
+                  "type": "Patient",
+                  "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+                }
+              ]
+            },
+            {
+              "path": "ReferralRequest.requester",
+              "min": 1,
+              "max": "1",
+              "description": "Practitioner",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#requestor"
+                    }
+                  ],
+                  "type": "Practitioner",
+                  "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+                }
+              ]
+            },
+            {
+              "path": "ReferralRequest.recipient",
+              "min": 0,
+              "max": "1",
+              "description": "Organisation",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#recipientOrganisation  "
+                    }
+                  ],
+                  "type": "Organization",
+                  "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+                }
+              ]
+            },
+            {
+              "path": "ReferralRequest.recipient",
+              "min": 0,
+              "max": "1",
+              "description": "Healthcare Service",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#recipientService"
+                    }
+                  ],
+                  "type": "HealthcareService",
+                  "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
+                }
+              ]
+            },
+            {
+              "path": "ReferralRequest.context",
+              "min": 1,
+              "max": "1",
+              "description": "Encompassing Encounter",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#encounter"
+                    }
+                  ],
+                  "type": "Encounter",
+                  "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+                }
+              ]
+            },
+            {
+              "path": "ReferralRequest.supportingInfo[]",
+              "min": 0,
+              "max": "1",
+              "description": "Supporting information - Triage Block",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#questionnaireResponse"
+                    }
+                  ],
+                  "type": "QuestionnaireResponse",
+                  "profile": "http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse"
+                }
+              ]
+            },
+            {
+              "path": "ReferralRequest.supportingInfo[]",
+              "min": 0,
+              "max": "1",
+              "description": "Supporting information - Consent",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#consent"
+                    }
+                  ],
+                  "type": "Consent",
+                  "profile": "http://hl7.org/fhir/STU3/StructureDefinition/Consent"
+                }
+              ]
+            },
+            {
+              "path": "ReferralRequest.supportingInfo[]",
+              "min": 0,
+              "max": "1",
+              "description": "Supporting information - Clinical Documentation",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#composition"
+                    }
+                  ],
+                  "type": "Composition",
+                  "profile": "http://hl7.org/fhir/STU3/StructureDefinition/Composition"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "#encounter",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "1",
+      "description": "ITK EncompassingEncounter",
+      "target": [
+        {
+          "type": "Encounter",
+          "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1",
+          "link": [
+            {
+              "path": "Encounter.location",
+              "min": 1,
+              "max": "1",
+              "description": "Location",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#location"
+                    }
+                  ],
+                  "type": "Location",
+                  "profile": "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "#recipientOrganisation",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "1",
+      "description": "Organisation",
+      "target": [
+        {
+          "type": "Organization",
+          "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+        }
+      ]
+    },
+    {
+      "id": "#recipientService",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "1",
+      "description": "Healthcare Service",
+      "target": [
+        {
+          "type": "HealthcareService",
+          "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"
+        }
+      ]
+    },
+    {
+      "id": "#location",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "1",
+      "description": "Delivery Location",
+      "target": [
+        {
+          "type": "Location",
+          "profile": "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1"
+        }
+      ]
+    },
+    {
+      "id": "#patient",
+      "path": "Bundle.entry.resource[0]",
+      "min": 1,
+      "max": "1",
+      "description": "Patient",
+      "target": [
+        {
+          "type": "Patient",
+          "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1",
+          "link": [
+            {
+              "path": "Patient.generalPractitioner",
+              "min": 1,
+              "max": "1",
+              "description": "Patient usual GP [ITK RecordTarget]",
+              "target": [
+                {
+                  "type": "Practitioner"
+                }
+              ]
+            },
+            {
+              "path": "Patient.managingOrganization[x]",
+              "min": 1,
+              "max": "1",
+              "description": "Patient Surgery [ITK RecordTarget->PatientRole->Organisation]",
+              "target": [
+                {
+                  "type": "Organization"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "#requestor",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "*",
+      "description": "Author or Consultant",
+      "target": [
+        {
+          "type": "Practitioner",
+          "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+        }
+      ]
+    },
+    {
+      "id": "#consent",
+      "path": "Bundle.entry.resource[x]",
+      "min": 0,
+      "max": "*",
+      "description": "ITK Consent / ITK Permission to View Section",
+      "target": [
+        {
+          "type": "Consent",
+          "profile": "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Consent-1"
+        }
+      ]
+    },
+    {
+      "id": "#questionnaireResponse",
+      "path": "Bundle.entry.resource[x]",
+      "min": 0,
+      "max": "*",
+      "description": "ITK Triage Attachment - this is a blob not questionnaire response",
+      "target": [
+        {
+          "type": "QuestionnaireResponse",
+          "profile": "http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse"
+        }
+      ]
+    },
+    {
+      "id": "#composition",
+      "path": "Bundle.entry.resource[x]",
+      "min": 0,
+      "max": "*",
+      "description": "Clinical Document",
+      "target": [
+        {
+          "type": "Composition",
+          "profile": "http://hl7.org/fhir/STU3/StructureDefinition/Composition"
+        }
+      ]
+    }
+  ]
+}

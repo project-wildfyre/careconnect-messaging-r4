@@ -3,13 +3,14 @@
   "id": "careconnect-messaging-stu3",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Messaing</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>\n</div></div>"
   },
   "url": "https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3",
-  "name": "Care Connect Messaing",
+  "version": "3.0.0",
+  "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2019-12-22T08:42:51+00:00",
+  "date": "2020-02-14T13:01:42+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -47,14 +48,32 @@
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Bundle-adta01.html"
+              "valueUri": "Bundle-notification-admit.html"
             }
           ],
           "example": true,
-          "name": "ADT_A01 FHIR Message",
-          "description": "ADT_A01 FHIR Message - Admit a patient",
+          "name": "notification-admit",
+          "description": "Notifiation Admission FHIR Message - Admit a patient",
           "sourceReference": {
-            "reference": "Bundle/adta01"
+            "reference": "Bundle/notification-admit"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+              "valueString": "Bundle"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Bundle-notification-admit-transaction.html"
+            }
+          ],
+          "example": true,
+          "name": "notification-admit-transaction",
+          "description": "Notifiation Admission FHIR Transaction - Admit a patient",
+          "sourceReference": {
+            "reference": "Bundle/notification-admit-transaction"
           }
         },
         {
@@ -83,14 +102,32 @@
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Bundle-adta03.html"
+              "valueUri": "Bundle-notification-discharge.html"
             }
           ],
           "example": true,
-          "name": "ADT_A03 FHIR Message",
-          "description": "ADT_A03 FHIR Message - Discharge a patient",
+          "name": "Notification Discharge FHIR Message",
+          "description": "Notification Discharge FHIR Message - Discharge a patient",
           "sourceReference": {
-            "reference": "Bundle/adta03"
+            "reference": "Bundle/notification-discharge"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+              "valueString": "Bundle"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Bundle-notification-discharge-transaction.html"
+            }
+          ],
+          "example": true,
+          "name": "Notification Discharge FHIR Transaction",
+          "description": "Notification Discharge FHIR Transaction - Discharge a patient",
+          "sourceReference": {
+            "reference": "Bundle/notification-discharge-transaction"
           }
         },
         {
@@ -137,14 +174,32 @@
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "Bundle-adta28.html"
+              "valueUri": "Bundle-patient-create.html"
             }
           ],
           "example": true,
-          "name": "ADT_A28 FHIR Message",
-          "description": "ADT_A28 FHIR Message - Add person information",
+          "name": "Patient Create FHIR Message",
+          "description": "Patient Create FHIR Message - Add person information",
           "sourceReference": {
-            "reference": "Bundle/adta28"
+            "reference": "Bundle/patient-create"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+              "valueString": "Bundle"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Bundle-patient-create-transaction.html"
+            }
+          ],
+          "example": true,
+          "name": "Patient Create FHIR Transaction",
+          "description": "Patient Create FHIR Transaction - Add person information",
+          "sourceReference": {
+            "reference": "Bundle/patient-create-transaction"
           }
         },
         {
@@ -232,6 +287,21 @@
       {
         "source": "results.html",
         "title": "HL7 v2 and FHIR Results",
+        "kind": "resource"
+      },
+      {
+        "source": "messagedefinitions.html",
+        "title": "Message Definitions",
+        "kind": "resource"
+      },
+      {
+        "source": "examples.html",
+        "title": "Examples",
+        "kind": "resource"
+      },
+      {
+        "source": "graphdefinitions.html",
+        "title": "Graph Definitions",
         "kind": "resource"
       },
       {

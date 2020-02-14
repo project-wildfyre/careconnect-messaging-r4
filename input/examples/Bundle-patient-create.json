@@ -1,0 +1,128 @@
+{
+    "resourceType": "Bundle",
+    "id": "patient-create",
+    "identifier": {
+        "value": "13403891320453338075"
+    },
+    "type": "message",
+    "entry": [
+        {
+            "fullUrl": "urn:oid:f3dc4d1d-75c4-453c-8bf0-5769e97aba3e",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "f3dc4d1d-75c4-453c-8bf0-5769e97aba3e",
+                "event": {
+                    "code": "patient-create",
+                    "display": "Patient Create"
+                },
+                "destination": [
+                    {
+                        "name": "ROUTE"
+                    }
+                ],
+                "sender": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RCB"
+                    },
+                    "display": "RCB"
+                },
+                "timestamp": "2010-01-02T12:15:00.000+00:00",
+                "focus": [
+                    {
+                        "reference": "urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "1b1732b7-9941-4a19-ba62-d0b3b3b0a785",
+                "identifier": [
+                    {
+                        "extension": [
+                            {
+                                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                                            "code": "01"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "3333333333"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "SMITH",
+                        "given": [
+                            "FREDRICA"
+                        ],
+                        "prefix": [
+                            "MRS"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+441234567890",
+                        "use": "home"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1965-11-12",
+                "address": [
+                    {
+                        "use": "home",
+                        "city": "MALTON",
+                        "district": "NORTH YORKSHIRE",
+                        "postalCode": "YO32 5TT"
+                    }
+                ],
+                "contact": [
+                    {
+                        "name": {
+                            "family": "SMITH",
+                            "given": [
+                                "FRANCESCA"
+                            ],
+                            "prefix": [
+                                "MRS"
+                            ]
+                        },
+                        "address": {
+                            "use": "home",
+                            "city": "MALTON",
+                            "district": "NORTH YORKSHIRE",
+                            "postalCode": "YO32 5TT"
+                        }
+                    }
+                ],
+                "generalPractitioner": [
+                    {
+                        "identifier": {
+                            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                            "value": "G5612908"
+                        },
+                        "display": "Dr Gregory Townley"
+                    }
+                ],
+                "managingOrganization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "Y06601"
+                    },
+                    "display": "MALTON GP PRACTICE"
+                }
+            }
+        }
+    ]
+}

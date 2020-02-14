@@ -1,0 +1,31 @@
+<MessageDefinition xmlns="http://hl7.org/fhir">
+    <id value="notification-admit"></id>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: notification-admit</p><p><b>url</b>: <a href="https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit">https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit</a></p><p><b>identifier</b>: c81b88dc-760e-4b1e-9cdb-c5f853630664</p><p><b>version</b>: 0.2.0</p><p><b>title</b>: Patient Admission Notification</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: NHS Digital</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright © 2020 NHS Digital</p><p><b>event</b>: Notification Admit (Details: https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2 code notification-admit = 'notification-admit', stated as 'Notification Admit')</p><p><b>category</b>: Notification</p><h3>Focus</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Profile</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>Encounter</td><td><a href="https://interopen.github.io/careconnect-base-stu3/StructureDefinition-CareConnect-Encounter-1.html">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1</a></td><td>1</td><td>1</td></tr></table></div>
+    </text>
+    <url value="https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit"></url>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"></system>
+        <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664"></value>
+    </identifier>
+    <version value="1.0.0"></version>
+    <title value="Patient Admission Notification"></title>
+    <status value="active"></status>
+    <date value="2019-08-22T12:49:51.688+01:00"></date>
+    <copyright value="Copyright © 2020 NHS Digital"></copyright>
+    <event>
+        <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"></system>
+        <code value="notification-admit"></code>
+        <display value="Notification Admit"></display>
+    </event>
+    <category value="Notification"></category>
+    <focus>
+        <code value="Encounter"></code>
+        <profile>
+            <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>
+        </profile>
+        <min value="1"/>
+        <max value="1"/>
+    </focus>
+</MessageDefinition>

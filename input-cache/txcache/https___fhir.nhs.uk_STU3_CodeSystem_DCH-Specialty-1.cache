@@ -1,8 +1,18 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
+  "code" : "500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1\" is not known (encountered paired with code = \"500\"); The code provided (https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1#500) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
   "code" : "300"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",
@@ -11,11 +21,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
-  "code" : "500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+  "code" : "180"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "The code system \"https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1\" is not known (encountered paired with code = \"500\"); The code provided (https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1#500) is not  valid in the value set All codes known to the system"
+  "error" : "The code system \"https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1\" is not known (encountered paired with code = \"180\"); The code provided (https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1#180) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------

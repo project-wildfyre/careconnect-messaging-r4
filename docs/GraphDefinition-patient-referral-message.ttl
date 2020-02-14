@@ -1,0 +1,363 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kevinmayfield.github.io/careconnect-api-stu3/GraphDefinition/patient-referral-message> a fhir:GraphDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patient-referral-message"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patient-referral-message</p><p><b>url</b>: <a href=\"http://fhir.nhs.uk/GraphDefinition/patient-referral-message\">http://fhir.nhs.uk/GraphDefinition/patient-referral-message</a></p><p><b>version</b>: 3.0.0</p><p><b>name</b>: Encounter Report FHIR Graph Definition</p><p><b>status</b>: draft</p><p><b>date</b>: 3 Mar 2019, 00:00:00</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: Encounter Report Graph</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>start</b>: MessageHeader</p><blockquote><p><b>link</b></p><p><b>id</b>: #message</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: MessageHeader. Where the coding and display for the event element is fixed to ‘CH005 - Birth Details’</p><blockquote><p><b>target</b></p><p><b>type</b>: MessageHeader</p><p><b>profile</b>: <a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1\">https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #referralRequest</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK ServiceRequest - This is a section in a FHIR Document</p><blockquote><p><b>target</b></p><p><b>type</b>: ReferralRequest</p><p><b>profile</b>: <a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #encounter</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: ITK EncompassingEncounter</p><blockquote><p><b>target</b></p><p><b>type</b>: Encounter</p><p><b>profile</b>: <a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #recipientOrganisation</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Organisation</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Organization</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #recipientService</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Healthcare Service</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>HealthcareService</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #location</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Delivery Location</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Location</td><td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1\">https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #patient</p><p><b>path</b>: Bundle.entry.resource[0]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Patient</p><blockquote><p><b>target</b></p><p><b>type</b>: Patient</p><p><b>profile</b>: <a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #requestor</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: Author or Consultant</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Practitioner</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #consent</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK Consent / ITK Permission to View Section</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Consent</td><td><a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Consent-1\">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Consent-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #questionnaireResponse</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK Triage Attachment - this is a blob not questionnaire response</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>QuestionnaireResponse</td><td><a href=\"http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse\">http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #composition</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: Clinical Document</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Composition</td><td><a href=\"http://hl7.org/fhir/STU3/StructureDefinition/Composition\">http://hl7.org/fhir/STU3/StructureDefinition/Composition</a></td></tr></table></blockquote></div>"
+  ];
+  fhir:GraphDefinition.url [ fhir:value "http://fhir.nhs.uk/GraphDefinition/patient-referral-message"];
+  fhir:GraphDefinition.version [ fhir:value "3.0.0"];
+  fhir:GraphDefinition.name [ fhir:value "Encounter Report FHIR Graph Definition"];
+  fhir:GraphDefinition.status [ fhir:value "draft"];
+  fhir:GraphDefinition.date [ fhir:value "2019-03-03T00:00:00+00:00"^^xsd:dateTime];
+  fhir:GraphDefinition.publisher [ fhir:value "mayfield-is.co.uk"];
+  fhir:GraphDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
+     ]
+  ];
+  fhir:GraphDefinition.description [ fhir:value "Encounter Report Graph"];
+  fhir:GraphDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "826" ]
+     ]
+  ];
+  fhir:GraphDefinition.start [ fhir:value "MessageHeader"];
+  fhir:GraphDefinition.link [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "#message" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "1" ];
+     fhir:GraphDefinition.link.description [ fhir:value "MessageHeader. Where the coding and display for the event element is fixed to ‘CH005 - Birth Details’" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "MessageHeader" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1" ];
+       fhir:GraphDefinition.link.target.link [
+         fhir:index 0;
+         fhir:GraphDefinition.link.path [ fhir:value "MessageHeader.focus" ];
+         fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "The focus of the message" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#referralRequest" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "ReferralRequest" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "#referralRequest" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "*" ];
+     fhir:GraphDefinition.link.description [ fhir:value "ITK ServiceRequest - This is a section in a FHIR Document" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "ReferralRequest" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1" ];
+       fhir:GraphDefinition.link.target.link [
+         fhir:index 0;
+         fhir:GraphDefinition.link.path [ fhir:value "ReferralRequest.subject" ];
+         fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "The patient" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#patient" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "Patient" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:GraphDefinition.link.path [ fhir:value "ReferralRequest.requester" ];
+         fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Practitioner" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#requestor" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "Practitioner" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:GraphDefinition.link.path [ fhir:value "ReferralRequest.recipient" ];
+         fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Organisation" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#recipientOrganisation  " ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:GraphDefinition.link.path [ fhir:value "ReferralRequest.recipient" ];
+         fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Healthcare Service" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#recipientService" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "HealthcareService" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:GraphDefinition.link.path [ fhir:value "ReferralRequest.context" ];
+         fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Encompassing Encounter" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#encounter" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "Encounter" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:GraphDefinition.link.path [ fhir:value "ReferralRequest.supportingInfo[]" ];
+         fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Supporting information - Triage Block" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#questionnaireResponse" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "QuestionnaireResponse" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:GraphDefinition.link.path [ fhir:value "ReferralRequest.supportingInfo[]" ];
+         fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Supporting information - Consent" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#consent" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "Consent" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "http://hl7.org/fhir/STU3/StructureDefinition/Consent" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:GraphDefinition.link.path [ fhir:value "ReferralRequest.supportingInfo[]" ];
+         fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Supporting information - Clinical Documentation" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#composition" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "Composition" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "http://hl7.org/fhir/STU3/StructureDefinition/Composition" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Element.id [ fhir:value "#encounter" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "1" ];
+     fhir:GraphDefinition.link.description [ fhir:value "ITK EncompassingEncounter" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "Encounter" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1" ];
+       fhir:GraphDefinition.link.target.link [
+         fhir:index 0;
+         fhir:GraphDefinition.link.path [ fhir:value "Encounter.location" ];
+         fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Location" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#location" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "Location" ];
+           fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Element.id [ fhir:value "#recipientOrganisation" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "1" ];
+     fhir:GraphDefinition.link.description [ fhir:value "Organisation" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Element.id [ fhir:value "#recipientService" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "1" ];
+     fhir:GraphDefinition.link.description [ fhir:value "Healthcare Service" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "HealthcareService" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Element.id [ fhir:value "#location" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "1" ];
+     fhir:GraphDefinition.link.description [ fhir:value "Delivery Location" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "Location" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Element.id [ fhir:value "#patient" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[0]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "1" ];
+     fhir:GraphDefinition.link.description [ fhir:value "Patient" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "Patient" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" ];
+       fhir:GraphDefinition.link.target.link [
+         fhir:index 0;
+         fhir:GraphDefinition.link.path [ fhir:value "Patient.generalPractitioner" ];
+         fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Patient usual GP [ITK RecordTarget]" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:GraphDefinition.link.target.type [ fhir:value "Practitioner" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:GraphDefinition.link.path [ fhir:value "Patient.managingOrganization[x]" ];
+         fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Patient Surgery [ITK RecordTarget->PatientRole->Organisation]" ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Element.id [ fhir:value "#requestor" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "*" ];
+     fhir:GraphDefinition.link.description [ fhir:value "Author or Consultant" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "Practitioner" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:Element.id [ fhir:value "#consent" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "*" ];
+     fhir:GraphDefinition.link.description [ fhir:value "ITK Consent / ITK Permission to View Section" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "Consent" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Consent-1" ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:Element.id [ fhir:value "#questionnaireResponse" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "*" ];
+     fhir:GraphDefinition.link.description [ fhir:value "ITK Triage Attachment - this is a blob not questionnaire response" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "QuestionnaireResponse" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse" ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:Element.id [ fhir:value "#composition" ];
+     fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
+     fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
+     fhir:GraphDefinition.link.max [ fhir:value "*" ];
+     fhir:GraphDefinition.link.description [ fhir:value "Clinical Document" ];
+     fhir:GraphDefinition.link.target [
+       fhir:index 0;
+       fhir:GraphDefinition.link.target.type [ fhir:value "Composition" ];
+       fhir:GraphDefinition.link.target.profile [ fhir:value "http://hl7.org/fhir/STU3/StructureDefinition/Composition" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kevinmayfield.github.io/careconnect-api-stu3/GraphDefinition/patient-referral-message.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

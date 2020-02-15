@@ -11,7 +11,7 @@
             <value value="http://fhir.nhs.uk"/>
         </telecom>
     </contact>
-    <description value="Encounter Report Graph"/>
+    <description value="Patient Referral Message Graph"/>
     <start value="MessageHeader"/>
     <link id="#message">
         <path value="Bundle.entry.resource[x]"/>

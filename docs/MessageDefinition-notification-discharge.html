@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>CARECONNECT-MESSAGING-STU3\Notitification Discharge - FHIR v3.0.2</title>
+    <title>CARECONNECT-MESSAGING-R4\Notitification Discharge - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,14 +37,14 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"11.18"}
-    h3,h4,h5,h6{--heading-prefix:"11.18"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.12"}
+    h3,h4,h5,h6{--heading-prefix:"9.12"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>3.0.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -62,7 +62,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
   <li><a href="index.html">Care Connect Messaging</a></li>
@@ -86,12 +86,6 @@
       </li>
         <li>
             <a href="adt.html">Admission, Discharge and Transfers</a>
-        </li>
-        <li>
-            <a href="orders.html">Orders</a>
-        </li>
-        <li>
-            <a href="results.html">Results</a>
         </li>
     </ul>
   </li>
@@ -138,7 +132,7 @@
 
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v3.0.0). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
   <h2 id="root">Notitification Discharge</h2>
   <p>
@@ -168,7 +162,7 @@
   <p>
     <b>Narrative view</b>
   </p>
-  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: notification-discharge</p><p><b>url</b>: <a href="https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge">https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge</a></p><p><b>identifier</b>: c81b88dc-760e-4b1e-9cdb-c5f853630664</p><p><b>version</b>: 3.0.0</p><p><b>title</b>: Patient Discharge Notification</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright &copy; 2020 NHS Digital</p><p><b>event</b>: Notification Discharge (Details: https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2 code notification-discharge = 'notification-discharge', stated as 'Notification Discharge')</p><p><b>category</b>: Notification</p><h3>Focus</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Profile</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>Encounter</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1</a></td><td>1</td><td>1</td></tr></table></div>
+  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: notification-discharge</p><p><b>url</b>: <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge">https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge</a></p><p><b>identifier</b>: c81b88dc-760e-4b1e-9cdb-c5f853630664</p><p><b>version</b>: 4.0.0</p><p><b>title</b>: Patient Discharge Notification</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright &copy; 2020 NHS Digital</p><p><b>category</b>: notification</p><h3>Focus</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>Encounter</td><td>1</td><td>1</td></tr></table></div>
 
   
   
@@ -182,8 +176,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="2c65e04c-3564-4037-b079-ce1131347875">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.stu3#3.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Feb 14, 2020 13:01+0000">2020-02-14</span>
+        <p><a name="c1c0b855-fbef-4257-8c64-338a84789af5">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 15, 2020 08:10+0000">2020-02-15</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -1,7 +1,7 @@
 <GraphDefinition xmlns="http://hl7.org/fhir">
     <id value="patient-referral-message"/>
-    <url value="http://fhir.nhs.uk/GraphDefinition/patient-referral-message"/>
-    <name value="Encounter Report FHIR Graph Definition"/>
+    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/patient-referral-message"/>
+    <name value="Patient Referral FHIR Graph Definition"/>
     <status value="draft"/>
     <date value="2019-03-03T00:00:00+00:00"/>
     <publisher value="XYZ"/>
@@ -30,7 +30,7 @@
                     <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
                         <valueString value="#referralRequest"/>
                     </extension>
-                    <type value="ReferralRequest"/>
+                    <type value="ServiceRequest"/>
                     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"/>
                 </target>
             </link>
@@ -42,10 +42,10 @@
         <max value="*"/>
         <description value="ITK ServiceRequest - This is a section in a FHIR Document"/>
         <target>
-            <type value="ReferralRequest"/>
+            <type value="ServiceRequest"/>
             <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"/>
             <link>
-                <path value="ReferralRequest.subject"/>
+                <path value="ServiceRequest.subject"/>
                 <min value="1"/>
                 <max value="1"/>
                 <description value="The patient"/>
@@ -54,11 +54,11 @@
                         <valueString value="#patient"/>
                     </extension>
                     <type value="Patient"/>
-                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
                 </target>
             </link>
             <link>
-                <path value="ReferralRequest.requester"/>
+                <path value="ServiceRequest.requester"/>
                 <min value="1"/>
                 <max value="1"/>
                 <description value="Practitioner"/>
@@ -67,11 +67,11 @@
                         <valueString value="#requestor"/>
                     </extension>
                     <type value="Practitioner"/>
-                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner"/>
                 </target>
             </link>
             <link>
-                <path value="ReferralRequest.recipient"/>
+                <path value="ServiceRequest.recipient"/>
                 <min value="0"/>
                 <max value="1"/>
                 <description value="Organisation"/>
@@ -80,11 +80,11 @@
                         <valueString value="#recipientOrganisation  "/>
                     </extension>
                     <type value="Organization"/>
-                   <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+                   <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization"/>
                 </target>
             </link>
             <link>
-                <path value="ReferralRequest.recipient"/>
+                <path value="ServiceRequest.recipient"/>
                 <min value="0"/>
                 <max value="1"/>
                 <description value="Healthcare Service"/>
@@ -97,7 +97,7 @@
                 </target>
             </link>
             <link>
-                <path value="ReferralRequest.context"/>
+                <path value="ServiceRequest.context"/>
                 <min value="1"/>
                 <max value="1"/>
                 <description value="Encompassing Encounter"/>
@@ -106,11 +106,11 @@
                         <valueString value="#encounter"/>
                     </extension>
                     <type value="Encounter"/>
-                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"/>
                 </target>
             </link>
             <link>
-                <path value="ReferralRequest.supportingInfo[]"/>
+                <path value="ServiceRequest.supportingInfo[]"/>
                 <min value="0"/>
                 <max value="1"/>
                 <description value="Supporting information - Triage Block"/>
@@ -123,7 +123,7 @@
                 </target>
             </link>
             <link>
-                <path value="ReferralRequest.supportingInfo[]"/>
+                <path value="ServiceRequest.supportingInfo[]"/>
                 <min value="0"/>
                 <max value="1"/>
                 <description value="Supporting information - Consent"/>
@@ -136,7 +136,7 @@
                 </target>
             </link>
             <link>
-                <path value="ReferralRequest.supportingInfo[]"/>
+                <path value="ServiceRequest.supportingInfo[]"/>
                 <min value="0"/>
                 <max value="1"/>
                 <description value="Supporting information - Clinical Documentation"/>
@@ -157,7 +157,7 @@
         <description value="ITK EncompassingEncounter"/>
         <target>
             <type value="Encounter"/>
-            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"/>
             <link>
                 <path value="Encounter.location"/>
                 <min value="1"/>
@@ -180,7 +180,7 @@
         <description value="Organisation"/>
         <target>
             <type value="Organization"/>
-            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization"/>
         </target>
     </link>
     <link id="#recipientService">
@@ -210,7 +210,7 @@
         <description value="Patient"/>
         <target>
             <type value="Patient"/>
-            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
             <link>
                 <path value="Patient.generalPractitioner"/>
                 <min value="1"/>
@@ -238,7 +238,7 @@
         <description value="Author or Consultant"/>
         <target>
             <type value="Practitioner"/>
-            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner"/>
         </target>
     </link>
     <link id="#consent">

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>CARECONNECT-MESSAGING-STU3\Patient Referral Example - JSON Representation - FHIR v3.0.2</title>
+    <title>CARECONNECT-MESSAGING-R4\Patient Referral Example - JSON Representation - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,14 +37,14 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"11.20"}
-    h3,h4,h5,h6{--heading-prefix:"11.20"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.14"}
+    h3,h4,h5,h6{--heading-prefix:"9.14"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>3.0.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -62,7 +62,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
   <li><a href="index.html">Care Connect Messaging</a></li>
@@ -86,12 +86,6 @@
       </li>
         <li>
             <a href="adt.html">Admission, Discharge and Transfers</a>
-        </li>
-        <li>
-            <a href="orders.html">Orders</a>
-        </li>
-        <li>
-            <a href="results.html">Results</a>
         </li>
     </ul>
   </li>
@@ -135,7 +129,7 @@
         <div class="row">
           <div class="inner-wrapper">
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v3.0.0). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
   <h2 id="root">Patient Referral Example - JSON Representation</h2>
   <p>
@@ -153,142 +147,73 @@
   
   <pre class="json">
 {
-  "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle">resourceType</a>" : "Bundle",
-  "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle.id">id</a>" : "patient-referral",
-  "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle.identifier">identifier</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "14038913245354"
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "patient-referral",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">identifier</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "14038913245354"
   },
-  "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle.type">type</a>" : "message",
-  "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle.entry">entry</a>" : [
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "message",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
     {
-      "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:3d4a07cc-ff85-45c2-8f60-202d5506db02",
-      "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader">resource</a>" : {
-        "<a href="http://hl7.org/fhir/STU3/messageheader.html">resourceType</a>" : "MessageHeader",
-        "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader.id">id</a>" : "3d4a07cc-ff85-45c2-8f60-202d5506db02",
-        "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 3d4a07cc-ff85-45c2-8f60-202d5506db02&lt;/p&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: patient-referral (Details: [not stated] code patient-referral = 'patient-referral', stated as 'patient-referral')&lt;/p&gt;&lt;h3&gt;Destinations&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;ROUTE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;receiver&lt;/b&gt;: DHU HEALTH CARE C.I.C&lt;/p&gt;&lt;p&gt;&lt;b&gt;sender&lt;/b&gt;: YORKSHIRE AMBULANCE SERVICE NHS TRUST&lt;/p&gt;&lt;p&gt;&lt;b&gt;timestamp&lt;/b&gt;: 1 Nov 2010, 15:12:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\"urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be\"&gt;urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:3d4a07cc-ff85-45c2-8f60-202d5506db02",
+      "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/messageheader.html">resourceType</a>" : "MessageHeader",
+        "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.id">id</a>" : "3d4a07cc-ff85-45c2-8f60-202d5506db02",
+        "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 3d4a07cc-ff85-45c2-8f60-202d5506db02&lt;/p&gt;&lt;h3&gt;Destinations&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;ROUTE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;sender&lt;/b&gt;: YORKSHIRE AMBULANCE SERVICE NHS TRUST&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\"urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be\"&gt;urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
-        "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader.event">event</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "patient-referral",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "patient-referral"
-        },
-        "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader.destination">destination</a>" : [
+        "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.destination">destination</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader.destination.name">name</a>" : "ROUTE"
+            "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.destination.name">name</a>" : "ROUTE"
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader.receiver">receiver</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/ods-site-code",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "NNJ"
+        "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.sender">sender</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/ods-organization-code",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "RX8"
           },
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "DHU HEALTH CARE C.I.C"
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "YORKSHIRE AMBULANCE SERVICE NHS TRUST"
         },
-        "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader.sender">sender</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/ods-organization-code",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "RX8"
-          },
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "YORKSHIRE AMBULANCE SERVICE NHS TRUST"
-        },
-        "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader.timestamp">timestamp</a>" : "2010-11-01T15:12:00.000+00:00",
-        "<a href="http://hl7.org/fhir/STU3/messageheader.html#MessageHeader.focus">focus</a>" : [
+        "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.focus">focus</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be"
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be"
           }
         ]
       }
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be",
-      "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest">resource</a>" : {
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html">resourceType</a>" : "ReferralRequest",
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.id">id</a>" : "6eb72362-cc88-4c54-bd05-a49885d370be",
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.meta">meta</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2019-06-26T16:08:17.275+00:00"
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be",
+      "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html">resourceType</a>" : "ServiceRequest",
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.id">id</a>" : "6eb72362-cc88-4c54-bd05-a49885d370be",
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2019-06-26T16:08:17.275+00:00"
         },
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 6eb72362-cc88-4c54-bd05-a49885d370be&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: R3&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Referral to medical emergency team &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {SNOMED CT code '713400007' = 'Referral to medical emergency team', given as 'Referral to medical emergency team'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceRequested&lt;/b&gt;: Surgical-Accident &amp;amp; emergency &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {SNOMED CT code '394576009' = 'Accident &amp;amp; emergency (qualifier value)', given as 'Surgical-Accident &amp;amp; emergency'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\"&gt;MRS FREDICA SMITH&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;context&lt;/b&gt;: &lt;a href=\"urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c\"&gt;urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 8 Nov 2018, 12:30:00&lt;/p&gt;&lt;h3&gt;Requesters&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Agent&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;OnBehalfOf&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Dr Samuel Darwin&lt;/td&gt;&lt;td&gt;YORKSHIRE AMBULANCE SERVICE NHS TRUST&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;specialty&lt;/b&gt;: ACCIDENT AND EMERGENCY &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '180' = '180', given as 'ACCIDENT AND EMERGENCY'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recipient&lt;/b&gt;: DHU HEALTH CARE C.I.C&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Intermittent vomiting &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {SNOMED CT code '236083006' = 'Intermittent vomiting', given as 'Intermittent vomiting'})&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 6eb72362-cc88-4c54-bd05-a49885d370be&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: R3&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\"&gt;MRS FREDICA SMITH&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 8 Nov 2018, 12:30:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Intermittent vomiting &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {SNOMED CT code '236083006' = 'Intermittent vomiting', given as 'Intermittent vomiting'})&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.identifier">identifier</a>" : [
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.identifier">identifier</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.interopen.org/ReferralRequest/Identifier",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "R3"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.interopen.org/ReferralRequest/Identifier",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "R3"
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.status">status</a>" : "completed",
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.intent">intent</a>" : "order",
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.type">type</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "713400007",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Referral to medical emergency team"
-            }
-          ]
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.status">status</a>" : "completed",
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.intent">intent</a>" : "order",
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4",
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "MRS FREDICA SMITH"
         },
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.serviceRequested">serviceRequested</a>" : [
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.authoredOn">authoredOn</a>" : "2018-11-08T12:30:00+00:00",
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.reasonCode">reasonCode</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "394576009",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Surgical-Accident &amp; emergency"
-              }
-            ]
-          }
-        ],
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.subject">subject</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4",
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "MRS FREDICA SMITH"
-        },
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.context">context</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c"
-        },
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.authoredOn">authoredOn</a>" : "2018-11-08T12:30:00+00:00",
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.requester">requester</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.requester.agent">agent</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "C3456789"
-            },
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "Dr Samuel Darwin"
-          },
-          "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.requester.onBehalfOf">onBehalfOf</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/ods-site-code",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "RX8"
-            },
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "YORKSHIRE AMBULANCE SERVICE NHS TRUST"
-          }
-        },
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.specialty">specialty</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "180",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "ACCIDENT AND EMERGENCY"
-            }
-          ]
-        },
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.recipient">recipient</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/ods-site-code",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "NNJ"
-            },
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "DHU HEALTH CARE C.I.C"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/STU3/referralrequest.html#ReferralRequest.reasonCode">reasonCode</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-              {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "236083006",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Intermittent vomiting"
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "236083006",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Intermittent vomiting"
               }
             ]
           }
@@ -296,267 +221,267 @@
       }
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c",
-      "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter">resource</a>" : {
-        "<a href="http://hl7.org/fhir/STU3/encounter.html">resourceType</a>" : "Encounter",
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.id">id</a>" : "38eeb5d7-e689-4ec5-81d2-f51f3011c72c",
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 2141&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: in-progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'ambulatory', stated as 'ambulatory')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: 13 &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)&lt;/span&gt;, 300 &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\"&gt;urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: attender &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'attender', given as 'attender'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;individual&lt;/b&gt;: Dr Samuel Darwin&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: admitter &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'admitter', given as 'admitter'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;individual&lt;/b&gt;: Dr Samuel Darwin&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: consultant &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'consultant', given as 'consultant'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;individual&lt;/b&gt;: Dr Samuel Darwin&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: referrer &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'referrer', given as 'referrer'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;individual&lt;/b&gt;: Dr Gregory Townley&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 1 Nov 2010, 16:00:00 --&amp;gt; (ongoing)&lt;/p&gt;&lt;h3&gt;Hospitalizations&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;AdmitSource&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Usual place of residence &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19', given as 'Usual place of residence'})&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Locations&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Location&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc\"&gt;South Yorks 999&lt;/a&gt;&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c",
+      "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/encounter.html">resourceType</a>" : "Encounter",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "38eeb5d7-e689-4ec5-81d2-f51f3011c72c",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 2141&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: in-progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'AMB', stated as 'ambulatory')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: 13 &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)&lt;/span&gt;, 300 &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\"&gt;urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: attender &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;individual&lt;/b&gt;: Dr Samuel Darwin&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: admitter &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'ADM', given as 'admitter'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;individual&lt;/b&gt;: Dr Samuel Darwin&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: consultant &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;individual&lt;/b&gt;: Dr Samuel Darwin&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;participant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: referrer &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'REF', given as 'referrer'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;individual&lt;/b&gt;: Dr Gregory Townley&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 1 Nov 2010, 16:00:00 --&amp;gt; (ongoing)&lt;/p&gt;&lt;h3&gt;Hospitalizations&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;AdmitSource&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Usual place of residence &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19', given as 'Usual place of residence'})&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Locations&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Location&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\"urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc\"&gt;South Yorks 999&lt;/a&gt;&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.identifier">identifier</a>" : [
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "2141"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "2141"
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.status">status</a>" : "in-progress",
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.class">class</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ActCode",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "AMB",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "ambulatory"
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a>" : "in-progress",
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ActCode",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "AMB",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "ambulatory"
         },
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.type">type</a>" : [
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.type">type</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "13"
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "13"
               }
             ]
           },
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "300"
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "300"
               }
             ]
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.subject">subject</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4"
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4"
         },
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.participant">participant</a>" : [
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant">participant</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.participant.type">type</a>" : [
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>" : [
               {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ParticipationType",
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "ATND",
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "attender"
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ParticipationType",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ATND",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "attender"
                   }
                 ]
               }
             ],
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.participant.individual">individual</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "C3456789"
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "C3456789"
               },
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "Dr Samuel Darwin"
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Dr Samuel Darwin"
             }
           },
           {
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.participant.type">type</a>" : [
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>" : [
               {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ParticipationType",
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "ADM",
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "admitter"
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ParticipationType",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ADM",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "admitter"
                   }
                 ]
               }
             ],
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.participant.individual">individual</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "C3456789"
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "C3456789"
               },
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "Dr Samuel Darwin"
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Dr Samuel Darwin"
             }
           },
           {
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.participant.type">type</a>" : [
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>" : [
               {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ParticipationType",
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "CON",
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "consultant"
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ParticipationType",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "CON",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "consultant"
                   }
                 ]
               }
             ],
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.participant.individual">individual</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "C3456789"
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "C3456789"
               },
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "Dr Samuel Darwin"
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Dr Samuel Darwin"
             }
           },
           {
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.participant.type">type</a>" : [
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>" : [
               {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ParticipationType",
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "REF",
-                    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "referrer"
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/v3/ParticipationType",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "REF",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "referrer"
                   }
                 ]
               }
             ],
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.participant.individual">individual</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "G5612908"
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "G5612908"
               },
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "Dr Gregory Townley"
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Dr Gregory Townley"
             }
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.period">period</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a>" : "2010-11-01T16:00:00+00:00"
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2010-11-01T16:00:00+00:00"
         },
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.hospitalization">hospitalization</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.hospitalization.admitSource">admitSource</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization">hospitalization</a>" : {
+          "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.hospitalization.admitSource">admitSource</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "19",
-                "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "Usual place of residence"
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "19",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Usual place of residence"
               }
             ]
           }
         },
-        "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.location">location</a>" : [
+        "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.location.location">location</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc",
-              "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "South Yorks 999"
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc",
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "South Yorks 999"
             },
-            "<a href="http://hl7.org/fhir/STU3/encounter.html#Encounter.location.status">status</a>" : "active"
+            "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a>" : "active"
           }
         ]
       }
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4",
-      "<a href="http://hl7.org/fhir/STU3/patient.html#Patient">resource</a>" : {
-        "<a href="http://hl7.org/fhir/STU3/patient.html">resourceType</a>" : "Patient",
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.id">id</a>" : "a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4",
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 3333333333&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: FREDRICA SMITH &lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: +441234567890(HOME)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1965-12-13&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: MALTON YO32 5TT (HOME)&lt;/p&gt;&lt;h3&gt;Contacts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Address&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;FRANCESCA SMITH &lt;/td&gt;&lt;td&gt;MALTON YO32 5TT (HOME)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;generalPractitioner&lt;/b&gt;: Dr Gregory Townley&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: MALTON GP PRACTICE&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 3333333333&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: FREDRICA SMITH &lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: +441234567890(HOME)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1965-12-13&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: MALTON YO32 5TT (HOME)&lt;/p&gt;&lt;h3&gt;Contacts&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Address&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;FRANCESCA SMITH &lt;/td&gt;&lt;td&gt;MALTON YO32 5TT (HOME)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;generalPractitioner&lt;/b&gt;: Dr Gregory Townley&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: MALTON GP PRACTICE&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.identifier">identifier</a>" : [
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.extension">extension</a>" : [
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.extension">extension</a>" : [
               {
-                "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.url">url</a>" : "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
-                "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
-                  "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
-                      "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "01"
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "01"
                     }
                   ]
                 }
               }
             ],
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/nhs-number",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "3333333333"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/nhs-number",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "3333333333"
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.name">name</a>" : [
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.family">family</a>" : "SMITH",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a>" : [
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "SMITH",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
               "FREDRICA"
             ],
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.prefix">prefix</a>" : [
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.prefix">prefix</a>" : [
               "MRS"
             ]
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.telecom">telecom</a>" : [
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "+441234567890",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "home"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "+441234567890",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "home"
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.gender">gender</a>" : "female",
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.birthDate">birthDate</a>" : "1965-12-13",
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.address">address</a>" : [
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "female",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1965-12-13",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.use">use</a>" : "home",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.city">city</a>" : "MALTON",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.district">district</a>" : "NORTH YORKSHIRE",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.postalCode">postalCode</a>" : "YO32 5TT"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a>" : "home",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "MALTON",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a>" : "NORTH YORKSHIRE",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "YO32 5TT"
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.contact">contact</a>" : [
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact">contact</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.contact.name">name</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.family">family</a>" : "SMITH",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a>" : [
+            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.name">name</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "SMITH",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
                 "FRANCESCA"
               ],
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.prefix">prefix</a>" : [
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.prefix">prefix</a>" : [
                 "MRS"
               ]
             },
-            "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.contact.address">address</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.use">use</a>" : "home",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.city">city</a>" : "MALTON",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.district">district</a>" : "NORTH YORKSHIRE",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Address#Address.postalCode">postalCode</a>" : "YO32 5TT"
+            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.address">address</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a>" : "home",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "MALTON",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a>" : "NORTH YORKSHIRE",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "YO32 5TT"
             }
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.generalPractitioner">generalPractitioner</a>" : [
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.generalPractitioner">generalPractitioner</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
-              "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "G5612908"
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.hl7.org.uk/Id/gmc-number",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "G5612908"
             },
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "Dr Gregory Townley"
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Dr Gregory Townley"
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/patient.html#Patient.managingOrganization">managingOrganization</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/ods-organization-code",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "Y06601"
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.managingOrganization">managingOrganization</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/ods-organization-code",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "Y06601"
           },
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.display">display</a>" : "MALTON GP PRACTICE"
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "MALTON GP PRACTICE"
         }
       }
     },
     {
-      "<a href="http://hl7.org/fhir/STU3/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc",
-      "<a href="http://hl7.org/fhir/STU3/location.html#Location">resource</a>" : {
-        "<a href="http://hl7.org/fhir/STU3/location.html">resourceType</a>" : "Location",
-        "<a href="http://hl7.org/fhir/STU3/location.html#Location.id">id</a>" : "335f4089-8979-4bd2-96db-6137c1483ecc",
-        "<a href="http://hl7.org/fhir/STU3/location.html#Location.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 335f4089-8979-4bd2-96db-6137c1483ecc&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: SHEF-TRIAGE&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: South Yorks 999&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc",
+      "<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/location.html">resourceType</a>" : "Location",
+        "<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a>" : "335f4089-8979-4bd2-96db-6137c1483ecc",
+        "<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 335f4089-8979-4bd2-96db-6137c1483ecc&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: SHEF-TRIAGE&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: South Yorks 999&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
-        "<a href="http://hl7.org/fhir/STU3/location.html#Location.identifier">identifier</a>" : [
+        "<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>" : [
           {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "htttps://fhir.yas.cas/Identifier",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "SHEF-TRIAGE"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "htttps://fhir.yas.cas/Identifier",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "SHEF-TRIAGE"
           }
         ],
-        "<a href="http://hl7.org/fhir/STU3/location.html#Location.name">name</a>" : "South Yorks 999",
-        "<a href="http://hl7.org/fhir/STU3/location.html#Location.partOf">partOf</a>" : {
-          "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.identifier">identifier</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/ods-site-code",
-            "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "RX8"
+        "<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a>" : "South Yorks 999",
+        "<a href="http://hl7.org/fhir/R4/location.html#Location.partOf">partOf</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">identifier</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://fhir.nhs.uk/Id/ods-site-code",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "RX8"
           }
         }
       }
@@ -577,8 +502,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="31c801e7-8889-4d07-b658-60383be57c6c">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.stu3#3.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Feb 14, 2020 13:01+0000">2020-02-14</span>
+        <p><a name="ae31c652-bb02-487d-a3ac-a3bb4cb12862">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 15, 2020 08:10+0000">2020-02-15</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

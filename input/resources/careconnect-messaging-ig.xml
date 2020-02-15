@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
-  <id value="careconnect-messaging-stu3"/>
-  <url value="https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/careconnect-messaging-stu3"/>
-  <version value="3.0.0"/>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir /input-cache/schemas-r5/fhir-single.xsd">
+  <id value="careconnect-messaging-r4"/>
+  <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-stu3"/>
+  <version value="4.0.0"/>
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
@@ -28,9 +28,9 @@
       -->
     </coding>
   </jurisdiction>
-  <packageId value="careconnect.messaging.stu3"/>
+  <packageId value="careconnect.messaging.r4"/>
   <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
-  <fhirVersion value="3.0.2"/>
+  <fhirVersion value="4.0.1"/>
   <definition>
     <grouping id="uk-examples">
       <name value="CareConnect Examples"></name>
@@ -56,15 +56,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/adta02"></reference>
-      </reference>
-      <name value="ADT_A02 FHIR Message"></name>
-      <description value="ADT_A02 FHIR Message - Transfer a patient"></description>
-      <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Bundle/notification-discharge"></reference>
       </reference>
       <name value="Notification Discharge FHIR Message"></name>
@@ -83,24 +74,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/adta04"></reference>
-      </reference>
-      <name value="ADT_A04 FHIR Message"></name>
-      <description value="ADT_A04 FHIR Message - Register a patient"></description>
-      <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/adta05"></reference>
-      </reference>
-      <name value="ADT_A05 FHIR Message"></name>
-      <description value="ADT_A05 FHIR Message - Pre-Admit a patient"></description>
-      <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Bundle/patient-create"></reference>
       </reference>
       <name value="Patient Create FHIR Message"></name>
@@ -114,33 +87,6 @@
       </reference>
       <name value="Patient Create FHIR Transaction"></name>
       <description value="Patient Create FHIR Transaction - Add person information"></description>
-      <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/orur01"></reference>
-      </reference>
-      <name value="ORU_R01 NEWS2 FHIR Message"></name>
-      <description value="ORU_R01 NEWS2 FHIR Message - Unsolicited Transmission Of Requested Information"></description>
-      <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/orur01-path"></reference>
-      </reference>
-      <name value="ORU_R01 Pathology FHIR Message"></name>
-      <description value="ORU_R01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information"></description>
-      <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/ormo01"></reference>
-      </reference>
-      <name value="ORM_O01 Order FHIR Message"></name>
-      <description value="ORM_O01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information"></description>
       <exampleBoolean value="true"/>
       <groupingId value="uk-examples"></groupingId>
     </resource>
@@ -219,16 +165,6 @@
       <page>
         <nameUrl value="adt.html"/>
         <title value="HL7 v2 and FHIR Admission, Discharge and Transfers"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="orders.html"/>
-        <title value="HL7 v2 and FHIR Orders"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="results.html"/>
-        <title value="HL7 v2 and FHIR Results"/>
         <generation value="markdown"/>
       </page>
       <page>

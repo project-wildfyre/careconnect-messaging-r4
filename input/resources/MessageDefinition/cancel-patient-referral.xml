@@ -1,6 +1,6 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
     <id value="cancel-patient-referral"></id>
-    <url value="https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral"></url>
+    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/cancel-patient-referral"></url>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664"></value>
@@ -15,9 +15,9 @@
         <code value="cancel-patient-referral"></code>
         <display value="cancel-patient-referral"></display>
     </event>
-    <category value="Notification"></category>
+    <category value="notification"></category>
     <focus>
-        <code value="ReferralRequest"></code>
+        <code value="ServiceRequest"></code>
         <profile>
             <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"/>
         </profile>

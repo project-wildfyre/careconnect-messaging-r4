@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/notification-admit> a fhir:Bundle;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/notification-admit> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "notification-admit"];
   fhir:Bundle.identifier [
@@ -34,11 +34,7 @@
   fhir:Resource.id [ fhir:value "beca0934-810e-428c-b186-967f1d5515f4"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: beca0934-810e-428c-b186-967f1d5515f4</p><p><b>event</b>: Notification Admit (Details: [not stated] code notification-admit = 'notification-admit', stated as 'Notification Admit')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 10 Oct 2010, 14:18:00</p><p><b>focus</b>: <a href=\"urn:oid:d5b742fd-fc49-493f-bfb1-669f90bfc67b\">urn:oid:d5b742fd-fc49-493f-bfb1-669f90bfc67b</a></p></div>"
-  ];
-  fhir:MessageHeader.event [
-     fhir:Coding.code [ fhir:value "notification-admit" ];
-     fhir:Coding.display [ fhir:value "Notification Admit" ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: beca0934-810e-428c-b186-967f1d5515f4</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>focus</b>: <a href=\"urn:oid:d5b742fd-fc49-493f-bfb1-669f90bfc67b\">urn:oid:d5b742fd-fc49-493f-bfb1-669f90bfc67b</a></p></div>"
   ];
   fhir:MessageHeader.destination [
      fhir:index 0;
@@ -51,7 +47,6 @@
      ];
      fhir:Reference.display [ fhir:value "RCB" ]
   ];
-  fhir:MessageHeader.timestamp [ fhir:value "2010-10-10T14:18:00.000+01:00"^^xsd:dateTime];
   fhir:MessageHeader.focus [
      fhir:index 0;
      fhir:Reference.reference [ fhir:value "urn:oid:d5b742fd-fc49-493f-bfb1-669f90bfc67b" ]
@@ -61,7 +56,7 @@
   fhir:Resource.id [ fhir:value "d5b742fd-fc49-493f-bfb1-669f90bfc67b"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: d5b742fd-fc49-493f-bfb1-669f90bfc67b</p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: 13 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"urn:oid:e6067c8e-e14d-4f71-a97a-0b1d31e50c7a\">urn:oid:e6067c8e-e14d-4f71-a97a-0b1d31e50c7a</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:1ddefce3-d054-46f3-9558-9706d04c7d2d\">OBS1</a></td><td>active</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: d5b742fd-fc49-493f-bfb1-669f90bfc67b</p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'IMP', stated as 'inpatient encounter')</p><p><b>type</b>: 13 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"urn:oid:e6067c8e-e14d-4f71-a97a-0b1d31e50c7a\">urn:oid:e6067c8e-e14d-4f71-a97a-0b1d31e50c7a</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'REF', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:1ddefce3-d054-46f3-9558-9706d04c7d2d\">OBS1</a></td><td>active</td></tr></table></div>"
   ];
   fhir:Encounter.identifier [
      fhir:index 0;
@@ -280,7 +275,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/notification-admit.ttl> a owl:Ontology;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/notification-admit.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

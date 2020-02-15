@@ -1,13 +1,16 @@
 {
-  "package": "careconnect.messaging.stu3",
-  "version": "3.0.0",
-  "fhirVersion": "3.0.2",
+  "package": "careconnect.messaging.r4",
+  "version": "4.0.0",
+  "fhirVersion": "4.0.1",
   "jurisdiction": "826",
   "extensions": [],
   "profiles": {},
   "usage": {
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
-      "ImplementationGuide.package.resource"
+      "ImplementationGuide.definition.resource"
     ],
     "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1": [
       "Bundle.entry.resource.identifier"

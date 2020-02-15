@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>CARECONNECT-MESSAGING-STU3\Patient Referral Example - FHIR v3.0.2</title>
+    <title>CARECONNECT-MESSAGING-R4\Patient Referral Example - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,14 +37,14 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"11.20"}
-    h3,h4,h5,h6{--heading-prefix:"11.20"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.14"}
+    h3,h4,h5,h6{--heading-prefix:"9.14"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>3.0.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -62,7 +62,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
   <li><a href="index.html">Care Connect Messaging</a></li>
@@ -86,12 +86,6 @@
       </li>
         <li>
             <a href="adt.html">Admission, Discharge and Transfers</a>
-        </li>
-        <li>
-            <a href="orders.html">Orders</a>
-        </li>
-        <li>
-            <a href="results.html">Results</a>
         </li>
     </ul>
   </li>
@@ -138,7 +132,7 @@
 
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v3.0.0). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
   <h2 id="root">Patient Referral Example</h2>
   <p>
@@ -168,7 +162,7 @@
   <p>
     <b>Narrative view</b>
   </p>
-  <div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d4a07cc-ff85-45c2-8f60-202d5506db02</p><p><b>event</b>: patient-referral (Details: [not stated] code patient-referral = 'patient-referral', stated as 'patient-referral')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>receiver</b>: DHU HEALTH CARE C.I.C</p><p><b>sender</b>: YORKSHIRE AMBULANCE SERVICE NHS TRUST</p><p><b>timestamp</b>: 1 Nov 2010, 15:12:00</p><p><a name="01697b04-7a22-44a6-978a-a94354185a2f">​</a><b>focus</b>: <a href="urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be">urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be</a></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6eb72362-cc88-4c54-bd05-a49885d370be</p><p><b>meta</b>: </p><p><b>identifier</b>: R3</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>type</b>: Referral to medical emergency team <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '713400007' = 'Referral to medical emergency team', given as 'Referral to medical emergency team'})</span></p><p><b>serviceRequested</b>: Surgical-Accident &amp; emergency <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '394576009' = 'Accident &amp; emergency (qualifier value)', given as 'Surgical-Accident &amp; emergency'})</span></p><p><a name="50632696-37f4-4ec9-bb1f-786694f969ac">​</a><b>subject</b>: <a href="urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4">MRS FREDICA SMITH</a></p><p><a name="05677407-7239-4c64-854c-8078c51ade0e">​</a><b>context</b>: <a href="urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c">urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c</a></p><p><b>authoredOn</b>: 8 Nov 2018, 12:30:00</p><h3>Requesters</h3><table class="grid"><tr><td>-</td><td><b>Agent</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td>Dr Samuel Darwin</td><td>YORKSHIRE AMBULANCE SERVICE NHS TRUST</td></tr></table><p><b>specialty</b>: ACCIDENT AND EMERGENCY <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '180' = '180', given as 'ACCIDENT AND EMERGENCY'})</span></p><p><b>recipient</b>: DHU HEALTH CARE C.I.C</p><p><b>reasonCode</b>: Intermittent vomiting <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '236083006' = 'Intermittent vomiting', given as 'Intermittent vomiting'})</span></p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p><b>identifier</b>: 2141</p><p><b>status</b>: in-progress</p><p><b>class</b>: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: 13 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><a name="62c67e6f-56b7-4a57-a298-1ef31d213547">​</a><b>subject</b>: <a href="urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4">urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'admitter', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 1 Nov 2010, 16:00:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>Usual place of residence <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19', given as 'Usual place of residence'})</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a name="56b2a96f-c4aa-41b3-b7b9-a56e860149d5">​</a><a href="urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc">South Yorks 999</a></td><td>active</td></tr></table><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-12-13</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Address</b></td></tr><tr><td>*</td><td>FRANCESCA SMITH </td><td>MALTON YO32 5TT (HOME)</td></tr></table><p><b>generalPractitioner</b>: Dr Gregory Townley</p><p><b>managingOrganization</b>: MALTON GP PRACTICE</p><hr/><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 335f4089-8979-4bd2-96db-6137c1483ecc</p><p><b>identifier</b>: SHEF-TRIAGE</p><p><b>name</b>: South Yorks 999</p><p><b>partOf</b>: </p><hr/></div>
+  <div><p>Bundle patient-referral of type message</p><a name="urn-oid-3d4a07cc-ff85-45c2-8f60-202d5506db02"> </a><a name="messageheader_3d4a07cc-ff85-45c2-8f60-202d5506db02"> </a><hr/><p>Entry 1 - Full URL = urn:oid:3d4a07cc-ff85-45c2-8f60-202d5506db02</p><p>Resource MessageHeader:</p><a name="urn-oid-6eb72362-cc88-4c54-bd05-a49885d370be"> </a><a name="servicerequest_6eb72362-cc88-4c54-bd05-a49885d370be"> </a><hr/><p>Entry 2 - Full URL = urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be</p><p>Resource ServiceRequest:</p><a name="urn-oid-38eeb5d7-e689-4ec5-81d2-f51f3011c72c"> </a><a name="encounter_38eeb5d7-e689-4ec5-81d2-f51f3011c72c"> </a><hr/><p>Entry 3 - Full URL = urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p>Resource Encounter:</p><a name="urn-oid-a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4"> </a><a name="patient_a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4"> </a><hr/><p>Entry 4 - Full URL = urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</p><p>Resource Patient:</p><a name="urn-oid-335f4089-8979-4bd2-96db-6137c1483ecc"> </a><a name="location_335f4089-8979-4bd2-96db-6137c1483ecc"> </a><hr/><p>Entry 5 - Full URL = urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc</p><p>Resource Location:</p></div>
 
   
   
@@ -182,8 +176,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="22e2cf27-d2ce-4b06-b6fe-cc6dd3809971">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.stu3#3.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Feb 14, 2020 13:01+0000">2020-02-14</span>
+        <p><a name="dcbf89a8-17ed-4a6d-ae7a-9858e785add2">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 15, 2020 08:10+0000">2020-02-15</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

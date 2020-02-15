@@ -1,6 +1,6 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
     <id value="notification-discharge"></id>
-    <url value="https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge"></url>
+    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge"></url>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664"></value>
@@ -15,11 +15,11 @@
         <code value="notification-discharge"></code>
         <display value="Notification Discharge"></display>
     </event>
-    <category value="Notification"></category>
+    <category value="notification"></category>
     <focus>
         <code value="Encounter"></code>
         <profile>
-            <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>
+            <reference value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"/>
         </profile>
         <min value="1"/>
         <max value="1"/>

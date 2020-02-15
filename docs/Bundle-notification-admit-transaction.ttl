@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/notification-admit-transaction> a fhir:Bundle;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/notification-admit-transaction> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "notification-admit-transaction"];
   fhir:Bundle.identifier [
@@ -71,11 +71,7 @@
 <urn:oid:87ea780f-7bb4-43a4-beba-caa5197e763a> a fhir:MessageHeader;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>event</b>: notification-admit (Details: [not stated] code notification-admit = 'notification-admit', stated as 'notification-admit')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href=\"ROUTE\">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 10 Oct 2010, 14:18:00</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0\">urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0</a></li><li><a href=\"urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca\">urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca</a></li><li><a href=\"urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9\">urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9</a></li></ul></div>"
-  ];
-  fhir:MessageHeader.event [
-     fhir:Coding.code [ fhir:value "notification-admit" ];
-     fhir:Coding.display [ fhir:value "notification-admit" ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href=\"ROUTE\">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0\">urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0</a></li><li><a href=\"urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca\">urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca</a></li><li><a href=\"urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9\">urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9</a></li></ul></div>"
   ];
   fhir:MessageHeader.destination [
      fhir:index 0;
@@ -92,7 +88,6 @@
      ];
      fhir:Reference.display [ fhir:value "RCB" ]
   ];
-  fhir:MessageHeader.timestamp [ fhir:value "2010-10-10T14:18:00.000+01:00"^^xsd:dateTime];
   fhir:MessageHeader.source [
      fhir:MessageHeader.source.name [ fhir:value "PAS" ];
      fhir:MessageHeader.source.endpoint [ fhir:value "PAS" ]
@@ -111,7 +106,7 @@
 <urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0> a fhir:Encounter;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: 13 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575\">urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:7fe49ce2-6aba-4630-9bd2-f89244c9b799\">OBS1</a></td><td>active</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'IMP', stated as 'inpatient encounter')</p><p><b>type</b>: 13 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575\">urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'REF', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:7fe49ce2-6aba-4630-9bd2-f89244c9b799\">OBS1</a></td><td>active</td></tr></table></div>"
   ];
   fhir:Encounter.identifier [
      fhir:index 0;
@@ -329,14 +324,13 @@
 <urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca> a fhir:Condition;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139-N39.3</p><p><b>clinicalStatus</b>: active</p><p><b>code</b>: Stress Incontinence <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/sid/icd-10 code 'N39.3' = 'N39.3', given as 'Stress Incontinence'})</span></p><p><b>subject</b>: <a href=\"urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575\">urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575</a></p><p><b>context</b>: <a href=\"urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0\">urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0</a></p><p><b>onset</b>: 9 Oct 2010, 09:00:00</p><p><b>asserter</b>: Dr Samuel Darwin</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139-N39.3</p><p><b>code</b>: Stress Incontinence <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/sid/icd-10 code 'N39.3' = 'N39.3', given as 'Stress Incontinence'})</span></p><p><b>subject</b>: <a href=\"urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575\">urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575</a></p><p><b>onset</b>: 9 Oct 2010, 09:00:00</p><p><b>asserter</b>: Dr Samuel Darwin</p></div>"
   ];
   fhir:Condition.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
      fhir:Identifier.value [ fhir:value "2139-N39.3" ]
   ];
-  fhir:Condition.clinicalStatus [ fhir:value "active"];
   fhir:Condition.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -347,9 +341,6 @@
   ];
   fhir:Condition.subject [
      fhir:Reference.reference [ fhir:value "urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575" ]
-  ];
-  fhir:Condition.context [
-     fhir:Reference.reference [ fhir:value "urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0" ]
   ];
   fhir:Condition.onsetDateTime [ fhir:value "2010-10-09T09:00:00+01:00"^^xsd:dateTime];
   fhir:Condition.asserter [
@@ -363,7 +354,7 @@
 <urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9> a fhir:Procedure;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139-ZZS4</p><p><b>status</b>: completed</p><p><b>code</b>: Colonic examination <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/Id/opcs-4 code 'ZZS4' = 'ZZS4', given as 'Colonic examination'})</span></p><p><b>subject</b>: <a href=\"urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575\">urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575</a></p><p><b>context</b>: <a href=\"urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0\">urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0</a></p><p><b>performed</b>: 20 Oct 2010, 20:56:00</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td>Dr Samuel Darwin</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139-ZZS4</p><p><b>status</b>: completed</p><p><b>code</b>: Colonic examination <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/Id/opcs-4 code 'ZZS4' = 'ZZS4', given as 'Colonic examination'})</span></p><p><b>subject</b>: <a href=\"urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575\">urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575</a></p><p><b>performed</b>: 20 Oct 2010, 20:56:00</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td>Dr Samuel Darwin</td></tr></table></div>"
   ];
   fhir:Procedure.identifier [
      fhir:index 0;
@@ -382,9 +373,6 @@
   fhir:Procedure.subject [
      fhir:Reference.reference [ fhir:value "urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575" ]
   ];
-  fhir:Procedure.context [
-     fhir:Reference.reference [ fhir:value "urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0" ]
-  ];
   fhir:Procedure.performedDateTime [ fhir:value "2010-10-20T20:56:00+01:00"^^xsd:dateTime];
   fhir:Procedure.performer [
      fhir:index 0;
@@ -399,7 +387,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/notification-admit-transaction.ttl> a owl:Ontology;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/notification-admit-transaction.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/patient-create> a fhir:Bundle;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/patient-create> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "patient-create"];
   fhir:Bundle.identifier [
@@ -26,11 +26,7 @@
   fhir:Resource.id [ fhir:value "f3dc4d1d-75c4-453c-8bf0-5769e97aba3e"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f3dc4d1d-75c4-453c-8bf0-5769e97aba3e</p><p><b>event</b>: Patient Create (Details: [not stated] code patient-create = 'patient-create', stated as 'Patient Create')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 2 Jan 2010, 12:15:00</p><p><b>focus</b>: <a href=\"urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785\">urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785</a></p></div>"
-  ];
-  fhir:MessageHeader.event [
-     fhir:Coding.code [ fhir:value "patient-create" ];
-     fhir:Coding.display [ fhir:value "Patient Create" ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f3dc4d1d-75c4-453c-8bf0-5769e97aba3e</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: RCB</p><p><b>focus</b>: <a href=\"urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785\">urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785</a></p></div>"
   ];
   fhir:MessageHeader.destination [
      fhir:index 0;
@@ -43,7 +39,6 @@
      ];
      fhir:Reference.display [ fhir:value "RCB" ]
   ];
-  fhir:MessageHeader.timestamp [ fhir:value "2010-01-02T12:15:00.000+00:00"^^xsd:dateTime];
   fhir:MessageHeader.focus [
      fhir:index 0;
      fhir:Reference.reference [ fhir:value "urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785" ]
@@ -136,7 +131,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/patient-create.ttl> a owl:Ontology;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/patient-create.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

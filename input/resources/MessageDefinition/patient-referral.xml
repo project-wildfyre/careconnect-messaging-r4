@@ -1,11 +1,12 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
     <id value="patient-referral"></id>
-    <url value="https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral"></url>
+    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/patient-referral"></url>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664"></value>
     </identifier>
     <version value="1.0.0"></version>
+    <name value="Patient Referral"></name>
     <title value="Patient Referral"></title>
     <status value="active"></status>
     <date value="2019-08-22T12:49:51.688+01:00"></date>
@@ -15,13 +16,13 @@
         <code value="patient-referral"></code>
         <display value="patient-referral"></display>
     </event>
-    <category value="Notification"></category>
+    <category value="notification"></category>
     <focus>
-        <code value="ReferralRequest"></code>
-        <profile>
-            <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"/>
-        </profile>
+        <code value="ServiceRequest"></code>
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest"/>
         <min value="1"/>
         <max value="1"/>
     </focus>
+    <graph value="https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition-patient-referral-message"/>
+
 </MessageDefinition>

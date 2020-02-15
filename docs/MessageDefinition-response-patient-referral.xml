@@ -3,14 +3,14 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
   <id value="response-patient-referral"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: response-patient-referral</p><p><b>url</b>: <a href="https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral">https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral</a></p><p><b>identifier</b>: c81b88dc-760e-4b1e-9cdb-c5f853630664</p><p><b>version</b>: 3.0.0</p><p><b>title</b>: Response Patient Referral</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright © 2020 XYZl</p><p><b>event</b>: Response Patient Referral (Details: https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2 code response-patient-referral = 'response-patient-referral', stated as 'Response Patient Referral')</p><p><b>category</b>: Notification</p><h3>Focus</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Profile</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>ReferralRequest</td><td><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1">https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1</a></td><td>1</td><td>1</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: response-patient-referral</p><p><b>url</b>: <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/response-patient-referral">https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/response-patient-referral</a></p><p><b>identifier</b>: c81b88dc-760e-4b1e-9cdb-c5f853630664</p><p><b>version</b>: 4.0.0</p><p><b>title</b>: Response Patient Referral</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright © 2020 XYZl</p><p><b>category</b>: notification</p><h3>Focus</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>ServiceRequest</td><td>1</td><td>1</td></tr></table></div>
   </text>
-  <url value="https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral"/>
+  <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/response-patient-referral"/>
   <identifier>
     <system value="https://tools.ietf.org/html/rfc4122"/>
     <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664"/>
   </identifier>
-  <version value="3.0.0"/>
+  <version value="4.0.0"/>
   <title value="Response Patient Referral"/>
   <status value="active"/>
   <date value="2019-08-22T12:49:51+01:00"/>
@@ -28,17 +28,9 @@
     </coding>
   </jurisdiction>
   <copyright value="Copyright &#xA9; 2020 XYZl"/>
-  <event>
-    <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
-    <code value="response-patient-referral"/>
-    <display value="Response Patient Referral"/>
-  </event>
-  <category value="Notification"/>
+  <category value="notification"/>
   <focus>
-    <code value="ReferralRequest"/>
-    <profile>
-      <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"/>
-    </profile>
+    <code value="ServiceRequest"/>
     <min value="1"/>
     <max value="1"/>
   </focus>

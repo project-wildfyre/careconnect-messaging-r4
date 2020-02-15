@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>CARECONNECT-MESSAGING-STU3\Cancel Patient Referral - JSON Representation - FHIR v3.0.2</title>
+    <title>CARECONNECT-MESSAGING-R4\Cancel Patient Referral - JSON Representation - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,14 +37,14 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"11.16"}
-    h3,h4,h5,h6{--heading-prefix:"11.16"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.10"}
+    h3,h4,h5,h6{--heading-prefix:"9.10"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
         
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>3.0.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -62,7 +62,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
   <li><a href="index.html">Care Connect Messaging</a></li>
@@ -86,12 +86,6 @@
       </li>
         <li>
             <a href="adt.html">Admission, Discharge and Transfers</a>
-        </li>
-        <li>
-            <a href="orders.html">Orders</a>
-        </li>
-        <li>
-            <a href="results.html">Results</a>
         </li>
     </ul>
   </li>
@@ -135,7 +129,7 @@
         <div class="row">
           <div class="inner-wrapper">
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v3.0.0). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <a name="root"> </a>
   <h2 id="root">Cancel Patient Referral - JSON Representation</h2>
   <p>
@@ -153,57 +147,51 @@
   
   <pre class="json">
 {
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition">resourceType</a>" : "MessageDefinition",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.id">id</a>" : "cancel-patient-referral",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: cancel-patient-referral&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\"https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral\"&gt;https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: c81b88dc-760e-4b1e-9cdb-c5f853630664&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 3.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Cancel Patient Referral&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 22 Aug 2019, 12:49:51&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: mayfield-is.co.uk&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United Kingdom of Great Britain and Northern Ireland (GBR) &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;copyright&lt;/b&gt;: Copyright &copy; 2020 NHS Digital&lt;/p&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: cancel-patient-referral (Details: https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2 code cancel-patient-referral = 'cancel-patient-referral', stated as 'cancel-patient-referral')&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Notification&lt;/p&gt;&lt;h3&gt;Focus&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Max&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;ReferralRequest&lt;/td&gt;&lt;td&gt;&lt;a href=\"https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1\"&gt;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition">resourceType</a>" : "MessageDefinition",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.id">id</a>" : "cancel-patient-referral",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: cancel-patient-referral&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/cancel-patient-referral\"&gt;https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/cancel-patient-referral&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: c81b88dc-760e-4b1e-9cdb-c5f853630664&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 4.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Cancel Patient Referral&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 22 Aug 2019, 12:49:51&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: mayfield-is.co.uk&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United Kingdom of Great Britain and Northern Ireland (GBR) &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;copyright&lt;/b&gt;: Copyright &copy; 2020 NHS Digital&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: notification&lt;/p&gt;&lt;h3&gt;Focus&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Max&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;ServiceRequest&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.url">url</a>" : "https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.identifier">identifier</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.system">system</a>" : "https://tools.ietf.org/html/rfc4122",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier#Identifier.value">value</a>" : "c81b88dc-760e-4b1e-9cdb-c5f853630664"
-  },
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.version">version</a>" : "3.0.0",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.title">title</a>" : "Cancel Patient Referral",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.date">date</a>" : "2019-08-22T12:49:51+01:00",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.publisher">publisher</a>" : "mayfield-is.co.uk",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.contact">contact</a>" : [
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.url">url</a>" : "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/cancel-patient-referral",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.identifier">identifier</a>" : [
     {
-      "<a href="http://hl7.org/fhir/STU3/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://tools.ietf.org/html/rfc4122",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "c81b88dc-760e-4b1e-9cdb-c5f853630664"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.version">version</a>" : "4.0.0",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.title">title</a>" : "Cancel Patient Referral",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.date">date</a>" : "2019-08-22T12:49:51+01:00",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.publisher">publisher</a>" : "mayfield-is.co.uk",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "kevin.mayfield@mayfield-is.co.uk"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "kevin.mayfield@mayfield-is.co.uk"
         }
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.jurisdiction">jurisdiction</a>" : [
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.jurisdiction">jurisdiction</a>" : [
     {
-      "<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
         {
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "826"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "826"
         }
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.copyright">copyright</a>" : "Copyright &copy; 2020 NHS Digital",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.event">event</a>" : {
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a>" : "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.code">code</a>" : "cancel-patient-referral",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.display">display</a>" : "cancel-patient-referral"
-  },
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.category">category</a>" : "Notification",
-  "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.focus">focus</a>" : [
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.copyright">copyright</a>" : "Copyright &copy; 2020 NHS Digital",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.category">category</a>" : "notification",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.focus">focus</a>" : [
     {
-      "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.focus.code">code</a>" : "ReferralRequest",
-      "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.focus.profile">profile</a>" : {
-        "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"
-      },
-      "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.focus.min">min</a>" : 1,
-      "<a href="http://hl7.org/fhir/STU3/messagedefinition.html#MessageDefinition.focus.max">max</a>" : "1"
+      "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.focus.code">code</a>" : "ServiceRequest",
+      "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.focus.min">min</a>" : 1,
+      "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.focus.max">max</a>" : "1"
     }
   ]
 }</pre>
@@ -221,8 +209,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="7852963a-df3f-41a8-8920-af730509d970">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.stu3#3.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Fri, Feb 14, 2020 13:01+0000">2020-02-14</span>
+        <p><a name="8c0f8cd5-a662-492a-911c-2f1ac1b936a1">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 15, 2020 08:10+0000">2020-02-15</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

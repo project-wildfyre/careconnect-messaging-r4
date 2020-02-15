@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/patient-referral> a fhir:Bundle;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/patient-referral> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "patient-referral"];
   fhir:Bundle.identifier [
@@ -39,22 +39,11 @@
   fhir:Resource.id [ fhir:value "3d4a07cc-ff85-45c2-8f60-202d5506db02"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d4a07cc-ff85-45c2-8f60-202d5506db02</p><p><b>event</b>: patient-referral (Details: [not stated] code patient-referral = 'patient-referral', stated as 'patient-referral')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>receiver</b>: DHU HEALTH CARE C.I.C</p><p><b>sender</b>: YORKSHIRE AMBULANCE SERVICE NHS TRUST</p><p><b>timestamp</b>: 1 Nov 2010, 15:12:00</p><p><b>focus</b>: <a href=\"urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be\">urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be</a></p></div>"
-  ];
-  fhir:MessageHeader.event [
-     fhir:Coding.code [ fhir:value "patient-referral" ];
-     fhir:Coding.display [ fhir:value "patient-referral" ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d4a07cc-ff85-45c2-8f60-202d5506db02</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: YORKSHIRE AMBULANCE SERVICE NHS TRUST</p><p><b>focus</b>: <a href=\"urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be\">urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be</a></p></div>"
   ];
   fhir:MessageHeader.destination [
      fhir:index 0;
      fhir:MessageHeader.destination.name [ fhir:value "ROUTE" ]
-  ];
-  fhir:MessageHeader.receiver [
-     fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/ods-site-code" ];
-       fhir:Identifier.value [ fhir:value "NNJ" ]
-     ];
-     fhir:Reference.display [ fhir:value "DHU HEALTH CARE C.I.C" ]
   ];
   fhir:MessageHeader.sender [
      fhir:Reference.identifier [
@@ -63,88 +52,34 @@
      ];
      fhir:Reference.display [ fhir:value "YORKSHIRE AMBULANCE SERVICE NHS TRUST" ]
   ];
-  fhir:MessageHeader.timestamp [ fhir:value "2010-11-01T15:12:00.000+00:00"^^xsd:dateTime];
   fhir:MessageHeader.focus [
      fhir:index 0;
      fhir:Reference.reference [ fhir:value "urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be" ]
   ] .
 
-<urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be> a fhir:ReferralRequest;
+<urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be> a fhir:ServiceRequest;
   fhir:Resource.id [ fhir:value "6eb72362-cc88-4c54-bd05-a49885d370be"];
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2019-06-26T16:08:17.275+00:00"^^xsd:dateTime ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6eb72362-cc88-4c54-bd05-a49885d370be</p><p><b>meta</b>: </p><p><b>identifier</b>: R3</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>type</b>: Referral to medical emergency team <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '713400007' = 'Referral to medical emergency team', given as 'Referral to medical emergency team'})</span></p><p><b>serviceRequested</b>: Surgical-Accident &amp; emergency <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '394576009' = 'Accident &amp; emergency (qualifier value)', given as 'Surgical-Accident &amp; emergency'})</span></p><p><b>subject</b>: <a href=\"urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\">MRS FREDICA SMITH</a></p><p><b>context</b>: <a href=\"urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c\">urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c</a></p><p><b>authoredOn</b>: 8 Nov 2018, 12:30:00</p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td>Dr Samuel Darwin</td><td>YORKSHIRE AMBULANCE SERVICE NHS TRUST</td></tr></table><p><b>specialty</b>: ACCIDENT AND EMERGENCY <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '180' = '180', given as 'ACCIDENT AND EMERGENCY'})</span></p><p><b>recipient</b>: DHU HEALTH CARE C.I.C</p><p><b>reasonCode</b>: Intermittent vomiting <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '236083006' = 'Intermittent vomiting', given as 'Intermittent vomiting'})</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6eb72362-cc88-4c54-bd05-a49885d370be</p><p><b>meta</b>: </p><p><b>identifier</b>: R3</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\">MRS FREDICA SMITH</a></p><p><b>authoredOn</b>: 8 Nov 2018, 12:30:00</p><p><b>requester</b>: </p><p><b>reasonCode</b>: Intermittent vomiting <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '236083006' = 'Intermittent vomiting', given as 'Intermittent vomiting'})</span></p></div>"
   ];
-  fhir:ReferralRequest.identifier [
+  fhir:ServiceRequest.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "https://fhir.interopen.org/ReferralRequest/Identifier" ];
      fhir:Identifier.value [ fhir:value "R3" ]
   ];
-  fhir:ReferralRequest.status [ fhir:value "completed"];
-  fhir:ReferralRequest.intent [ fhir:value "order"];
-  fhir:ReferralRequest.type [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:713400007;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "713400007" ];
-       fhir:Coding.display [ fhir:value "Referral to medical emergency team" ]
-     ]
-  ];
-  fhir:ReferralRequest.serviceRequested [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:394576009;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "394576009" ];
-       fhir:Coding.display [ fhir:value "Surgical-Accident & emergency" ]
-     ]
-  ];
-  fhir:ReferralRequest.subject [
+  fhir:ServiceRequest.status [ fhir:value "completed"];
+  fhir:ServiceRequest.intent [ fhir:value "order"];
+  fhir:ServiceRequest.subject [
      fhir:Reference.reference [ fhir:value "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4" ];
      fhir:Reference.display [ fhir:value "MRS FREDICA SMITH" ]
   ];
-  fhir:ReferralRequest.context [
-     fhir:Reference.reference [ fhir:value "urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c" ]
-  ];
-  fhir:ReferralRequest.authoredOn [ fhir:value "2018-11-08T12:30:00+00:00"^^xsd:dateTime];
-  fhir:ReferralRequest.requester [
-     fhir:ReferralRequest.requester.agent [
-       fhir:Reference.identifier [
-         fhir:Identifier.system [ fhir:value "https://fhir.hl7.org.uk/Id/gmc-number" ];
-         fhir:Identifier.value [ fhir:value "C3456789" ]
-       ];
-       fhir:Reference.display [ fhir:value "Dr Samuel Darwin" ]
-     ];
-     fhir:ReferralRequest.requester.onBehalfOf [
-       fhir:Reference.identifier [
-         fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/ods-site-code" ];
-         fhir:Identifier.value [ fhir:value "RX8" ]
-       ];
-       fhir:Reference.display [ fhir:value "YORKSHIRE AMBULANCE SERVICE NHS TRUST" ]
-     ]
-  ];
-  fhir:ReferralRequest.specialty [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1" ];
-       fhir:Coding.code [ fhir:value "180" ];
-       fhir:Coding.display [ fhir:value "ACCIDENT AND EMERGENCY" ]
-     ]
-  ];
-  fhir:ReferralRequest.recipient [
-     fhir:index 0;
-     fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/ods-site-code" ];
-       fhir:Identifier.value [ fhir:value "NNJ" ]
-     ];
-     fhir:Reference.display [ fhir:value "DHU HEALTH CARE C.I.C" ]
-  ];
-  fhir:ReferralRequest.reasonCode [
+  fhir:ServiceRequest.authoredOn [ fhir:value "2018-11-08T12:30:00+00:00"^^xsd:dateTime];
+  fhir:ServiceRequest.requester [];
+  fhir:ServiceRequest.reasonCode [
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -159,7 +94,7 @@
   fhir:Resource.id [ fhir:value "38eeb5d7-e689-4ec5-81d2-f51f3011c72c"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p><b>identifier</b>: 2141</p><p><b>status</b>: in-progress</p><p><b>class</b>: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: 13 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\">urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'admitter', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 1 Nov 2010, 16:00:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>Usual place of residence <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19', given as 'Usual place of residence'})</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc\">South Yorks 999</a></td><td>active</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p><b>identifier</b>: 2141</p><p><b>status</b>: in-progress</p><p><b>class</b>: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'AMB', stated as 'ambulatory')</p><p><b>type</b>: 13 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\">urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'ADM', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'REF', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 1 Nov 2010, 16:00:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>Usual place of residence <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19', given as 'Usual place of residence'})</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc\">South Yorks 999</a></td><td>active</td></tr></table></div>"
   ];
   fhir:Encounter.identifier [
      fhir:index 0;
@@ -391,7 +326,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/patient-referral.ttl> a owl:Ontology;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/patient-referral.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

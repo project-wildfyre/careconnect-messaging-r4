@@ -45,7 +45,7 @@
         {
             "fullUrl": "urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be",
             "resource": {
-                "resourceType": "ReferralRequest",
+                "resourceType": "ServiceRequest",
                 "id": "6eb72362-cc88-4c54-bd05-a49885d370be",
                 "meta": {
                     "lastUpdated": "2019-06-26T16:08:17.275+00:00"

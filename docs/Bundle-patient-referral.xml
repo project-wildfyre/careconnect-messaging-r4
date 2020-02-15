@@ -12,22 +12,11 @@
       <MessageHeader>
         <id value="3d4a07cc-ff85-45c2-8f60-202d5506db02"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d4a07cc-ff85-45c2-8f60-202d5506db02</p><p><b>event</b>: patient-referral (Details: [not stated] code patient-referral = 'patient-referral', stated as 'patient-referral')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>receiver</b>: DHU HEALTH CARE C.I.C</p><p><b>sender</b>: YORKSHIRE AMBULANCE SERVICE NHS TRUST</p><p><b>timestamp</b>: 1 Nov 2010, 15:12:00</p><p><b>focus</b>: <a href="urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be">urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d4a07cc-ff85-45c2-8f60-202d5506db02</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: YORKSHIRE AMBULANCE SERVICE NHS TRUST</p><p><b>focus</b>: <a href="urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be">urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be</a></p></div>
         </text>
-        <event>
-          <code value="patient-referral"/>
-          <display value="patient-referral"/>
-        </event>
         <destination>
           <name value="ROUTE"/>
         </destination>
-        <receiver>
-          <identifier>
-            <system value="https://fhir.nhs.uk/Id/ods-site-code"/>
-            <value value="NNJ"/>
-          </identifier>
-          <display value="DHU HEALTH CARE C.I.C"/>
-        </receiver>
         <sender>
           <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
@@ -35,7 +24,6 @@
           </identifier>
           <display value="YORKSHIRE AMBULANCE SERVICE NHS TRUST"/>
         </sender>
-        <timestamp value="2010-11-01T15:12:00.000+00:00"/>
         <focus>
           <reference value="urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be"/>
         </focus>
@@ -45,13 +33,13 @@
   <entry>
     <fullUrl value="urn:oid:6eb72362-cc88-4c54-bd05-a49885d370be"/>
     <resource>
-      <ReferralRequest>
+      <ServiceRequest>
         <id value="6eb72362-cc88-4c54-bd05-a49885d370be"/>
         <meta>
           <lastUpdated value="2019-06-26T16:08:17.275+00:00"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6eb72362-cc88-4c54-bd05-a49885d370be</p><p><b>meta</b>: </p><p><b>identifier</b>: R3</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>type</b>: Referral to medical emergency team <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '713400007' = 'Referral to medical emergency team', given as 'Referral to medical emergency team'})</span></p><p><b>serviceRequested</b>: Surgical-Accident &amp; emergency <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '394576009' = 'Accident &amp; emergency (qualifier value)', given as 'Surgical-Accident &amp; emergency'})</span></p><p><b>subject</b>: <a href="urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4">MRS FREDICA SMITH</a></p><p><b>context</b>: <a href="urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c">urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c</a></p><p><b>authoredOn</b>: 8 Nov 2018, 12:30:00</p><h3>Requesters</h3><table class="grid"><tr><td>-</td><td><b>Agent</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td>Dr Samuel Darwin</td><td>YORKSHIRE AMBULANCE SERVICE NHS TRUST</td></tr></table><p><b>specialty</b>: ACCIDENT AND EMERGENCY <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '180' = '180', given as 'ACCIDENT AND EMERGENCY'})</span></p><p><b>recipient</b>: DHU HEALTH CARE C.I.C</p><p><b>reasonCode</b>: Intermittent vomiting <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '236083006' = 'Intermittent vomiting', given as 'Intermittent vomiting'})</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6eb72362-cc88-4c54-bd05-a49885d370be</p><p><b>meta</b>: </p><p><b>identifier</b>: R3</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4">MRS FREDICA SMITH</a></p><p><b>authoredOn</b>: 8 Nov 2018, 12:30:00</p><p><b>requester</b>: </p><p><b>reasonCode</b>: Intermittent vomiting <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '236083006' = 'Intermittent vomiting', given as 'Intermittent vomiting'})</span></p></div>
         </text>
         <identifier>
           <system value="https://fhir.interopen.org/ReferralRequest/Identifier"/>
@@ -59,58 +47,12 @@
         </identifier>
         <status value="completed"/>
         <intent value="order"/>
-        <type>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="713400007"/>
-            <display value="Referral to medical emergency team"/>
-          </coding>
-        </type>
-        <serviceRequested>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="394576009"/>
-            <display value="Surgical-Accident &amp; emergency"/>
-          </coding>
-        </serviceRequested>
         <subject>
           <reference value="urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4"/>
           <display value="MRS FREDICA SMITH"/>
         </subject>
-        <context>
-          <reference value="urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c"/>
-        </context>
         <authoredOn value="2018-11-08T12:30:00+00:00"/>
-        <requester>
-          <agent>
-            <identifier>
-              <system value="https://fhir.hl7.org.uk/Id/gmc-number"/>
-              <value value="C3456789"/>
-            </identifier>
-            <display value="Dr Samuel Darwin"/>
-          </agent>
-          <onBehalfOf>
-            <identifier>
-              <system value="https://fhir.nhs.uk/Id/ods-site-code"/>
-              <value value="RX8"/>
-            </identifier>
-            <display value="YORKSHIRE AMBULANCE SERVICE NHS TRUST"/>
-          </onBehalfOf>
-        </requester>
-        <specialty>
-          <coding>
-            <system value="https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1"/>
-            <code value="180"/>
-            <display value="ACCIDENT AND EMERGENCY"/>
-          </coding>
-        </specialty>
-        <recipient>
-          <identifier>
-            <system value="https://fhir.nhs.uk/Id/ods-site-code"/>
-            <value value="NNJ"/>
-          </identifier>
-          <display value="DHU HEALTH CARE C.I.C"/>
-        </recipient>
+        <requester/>
         <reasonCode>
           <coding>
             <system value="http://snomed.info/sct"/>
@@ -118,7 +60,7 @@
             <display value="Intermittent vomiting"/>
           </coding>
         </reasonCode>
-      </ReferralRequest>
+      </ServiceRequest>
     </resource>
   </entry>
   <entry>
@@ -127,7 +69,7 @@
       <Encounter>
         <id value="38eeb5d7-e689-4ec5-81d2-f51f3011c72c"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p><b>identifier</b>: 2141</p><p><b>status</b>: in-progress</p><p><b>class</b>: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: 13 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href="urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4">urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'admitter', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 1 Nov 2010, 16:00:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>Usual place of residence <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19', given as 'Usual place of residence'})</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href="urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc">South Yorks 999</a></td><td>active</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p><b>identifier</b>: 2141</p><p><b>status</b>: in-progress</p><p><b>class</b>: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'AMB', stated as 'ambulatory')</p><p><b>type</b>: 13 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href="urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4">urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'ADM', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'REF', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 1 Nov 2010, 16:00:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>Usual place of residence <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19', given as 'Usual place of residence'})</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href="urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc">South Yorks 999</a></td><td>active</td></tr></table></div>
         </text>
         <identifier>
           <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>

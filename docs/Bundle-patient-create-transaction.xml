@@ -12,12 +12,8 @@
     <resource>
       <MessageHeader>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>event</b>: patient-create (Details: [not stated] code patient-create = 'patient-create', stated as 'patient-create')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href="ROUTE">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><p><b>timestamp</b>: 2 Jan 2010, 12:15:00</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href="PAS">PAS</a></td></tr></table><p><b>focus</b>: <a href="urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1">urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href="ROUTE">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href="PAS">PAS</a></td></tr></table><p><b>focus</b>: <a href="urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1">urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1</a></p></div>
         </text>
-        <event>
-          <code value="patient-create"/>
-          <display value="patient-create"/>
-        </event>
         <destination>
           <name value="ROUTE"/>
           <target>
@@ -32,7 +28,6 @@
           </identifier>
           <display value="RCB"/>
         </sender>
-        <timestamp value="2010-01-02T12:15:00.000+00:00"/>
         <source>
           <name value="PAS"/>
           <endpoint value="PAS"/>

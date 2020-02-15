@@ -3,9 +3,9 @@
 
 The aim of this Implementation Guide is to *suggest* the minimal/recommended messaging capabilities of a clinical system so that it **forms part of LHCR and/or Hospital ecosystem**.
 
-For FHIR this guide builds on the conformance resources in [INTEROPen Care Connect STU3 Implementation Guide](https://interopen.github.io/careconnect-base-stu3/) 
+For FHIR this guide builds on the conformance resources in [Unofficial UK Core Implementation Guide](https://interopen.github.io/careconnect-base-stu3/) 
 
-This IG does not describe an OPEN API (RESTful API). This can be found here: [Care Conect API](https://kevinmayfield.github.io/careconnect-api-stu3/)
+This IG does not describe an OPEN API (RESTful API). This can be found here: [Care Conect API](https://project-wildfyre.github.io/careconnect-api-R4/)
 
 ### Inbound Messaging API
 

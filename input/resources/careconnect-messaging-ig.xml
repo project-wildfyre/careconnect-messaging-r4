@@ -22,15 +22,16 @@
       <!-- This is the code for universal -->
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="826"/>
-      <!-- Change to this if the IG is country-specific
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-      -->
     </coding>
   </jurisdiction>
   <packageId value="careconnect.messaging.r4"/>
   <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
+  <dependsOn>
+   <!-- <uri value="https://project-wildfyre.github.io/uk-testcore-r4/ImplementationGuide/uk.testcore.r4" /> -->
+    <packageId value="uk.testcore.r4"/>
+    <version value="dev"/>
+  </dependsOn>
   <definition>
     <grouping id="uk-examples">
       <name value="CareConnect Examples"></name>

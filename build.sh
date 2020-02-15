@@ -2,3 +2,4 @@ JAVA -jar input-cache/org.hl7.fhir.publisher.jar -ig ig.ini -tool jekyll -destin
 rm -r docs
 rm output/*.md
 mv output docs
+cp package-list.json docs

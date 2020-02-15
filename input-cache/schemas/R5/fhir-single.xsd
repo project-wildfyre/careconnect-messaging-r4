@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Wed, Feb 12, 2020 23:01+0000 for FHIR v4.2.0 
+  Generated on Sat, Feb 15, 2020 17:35+0000 for FHIR v4.2.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.2.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -17788,12 +17788,12 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
   </xs:complexType>
   <xs:element name="DeviceUseStatement" type="DeviceUseStatement">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A record of a device being used by a patient where the record is the result of a report from the patient or another clinician.</xs:documentation>
+      <xs:documentation xml:lang="en">A record of a device being used by a patient where the record is the result of a report from the patient or a clinician.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="DeviceUseStatement">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A record of a device being used by a patient where the record is the result of a report from the patient or another clinician.</xs:documentation>
+      <xs:documentation xml:lang="en">A record of a device being used by a patient where the record is the result of a report from the patient or a clinician.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -17814,6 +17814,11 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">A code representing the patient or other source's judgment about the state of the device used that this statement is about.  Generally this will be active or completed.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">This attribute indicates a category for the statement - The device statement may be made in an inpatient or outpatient settting (inpatient | outpatient | community | patientspecified).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="subject" minOccurs="1" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">The patient who used the device.</xs:documentation>
@@ -17824,6 +17829,11 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">Allows linking the DeviceUseStatement to the underlying Request, or to other information that supports or is used to derive the DeviceUseStatement.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="context" minOccurs="0" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The encounter or episode of care that establishes the context for this device use statement.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
               <xs:documentation xml:lang="en">How often the device was used.</xs:documentation>
@@ -17832,19 +17842,29 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
             <xs:element name="timingPeriod" type="Period"/>
             <xs:element name="timingDateTime" type="dateTime"/>
           </xs:choice>
-          <xs:element name="recordedOn" minOccurs="0" maxOccurs="1" type="dateTime">
+          <xs:element name="dateAsserted" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The time at which the statement was made/recorded.</xs:documentation>
+              <xs:documentation xml:lang="en">The time at which the statement was recorded by informationSource.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="source" minOccurs="0" maxOccurs="1" type="Reference">
+          <xs:element name="usageStatus" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The status of the device usage, for example always, sometimes, never. This is not the same as the status of the statement.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="usageReason" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The reason for asserting the usage status - for example forgot, lost, stolen, broken.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="informationSource" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Who reported the device was being used by the patient.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="device" minOccurs="1" maxOccurs="1" type="Reference">
+          <xs:element name="device" minOccurs="1" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The details of the device used.</xs:documentation>
+              <xs:documentation xml:lang="en">Code or Reference to device used.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="reason" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
@@ -17852,7 +17872,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">Reason or justification for the use of the device. A coded concept, or another resource whose existence justifies this DeviceUseStatement.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="bodySite" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="bodySite" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Indicates the anotomic location on the subject's body where the device was used ( i.e. the target).</xs:documentation>
            </xs:annotation>

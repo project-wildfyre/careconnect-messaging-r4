@@ -31,7 +31,7 @@
                         <valueString value="#referralRequest"/>
                     </extension>
                     <type value="ServiceRequest"/>
-                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"/>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest"/>
                 </target>
             </link>
         </target>
@@ -43,7 +43,7 @@
         <description value="ITK ServiceRequest - This is a section in a FHIR Document"/>
         <target>
             <type value="ServiceRequest"/>
-            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest"/>
             <link>
                 <path value="ServiceRequest.subject"/>
                 <min value="1"/>
@@ -93,7 +93,7 @@
                         <valueString value="#recipientService"/>
                     </extension>
                     <type value="HealthcareService"/>
-                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"/>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService"/>
                 </target>
             </link>
             <link>
@@ -119,7 +119,7 @@
                         <valueString value="#questionnaireResponse"/>
                     </extension>
                     <type value="QuestionnaireResponse"/>
-                    <profile value="http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse"/>
+                    <profile value="http://hl7.org/fhir/R4/StructureDefinition/QuestionnaireResponse"/>
                 </target>
             </link>
             <link>
@@ -132,7 +132,7 @@
                         <valueString value="#consent"/>
                     </extension>
                     <type value="Consent"/>
-                    <profile value="http://hl7.org/fhir/STU3/StructureDefinition/Consent"/>
+                    <profile value="http://hl7.org/fhir/R4/StructureDefinition/Consent"/>
                 </target>
             </link>
             <link>
@@ -145,7 +145,7 @@
                         <valueString value="#composition"/>
                     </extension>
                     <type value="Composition"/>
-                    <profile value="http://hl7.org/fhir/STU3/StructureDefinition/Composition"/>
+                    <profile value="http://hl7.org/fhir/R4/StructureDefinition/Composition"/>
                 </target>
             </link>
         </target>
@@ -168,7 +168,7 @@
                         <valueString value="#location"/>
                     </extension>
                     <type value="Location"/>
-                    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1"/>
+                    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location"/>
                 </target>
             </link>
         </target>
@@ -190,7 +190,7 @@
         <description value="Healthcare Service"/>
         <target>
             <type value="HealthcareService"/>
-            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService"/>
         </target>
     </link>
     <link id="#location">
@@ -200,7 +200,7 @@
         <description value="Delivery Location"/>
         <target>
             <type value="Location"/>
-            <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Delivery-Location-1"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location"/>
         </target>
     </link>
     <link id="#patient">
@@ -248,7 +248,7 @@
         <description value="ITK Consent / ITK Permission to View Section"/>
         <target>
             <type value="Consent"/>
-            <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Consent-1"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent"/>
         </target>
     </link>
     <link id="#questionnaireResponse">
@@ -258,7 +258,7 @@
         <description value="ITK Triage Attachment - this is a blob not questionnaire response"/>
         <target>
             <type value="QuestionnaireResponse"/>
-            <profile value="http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse"/>
+            <profile value="http://hl7.org/fhir/R4/StructureDefinition/QuestionnaireResponse"/>
         </target>
     </link>
     <link id="#composition">
@@ -268,7 +268,7 @@
         <description value="Clinical Document"/>
         <target>
             <type value="Composition"/>
-            <profile value="http://hl7.org/fhir/STU3/StructureDefinition/Composition"/>
+            <profile value="http://hl7.org/fhir/R4/StructureDefinition/Composition"/>
         </target>
     </link>
 </GraphDefinition>

@@ -3,9 +3,9 @@
 
 err = 224, warn = 22, info = 68
 IG Publisher Version: v1.0.64-SNAPSHOT
-Generated Sun Feb 16 10:27:08 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Sun Feb 16 11:15:54 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
- Build Errors : 68 / 1
+ Build Errors : 71 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-admit : 12 / 9
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-admit-transaction : 12 / 9
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-discharge : 12 / 4
@@ -52,10 +52,13 @@ ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/Bundle-patient-referral.json.html#/html/body/div/div/div/p/a at Line 509, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/Bundle-patient-referral.ttl.html#/html/body/div/div/div/p/a at Line 465, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/Bundle-patient-referral.xml.html#/html/body/div/div/div/p/a at Line 450, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/blockquote/p/a at Line 168, column 1902: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 3645: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 5654: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.json.html#/html/body/div/div/div/p/a at Line 558, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.ttl.html#/html/body/div/div/div/p/a at Line 525, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.xml.html#/html/body/div/div/div/p/a at Line 486, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.xml.html#/html/body/div/div/div/p/a at Line 485, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/MessageDefinition-cancel-patient-referral.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/MessageDefinition-cancel-patient-referral.json.html#/html/body/div/div/div/p/a at Line 216, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/MessageDefinition-cancel-patient-referral.ttl.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
@@ -227,14 +230,14 @@ WARNING: GraphDefinition/patient-referral-message: GraphDefinition.link[1].targe
 ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[3].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
 ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[4].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
 ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[5].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[5].target[0].profile: URL value 'http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse' does not resolve
+ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[5].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/QuestionnaireResponse' does not resolve
 ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[6].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[6].target[0].profile: URL value 'http://hl7.org/fhir/STU3/StructureDefinition/Consent' does not resolve
+ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[6].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Consent' does not resolve
 ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[7].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[7].target[0].profile: URL value 'http://hl7.org/fhir/STU3/StructureDefinition/Composition' does not resolve
+ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[1].target[0].link[7].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Composition' does not resolve
 ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[2].target[0].link[0].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[9].target[0].profile: URL value 'http://hl7.org/fhir/STU3/StructureDefinition/QuestionnaireResponse' does not resolve
-ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[10].target[0].profile: URL value 'http://hl7.org/fhir/STU3/StructureDefinition/Composition' does not resolve
+ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[9].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/QuestionnaireResponse' does not resolve
+ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[10].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Composition' does not resolve
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/cancel-patient-referral.xml ==
 ERROR: /f:MessageDefinition: Undefined element 'event'
 ERROR: /f:MessageDefinition/f:focus/f:profile: Undefined element 'reference'

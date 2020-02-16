@@ -19,7 +19,7 @@
     <focus>
         <code value="ServiceRequest"></code>
         <profile>
-            <reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1"/>
+            <reference value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest"/>
         </profile>
         <min value="1"/>
         <max value="1"/>

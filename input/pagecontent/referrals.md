@@ -14,7 +14,7 @@ Not a common standard within the UK. Internationally REF^R12 is used.
 
 #### Patient Referral - HL7 v3 / ITK and FHIR DSTU2 
 
-NHS Digital has produced a number of HL7v3 based referral messages. These include eReferral, NHS 111 and Social Care ADW
+Project Wildfyre has produced a number of HL7v3 based referral messages. These include eReferral, NHS 111 and Social Care ADW
 
 #### Patient Referral - FHIR Message Definition
 
@@ -33,7 +33,7 @@ This would typically consist of the following resources:
 |----------------------------|-----|-----|
 {: .grid }
 
-The content of the Composition (Referral Letter) is not discussed here. Please see NHS Digital Transfer of Care projects for details.
+The content of the Composition (Referral Letter) is not discussed here. Please see Project Wildfyre Transfer of Care projects for details.
 Composition (/FHIR Document) may be replaced with traditional documents such as a letter in PDF format. 
 
 ### Patient Referral and Resposnse - Exchange of Fire

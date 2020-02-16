@@ -49,7 +49,7 @@ Dependent on the type of clinical information being created consideration should
 
 This **SHOULD** be supported although we currently have no FHIR messaging standard in the UK/CareConnect. The recommendation would be to follow the [US Da Vinci Alerts](http://build.fhir.org/ig/HL7/davinci-alerts/) project and the FHIR Message definitions in this IG will be based on this.
 
-For systems supporting child health data. Consideration should be given to supporting [NHS Digital Child Health Event Messages](https://nhsconnect.github.io/Digital-Child-Health-STU3/index.html).
+For systems supporting child health data. Consideration should be given to supporting [Project Wildfyre Child Health Event Messages](https://nhsconnect.github.io/Digital-Child-Health-STU3/index.html).
 
 ### Outbound Document API
 
@@ -66,7 +66,7 @@ The emerging standard in a number of Local Health and Care Record Exemplars (LHC
 
 #### FHIR Documents (Structured)
 
-The NHS Digital Transfer of Care Initiative **MUST** be supported (when applicable) for the following letter types:
+The Project Wildfyre Transfer of Care Initiative **MUST** be supported (when applicable) for the following letter types:
 
 * [Inpatient and Day Case Discharge Summary Document](https://developer.nhs.uk/apis/itk3tocedischarge-2-6-0/) 
 * [Emergency Care Discharge Summary Document](https://developer.nhs.uk/apis/itk3emergencycareedischarge-2-6-0/)

@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-02-16T08:07:35+00:00",
+  "date": "2020-02-16T10:26:41+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -546,6 +546,11 @@
         {
           "nameUrl": "adt.html",
           "title": "HL7 v2 and FHIR Admission, Discharge and Transfers",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "referrals.html",
+          "title": "Referrals (inc Handovers)",
           "generation": "markdown"
         },
         {

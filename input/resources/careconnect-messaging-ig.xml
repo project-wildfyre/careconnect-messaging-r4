@@ -169,6 +169,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="referrals.html"/>
+        <title value="Referrals (inc Handovers)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="messagedefinitions.html"/>
         <title value="Message Definitions"/>
         <generation value="markdown"/>

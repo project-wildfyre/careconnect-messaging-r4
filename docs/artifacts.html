@@ -146,68 +146,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">CareConnect Examples</a>
+         <a href="#1">Behavior: Message Definitions</a>
       </li>
       <li>
-         <a href="#2">Behavior: Message Definitions</a>
+         <a href="#2">Structures: Graph Definitions</a>
       </li>
       <li>
-         <a href="#3">Structures: Graph Definitions</a>
-      </li>
-      <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#3">Example: Example Instances</a>
       </li>
    </ul>
 </div>
 <div>
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>CareConnect Examples </h3>
-   <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-notification-admit.html" title="Bundle/notification-admit">notification-admit</a>
-               </td>
-               <td>Notifiation Admission FHIR Message - Admit a patient</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-notification-admit-transaction.html" title="Bundle/notification-admit-transaction">notification-admit-transaction</a>
-               </td>
-               <td>Notifiation Admission FHIR Transaction - Admit a patient</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-notification-discharge.html" title="Bundle/notification-discharge">Notification Discharge FHIR Message</a>
-               </td>
-               <td>Notification Discharge FHIR Message - Discharge a patient</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-notification-discharge-transaction.html" title="Bundle/notification-discharge-transaction">Notification Discharge FHIR Transaction</a>
-               </td>
-               <td>Notification Discharge FHIR Transaction - Discharge a patient</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-patient-create.html" title="Bundle/patient-create">Patient Create FHIR Message</a>
-               </td>
-               <td>Patient Create FHIR Message - Add person information</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-patient-create-transaction.html" title="Bundle/patient-create-transaction">Patient Create FHIR Transaction</a>
-               </td>
-               <td>Patient Create FHIR Transaction - Add person information</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
    <h3>Behavior: Message Definitions </h3>
    <p>These define the types of messages that can be sent and/or received by systems complying with this implementation guide</p>
    <p>
@@ -253,7 +204,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="2"> </a>
    <h3>Structures: Graph Definitions </h3>
    <p>These define collections of interrelated resources that are useful to pass around as a group</p>
    <p>
@@ -269,13 +220,49 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="3"> </a>
    <h3>Example: Example Instances </h3>
    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
    <p>
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-notification-admit.html" title="Bundle/notification-admit">notification-admit</a>
+               </td>
+               <td>Notifiation Admission FHIR Message - Admit a patient</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-notification-admit-transaction.html" title="Bundle/notification-admit-transaction">notification-admit-transaction</a>
+               </td>
+               <td>Notifiation Admission FHIR Transaction - Admit a patient</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-notification-discharge.html" title="Bundle/notification-discharge">Notification Discharge FHIR Message</a>
+               </td>
+               <td>Notification Discharge FHIR Message - Discharge a patient</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-notification-discharge-transaction.html" title="Bundle/notification-discharge-transaction">Notification Discharge FHIR Transaction</a>
+               </td>
+               <td>Notification Discharge FHIR Transaction - Discharge a patient</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-patient-create.html" title="Bundle/patient-create">Patient Create FHIR Message</a>
+               </td>
+               <td>Patient Create FHIR Message - Add person information</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-patient-create-transaction.html" title="Bundle/patient-create-transaction">Patient Create FHIR Transaction</a>
+               </td>
+               <td>Patient Create FHIR Transaction - Add person information</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Bundle-patient-referral.html" title="Bundle/patient-referral">Patient Referral Example</a>
@@ -297,8 +284,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="20be8cbe-cb93-40c6-abfb-66b3fe654664">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 16, 2020 11:15+0000">2020-02-16</span>
+        <p><a name="d22f442f-a54f-4feb-a1af-df49c11b2be6">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 16, 2020 11:21+0000">2020-02-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

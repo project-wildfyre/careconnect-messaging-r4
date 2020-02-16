@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-02-16T11:15:26+00:00",
+  "date": "2020-02-16T11:21:42+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -268,13 +268,6 @@
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
-    "grouping": [
-      {
-        "id": "uk-examples",
-        "name": "CareConnect Examples",
-        "description": "These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"
-      }
-    ],
     "resource": [
       {
         "extension": [
@@ -292,8 +285,7 @@
         },
         "name": "notification-admit",
         "description": "Notifiation Admission FHIR Message - Admit a patient",
-        "exampleBoolean": true,
-        "groupingId": "uk-examples"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -311,8 +303,7 @@
         },
         "name": "notification-admit-transaction",
         "description": "Notifiation Admission FHIR Transaction - Admit a patient",
-        "exampleBoolean": true,
-        "groupingId": "uk-examples"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -330,8 +321,7 @@
         },
         "name": "Notification Discharge FHIR Message",
         "description": "Notification Discharge FHIR Message - Discharge a patient",
-        "exampleBoolean": true,
-        "groupingId": "uk-examples"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -349,8 +339,7 @@
         },
         "name": "Notification Discharge FHIR Transaction",
         "description": "Notification Discharge FHIR Transaction - Discharge a patient",
-        "exampleBoolean": true,
-        "groupingId": "uk-examples"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -368,8 +357,7 @@
         },
         "name": "Patient Create FHIR Message",
         "description": "Patient Create FHIR Message - Add person information",
-        "exampleBoolean": true,
-        "groupingId": "uk-examples"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -387,8 +375,7 @@
         },
         "name": "Patient Create FHIR Transaction",
         "description": "Patient Create FHIR Transaction - Add person information",
-        "exampleBoolean": true,
-        "groupingId": "uk-examples"
+        "exampleBoolean": true
       },
       {
         "extension": [

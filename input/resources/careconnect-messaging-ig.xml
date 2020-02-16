@@ -33,10 +33,6 @@
     <version value="dev"/>
   </dependsOn>
   <definition>
-    <grouping id="uk-examples">
-      <name value="CareConnect Examples"></name>
-      <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like"></description>
-    </grouping>
     <resource>
       <reference>
         <reference value="Bundle/notification-admit"></reference>
@@ -44,7 +40,6 @@
       <name value="notification-admit"></name>
       <description value="Notifiation Admission FHIR Message - Admit a patient"></description>
       <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
     </resource>
     <resource>
       <reference>
@@ -53,7 +48,6 @@
       <name value="notification-admit-transaction"></name>
       <description value="Notifiation Admission FHIR Transaction - Admit a patient"></description>
       <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
     </resource>
     <resource>
       <reference>
@@ -62,7 +56,6 @@
       <name value="Notification Discharge FHIR Message"></name>
       <description value="Notification Discharge FHIR Message - Discharge a patient"></description>
       <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
     </resource>
     <resource>
       <reference>
@@ -71,7 +64,6 @@
       <name value="Notification Discharge FHIR Transaction"></name>
       <description value="Notification Discharge FHIR Transaction - Discharge a patient"></description>
       <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
     </resource>
     <resource>
       <reference>
@@ -80,7 +72,6 @@
       <name value="Patient Create FHIR Message"></name>
       <description value="Patient Create FHIR Message - Add person information"></description>
       <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
     </resource>
     <resource>
       <reference>
@@ -89,7 +80,6 @@
       <name value="Patient Create FHIR Transaction"></name>
       <description value="Patient Create FHIR Transaction - Add person information"></description>
       <exampleBoolean value="true"/>
-      <groupingId value="uk-examples"></groupingId>
     </resource>
     <resource>
       <reference>

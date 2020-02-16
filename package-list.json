@@ -1,10 +1,10 @@
 {
     "package-id" : "careconnect.messaging.r4",
     "title" : "Example CareConnect Messaging R4",
-    "canonical" : "https://project-wildfyre.github.io/careconnect-messaging-r4",
+    "canonical" : "http://build.fhir.org/ig/project-wildfyre/careconnect-messaging-r4",
     "introduction" : "The introduction that should appear in the FHIR IG registry",
     "list" : [{
-     "version" : "current",
+     "version" : "4.0.0",
       "fhirversion": "4.0.1",
       "date" : "2019-12-19",
       "desc" : "Continuous Integration Build (latest in version control)",

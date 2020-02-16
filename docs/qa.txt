@@ -3,7 +3,7 @@
 
 err = 280, warn = 22, info = 58
 IG Publisher Version: v1.0.64-SNAPSHOT
-Generated Sat Feb 15 18:39:22 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Sun Feb 16 06:34:38 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
  Build Errors : 70 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-admit : 17 / 5

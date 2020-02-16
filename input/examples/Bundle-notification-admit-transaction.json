@@ -8,10 +8,10 @@
     "type": "transaction",
     "entry": [
         {
-            "fullUrl": "urn:oid:87ea780f-7bb4-43a4-beba-caa5197e763a",
+            "fullUrl": "urn:oid:95675fed-25a6-4d75-8351-49707f9d3360",
             "resource": {
                 "resourceType": "MessageHeader",
-                "event": {
+                "eventCoding": {
                     "code": "notification-admit",
                     "display": "notification-admit"
                 },
@@ -31,20 +31,19 @@
                     },
                     "display": "RCB"
                 },
-                "timestamp": "2010-10-10T14:18:00.000+01:00",
                 "source": {
                     "name": "PAS",
                     "endpoint": "PAS"
                 },
                 "focus": [
                     {
-                        "reference": "urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0"
+                        "reference": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"
                     },
                     {
-                        "reference": "urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca"
+                        "reference": "urn:oid:a1cf4e55-a7bb-4867-a2bb-07619a67edd7"
                     },
                     {
-                        "reference": "urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9"
+                        "reference": "urn:oid:1af1046d-f398-41d6-8ecc-be8ecf4c9ccd"
                     }
                 ]
             },
@@ -54,7 +53,7 @@
             }
         },
         {
-            "fullUrl": "urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0",
+            "fullUrl": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f",
             "resource": {
                 "resourceType": "Encounter",
                 "identifier": [
@@ -88,7 +87,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575"
+                    "reference": "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"
                 },
                 "participant": [
                     {
@@ -168,7 +167,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "urn:oid:7fe49ce2-6aba-4630-9bd2-f89244c9b799",
+                            "reference": "urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef",
                             "display": "OBS1"
                         },
                         "status": "active"
@@ -182,7 +181,7 @@
             }
         },
         {
-            "fullUrl": "urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575",
+            "fullUrl": "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c",
             "resource": {
                 "resourceType": "Patient",
                 "identifier": [
@@ -275,7 +274,7 @@
             }
         },
         {
-            "fullUrl": "urn:oid:7fe49ce2-6aba-4630-9bd2-f89244c9b799",
+            "fullUrl": "urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef",
             "resource": {
                 "resourceType": "Location",
                 "identifier": [
@@ -305,7 +304,7 @@
             }
         },
         {
-            "fullUrl": "urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca",
+            "fullUrl": "urn:oid:a1cf4e55-a7bb-4867-a2bb-07619a67edd7",
             "resource": {
                 "resourceType": "Condition",
                 "identifier": [
@@ -314,7 +313,14 @@
                         "value": "2139-N39.3"
                     }
                 ],
-                "clinicalStatus": "active",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active"
+                        }
+                    ]
+                },
                 "code": {
                     "coding": [
                         {
@@ -325,10 +331,10 @@
                     ]
                 },
                 "subject": {
-                    "reference": "urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575"
+                    "reference": "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"
                 },
-                "context": {
-                    "reference": "urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0"
+                "encounter": {
+                    "reference": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"
                 },
                 "onsetDateTime": "2010-10-09T09:00:00+01:00",
                 "asserter": {
@@ -346,7 +352,7 @@
             }
         },
         {
-            "fullUrl": "urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9",
+            "fullUrl": "urn:oid:1af1046d-f398-41d6-8ecc-be8ecf4c9ccd",
             "resource": {
                 "resourceType": "Procedure",
                 "identifier": [
@@ -366,10 +372,10 @@
                     ]
                 },
                 "subject": {
-                    "reference": "urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575"
+                    "reference": "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"
                 },
-                "context": {
-                    "reference": "urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0"
+                "encounter": {
+                    "reference": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"
                 },
                 "performedDateTime": "2010-10-20T20:56:00+01:00",
                 "performer": [

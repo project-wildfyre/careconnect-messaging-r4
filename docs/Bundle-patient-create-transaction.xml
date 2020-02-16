@@ -8,12 +8,16 @@
   </identifier>
   <type value="transaction"/>
   <entry>
-    <fullUrl value="urn:oid:53c1b969-614b-47cf-a5d6-7c3edcbb1377"/>
+    <fullUrl value="urn:oid:844ebe20-78f0-4d77-8890-44d588717ca9"/>
     <resource>
       <MessageHeader>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href="ROUTE">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href="PAS">PAS</a></td></tr></table><p><b>focus</b>: <a href="urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1">urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>event</b>: patient-create (Details: [not stated] code patient-create = 'patient-create', stated as 'patient-create')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href="ROUTE">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href="PAS">PAS</a></td></tr></table><p><b>focus</b>: <a href="urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3">urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3</a></p></div>
         </text>
+        <eventCoding>
+          <code value="patient-create"/>
+          <display value="patient-create"/>
+        </eventCoding>
         <destination>
           <name value="ROUTE"/>
           <target>
@@ -33,7 +37,7 @@
           <endpoint value="PAS"/>
         </source>
         <focus>
-          <reference value="urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1"/>
+          <reference value="urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3"/>
         </focus>
       </MessageHeader>
     </resource>
@@ -43,7 +47,7 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1"/>
+    <fullUrl value="urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3"/>
     <resource>
       <Patient>
         <text>

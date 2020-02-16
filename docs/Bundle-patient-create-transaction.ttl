@@ -15,16 +15,16 @@
   fhir:Bundle.type [ fhir:value "transaction"];
   fhir:Bundle.entry [
      fhir:index 0;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:53c1b969-614b-47cf-a5d6-7c3edcbb1377" ];
-     fhir:Bundle.entry.resource <urn:oid:53c1b969-614b-47cf-a5d6-7c3edcbb1377>;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:844ebe20-78f0-4d77-8890-44d588717ca9" ];
+     fhir:Bundle.entry.resource <urn:oid:844ebe20-78f0-4d77-8890-44d588717ca9>;
      fhir:Bundle.entry.request [
        fhir:Bundle.entry.request.method [ fhir:value "POST" ];
        fhir:Bundle.entry.request.url [ fhir:value "MessageHeader" ]
      ]
   ], [
      fhir:index 1;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1" ];
-     fhir:Bundle.entry.resource <urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1>;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3" ];
+     fhir:Bundle.entry.resource <urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3>;
      fhir:Bundle.entry.request [
        fhir:Bundle.entry.request.method [ fhir:value "POST" ];
        fhir:Bundle.entry.request.url [ fhir:value "Patient" ];
@@ -32,10 +32,14 @@
      ]
   ] .
 
-<urn:oid:53c1b969-614b-47cf-a5d6-7c3edcbb1377> a fhir:MessageHeader;
+<urn:oid:844ebe20-78f0-4d77-8890-44d588717ca9> a fhir:MessageHeader;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href=\"ROUTE\">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>focus</b>: <a href=\"urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1\">urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>event</b>: patient-create (Details: [not stated] code patient-create = 'patient-create', stated as 'patient-create')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href=\"ROUTE\">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>focus</b>: <a href=\"urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3\">urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3</a></p></div>"
+  ];
+  fhir:MessageHeader.eventCoding [
+     fhir:Coding.code [ fhir:value "patient-create" ];
+     fhir:Coding.display [ fhir:value "patient-create" ]
   ];
   fhir:MessageHeader.destination [
      fhir:index 0;
@@ -58,10 +62,10 @@
   ];
   fhir:MessageHeader.focus [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1" ]
+     fhir:Reference.reference [ fhir:value "urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3" ]
   ] .
 
-<urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1> a fhir:Patient;
+<urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3> a fhir:Patient;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-11-12</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Address</b></td></tr><tr><td>*</td><td>FRANCESCA SMITH </td><td>MALTON YO32 5TT (HOME)</td></tr></table><p><b>generalPractitioner</b>: Dr Gregory Townley</p><p><b>managingOrganization</b>: MALTON GP PRACTICE</p></div>"

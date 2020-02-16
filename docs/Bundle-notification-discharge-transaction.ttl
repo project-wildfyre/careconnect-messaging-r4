@@ -15,16 +15,16 @@
   fhir:Bundle.type [ fhir:value "transaction"];
   fhir:Bundle.entry [
      fhir:index 0;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:1fe9a302-1575-44e0-b8a8-9de72b5576fe" ];
-     fhir:Bundle.entry.resource <urn:oid:1fe9a302-1575-44e0-b8a8-9de72b5576fe>;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:1e1e200b-8410-48b7-abe7-9e9e59eab067" ];
+     fhir:Bundle.entry.resource <urn:oid:1e1e200b-8410-48b7-abe7-9e9e59eab067>;
      fhir:Bundle.entry.request [
        fhir:Bundle.entry.request.method [ fhir:value "POST" ];
        fhir:Bundle.entry.request.url [ fhir:value "MessageHeader" ]
      ]
   ], [
      fhir:index 1;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:24ffdbb6-db4a-4be2-94f6-8f4831d48f80" ];
-     fhir:Bundle.entry.resource <urn:oid:24ffdbb6-db4a-4be2-94f6-8f4831d48f80>;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:d183a526-a507-458b-ac79-5c09b62e5c76" ];
+     fhir:Bundle.entry.resource <urn:oid:d183a526-a507-458b-ac79-5c09b62e5c76>;
      fhir:Bundle.entry.request [
        fhir:Bundle.entry.request.method [ fhir:value "POST" ];
        fhir:Bundle.entry.request.url [ fhir:value "Encounter" ];
@@ -32,8 +32,8 @@
      ]
   ], [
      fhir:index 2;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:45fe8f76-8f1f-4b26-bac8-5c5127a6ff66" ];
-     fhir:Bundle.entry.resource <urn:oid:45fe8f76-8f1f-4b26-bac8-5c5127a6ff66>;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:758da98d-81b8-42a7-9e7c-187ce09a138b" ];
+     fhir:Bundle.entry.resource <urn:oid:758da98d-81b8-42a7-9e7c-187ce09a138b>;
      fhir:Bundle.entry.request [
        fhir:Bundle.entry.request.method [ fhir:value "POST" ];
        fhir:Bundle.entry.request.url [ fhir:value "Patient" ];
@@ -41,8 +41,8 @@
      ]
   ], [
      fhir:index 3;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:a17ba089-4543-451f-b3b3-100a5fa48387" ];
-     fhir:Bundle.entry.resource <urn:oid:a17ba089-4543-451f-b3b3-100a5fa48387>;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:521ce9b3-7698-44c6-aa04-01278c17221f" ];
+     fhir:Bundle.entry.resource <urn:oid:521ce9b3-7698-44c6-aa04-01278c17221f>;
      fhir:Bundle.entry.request [
        fhir:Bundle.entry.request.method [ fhir:value "POST" ];
        fhir:Bundle.entry.request.url [ fhir:value "Location" ];
@@ -50,10 +50,14 @@
      ]
   ] .
 
-<urn:oid:1fe9a302-1575-44e0-b8a8-9de72b5576fe> a fhir:MessageHeader;
+<urn:oid:1e1e200b-8410-48b7-abe7-9e9e59eab067> a fhir:MessageHeader;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>MATSYSTEM</td><td><a href=\"MATSYSTEM\">MATSYSTEM</a></td></tr></table><p><b>focus</b>: <a href=\"urn:oid:24ffdbb6-db4a-4be2-94f6-8f4831d48f80\">urn:oid:24ffdbb6-db4a-4be2-94f6-8f4831d48f80</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>event</b>: notification-discharge (Details: [not stated] code notification-discharge = 'notification-discharge', stated as 'notification-discharge')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>MATSYSTEM</td><td><a href=\"MATSYSTEM\">MATSYSTEM</a></td></tr></table><p><b>focus</b>: <a href=\"urn:oid:d183a526-a507-458b-ac79-5c09b62e5c76\">urn:oid:d183a526-a507-458b-ac79-5c09b62e5c76</a></p></div>"
+  ];
+  fhir:MessageHeader.eventCoding [
+     fhir:Coding.code [ fhir:value "notification-discharge" ];
+     fhir:Coding.display [ fhir:value "notification-discharge" ]
   ];
   fhir:MessageHeader.destination [
      fhir:index 0;
@@ -76,13 +80,13 @@
   ];
   fhir:MessageHeader.focus [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "urn:oid:24ffdbb6-db4a-4be2-94f6-8f4831d48f80" ]
+     fhir:Reference.reference [ fhir:value "urn:oid:d183a526-a507-458b-ac79-5c09b62e5c76" ]
   ] .
 
-<urn:oid:24ffdbb6-db4a-4be2-94f6-8f4831d48f80> a fhir:Encounter;
+<urn:oid:d183a526-a507-458b-ac79-5c09b62e5c76> a fhir:Encounter;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 11554</p><p><b>status</b>: finished</p><p><b>class</b>: short stay (Details: http://hl7.org/fhir/v3/ActCode code SS = 'SS', stated as 'short stay')</p><p><b>type</b>: 82 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '82' = '82)</span>, 500 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '500' = '500)</span></p><p><b>subject</b>: <a href=\"urn:oid:45fe8f76-8f1f-4b26-bac8-5c5127a6ff66\">urn:oid:45fe8f76-8f1f-4b26-bac8-5c5127a6ff66</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'ADM', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><p><b>period</b>: 30 Mar 2010, 11:00:00 --&gt; 31 Mar 2010, 17:15:00</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td>79 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '79' = '79)</span></td><td>19 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:a17ba089-4543-451f-b3b3-100a5fa48387\">MATWRD</a></td><td>active</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 11554</p><p><b>status</b>: finished</p><p><b>class</b>: short stay (Details: http://hl7.org/fhir/v3/ActCode code SS = 'SS', stated as 'short stay')</p><p><b>type</b>: 82 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '82' = '82)</span>, 500 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '500' = '500)</span></p><p><b>subject</b>: <a href=\"urn:oid:758da98d-81b8-42a7-9e7c-187ce09a138b\">urn:oid:758da98d-81b8-42a7-9e7c-187ce09a138b</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'ADM', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><p><b>period</b>: 30 Mar 2010, 11:00:00 --&gt; 31 Mar 2010, 17:15:00</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td>79 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '79' = '79)</span></td><td>19 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:521ce9b3-7698-44c6-aa04-01278c17221f\">MATWRD</a></td><td>active</td></tr></table></div>"
   ];
   fhir:Encounter.identifier [
      fhir:index 0;
@@ -111,7 +115,7 @@
      ]
   ];
   fhir:Encounter.subject [
-     fhir:Reference.reference [ fhir:value "urn:oid:45fe8f76-8f1f-4b26-bac8-5c5127a6ff66" ]
+     fhir:Reference.reference [ fhir:value "urn:oid:758da98d-81b8-42a7-9e7c-187ce09a138b" ]
   ];
   fhir:Encounter.participant [
      fhir:index 0;
@@ -191,13 +195,13 @@
   fhir:Encounter.location [
      fhir:index 0;
      fhir:Encounter.location.location [
-       fhir:Reference.reference [ fhir:value "urn:oid:a17ba089-4543-451f-b3b3-100a5fa48387" ];
+       fhir:Reference.reference [ fhir:value "urn:oid:521ce9b3-7698-44c6-aa04-01278c17221f" ];
        fhir:Reference.display [ fhir:value "MATWRD" ]
      ];
      fhir:Encounter.location.status [ fhir:value "active" ]
   ] .
 
-<urn:oid:45fe8f76-8f1f-4b26-bac8-5c5127a6ff66> a fhir:Patient;
+<urn:oid:758da98d-81b8-42a7-9e7c-187ce09a138b> a fhir:Patient;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-12-13</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><p><b>generalPractitioner</b>: Dr Gregory Townley</p><p><b>managingOrganization</b>: MALTON GP PRACTICE</p></div>"
@@ -261,7 +265,7 @@
      fhir:Reference.display [ fhir:value "MALTON GP PRACTICE" ]
   ] .
 
-<urn:oid:a17ba089-4543-451f-b3b3-100a5fa48387> a fhir:Location;
+<urn:oid:521ce9b3-7698-44c6-aa04-01278c17221f> a fhir:Location;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: MATWRD</p><p><b>name</b>: MATWRD</p><p><b>managingOrganization</b>: </p><p><b>partOf</b>: </p></div>"

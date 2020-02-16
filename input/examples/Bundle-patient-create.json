@@ -2,22 +2,27 @@
     "resourceType": "Bundle",
     "id": "patient-create",
     "identifier": {
+        "system": "https://fhir.mytrust.nhs.uk/Id/RCB/PAS",
         "value": "13403891320453338075"
     },
     "type": "message",
     "entry": [
         {
-            "fullUrl": "urn:oid:f3dc4d1d-75c4-453c-8bf0-5769e97aba3e",
+            "fullUrl": "urn:oid:844ebe20-78f0-4d77-8890-44d588717ca9",
             "resource": {
                 "resourceType": "MessageHeader",
-                "id": "f3dc4d1d-75c4-453c-8bf0-5769e97aba3e",
-                "event": {
+                "id": "844ebe20-78f0-4d77-8890-44d588717ca9",
+                "eventCoding": {
                     "code": "patient-create",
-                    "display": "Patient Create"
+                    "display": "patient-create"
                 },
                 "destination": [
                     {
-                        "name": "ROUTE"
+                        "name": "ROUTE",
+                        "target": {
+                            "display": "ROUTE"
+                        },
+                        "endpoint": "ROUTE"
                     }
                 ],
                 "sender": {
@@ -27,19 +32,22 @@
                     },
                     "display": "RCB"
                 },
-                "timestamp": "2010-01-02T12:15:00.000+00:00",
+                "source": {
+                    "name": "PAS",
+                    "endpoint": "PAS"
+                },
                 "focus": [
                     {
-                        "reference": "urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785"
+                        "reference": "urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3"
                     }
                 ]
             }
         },
         {
-            "fullUrl": "urn:oid:1b1732b7-9941-4a19-ba62-d0b3b3b0a785",
+            "fullUrl": "urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3",
             "resource": {
                 "resourceType": "Patient",
-                "id": "1b1732b7-9941-4a19-ba62-d0b3b3b0a785",
+                "id": "221c028d-e15b-4d60-8035-c460c8231fa3",
                 "identifier": [
                     {
                         "extension": [

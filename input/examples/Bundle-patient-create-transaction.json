@@ -8,10 +8,10 @@
     "type": "transaction",
     "entry": [
         {
-            "fullUrl": "urn:oid:53c1b969-614b-47cf-a5d6-7c3edcbb1377",
+            "fullUrl": "urn:oid:844ebe20-78f0-4d77-8890-44d588717ca9",
             "resource": {
                 "resourceType": "MessageHeader",
-                "event": {
+                "eventCoding": {
                     "code": "patient-create",
                     "display": "patient-create"
                 },
@@ -31,14 +31,13 @@
                     },
                     "display": "RCB"
                 },
-                "timestamp": "2010-01-02T12:15:00.000+00:00",
                 "source": {
                     "name": "PAS",
                     "endpoint": "PAS"
                 },
                 "focus": [
                     {
-                        "reference": "urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1"
+                        "reference": "urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3"
                     }
                 ]
             },
@@ -48,7 +47,7 @@
             }
         },
         {
-            "fullUrl": "urn:oid:cb3fe42f-02f6-4266-a056-8a30dda8d5f1",
+            "fullUrl": "urn:oid:221c028d-e15b-4d60-8035-c460c8231fa3",
             "resource": {
                 "resourceType": "Patient",
                 "identifier": [

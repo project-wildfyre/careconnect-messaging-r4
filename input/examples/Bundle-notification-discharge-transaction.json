@@ -8,10 +8,10 @@
     "type": "transaction",
     "entry": [
         {
-            "fullUrl": "urn:oid:1fe9a302-1575-44e0-b8a8-9de72b5576fe",
+            "fullUrl": "urn:oid:1e1e200b-8410-48b7-abe7-9e9e59eab067",
             "resource": {
                 "resourceType": "MessageHeader",
-                "event": {
+                "eventCoding": {
                     "code": "notification-discharge",
                     "display": "notification-discharge"
                 },
@@ -31,14 +31,13 @@
                     },
                     "display": "RCB"
                 },
-                "timestamp": "2010-03-31T17:30:00.000+01:00",
                 "source": {
                     "name": "MATSYSTEM",
                     "endpoint": "MATSYSTEM"
                 },
                 "focus": [
                     {
-                        "reference": "urn:oid:24ffdbb6-db4a-4be2-94f6-8f4831d48f80"
+                        "reference": "urn:oid:d183a526-a507-458b-ac79-5c09b62e5c76"
                     }
                 ]
             },
@@ -48,7 +47,7 @@
             }
         },
         {
-            "fullUrl": "urn:oid:24ffdbb6-db4a-4be2-94f6-8f4831d48f80",
+            "fullUrl": "urn:oid:d183a526-a507-458b-ac79-5c09b62e5c76",
             "resource": {
                 "resourceType": "Encounter",
                 "identifier": [
@@ -82,7 +81,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "urn:oid:45fe8f76-8f1f-4b26-bac8-5c5127a6ff66"
+                    "reference": "urn:oid:758da98d-81b8-42a7-9e7c-187ce09a138b"
                 },
                 "participant": [
                     {
@@ -171,7 +170,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "urn:oid:a17ba089-4543-451f-b3b3-100a5fa48387",
+                            "reference": "urn:oid:521ce9b3-7698-44c6-aa04-01278c17221f",
                             "display": "MATWRD"
                         },
                         "status": "active"
@@ -185,7 +184,7 @@
             }
         },
         {
-            "fullUrl": "urn:oid:45fe8f76-8f1f-4b26-bac8-5c5127a6ff66",
+            "fullUrl": "urn:oid:758da98d-81b8-42a7-9e7c-187ce09a138b",
             "resource": {
                 "resourceType": "Patient",
                 "identifier": [
@@ -259,7 +258,7 @@
             }
         },
         {
-            "fullUrl": "urn:oid:a17ba089-4543-451f-b3b3-100a5fa48387",
+            "fullUrl": "urn:oid:521ce9b3-7698-44c6-aa04-01278c17221f",
             "resource": {
                 "resourceType": "Location",
                 "identifier": [

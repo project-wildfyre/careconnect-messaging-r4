@@ -2,22 +2,27 @@
     "resourceType": "Bundle",
     "id": "notification-admit",
     "identifier": {
+        "system": "https://fhir.mytrust.nhs.uk/Id/RCB/PAS",
         "value": "1391320453338055"
     },
     "type": "message",
     "entry": [
         {
-            "fullUrl": "urn:oid:beca0934-810e-428c-b186-967f1d5515f4",
+            "fullUrl": "urn:oid:95675fed-25a6-4d75-8351-49707f9d3360",
             "resource": {
                 "resourceType": "MessageHeader",
-                "id": "beca0934-810e-428c-b186-967f1d5515f4",
-                "event": {
+                "id": "95675fed-25a6-4d75-8351-49707f9d3360",
+                "eventCoding": {
                     "code": "notification-admit",
-                    "display": "Notification Admit"
+                    "display": "notification-admit"
                 },
                 "destination": [
                     {
-                        "name": "ROUTE"
+                        "name": "ROUTE",
+                        "target": {
+                            "display": "ROUTE"
+                        },
+                        "endpoint": "ROUTE"
                     }
                 ],
                 "sender": {
@@ -27,19 +32,28 @@
                     },
                     "display": "RCB"
                 },
-                "timestamp": "2010-10-10T14:18:00.000+01:00",
+                "source": {
+                    "name": "PAS",
+                    "endpoint": "PAS"
+                },
                 "focus": [
                     {
-                        "reference": "urn:oid:d5b742fd-fc49-493f-bfb1-669f90bfc67b"
+                        "reference": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"
+                    },
+                    {
+                        "reference": "urn:oid:a1cf4e55-a7bb-4867-a2bb-07619a67edd7"
+                    },
+                    {
+                        "reference": "urn:oid:1af1046d-f398-41d6-8ecc-be8ecf4c9ccd"
                     }
                 ]
             }
         },
         {
-            "fullUrl": "urn:oid:d5b742fd-fc49-493f-bfb1-669f90bfc67b",
+            "fullUrl": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f",
             "resource": {
                 "resourceType": "Encounter",
-                "id": "d5b742fd-fc49-493f-bfb1-669f90bfc67b",
+                "id": "506ab3bc-8efa-40bc-a7ad-1643d467eb4f",
                 "identifier": [
                     {
                         "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -71,7 +85,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "urn:oid:e6067c8e-e14d-4f71-a97a-0b1d31e50c7a"
+                    "reference": "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"
                 },
                 "participant": [
                     {
@@ -151,7 +165,7 @@
                 "location": [
                     {
                         "location": {
-                            "reference": "urn:oid:1ddefce3-d054-46f3-9558-9706d04c7d2d",
+                            "reference": "urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef",
                             "display": "OBS1"
                         },
                         "status": "active"
@@ -160,10 +174,10 @@
             }
         },
         {
-            "fullUrl": "urn:oid:e6067c8e-e14d-4f71-a97a-0b1d31e50c7a",
+            "fullUrl": "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c",
             "resource": {
                 "resourceType": "Patient",
-                "id": "e6067c8e-e14d-4f71-a97a-0b1d31e50c7a",
+                "id": "29703a7e-238a-4510-a249-ec68ffc8d69c",
                 "identifier": [
                     {
                         "extension": [
@@ -249,13 +263,13 @@
             }
         },
         {
-            "fullUrl": "urn:oid:1ddefce3-d054-46f3-9558-9706d04c7d2d",
+            "fullUrl": "urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef",
             "resource": {
                 "resourceType": "Location",
-                "id": "1ddefce3-d054-46f3-9558-9706d04c7d2d",
+                "id": "dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef",
                 "identifier": [
                     {
-                        "system": "htttps://fhir.xgenome.co.uk/Id/Ward",
+                        "system": "https://fhir.myepr.co.uk/Id/Ward",
                         "value": "OBS1"
                     }
                 ],
@@ -272,6 +286,91 @@
                         "value": "RCB55"
                     }
                 }
+            }
+        },
+        {
+            "fullUrl": "urn:oid:a1cf4e55-a7bb-4867-a2bb-07619a67edd7",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "a1cf4e55-a7bb-4867-a2bb-07619a67edd7",
+                "identifier": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "value": "2139-N39.3"
+                    }
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10",
+                            "code": "N39.3",
+                            "display": "Stress Incontinence"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"
+                },
+                "encounter": {
+                    "reference": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"
+                },
+                "onsetDateTime": "2010-10-09T09:00:00+01:00",
+                "asserter": {
+                    "identifier": {
+                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                        "value": "C3456789"
+                    },
+                    "display": "Dr Samuel Darwin"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:oid:1af1046d-f398-41d6-8ecc-be8ecf4c9ccd",
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "1af1046d-f398-41d6-8ecc-be8ecf4c9ccd",
+                "identifier": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "value": "2139-ZZS4"
+                    }
+                ],
+                "status": "completed",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/Id/opcs-4",
+                            "code": "ZZS4",
+                            "display": "Colonic examination"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"
+                },
+                "encounter": {
+                    "reference": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"
+                },
+                "performedDateTime": "2010-10-20T20:56:00+01:00",
+                "performer": [
+                    {
+                        "actor": {
+                            "identifier": {
+                                "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                                "value": "C3456789"
+                            },
+                            "display": "Dr Samuel Darwin"
+                        }
+                    }
+                ]
             }
         }
     ]

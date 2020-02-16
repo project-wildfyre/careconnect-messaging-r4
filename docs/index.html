@@ -153,17 +153,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="introduction">Introduction</h3>
 
-<p>The aim of this Implementation Guide is to <em>suggest</em> the minimal/recommended messaging capabilities of a clinical system so that it <strong>forms part of LHCR and/or Hospital ecosystem</strong>.</p>
+<p>This is a work in progres and not official guidance. It is being developed as a result of several FHIR R4 implementations and will focus on providing practical examples, missing conformance resources and notes on implementation.</p>
 
-<p>For FHIR this guide builds on the conformance resources in <a href="https://interopen.github.io/careconnect-base-stu3/">Unofficial UK Core Implementation Guide</a></p>
+<p>The aim of this Implementation Guide is to <em>suggest</em> the minimal/recommended messaging capabilities of a interoperable system so that it <strong>forms part of LHCR and/or Hospital ecosystem</strong>. That is the ‘Trust Integration Engine’ in the diagram below.</p>
 
-<p>This IG does not describe an OPEN API (RESTful API). This can be found here: <a href="https://project-wildfyre.github.io/careconnect-api-R4/">Care Conect API</a></p>
+<p><img src="LHCRE.jpeg" alt="LHCR and NHS Trust Messaging"/></p>
+
+<p>For FHIR this guide builds on the conformance resources in <a href="https://interopen.github.io/careconnect-base-stu3/">Unofficial UK Core Implementation Guide</a>.</p>
+
+<p>NOTE: The examples in this guide are based on the <a href="downloads/HSCIC ITK HL7 V2 Message Specifications.pdf">HSCIC ITK HL7v2</a> implementation guide and official HL7 v2 to FHIR conversion guidance.</p>
+
+<p>This IG does not describe a FHIR RESTful API (FHIR Clients in the diagram above). This can be found here: <a href="https://project-wildfyre.github.io/careconnect-api-R4/">Care Conect API</a></p>
 
 <h3 id="inbound-messaging-api">Inbound Messaging API</h3>
 
 <h4 id="hl7v2">HL7v2</h4>
 
-<p><a name="d9fa3d7c-7d85-4aae-b8e9-376140dcc20e">​</a><a href="downloads/HSCIC ITK HL7 V2 Message Specifications.pdf">HSCIC HL7v2</a> pipe+hat format <strong>MUST</strong> be supported. In particular the following Messaging Subsets are to considered the minimum requirement.</p>
+<p><a href="downloads/HSCIC ITK HL7 V2 Message Specifications.pdf">HSCIC ITK HL7v2</a> pipe+hat format <strong>MUST</strong> be supported. In particular the following Messaging Subsets are to considered the minimum requirement.</p>
 
 <ul>
   <li>3.1.4 Patient Identity Management</li>
@@ -237,8 +243,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="97550936-b975-4629-9b93-829ebb074196">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 16, 2020 06:34+0000">2020-02-16</span>
+        <p><a name="14f9d201-9fb4-483e-bc00-c14554fb4162">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 16, 2020 08:07+0000">2020-02-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

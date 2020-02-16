@@ -1,17 +1,23 @@
 
 ### Introduction
 
-The aim of this Implementation Guide is to *suggest* the minimal/recommended messaging capabilities of a clinical system so that it **forms part of LHCR and/or Hospital ecosystem**.
+This is a work in progres and not official guidance. It is being developed as a result of several FHIR R4 implementations and will focus on providing practical examples, missing conformance resources and notes on implementation.
+ 
+The aim of this Implementation Guide is to *suggest* the minimal/recommended messaging capabilities of a interoperable system so that it **forms part of LHCR and/or Hospital ecosystem**. That is the 'Trust Integration Engine' in the diagram below.
 
-For FHIR this guide builds on the conformance resources in [Unofficial UK Core Implementation Guide](https://interopen.github.io/careconnect-base-stu3/) 
+![LHCR and NHS Trust Messaging](LHCRE.jpeg)
 
-This IG does not describe an OPEN API (RESTful API). This can be found here: [Care Conect API](https://project-wildfyre.github.io/careconnect-api-R4/)
+For FHIR this guide builds on the conformance resources in [Unofficial UK Core Implementation Guide](https://interopen.github.io/careconnect-base-stu3/). 
+
+NOTE: The examples in this guide are based on the [HSCIC ITK HL7v2](downloads/HSCIC ITK HL7 V2 Message Specifications.pdf) implementation guide and official HL7 v2 to FHIR conversion guidance. 
+
+This IG does not describe a FHIR RESTful API (FHIR Clients in the diagram above). This can be found here: [Care Conect API](https://project-wildfyre.github.io/careconnect-api-R4/)
 
 ### Inbound Messaging API
 
 #### HL7v2
 
-[HSCIC HL7v2](downloads/HSCIC ITK HL7 V2 Message Specifications.pdf) pipe+hat format **MUST** be supported. In particular the following Messaging Subsets are to considered the minimum requirement.
+[HSCIC ITK HL7v2](downloads/HSCIC ITK HL7 V2 Message Specifications.pdf) pipe+hat format **MUST** be supported. In particular the following Messaging Subsets are to considered the minimum requirement.
 
 * 3.1.4 Patient Identity Management
 * 3.1.1 Basic Inpatient / Outpatient Encounter Management

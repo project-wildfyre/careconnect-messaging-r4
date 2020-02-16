@@ -8,12 +8,16 @@
   </identifier>
   <type value="transaction"/>
   <entry>
-    <fullUrl value="urn:oid:87ea780f-7bb4-43a4-beba-caa5197e763a"/>
+    <fullUrl value="urn:oid:95675fed-25a6-4d75-8351-49707f9d3360"/>
     <resource>
       <MessageHeader>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href="ROUTE">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href="PAS">PAS</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href="urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0">urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0</a></li><li><a href="urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca">urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca</a></li><li><a href="urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9">urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9</a></li></ul></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>event</b>: notification-admit (Details: [not stated] code notification-admit = 'notification-admit', stated as 'notification-admit')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href="ROUTE">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href="PAS">PAS</a></td></tr></table><p><b>focus</b>: </p><ul><li><a href="urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f">urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f</a></li><li><a href="urn:oid:a1cf4e55-a7bb-4867-a2bb-07619a67edd7">urn:oid:a1cf4e55-a7bb-4867-a2bb-07619a67edd7</a></li><li><a href="urn:oid:1af1046d-f398-41d6-8ecc-be8ecf4c9ccd">urn:oid:1af1046d-f398-41d6-8ecc-be8ecf4c9ccd</a></li></ul></div>
         </text>
+        <eventCoding>
+          <code value="notification-admit"/>
+          <display value="notification-admit"/>
+        </eventCoding>
         <destination>
           <name value="ROUTE"/>
           <target>
@@ -33,13 +37,13 @@
           <endpoint value="PAS"/>
         </source>
         <focus>
-          <reference value="urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0"/>
+          <reference value="urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"/>
         </focus>
         <focus>
-          <reference value="urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca"/>
+          <reference value="urn:oid:a1cf4e55-a7bb-4867-a2bb-07619a67edd7"/>
         </focus>
         <focus>
-          <reference value="urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9"/>
+          <reference value="urn:oid:1af1046d-f398-41d6-8ecc-be8ecf4c9ccd"/>
         </focus>
       </MessageHeader>
     </resource>
@@ -49,11 +53,11 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:oid:28390ec4-1809-402d-abfc-b60c94f5bad0"/>
+    <fullUrl value="urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"/>
     <resource>
       <Encounter>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'IMP', stated as 'inpatient encounter')</p><p><b>type</b>: 13 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href="urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575">urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'REF', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href="urn:oid:7fe49ce2-6aba-4630-9bd2-f89244c9b799">OBS1</a></td><td>active</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'IMP', stated as 'inpatient encounter')</p><p><b>type</b>: 13 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href="urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c">urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'REF', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href="urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef">OBS1</a></td><td>active</td></tr></table></div>
         </text>
         <identifier>
           <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
@@ -78,7 +82,7 @@
           </coding>
         </type>
         <subject>
-          <reference value="urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575"/>
+          <reference value="urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"/>
         </subject>
         <participant>
           <type>
@@ -141,7 +145,7 @@
         </hospitalization>
         <location>
           <location>
-            <reference value="urn:oid:7fe49ce2-6aba-4630-9bd2-f89244c9b799"/>
+            <reference value="urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef"/>
             <display value="OBS1"/>
           </location>
           <status value="active"/>
@@ -155,7 +159,7 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575"/>
+    <fullUrl value="urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"/>
     <resource>
       <Patient>
         <text>
@@ -227,7 +231,7 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:oid:7fe49ce2-6aba-4630-9bd2-f89244c9b799"/>
+    <fullUrl value="urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef"/>
     <resource>
       <Location>
         <text>
@@ -259,16 +263,22 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:oid:d7a76f2b-0a95-4bf3-86fb-2705380ea3ca"/>
+    <fullUrl value="urn:oid:a1cf4e55-a7bb-4867-a2bb-07619a67edd7"/>
     <resource>
       <Condition>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139-N39.3</p><p><b>code</b>: Stress Incontinence <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/sid/icd-10 code 'N39.3' = 'N39.3', given as 'Stress Incontinence'})</span></p><p><b>subject</b>: <a href="urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575">urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575</a></p><p><b>onset</b>: 9 Oct 2010, 09:00:00</p><p><b>asserter</b>: Dr Samuel Darwin</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139-N39.3</p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/condition-clinical code 'active' = 'Active)</span></p><p><b>code</b>: Stress Incontinence <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/sid/icd-10 code 'N39.3' = 'N39.3', given as 'Stress Incontinence'})</span></p><p><b>subject</b>: <a href="urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c">urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</a></p><p><b>encounter</b>: <a href="urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f">urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f</a></p><p><b>onset</b>: 9 Oct 2010, 09:00:00</p><p><b>asserter</b>: Dr Samuel Darwin</p></div>
         </text>
         <identifier>
           <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
           <value value="2139-N39.3"/>
         </identifier>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
         <code>
           <coding>
             <system value="http://hl7.org/fhir/sid/icd-10"/>
@@ -277,8 +287,11 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575"/>
+          <reference value="urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"/>
         </subject>
+        <encounter>
+          <reference value="urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"/>
+        </encounter>
         <onsetDateTime value="2010-10-09T09:00:00+01:00"/>
         <asserter>
           <identifier>
@@ -296,11 +309,11 @@
     </request>
   </entry>
   <entry>
-    <fullUrl value="urn:oid:27c02a78-96b4-4fcb-ae09-0840716a90a9"/>
+    <fullUrl value="urn:oid:1af1046d-f398-41d6-8ecc-be8ecf4c9ccd"/>
     <resource>
       <Procedure>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139-ZZS4</p><p><b>status</b>: completed</p><p><b>code</b>: Colonic examination <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/Id/opcs-4 code 'ZZS4' = 'ZZS4', given as 'Colonic examination'})</span></p><p><b>subject</b>: <a href="urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575">urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575</a></p><p><b>performed</b>: 20 Oct 2010, 20:56:00</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td>Dr Samuel Darwin</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>identifier</b>: 2139-ZZS4</p><p><b>status</b>: completed</p><p><b>code</b>: Colonic examination <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/Id/opcs-4 code 'ZZS4' = 'ZZS4', given as 'Colonic examination'})</span></p><p><b>subject</b>: <a href="urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c">urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</a></p><p><b>encounter</b>: <a href="urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f">urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f</a></p><p><b>performed</b>: 20 Oct 2010, 20:56:00</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td>Dr Samuel Darwin</td></tr></table></div>
         </text>
         <identifier>
           <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
@@ -315,8 +328,11 @@
           </coding>
         </code>
         <subject>
-          <reference value="urn:oid:b915db16-84a1-4a47-8e3f-5b9edebd8575"/>
+          <reference value="urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"/>
         </subject>
+        <encounter>
+          <reference value="urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"/>
+        </encounter>
         <performedDateTime value="2010-10-20T20:56:00+01:00"/>
         <performer>
           <actor>

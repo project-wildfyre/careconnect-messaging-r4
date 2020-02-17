@@ -138,6 +138,13 @@
     <name value="Patient Referral Message Definition"/>
     <description value="For handover, service request or referral"/>
   </resource>
+    <resource>
+      <reference>
+        <reference value="GraphDefinition/nhs111report-information-model"/>
+      </reference>
+      <name value="Information Model - NHS 111 Report"/>
+      <description value="Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)."/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

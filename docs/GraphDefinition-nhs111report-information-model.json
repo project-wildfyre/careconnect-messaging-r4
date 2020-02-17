@@ -1,0 +1,277 @@
+{
+  "resourceType": "GraphDefinition",
+  "id": "nhs111report-information-model",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: nhs111report-information-model</p><p><b>url</b>: <a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111report-information-model\">https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111report-information-model</a></p><p><b>version</b>: 4.0.0</p><p><b>name</b>: Information Model - NHS 111 Report</p><p><b>status</b>: draft</p><p><b>date</b>: 3 Mar 2019, 00:00:00</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html).</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>start</b>: Composition</p><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: informationRecipient</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient. </p><blockquote><p><b>target</b></p><p><b>type</b>: Patient</p><p><b>profile</b>: <a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: HeathcareService</p><p><b>profile</b>: <a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HeathcareService\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HeathcareService</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: Person</p><p><b>profile</b>: <a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Person\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Person</a></p></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.subject</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: ITK recordTarget (The patient whose record is the target for the information in the Document.)</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Patient</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.custodian</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: Organization which maintains the composition</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Organization</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.author</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: Who and/or what authored the composition</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Practitioner</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.encounter</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Intended 'real-world' recipient for the data</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Encounter</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: patientDemographicsSection</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: Patient being discharged</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Patient</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: patientDemographicsSection</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: Patient being discharged</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Patient</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: serviceRequest</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: Service Required</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>ReferralRequest</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: PermissionToView</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK Consent</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Consent</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: ClinicalDiscriminator</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK ClinicalDiscriminator - not sure if structured. Might be clinical impression</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Condition</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: AppointmentReference</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK AppointmentReference - not sure if structured</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Appointment</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Appointment\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Appointment</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: IntegratedCareHistory</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK IntegratedCareHistory - not sure if structured</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Encounter</td><td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Encounter-1\">https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Encounter-1</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: TriageAttachment</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK TriageAttachment - This is actually a text blob</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>QuestionnaireResponse</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-QuestionnaireResponse\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-QuestionnaireResponse</a></td></tr></table></blockquote></div>"
+  },
+  "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111report-information-model",
+  "version": "4.0.0",
+  "name": "Information Model - NHS 111 Report",
+  "status": "draft",
+  "date": "2019-03-03T00:00:00+00:00",
+  "publisher": "mayfield-is.co.uk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kevin.mayfield@mayfield-is.co.uk"
+        }
+      ]
+    }
+  ],
+  "description": "Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html).",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "start": "Composition",
+  "link": [
+    {
+      "path": "Composition.section[x].entry",
+      "sliceName": "informationRecipient",
+      "min": 1,
+      "max": "*",
+      "description": "ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient. ",
+      "target": [
+        {
+          "type": "Patient",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"
+        },
+        {
+          "type": "HeathcareService",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HeathcareService"
+        },
+        {
+          "type": "Person",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Person"
+        }
+      ]
+    },
+    {
+      "path": "Composition.subject",
+      "min": 1,
+      "max": "1",
+      "description": "ITK recordTarget (The patient whose record is the target for the information in the Document.)",
+      "target": [
+        {
+          "type": "Patient",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"
+        }
+      ]
+    },
+    {
+      "path": "Composition.custodian",
+      "min": 0,
+      "max": "1",
+      "description": "Organization which maintains the composition",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#custodian"
+            }
+          ],
+          "type": "Organization",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization"
+        }
+      ]
+    },
+    {
+      "path": "Composition.author",
+      "min": 1,
+      "max": "*",
+      "description": "Who and/or what authored the composition",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#consultant"
+            }
+          ],
+          "type": "Practitioner",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner"
+        }
+      ]
+    },
+    {
+      "path": "Composition.encounter",
+      "min": 1,
+      "max": "1",
+      "description": "Intended 'real-world' recipient for the data",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#encompassingencounter"
+            }
+          ],
+          "type": "Encounter",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"
+        }
+      ]
+    },
+    {
+      "path": "Composition.section[x].entry",
+      "sliceName": "patientDemographicsSection",
+      "min": 1,
+      "max": "*",
+      "description": "Patient being discharged",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#patient"
+            }
+          ],
+          "type": "Patient",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"
+        }
+      ]
+    },
+    {
+      "path": "Composition.section[x].entry",
+      "sliceName": "patientDemographicsSection",
+      "min": 1,
+      "max": "*",
+      "description": "Patient being discharged",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#patient"
+            }
+          ],
+          "type": "Patient",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"
+        }
+      ]
+    },
+    {
+      "path": "Composition.section[x].entry",
+      "sliceName": "serviceRequest",
+      "min": 1,
+      "max": "*",
+      "description": "Service Required",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#serviceRequest"
+            }
+          ],
+          "type": "ReferralRequest",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest"
+        }
+      ]
+    },
+    {
+      "path": "Composition.section[x].entry",
+      "sliceName": "PermissionToView",
+      "min": 0,
+      "max": "*",
+      "description": "ITK Consent",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#consent"
+            }
+          ],
+          "type": "Consent",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent"
+        }
+      ]
+    },
+    {
+      "path": "Composition.section[x].entry",
+      "sliceName": "ClinicalDiscriminator",
+      "min": 0,
+      "max": "*",
+      "description": "ITK ClinicalDiscriminator - not sure if structured. Might be clinical impression",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#condition"
+            }
+          ],
+          "type": "Condition",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition"
+        }
+      ]
+    },
+    {
+      "path": "Composition.section[x].entry",
+      "sliceName": "AppointmentReference",
+      "min": 0,
+      "max": "*",
+      "description": "ITK AppointmentReference - not sure if structured",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#appointment"
+            }
+          ],
+          "type": "Appointment",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Appointment"
+        }
+      ]
+    },
+    {
+      "path": "Composition.section[x].entry",
+      "sliceName": "IntegratedCareHistory",
+      "min": 0,
+      "max": "*",
+      "description": "ITK IntegratedCareHistory - not sure if structured",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#pastEncounter"
+            }
+          ],
+          "type": "Encounter",
+          "profile": "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Encounter-1"
+        }
+      ]
+    },
+    {
+      "path": "Composition.section[x].entry",
+      "sliceName": "TriageAttachment",
+      "min": 0,
+      "max": "*",
+      "description": "ITK TriageAttachment - This is actually a text blob",
+      "target": [
+        {
+          "extension": [
+            {
+              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+              "valueString": "#questionnaireResponse"
+            }
+          ],
+          "type": "QuestionnaireResponse",
+          "profile": "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-QuestionnaireResponse"
+        }
+      ]
+    }
+  ]
+}

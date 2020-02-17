@@ -1,0 +1,196 @@
+<GraphDefinition xmlns="http://hl7.org/fhir">
+    <id value="nhs111report-information-model"/>
+    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111report-information-model"/>
+    <name value="Information Model - NHS 111 Report"/>
+    <status value="draft"/>
+    <date value="2019-03-03T00:00:00+00:00"/>
+    <publisher value="NHS Digital"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://fhir.nhs.uk"/>
+        </telecom>
+    </contact>
+    <description value="Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)."/>
+    <start value="Composition"/>
+    <link>
+        <path value="Composition.section[x].entry"/>
+        <sliceName value="informationRecipient"/>
+        <min value="1"/>
+        <max value="*"/>
+        <description value="ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient. "/>
+        <target>
+            <type value="Patient"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+        </target>
+        <target>
+            <type value="HeathcareService"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HeathcareService"/>
+        </target>
+        <target>
+            <type value="Person"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Person"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+        <description value="ITK recordTarget (The patient whose record is the target for the information in the Document.)"/>
+        <target value="#patient">
+            <type value="Patient"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.custodian"/>
+        <min value="0"/>
+        <max value="1"/>
+        <description value="Organization which maintains the composition"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#custodian"/>
+            </extension>
+            <type value="Organization"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.author"/>
+        <min value="1"/>
+        <max value="*"/>
+        <description value="Who and/or what authored the composition"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#consultant"/>
+            </extension>
+            <type value="Practitioner"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.encounter"/>
+        <min value="1"/>
+        <max value="1"/>
+        <description value="Intended 'real-world' recipient for the data"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#encompassingencounter"/>
+            </extension>
+            <type value="Encounter"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.section[x].entry"/>
+        <sliceName value="patientDemographicsSection"/>
+        <min value="1"/>
+        <max value="*"/>
+        <description value="Patient being discharged"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#patient"/>
+            </extension>
+            <type value="Patient"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.section[x].entry"/>
+        <sliceName value="patientDemographicsSection"/>
+        <min value="1"/>
+        <max value="*"/>
+        <description value="Patient being discharged"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#patient"/>
+            </extension>
+            <type value="Patient"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.section[x].entry"/>
+        <sliceName value="serviceRequest"/>
+        <min value="1"/>
+        <max value="*"/>
+        <description value="Service Required"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#serviceRequest"/>
+            </extension>
+            <type value="ReferralRequest"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.section[x].entry"/>
+        <sliceName value="PermissionToView"/>
+        <min value="0"/>
+        <max value="*"/>
+        <description value="ITK Consent"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#consent"/>
+            </extension>
+            <type value="Consent"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.section[x].entry"/>
+        <sliceName value="ClinicalDiscriminator"/>
+        <min value="0"/>
+        <max value="*"/>
+        <description value="ITK ClinicalDiscriminator - not sure if structured. Might be clinical impression"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#condition"/>
+            </extension>
+            <type value="Condition"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.section[x].entry"/>
+        <sliceName value="AppointmentReference"/>
+        <min value="0"/>
+        <max value="*"/>
+        <description value="ITK AppointmentReference - not sure if structured"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#appointment"/>
+            </extension>
+            <type value="Appointment"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Appointment"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.section[x].entry"/>
+        <sliceName value="IntegratedCareHistory"/>
+        <min value="0"/>
+        <max value="*"/>
+        <description value="ITK IntegratedCareHistory - not sure if structured"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#pastEncounter"/>
+            </extension>
+            <type value="Encounter"/>
+            <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>
+        </target>
+    </link>
+    <link>
+        <path value="Composition.section[x].entry"/>
+        <sliceName value="TriageAttachment"/>
+        <min value="0"/>
+        <max value="*"/>
+        <description value="ITK TriageAttachment - This is actually a text blob"/>
+        <target>
+            <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                <valueString value="#questionnaireResponse"/>
+            </extension>
+            <type value="QuestionnaireResponse"/>
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-QuestionnaireResponse"/>
+        </target>
+    </link>
+</GraphDefinition>

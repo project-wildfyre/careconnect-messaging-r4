@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-02-17T10:31:08+00:00"/>
+  <date value="2020-02-17T16:15:08+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -371,6 +371,19 @@
       </reference>
       <name value="Information Model - NHS 111 Report"/>
       <description value="Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="GraphDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="GraphDefinition-nhs111ambulancerequest-information-model.html"/>
+      </extension>
+      <reference>
+        <reference value="GraphDefinition/nhs111ambulancerequest-information-model"/>
+      </reference>
+      <name value="Information Model - NHS 111 Ambulance Request"/>
+      <description value="This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

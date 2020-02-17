@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GraphDefinition xmlns="http://hl7.org/fhir">
+  <id value="nhs111ambulancerequest-information-model"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: nhs111ambulancerequest-information-model</p><p><b>url</b>: <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model">https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model</a></p><p><b>version</b>: 4.0.0</p><p><b>name</b>: Information Model - NHS 111 Report</p><p><b>status</b>: draft</p><p><b>date</b>: 3 Mar 2019, 00:00:00</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance.</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>start</b>: ServiceRequest</p><p><b>profile</b>: <a href="http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest">http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest</a></p><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.requestor</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: This links the ambulance request to author of the request.</p><blockquote><p><b>target</b></p><p><b>type</b>: Organization</p><p><b>profile</b>: <a href="http://hl7.org/fhir/R4/StructureDefinition/Organization">http://hl7.org/fhir/R4/StructureDefinition/Organization</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: Practitioner</p><p><b>profile</b>: <a href="http://hl7.org/fhir/R4/StructureDefinition/Practitioner">http://hl7.org/fhir/R4/StructureDefinition/Practitioner</a></p></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.performer</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It is used for the list of recipients of the ambulance request message.</p><blockquote><p><b>target</b></p><p><b>type</b>: Organization</p><p><b>profile</b>: <a href="http://hl7.org/fhir/R4/StructureDefinition/Organization">http://hl7.org/fhir/R4/StructureDefinition/Organization</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: Practitioner</p><p><b>profile</b>: <a href="http://hl7.org/fhir/R4/StructureDefinition/Practitioner">http://hl7.org/fhir/R4/StructureDefinition/Practitioner</a></p></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.replaces</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: It is used when the ambulance request message is being replaced by an updated version. The new and previous ambulance request must be for the same NHS 111 case.(i.e. have the same case id). The ambulance request being sent replaces the one referenced in previous ambulance request class.</p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>ServiceRequest</td><td><a href="http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest">http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.supportingInformation[x]</p><p><b>sliceName</b>: TriageOutcome</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Justifying Triage Outcome </p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Observation</td><td><a href="http://hl7.org/fhir/R4/StructureDefinition/Observation">http://hl7.org/fhir/R4/StructureDefinition/Observation</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.supportingInformation[x]</p><p><b>sliceName</b>: TriageDisposition</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: Triage Disposition</p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Observation</td><td><a href="http://hl7.org/fhir/R4/StructureDefinition/Observation">http://hl7.org/fhir/R4/StructureDefinition/Observation</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.notes</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: Used to carry additional notes pertinent to the ambulance request.</p></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.supportingInformation[x]</p><p><b>sliceName</b>: PermissionToView</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: It is used to carry the Permission To View outcome.</p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Consent</td><td><a href="http://hl7.org/fhir/R4/StructureDefinition/Consent">http://hl7.org/fhir/R4/StructureDefinition/Consent</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.encounter</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It is used when the ambulance request message is being replaced by an updated version. The new and previous ambulance request must be for the same NHS 111 case.(i.e. have the same case id). The ambulance request being sent replaces the one referenced in previous ambulance request class.</p><blockquote><p><b>target</b></p><p><b>type</b>: Encounter</p><p><b>profile</b>: <a href="http://hl7.org/fhir/R4/StructureDefinition/Encounter">http://hl7.org/fhir/R4/StructureDefinition/Encounter</a></p><h3>Links</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.supportingInformation[x]</p><p><b>sliceName</b>: TraumaFlag</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request.</p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href="http://hl7.org/fhir/R4/StructureDefinition/Flag">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.supportingInformation[x]</p><p><b>sliceName</b>: FireFlag</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request.</p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href="http://hl7.org/fhir/R4/StructureDefinition/Flag">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.supportingInformation[x]</p><p><b>sliceName</b>: SceneSafeFlag</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It is used to indicate information about whether the scene is safe pertinent to the ambulance request.</p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href="http://hl7.org/fhir/R4/StructureDefinition/Flag">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.supportingInformation[x]</p><p><b>sliceName</b>: PoliceFlag</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request</p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href="http://hl7.org/fhir/R4/StructureDefinition/Flag">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: ServiceRequest.supportingInformation[x]</p><p><b>sliceName</b>: TrappedFlag</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It is used to indicate information about whether the patient is trapped pertinent to the ambulance request.</p><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href="http://hl7.org/fhir/R4/StructureDefinition/Flag">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote></div>
+  </text>
+  <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model"/>
+  <version value="4.0.0"/>
+  <name value="Information Model - NHS 111 Report"/>
+  <status value="draft"/>
+  <date value="2019-03-03T00:00:00+00:00"/>
+  <publisher value="mayfield-is.co.uk"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+    </telecom>
+  </contact>
+  <description value="This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="826"/>
+    </coding>
+  </jurisdiction>
+  <start value="ServiceRequest"/>
+  <profile value="http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest"/>
+  <link>
+    <path value="ServiceRequest.requestor"/>
+    <min value="1"/>
+    <max value="1"/>
+    <description value="This links the ambulance request to author of the request."/>
+    <target>
+      <type value="Organization"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Organization"/>
+    </target>
+    <target>
+      <type value="Practitioner"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Practitioner"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.performer"/>
+    <min value="1"/>
+    <max value="1"/>
+    <description value="It is used for the list of recipients of the ambulance request message."/>
+    <target>
+      <type value="Organization"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Organization"/>
+    </target>
+    <target>
+      <type value="Practitioner"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Practitioner"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.replaces"/>
+    <min value="0"/>
+    <max value="1"/>
+    <description value="It is used when the ambulance request message is being replaced by an updated version. The new and previous ambulance request must be for the same NHS 111 case.(i.e. have the same case id). The ambulance request being sent replaces the one referenced in previous ambulance request class."/>
+    <target>
+      <type value="ServiceRequest"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.supportingInformation[x]"/>
+    <sliceName value="TriageOutcome"/>
+    <min value="1"/>
+    <max value="1"/>
+    <description value="Justifying Triage Outcome "/>
+    <target>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Observation"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.supportingInformation[x]"/>
+    <sliceName value="TriageDisposition"/>
+    <min value="0"/>
+    <max value="1"/>
+    <description value="Triage Disposition"/>
+    <target>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Observation"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.notes"/>
+    <min value="0"/>
+    <max value="1"/>
+    <description value="Used to carry additional notes pertinent to the ambulance request."/>
+  </link>
+  <link>
+    <path value="ServiceRequest.supportingInformation[x]"/>
+    <sliceName value="PermissionToView"/>
+    <min value="0"/>
+    <max value="1"/>
+    <description value="It is used to carry the Permission To View outcome."/>
+    <target>
+      <type value="Consent"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Consent"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.encounter"/>
+    <min value="1"/>
+    <max value="1"/>
+    <description value="It is used when the ambulance request message is being replaced by an updated version. The new and previous ambulance request must be for the same NHS 111 case.(i.e. have the same case id). The ambulance request being sent replaces the one referenced in previous ambulance request class."/>
+    <target>
+      <type value="Encounter"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Encounter"/>
+      <link>
+        <path value="Encounter.location"/>
+        <min value="1"/>
+        <max value="1"/>
+        <description value="This is the location where the NHS 111 encounter call was made from by the patient or third party on behalf of the patient."/>
+        <target>
+          <type value="Location"/>
+          <profile value="http://hl7.org/fhir/R4/StructureDefinition/Location"/>
+        </target>
+      </link>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.supportingInformation[x]"/>
+    <sliceName value="TraumaFlag"/>
+    <min value="1"/>
+    <max value="1"/>
+    <description value="It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request."/>
+    <target>
+      <type value="Flag"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Flag"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.supportingInformation[x]"/>
+    <sliceName value="FireFlag"/>
+    <min value="1"/>
+    <max value="1"/>
+    <description value="It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request."/>
+    <target>
+      <type value="Flag"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Flag"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.supportingInformation[x]"/>
+    <sliceName value="SceneSafeFlag"/>
+    <min value="1"/>
+    <max value="1"/>
+    <description value="It is used to indicate information about whether the scene is safe pertinent to the ambulance request."/>
+    <target>
+      <type value="Flag"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Flag"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.supportingInformation[x]"/>
+    <sliceName value="PoliceFlag"/>
+    <min value="1"/>
+    <max value="1"/>
+    <description value="It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request"/>
+    <target>
+      <type value="Flag"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Flag"/>
+    </target>
+  </link>
+  <link>
+    <path value="ServiceRequest.supportingInformation[x]"/>
+    <sliceName value="TrappedFlag"/>
+    <min value="1"/>
+    <max value="1"/>
+    <description value="It is used to indicate information about whether the patient is trapped pertinent to the ambulance request."/>
+    <target>
+      <type value="Flag"/>
+      <profile value="http://hl7.org/fhir/R4/StructureDefinition/Flag"/>
+    </target>
+  </link>
+</GraphDefinition>

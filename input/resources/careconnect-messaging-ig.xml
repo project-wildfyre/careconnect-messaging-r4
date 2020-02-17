@@ -145,6 +145,13 @@
       <name value="Information Model - NHS 111 Report"/>
       <description value="Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)."/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="GraphDefinition/nhs111ambulancerequest-information-model"/>
+      </reference>
+      <name value="Information Model - NHS 111 Ambulance Request"/>
+      <description value="This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

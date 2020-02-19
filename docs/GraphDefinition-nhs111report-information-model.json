@@ -3,7 +3,7 @@
   "id": "nhs111report-information-model",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: nhs111report-information-model</p><p><b>url</b>: <a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111report-information-model\">https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111report-information-model</a></p><p><b>version</b>: 4.0.0</p><p><b>name</b>: Information Model - NHS 111 Report</p><p><b>status</b>: draft</p><p><b>date</b>: 3 Mar 2019, 00:00:00</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html).</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>start</b>: Composition</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Composition\">http://hl7.org/fhir/R4/StructureDefinition/Composition</a></p><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: informationRecipient</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient. </p><blockquote><p><b>target</b></p><p><b>type</b>: Patient</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Patient\">http://hl7.org/fhir/R4/StructureDefinition/Patient</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: HeathcareService</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/HeathcareService\">http://hl7.org/fhir/R4/StructureDefinition/HeathcareService</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: Person</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Person\">http://hl7.org/fhir/R4/StructureDefinition/Person</a></p></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.author</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: It holds details of how and when the author authored the document.</p><blockquote><p><b>target</b></p><p><b>type</b>: Practitioner</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Practitioner\">http://hl7.org/fhir/R4/StructureDefinition/Practitioner</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: Device</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Device\">http://hl7.org/fhir/R4/StructureDefinition/Device</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: Person</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Person\">http://hl7.org/fhir/R4/StructureDefinition/Person</a></p></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.subject</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: ITK recordTarget (The patient whose record is the target for the information in the Document.)</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Patient</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Patient\">http://hl7.org/fhir/R4/StructureDefinition/Patient</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.custodian</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: The custodian is the legal owner of the document and is the organisation responsible for maintaining the information in the document.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Organization</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Organization\">http://hl7.org/fhir/R4/StructureDefinition/Organization</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: informant</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: An informant is a person who informed the author about information contained in the document.</p><blockquote><p><b>target</b></p><p><b>type</b>: Organization</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Organization\">http://hl7.org/fhir/R4/StructureDefinition/Organization</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: Person</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Person\">http://hl7.org/fhir/R4/StructureDefinition/Person</a></p></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: participant</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: Participants are people, organisations or devices that are involved in some way with the CDA document.</p><blockquote><p><b>target</b></p><p><b>type</b>: Organization</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Organization\">http://hl7.org/fhir/R4/StructureDefinition/Organization</a></p></blockquote><blockquote><p><b>target</b></p><p><b>type</b>: Person</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Person\">http://hl7.org/fhir/R4/StructureDefinition/Person</a></p></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.relatesTo.target[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: This is a related document relationship it links the current document to a related document.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Composition</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Composition\">http://hl7.org/fhir/R4/StructureDefinition/Composition</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: documentationOf</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the Composition.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>ServiceRequest</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest\">http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: authorization</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: Details of the authorisation associated with the document</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Consent</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Consent\">http://hl7.org/fhir/R4/StructureDefinition/Consent</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.encounter</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Encounter</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Encounter\">http://hl7.org/fhir/R4/StructureDefinition/Encounter</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: patientDemographicsSection</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: Patient details - unable to locate in the CDA document</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td/><td>Patient</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Patient\">http://hl7.org/fhir/R4/StructureDefinition/Patient</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: TriageAttachment</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK TriageAttachment - This is a base 64 encoded export of Pathway in JSON format</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Binary</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Binary\">http://hl7.org/fhir/R4/StructureDefinition/Binary</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: PermissionToView</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: The Permission to View template details the permission to view the care record associated with this message.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Consent</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Consent\">http://hl7.org/fhir/R4/StructureDefinition/Consent</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>path</b>: Composition.section[x].entry</p><p><b>sliceName</b>: NHS111TextSection</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: Document Text</p></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: nhs111report-information-model</p><p><b>url</b>: <a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111report-information-model\">https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111report-information-model</a></p><p><b>version</b>: 4.0.0</p><p><b>name</b>: Information Model - NHS 111 Report</p><p><b>status</b>: draft</p><p><b>date</b>: 3 Mar 2019, 00:00:00</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html).</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>start</b>: Composition</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Composition\">http://hl7.org/fhir/R4/StructureDefinition/Composition</a></p><blockquote><p><b>link</b></p><p><b>id</b>: #composition</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: The document. This is the focus of the message</p><blockquote><p><b>target</b></p><p><b>type</b>: Composition</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Composition\">http://hl7.org/fhir/R4/StructureDefinition/Composition</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #patient</p><p><b>path</b>: Bundle.entry.resource[0]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Patient</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Patient</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Patient\">http://hl7.org/fhir/R4/StructureDefinition/Patient</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #authorisation</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: Details of the authorisation associated with the document</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Consent</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Consent\">http://hl7.org/fhir/R4/StructureDefinition/Consent</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #permissionToView</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK Consent / ITK Permission to View Section</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Consent</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Consent\">http://hl7.org/fhir/R4/StructureDefinition/Consent</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #triagePathways</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK TriageAttachment - This is a base 64 encoded export of Pathway in JSON format</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Binary</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Binary\">http://hl7.org/fhir/R4/StructureDefinition/Binary</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #encompassingEncounter</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Encounter</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Encounter\">http://hl7.org/fhir/R4/StructureDefinition/Encounter</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #serviceRequest</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the Composition.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'.</p><blockquote><p><b>target</b></p><p><b>type</b>: ServiceRequest</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest\">http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #author</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It holds details of how and when the author authored the document.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Practitioner</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Practitioner\">http://hl7.org/fhir/R4/StructureDefinition/Practitioner</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #custodian</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It holds details of how and when the author authored the document.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Organization</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Organization\">http://hl7.org/fhir/R4/StructureDefinition/Organization</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #recipientService</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: *</p><p><b>description</b>: ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>HealthcareService</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/HealthcareService\">http://hl7.org/fhir/R4/StructureDefinition/HealthcareService</a></td></tr></table></blockquote></div>"
   },
   "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111report-information-model",
   "version": "4.0.0",
@@ -36,182 +36,317 @@
   "profile": "http://hl7.org/fhir/R4/StructureDefinition/Composition",
   "link": [
     {
-      "path": "Composition.section[x].entry",
-      "sliceName": "informationRecipient",
-      "min": 1,
-      "max": "*",
-      "description": "ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient. ",
-      "target": [
-        {
-          "type": "Patient",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
-        },
-        {
-          "type": "HeathcareService",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/HeathcareService"
-        },
-        {
-          "type": "Person",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
-        }
-      ]
-    },
-    {
-      "path": "Composition.author",
-      "min": 1,
-      "max": "*",
-      "description": "It holds details of how and when the author authored the document.",
-      "target": [
-        {
-          "type": "Practitioner",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
-        },
-        {
-          "type": "Device",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Device"
-        },
-        {
-          "type": "Person",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
-        }
-      ]
-    },
-    {
-      "path": "Composition.subject",
+      "id": "#composition",
+      "path": "Bundle.entry.resource[x]",
       "min": 1,
       "max": "1",
-      "description": "ITK recordTarget (The patient whose record is the target for the information in the Document.)",
-      "target": [
-        {
-          "type": "Patient",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
-        }
-      ]
-    },
-    {
-      "path": "Composition.custodian",
-      "min": 1,
-      "max": "1",
-      "description": "The custodian is the legal owner of the document and is the organisation responsible for maintaining the information in the document.",
-      "target": [
-        {
-          "type": "Organization",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
-        }
-      ]
-    },
-    {
-      "path": "Composition.section[x].entry",
-      "sliceName": "informant",
-      "min": 1,
-      "max": "*",
-      "description": "An informant is a person who informed the author about information contained in the document.",
-      "target": [
-        {
-          "type": "Organization",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
-        },
-        {
-          "type": "Person",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
-        }
-      ]
-    },
-    {
-      "path": "Composition.section[x].entry",
-      "sliceName": "participant",
-      "min": 1,
-      "max": "*",
-      "description": "Participants are people, organisations or devices that are involved in some way with the CDA document.",
-      "target": [
-        {
-          "type": "Organization",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
-        },
-        {
-          "type": "Person",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
-        }
-      ]
-    },
-    {
-      "path": "Composition.relatesTo.target[x]",
-      "min": 0,
-      "max": "*",
-      "description": "This is a related document relationship it links the current document to a related document.",
+      "description": "The document. This is the focus of the message",
       "target": [
         {
           "type": "Composition",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Composition"
+          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Composition",
+          "link": [
+            {
+              "path": "Composition.author",
+              "min": 1,
+              "max": "*",
+              "description": "It holds details of how and when the author authored the document.",
+              "target": [
+                {
+                  "type": "Person",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#author"
+                    }
+                  ],
+                  "type": "Practitioner",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
+                },
+                {
+                  "type": "Device",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Device"
+                }
+              ]
+            },
+            {
+              "path": "Composition.subject",
+              "min": 1,
+              "max": "1",
+              "description": "ITK recordTarget (The patient whose record is the target for the information in the Document.)",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#patient"
+                    }
+                  ],
+                  "type": "Patient",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                }
+              ]
+            },
+            {
+              "path": "Composition.custodian",
+              "min": 1,
+              "max": "1",
+              "description": "The custodian is the legal owner of the document and is the organisation responsible for maintaining the information in the document.",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#custodian"
+                    }
+                  ],
+                  "type": "Organization",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                }
+              ]
+            },
+            {
+              "path": "Composition.section[x].entry",
+              "sliceName": "informationRecipient",
+              "min": 1,
+              "max": "*",
+              "description": "ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient. ",
+              "target": [
+                {
+                  "type": "Patient",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#recipientService"
+                    }
+                  ],
+                  "type": "HeathcareService",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/HeathcareService"
+                },
+                {
+                  "type": "Person",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
+                }
+              ]
+            },
+            {
+              "path": "Composition.section[x].entry",
+              "sliceName": "informant",
+              "min": 1,
+              "max": "*",
+              "description": "An informant is a person who informed the author about information contained in the document.",
+              "target": [
+                {
+                  "type": "Person",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
+                },
+                {
+                  "type": "Organization",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                }
+              ]
+            },
+            {
+              "path": "Composition.relatesTo.target[x]",
+              "min": 0,
+              "max": "*",
+              "description": "This is a related document relationship it links the current document to a related document.",
+              "target": [
+                {
+                  "type": "Composition",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Composition"
+                }
+              ]
+            },
+            {
+              "path": "Composition.encounter",
+              "min": 1,
+              "max": "1",
+              "description": "This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#encompassingEncounter"
+                    }
+                  ],
+                  "type": "Encounter",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
+                }
+              ]
+            },
+            {
+              "path": "Composition.section[x].entry",
+              "sliceName": "participant",
+              "min": 1,
+              "max": "*",
+              "description": "Participants are people, organisations or devices that are involved in some way with the CDA document.",
+              "target": [
+                {
+                  "type": "Person",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
+                },
+                {
+                  "type": "Organization",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                }
+              ]
+            },
+            {
+              "path": "Composition.section[x].entry",
+              "sliceName": "documentationOf",
+              "min": 0,
+              "max": "*",
+              "description": "A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the Composition.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'.",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#serviceRequest"
+                    }
+                  ],
+                  "type": "ServiceRequest",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest"
+                }
+              ]
+            },
+            {
+              "path": "Composition.section[x].entry",
+              "sliceName": "authorization",
+              "min": 0,
+              "max": "*",
+              "description": "Details of the authorisation associated with the document",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#authorisation"
+                    }
+                  ],
+                  "type": "Consent",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                }
+              ]
+            },
+            {
+              "path": "Composition.section[x].entry",
+              "sliceName": "patientDemographicsSection",
+              "min": 1,
+              "max": "*",
+              "description": "Patient details - unable to locate in the CDA document",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#patient"
+                    }
+                  ],
+                  "type": "Patient",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                }
+              ]
+            },
+            {
+              "path": "Composition.section[x].entry",
+              "sliceName": "TriageAttachment",
+              "min": 0,
+              "max": "*",
+              "description": "ITK TriageAttachment - This is a base 64 encoded export of Pathway in JSON format",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#triagePathways"
+                    }
+                  ],
+                  "type": "Binary",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Binary"
+                }
+              ]
+            },
+            {
+              "path": "Composition.section[x].entry",
+              "sliceName": "PermissionToView",
+              "min": 0,
+              "max": "*",
+              "description": "The Permission to View template details the permission to view the care record associated with this message.",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#permissionToView"
+                    }
+                  ],
+                  "type": "Consent",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                }
+              ]
+            },
+            {
+              "path": "Composition.section[x].entry",
+              "sliceName": "NHS111TextSection",
+              "min": 0,
+              "max": "*",
+              "description": "Document Text"
+            }
+          ]
         }
       ]
     },
     {
-      "path": "Composition.section[x].entry",
-      "sliceName": "documentationOf",
-      "min": 0,
-      "max": "*",
-      "description": "A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the Composition.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'.",
+      "id": "#patient",
+      "path": "Bundle.entry.resource[0]",
+      "min": 1,
+      "max": "1",
+      "description": "Patient",
       "target": [
         {
-          "type": "ServiceRequest",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest"
+          "type": "Patient",
+          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
         }
       ]
     },
     {
-      "path": "Composition.section[x].entry",
-      "sliceName": "authorization",
+      "id": "#authorisation",
+      "path": "Bundle.entry.resource[x]",
       "min": 0,
       "max": "*",
       "description": "Details of the authorisation associated with the document",
       "target": [
         {
-          "extension": [
-            {
-              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
-              "valueString": "#consent"
-            }
-          ],
           "type": "Consent",
           "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
         }
       ]
     },
     {
-      "path": "Composition.encounter",
-      "min": 1,
-      "max": "1",
-      "description": "This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.",
-      "target": [
-        {
-          "type": "Encounter",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
-        }
-      ]
-    },
-    {
-      "path": "Composition.section[x].entry",
-      "sliceName": "patientDemographicsSection",
-      "min": 1,
+      "id": "#permissionToView",
+      "path": "Bundle.entry.resource[x]",
+      "min": 0,
       "max": "*",
-      "description": "Patient details - unable to locate in the CDA document",
+      "description": "ITK Consent / ITK Permission to View Section",
       "target": [
         {
-          "extension": [
-            {
-              "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
-              "valueString": "#patient"
-            }
-          ],
-          "type": "Patient",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+          "type": "Consent",
+          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
         }
       ]
     },
     {
-      "path": "Composition.section[x].entry",
-      "sliceName": "TriageAttachment",
+      "id": "#triagePathways",
+      "path": "Bundle.entry.resource[x]",
       "min": 0,
       "max": "*",
       "description": "ITK TriageAttachment - This is a base 64 encoded export of Pathway in JSON format",
@@ -223,24 +358,207 @@
       ]
     },
     {
-      "path": "Composition.section[x].entry",
-      "sliceName": "PermissionToView",
-      "min": 0,
-      "max": "*",
-      "description": "The Permission to View template details the permission to view the care record associated with this message.",
+      "id": "#encompassingEncounter",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "1",
+      "description": "This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.",
       "target": [
         {
-          "type": "Consent",
-          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+          "type": "Encounter",
+          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
         }
       ]
     },
     {
-      "path": "Composition.section[x].entry",
-      "sliceName": "NHS111TextSection",
+      "id": "#serviceRequest",
+      "path": "Bundle.entry.resource[x]",
       "min": 0,
       "max": "*",
-      "description": "Document Text"
+      "description": "A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the Composition.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'.",
+      "target": [
+        {
+          "type": "ServiceRequest",
+          "profile": "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest",
+          "link": [
+            {
+              "path": "ServiceRequest.subject",
+              "min": 1,
+              "max": "1",
+              "description": "The patient",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#patient"
+                    }
+                  ],
+                  "type": "Patient",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                }
+              ]
+            },
+            {
+              "path": "ServiceRequest.encounter",
+              "min": 1,
+              "max": "1",
+              "description": "Encompassing Encounter",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#encompassingEncounter"
+                    }
+                  ],
+                  "type": "Encounter",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
+                }
+              ]
+            },
+            {
+              "path": "ServiceRequest.requester",
+              "min": 1,
+              "max": "1",
+              "description": "Who is requesting the serviceRequest. Not clear from ITK CDA Message",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#author"
+                    }
+                  ],
+                  "type": "Practitioner",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#custodian"
+                    }
+                  ],
+                  "type": "Organization",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                }
+              ]
+            },
+            {
+              "path": "ServiceRequest.performer[x]",
+              "min": 1,
+              "max": "*",
+              "description": "ITK informationRecipient. The primary information recipients of the service request are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient.",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#recipientService"
+                    }
+                  ],
+                  "type": "HealthcareService",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/HealthcareService"
+                }
+              ]
+            },
+            {
+              "path": "ServiceRequest.supportingInfo[]",
+              "min": 0,
+              "max": "1",
+              "description": "Supporting information - Triage Block",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#triagePathways"
+                    }
+                  ],
+                  "type": "Binary",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Binary"
+                }
+              ]
+            },
+            {
+              "path": "ServiceRequest.supportingInfo[]",
+              "min": 0,
+              "max": "*",
+              "description": "Authorisation",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#authorisation"
+                    }
+                  ],
+                  "type": "Consent",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                }
+              ]
+            },
+            {
+              "path": "ServiceRequest.supportingInfo[]",
+              "min": 0,
+              "max": "*",
+              "description": "Permission To View",
+              "target": [
+                {
+                  "extension": [
+                    {
+                      "url": "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "valueString": "#permissionToView"
+                    }
+                  ],
+                  "type": "Consent",
+                  "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "#author",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "1",
+      "description": "It holds details of how and when the author authored the document.",
+      "target": [
+        {
+          "type": "Practitioner",
+          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
+        }
+      ]
+    },
+    {
+      "id": "#custodian",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "1",
+      "description": "It holds details of how and when the author authored the document.",
+      "target": [
+        {
+          "type": "Organization",
+          "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+        }
+      ]
+    },
+    {
+      "id": "#recipientService",
+      "path": "Bundle.entry.resource[x]",
+      "min": 1,
+      "max": "*",
+      "description": "ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient.",
+      "target": [
+        {
+          "type": "HealthcareService",
+          "profile": "http://hl7.org/fhir/R4/StructureDefinition/HealthcareService"
+        }
+      ]
     }
   ]
 }

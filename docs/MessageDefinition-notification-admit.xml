@@ -36,6 +36,7 @@
   <category value="notification"/>
   <focus>
     <code value="Encounter"/>
+    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter"/>
     <min value="1"/>
     <max value="1"/>
   </focus>

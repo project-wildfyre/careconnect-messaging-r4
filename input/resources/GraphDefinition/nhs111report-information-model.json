@@ -12,14 +12,13 @@
                         "telecom": [
                                 {
                                         "system": "email",
-                                        "value": "kevin.mayfield@mayfield-is.co.uk"
+                                        "value": "mailto:kevin.mayfield@mayfield-is.co.uk"
                                 }
                         ]
                 }
         ],
         "description": "Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html).",
         "start": "Composition",
-        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Composition",
         "link": [
                 {
                         "id": "#composition",
@@ -30,7 +29,6 @@
                         "target": [
                                 {
                                         "type": "Composition",
-                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Composition",
                                         "link": [
                                                 {
                                                         "path": "Composition.author",
@@ -49,12 +47,10 @@
                                                                                         "valueString": "#author"
                                                                                 }
                                                                         ],
-                                                                        "type": "Practitioner",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
+                                                                        "type": "Practitioner"
                                                                 },
                                                                 {
-                                                                        "type": "Device",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Device"
+                                                                        "type": "Device"
                                                                 }
                                                         ]
                                                 },
@@ -71,8 +67,7 @@
                                                                                         "valueString": "#patient"
                                                                                 }
                                                                         ],
-                                                                        "type": "Patient",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                                                                        "type": "Patient"
                                                                 }
                                                         ]
                                                 },
@@ -89,10 +84,9 @@
                                                                                         "valueString": "#custodian"
                                                                                 }
                                                                         ],
-                                                                        "type": "Organization",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                                                                        "type": "Organization"
                                                                 }
-                                                        ]
+                                                        ]339Ragnar
                                                 },
                                                 {
                                                         "path": "Composition.section[x].entry",
@@ -102,8 +96,7 @@
                                                         "description": "ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient. ",
                                                         "target": [
                                                                 {
-                                                                        "type": "Patient",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                                                                        "type": "Patient"
                                                                 },
                                                                 {
                                                                         "extension": [
@@ -112,12 +105,10 @@
                                                                                         "valueString": "#recipientService"
                                                                                 }
                                                                         ],
-                                                                        "type": "HeathcareService",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/HeathcareService"
+                                                                        "type": "HeathcareService"
                                                                 },
                                                                 {
-                                                                        "type": "Person",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
+                                                                        "type": "Person"
                                                                 }
                                                         ]
                                                 },
@@ -129,12 +120,10 @@
                                                         "description": "An informant is a person who informed the author about information contained in the document.",
                                                         "target": [
                                                                 {
-                                                                        "type": "Person",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
+                                                                        "type": "Person"
                                                                 },
                                                                 {
-                                                                        "type": "Organization",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                                                                        "type": "Organization"
                                                                 }
                                                         ]
                                                 },
@@ -145,8 +134,7 @@
                                                         "description": "This is a related document relationship it links the current document to a related document.",
                                                         "target": [
                                                                 {
-                                                                        "type": "Composition",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Composition"
+                                                                        "type": "Composition"
                                                                 }
                                                         ]
                                                 },
@@ -163,8 +151,7 @@
                                                                                         "valueString": "#encompassingEncounter"
                                                                                 }
                                                                         ],
-                                                                        "type": "Encounter",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
+                                                                        "type": "Encounter"
                                                                 }
                                                         ]
                                                 },
@@ -176,12 +163,10 @@
                                                         "description": "Participants are people, organisations or devices that are involved in some way with the CDA document.",
                                                         "target": [
                                                                 {
-                                                                        "type": "Person",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Person"
+                                                                        "type": "Person"
                                                                 },
                                                                 {
-                                                                        "type": "Organization",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                                                                        "type": "Organization"
                                                                 }
                                                         ]
                                                 },
@@ -199,8 +184,7 @@
                                                                                         "valueString": "#serviceRequest"
                                                                                 }
                                                                         ],
-                                                                        "type": "ServiceRequest",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest"
+                                                                        "type": "ServiceRequest"
                                                                 }
                                                         ]
                                                 },
@@ -218,8 +202,7 @@
                                                                                         "valueString": "#authorisation"
                                                                                 }
                                                                         ],
-                                                                        "type": "Consent",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                                                                        "type": "Consent"
                                                                 }
                                                         ]
                                                 },
@@ -237,8 +220,7 @@
                                                                                         "valueString": "#patient"
                                                                                 }
                                                                         ],
-                                                                        "type": "Patient",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                                                                        "type": "Patient"
                                                                 }
                                                         ]
                                                 },
@@ -256,8 +238,7 @@
                                                                                         "valueString": "#triagePathways"
                                                                                 }
                                                                         ],
-                                                                        "type": "Binary",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Binary"
+                                                                        "type": "Binary"
                                                                 }
                                                         ]
                                                 },
@@ -275,8 +256,7 @@
                                                                                         "valueString": "#permissionToView"
                                                                                 }
                                                                         ],
-                                                                        "type": "Consent",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                                                                        "type": "Consent"
                                                                 }
                                                         ]
                                                 },
@@ -299,8 +279,7 @@
                         "description": "Patient",
                         "target": [
                                 {
-                                        "type": "Patient",
-                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                                        "type": "Patient"
                                 }
                         ]
                 },
@@ -312,8 +291,7 @@
                         "description": "Details of the authorisation associated with the document",
                         "target": [
                                 {
-                                        "type": "Consent",
-                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                                        "type": "Consent"
                                 }
                         ]
                 },
@@ -325,8 +303,7 @@
                         "description": "ITK Consent / ITK Permission to View Section",
                         "target": [
                                 {
-                                        "type": "Consent",
-                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                                        "type": "Consent"
                                 }
                         ]
                 },
@@ -338,8 +315,7 @@
                         "description": "ITK TriageAttachment - This is a base 64 encoded export of Pathway in JSON format",
                         "target": [
                                 {
-                                        "type": "Binary",
-                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Binary"
+                                        "type": "Binary"
                                 }
                         ]
                 },
@@ -351,8 +327,7 @@
                         "description": "This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.",
                         "target": [
                                 {
-                                        "type": "Encounter",
-                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
+                                        "type": "Encounter"
                                 }
                         ]
                 },
@@ -380,8 +355,7 @@
                                                                                         "valueString": "#patient"
                                                                                 }
                                                                         ],
-                                                                        "type": "Patient",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                                                                        "type": "Patient"
                                                                 }
                                                         ]
                                                 },
@@ -398,8 +372,7 @@
                                                                                         "valueString": "#encompassingEncounter"
                                                                                 }
                                                                         ],
-                                                                        "type": "Encounter",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
+                                                                        "type": "Encounter"
                                                                 }
                                                         ]
                                                 },
@@ -416,8 +389,7 @@
                                                                                         "valueString": "#author"
                                                                                 }
                                                                         ],
-                                                                        "type": "Practitioner",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
+                                                                        "type": "Practitioner"
                                                                 },
                                                                 {
                                                                         "extension": [
@@ -426,8 +398,7 @@
                                                                                         "valueString": "#custodian"
                                                                                 }
                                                                         ],
-                                                                        "type": "Organization",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                                                                        "type": "Organization"
                                                                 }
                                                         ]
                                                 },
@@ -444,8 +415,7 @@
                                                                                         "valueString": "#recipientService"
                                                                                 }
                                                                         ],
-                                                                        "type": "HealthcareService",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/HealthcareService"
+                                                                        "type": "HealthcareService"
                                                                 }
                                                         ]
                                                 },
@@ -462,8 +432,7 @@
                                                                                         "valueString": "#triagePathways"
                                                                                 }
                                                                         ],
-                                                                        "type": "Binary",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Binary"
+                                                                        "type": "Binary"
                                                                 }
                                                         ]
                                                 },
@@ -480,8 +449,7 @@
                                                                                         "valueString": "#authorisation"
                                                                                 }
                                                                         ],
-                                                                        "type": "Consent",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                                                                        "type": "Consent"
                                                                 }
                                                         ]
                                                 },
@@ -498,8 +466,7 @@
                                                                                         "valueString": "#permissionToView"
                                                                                 }
                                                                         ],
-                                                                        "type": "Consent",
-                                                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                                                                        "type": "Consent"
                                                                 }
                                                         ]
                                                 }
@@ -515,8 +482,7 @@
                         "description": "It holds details of how and when the author authored the document.",
                         "target": [
                                 {
-                                        "type": "Practitioner",
-                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
+                                        "type": "Practitioner"
                                 }
                         ]
                 },
@@ -528,8 +494,7 @@
                         "description": "It holds details of how and when the author authored the document.",
                         "target": [
                                 {
-                                        "type": "Organization",
-                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                                        "type": "Organization"
                                 }
                         ]
                 },
@@ -541,8 +506,7 @@
                         "description": "ITK informationRecipient. The primary information recipients of the clinical documents are usually expected to perform some action on receipt of a CDA document. There can be more than one primary recipient.",
                         "target": [
                                 {
-                                        "type": "HealthcareService",
-                                        "profile": "http://hl7.org/fhir/R4/StructureDefinition/HealthcareService"
+                                        "type": "HealthcareService"
                                 }
                         ]
                 }

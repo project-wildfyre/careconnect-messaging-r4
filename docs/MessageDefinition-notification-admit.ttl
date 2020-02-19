@@ -49,6 +49,10 @@
   fhir:MessageDefinition.focus [
      fhir:index 0;
      fhir:MessageDefinition.focus.code [ fhir:value "Encounter" ];
+     fhir:MessageDefinition.focus.profile [
+       fhir:value "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter";
+       fhir:link <https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter>
+     ];
      fhir:MessageDefinition.focus.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
      fhir:MessageDefinition.focus.max [ fhir:value "1" ]
   ] .

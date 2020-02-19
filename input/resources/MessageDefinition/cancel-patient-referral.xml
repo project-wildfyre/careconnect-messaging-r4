@@ -18,9 +18,7 @@
     <category value="notification"></category>
     <focus>
         <code value="ServiceRequest"></code>
-        <profile>
-            <reference value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest"/>
-        </profile>
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest"/>
         <min value="1"/>
         <max value="1"/>
     </focus>

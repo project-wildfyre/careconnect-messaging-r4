@@ -2,7 +2,7 @@
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir /input-cache/schemas-r5/fhir-single.xsd">
   <id value="careconnect-messaging-r4"/>
-  <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-stu3"/>
+  <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4"/>
   <version value="4.0.0"/>
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
@@ -12,7 +12,7 @@
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="email"/>
-      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+      <value value="mailto:kevin.mayfield@mayfield-is.co.uk"/>
     </telecom>
   </contact>
   <description value="Demonstration of Care Connect STU3 Implementation Guide to support Messaging"/>

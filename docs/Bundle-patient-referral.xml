@@ -69,7 +69,7 @@
       <Encounter>
         <id value="38eeb5d7-e689-4ec5-81d2-f51f3011c72c"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p><b>identifier</b>: 2141</p><p><b>status</b>: in-progress</p><p><b>class</b>: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'AMB', stated as 'ambulatory')</p><p><b>type</b>: 13 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href="urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4">urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ADM' = 'ADM', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'REF', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 1 Nov 2010, 16:00:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>Usual place of residence <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19', given as 'Usual place of residence'})</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href="urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc">South Yorks 999</a></td><td>active</td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p><b>identifier</b>: 2141</p><p><b>status</b>: in-progress</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: 13 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href="urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4">urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'ADM' = 'admitter', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 1 Nov 2010, 16:00:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class="grid"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>Usual place of residence <span style="background: LightGoldenRodYellow">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19', given as 'Usual place of residence'})</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href="urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc">South Yorks 999</a></td><td>active</td></tr></table></div>
         </text>
         <identifier>
           <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
@@ -77,7 +77,7 @@
         </identifier>
         <status value="in-progress"/>
         <class>
-          <system value="http://hl7.org/fhir/v3/ActCode"/>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
           <code value="AMB"/>
           <display value="ambulatory"/>
         </class>
@@ -99,7 +99,7 @@
         <participant>
           <type>
             <coding>
-              <system value="http://hl7.org/fhir/v3/ParticipationType"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
               <code value="ATND"/>
               <display value="attender"/>
             </coding>
@@ -115,7 +115,7 @@
         <participant>
           <type>
             <coding>
-              <system value="http://hl7.org/fhir/v3/ParticipationType"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
               <code value="ADM"/>
               <display value="admitter"/>
             </coding>
@@ -131,7 +131,7 @@
         <participant>
           <type>
             <coding>
-              <system value="http://hl7.org/fhir/v3/ParticipationType"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
               <code value="CON"/>
               <display value="consultant"/>
             </coding>
@@ -147,7 +147,7 @@
         <participant>
           <type>
             <coding>
-              <system value="http://hl7.org/fhir/v3/ParticipationType"/>
+              <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
               <code value="REF"/>
               <display value="referrer"/>
             </coding>

@@ -1,37 +1,37 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>CARECONNECT-MESSAGING-R4\Information Model - NHS 111 Ambulance Request - JSON Representation - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
      
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
   
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
   
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -39,34 +39,34 @@
 
     <style type="text/css">h2{--heading-prefix:"10.9"}
     h3,h4,h5,h6{--heading-prefix:"10.9"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
         
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
     
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
     
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">Care Connect Messaging</a></li>
-  <!-- <li class="dropdown">
+<!--  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">MyIg Background<b class="caret">
       </b>
     </a>
@@ -75,7 +75,7 @@
         <a href="background.html">Backaground</a>
       </li>
     </ul>
-  </li> -->
+  </li>-->
  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret">
       </b>
@@ -112,27 +112,27 @@
   <li><a href="artifacts.html">Artifact Summary</a></li>
 </ul>      
 
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->  
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Information Model - NHS 111 Ambulance Request</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Information Model - NHS 111 Ambulance Request</b></li>
         </ul>  
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
     
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <a name="root"> </a>
   <h2 id="root">Information Model - NHS 111 Ambulance Request - JSON Representation</h2>
   <p>
@@ -154,11 +154,11 @@
   "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.id">id</a>" : "nhs111ambulancerequest-information-model",
   "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: nhs111ambulancerequest-information-model&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model\"&gt;https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 4.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Information Model - NHS 111 Report&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 3 Mar 2019, 00:00:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: mayfield-is.co.uk&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance.&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United Kingdom of Great Britain and Northern Ireland (GBR) &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: ServiceRequest&lt;/p&gt;&lt;p&gt;&lt;b&gt;profile&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest\"&gt;http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #serviceRequest&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: *&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the Composition.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: ServiceRequest&lt;/p&gt;&lt;p&gt;&lt;b&gt;profile&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest\"&gt;http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Links&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[0]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Patient&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Patient&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Patient\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Patient&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #author&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: It holds details of how and when the author authored the document.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Practitioner&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Practitioner\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Practitioner&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #custodian&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: It holds details of how and when the author authored the document.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Organization\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Organization&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #recipientOrganisation&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Recieving Ambulance Service.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Organization\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Organization&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #triageOutcome&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Triage Outcome (coded)&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Observation&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Observation\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Observation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #triageDisposition&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Triage Disposition (coded)&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Observation&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Observation\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Observation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #clinicalDiscriminator&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: a concept from the NHS Pathways codes, or a text representation, to describe the clinical discriminator.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Observation&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Observation\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Observation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #permissionToView&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: *&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: ITK Consent / ITK Permission to View Section&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Consent&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Consent\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Consent&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #encompassingEncounter&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Encounter&lt;/p&gt;&lt;p&gt;&lt;b&gt;profile&lt;/b&gt;: &lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Encounter\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Encounter&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Links&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #serviceLocation&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This is the location where the NHS 111 encounter call was made from by the patient or third party on behalf of the patient.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Location&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Location\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Location&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #traumaFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (Observation?) It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Flag&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #fireFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (Observation?) It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Flag&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #safeFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (Observation?) It is used to indicate information about whether the scene is safe pertinent to the ambulance request.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Flag&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #policeFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (Observation?) It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Flag&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #trappedFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (Observation?) It is used to indicate information about whether the patient is trapped pertinent to the ambulance request.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Flag&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #clinicalNotes&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Composition&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/StructureDefinition/Composition\"&gt;http://hl7.org/fhir/R4/StructureDefinition/Composition&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: nhs111ambulancerequest-information-model&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\&quot;https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model\&quot;&gt;https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 4.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Information Model - NHS 111 Ambulance Request&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 3 Mar 2019, 00:00:00&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: mayfield-is.co.uk&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance.&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United Kingdom of Great Britain and Northern Ireland (GBR) &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;start&lt;/b&gt;: ServiceRequest&lt;/p&gt;&lt;p&gt;&lt;b&gt;profile&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest\&quot;&gt;http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #serviceRequest&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: *&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the Composition.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: ServiceRequest&lt;/p&gt;&lt;h3&gt;Links&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #patient&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[0]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Patient&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Patient&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #author&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: It holds details of how and when the author authored the document.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Practitioner&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #custodian&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: It holds details of how and when the author authored the document.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #recipientOrganisation&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Recieving Ambulance Service.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Organization&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #triageOutcome&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Triage Outcome (coded)&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Observation&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #triageDisposition&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Triage Disposition (coded)&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Observation&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #clinicalDiscriminator&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: a concept from the NHS Pathways codes, or a text representation, to describe the clinical discriminator. This is the problem or serviceRequest.reasonCode&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Condition&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #permissionToView&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: *&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: ITK Consent / ITK Permission to View Section&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Consent&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #encompassingEncounter&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;target&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Encounter&lt;/p&gt;&lt;h3&gt;Links&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #serviceLocation&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: This is the location where the NHS 111 encounter call was made from by the patient or third party on behalf of the patient.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Location&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #traumaFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (pertinent Information Questionnaire item?) It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #fireFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (pertinent Information Questionnaire item?) It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #safeFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (pertinent Information Questionnaire item?) It is used to indicate information about whether the scene is safe pertinent to the ambulance request.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #policeFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (pertinent Information Questionnaire item?) It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #trappedFlag&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 0&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: (pertinent Information Questionnaire item?) It is used to indicate information about whether the patient is trapped pertinent to the ambulance request.&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Flag&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: #clinicalNotes&lt;/p&gt;&lt;p&gt;&lt;b&gt;path&lt;/b&gt;: Bundle.entry.resource[x]&lt;/p&gt;&lt;p&gt;&lt;b&gt;min&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;max&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: pertinent Information AdditionalNotes - this could be annotation in the serviceRequest&lt;/p&gt;&lt;h3&gt;Targets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Composition&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.url">url</a>" : "https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model",
   "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.version">version</a>" : "4.0.0",
-  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.name">name</a>" : "Information Model - NHS 111 Report",
+  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.name">name</a>" : "Information Model - NHS 111 Ambulance Request",
   "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.date">date</a>" : "2019-03-03T00:00:00+00:00",
   "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.publisher">publisher</a>" : "mayfield-is.co.uk",
@@ -167,7 +167,7 @@
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "kevin.mayfield@mayfield-is.co.uk"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "mailto:kevin.mayfield@mayfield-is.co.uk"
         }
       ]
     }
@@ -195,7 +195,6 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "ServiceRequest",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest",
           "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.link">link</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "ServiceRequest.subject",
@@ -210,8 +209,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#patient"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Patient",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Patient"
                 }
               ]
             },
@@ -228,8 +226,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#custodian"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Organization",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Organization"
                 },
                 {
                   "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.extension">extension</a>" : [
@@ -238,8 +235,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#author"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Practitioner",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Practitioner"
                 }
               ]
             },
@@ -256,8 +252,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#recipientOrganisation"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Organization",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Organization"
                 }
               ]
             },
@@ -268,8 +263,7 @@
               "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "It is used when the ambulance request message is being replaced by an updated version. The new and previous ambulance request must be for the same NHS 111 case.(i.e. have the same case id). The ambulance request being sent replaces the one referenced in previous ambulance request class.",
               "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "ServiceRequest",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "ServiceRequest"
                 }
               ]
             },
@@ -287,8 +281,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#triageOutcome"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Observation"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation"
                 }
               ]
             },
@@ -305,15 +298,14 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#triageDisposition"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Observation"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation"
                 }
               ]
             },
             {
               "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "ServiceRequest.supportingInformation[x]",
               "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.min">min</a>" : 0,
-              "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "1",
+              "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "*",
               "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "Clinical Discriminator",
               "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
                 {
@@ -323,8 +315,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#clinicalDiscriminator"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Observation"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Condition"
                 }
               ]
             },
@@ -341,8 +332,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#clinicalNotes"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Composition",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Composition"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Composition"
                 }
               ]
             },
@@ -360,8 +350,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#permissionToView"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Consent",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Consent"
                 }
               ]
             },
@@ -378,8 +367,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#encompassingEncounter"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Encounter",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Encounter"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Encounter"
                 }
               ]
             },
@@ -397,8 +385,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#traumaFlag"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
                 }
               ]
             },
@@ -416,8 +403,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#fireFlag"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
                 }
               ]
             },
@@ -435,8 +421,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#safeFlag"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
                 }
               ]
             },
@@ -454,8 +439,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#policeFlag"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
                 }
               ]
             },
@@ -473,8 +457,7 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#trappedFlag"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
                 }
               ]
             }
@@ -490,8 +473,7 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "Patient",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Patient",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Patient"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Patient"
         }
       ]
     },
@@ -503,8 +485,7 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "It holds details of how and when the author authored the document.",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Practitioner",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Practitioner"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Practitioner"
         }
       ]
     },
@@ -516,8 +497,7 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "It holds details of how and when the author authored the document.",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Organization",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Organization"
         }
       ]
     },
@@ -529,8 +509,7 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "Recieving Ambulance Service.",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Organization",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Organization"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Organization"
         }
       ]
     },
@@ -542,8 +521,7 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "Triage Outcome (coded)",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Observation"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation"
         }
       ]
     },
@@ -555,8 +533,7 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "Triage Disposition (coded)",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Observation"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation"
         }
       ]
     },
@@ -565,11 +542,10 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "Bundle.entry.resource[x]",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.min">min</a>" : 1,
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "1",
-      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "a concept from the NHS Pathways codes, or a text representation, to describe the clinical discriminator.",
+      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "a concept from the NHS Pathways codes, or a text representation, to describe the clinical discriminator. This is the problem or serviceRequest.reasonCode",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Observation",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Observation"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Condition"
         }
       ]
     },
@@ -581,8 +557,7 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "ITK Consent / ITK Permission to View Section",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Consent",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Consent"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Consent"
         }
       ]
     },
@@ -595,7 +570,6 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Encounter",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Encounter",
           "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.link">link</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "Encounter.location",
@@ -610,8 +584,24 @@
                       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#serviceLocation"
                     }
                   ],
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Location",
-                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Location"
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Location"
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "Encounter.reasonReference",
+              "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.min">min</a>" : 1,
+              "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "1",
+              "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "Possibly location of clinical discriminator (which appears to be the problem). ",
+              "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.extension">extension</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId",
+                      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "#clinicalDiscriminator"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Condition"
                 }
               ]
             }
@@ -627,8 +617,7 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "This is the location where the NHS 111 encounter call was made from by the patient or third party on behalf of the patient.",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Location",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Location"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Location"
         }
       ]
     },
@@ -637,11 +626,10 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "Bundle.entry.resource[x]",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.min">min</a>" : 0,
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "1",
-      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(Observation?) It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request.",
+      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(pertinent Information Questionnaire item?) It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request.",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
         }
       ]
     },
@@ -650,11 +638,10 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "Bundle.entry.resource[x]",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.min">min</a>" : 0,
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "1",
-      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(Observation?) It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request.",
+      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(pertinent Information Questionnaire item?) It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request.",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
         }
       ]
     },
@@ -663,11 +650,10 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "Bundle.entry.resource[x]",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.min">min</a>" : 0,
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "1",
-      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(Observation?) It is used to indicate information about whether the scene is safe pertinent to the ambulance request.",
+      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(pertinent Information Questionnaire item?) It is used to indicate information about whether the scene is safe pertinent to the ambulance request.",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
         }
       ]
     },
@@ -676,11 +662,10 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "Bundle.entry.resource[x]",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.min">min</a>" : 0,
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "1",
-      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(Observation?) It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request",
+      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(pertinent Information Questionnaire item?) It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
         }
       ]
     },
@@ -689,11 +674,10 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "Bundle.entry.resource[x]",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.min">min</a>" : 0,
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "1",
-      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(Observation?) It is used to indicate information about whether the patient is trapped pertinent to the ambulance request.",
+      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "(pertinent Information Questionnaire item?) It is used to indicate information about whether the patient is trapped pertinent to the ambulance request.",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Flag"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Flag"
         }
       ]
     },
@@ -702,10 +686,10 @@
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.path">path</a>" : "Bundle.entry.resource[x]",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.min">min</a>" : 1,
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.description">description</a>" : "pertinent Information AdditionalNotes - this could be annotation in the serviceRequest",
       "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target">target</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Composition",
-          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.profile">profile</a>" : "http://hl7.org/fhir/R4/StructureDefinition/Composition"
+          "<a href="http://hl7.org/fhir/R4/graphdefinition.html#GraphDefinition.link.target.type">type</a>" : "Composition"
         }
       ]
     }
@@ -716,44 +700,44 @@
   
   
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
 
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="4f2d2618-d4ea-477a-a4cc-9d8a9f760b1d">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 19, 2020 12:50+0000">2020-02-19</span>
+        <p>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 19, 2020 15:04+0000">2020-02-19</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>

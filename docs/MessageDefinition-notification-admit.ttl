@@ -28,7 +28,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
+       fhir:ContactPoint.value [ fhir:value "mailto:kevin.mayfield@mayfield-is.co.uk" ]
      ]
   ];
   fhir:MessageDefinition.jurisdiction [
@@ -40,6 +40,11 @@
      ]
   ];
   fhir:MessageDefinition.copyright [ fhir:value "Copyright © 2020 Project Wildfyre"];
+  fhir:MessageDefinition.eventCoding [
+     fhir:Coding.system [ fhir:value "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" ];
+     fhir:Coding.code [ fhir:value "notification-admit" ];
+     fhir:Coding.display [ fhir:value "Notification Admit" ]
+  ];
   fhir:MessageDefinition.category [ fhir:value "notification"];
   fhir:MessageDefinition.focus [
      fhir:index 0;

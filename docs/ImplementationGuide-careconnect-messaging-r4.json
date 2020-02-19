@@ -3,21 +3,21 @@
   "id": "careconnect-messaging-r4",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>\n</div></div>"
   },
-  "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-stu3",
+  "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4",
   "version": "4.0.0",
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-02-19T12:50:01+00:00",
+  "date": "2020-02-19T15:04:48+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
       "telecom": [
         {
           "system": "email",
-          "value": "kevin.mayfield@mayfield-is.co.uk"
+          "value": "mailto:kevin.mayfield@mayfield-is.co.uk"
         }
       ]
     }

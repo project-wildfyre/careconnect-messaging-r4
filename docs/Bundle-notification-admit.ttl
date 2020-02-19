@@ -83,7 +83,7 @@
   fhir:Resource.id [ fhir:value "506ab3bc-8efa-40bc-a7ad-1643d467eb4f"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 506ab3bc-8efa-40bc-a7ad-1643d467eb4f</p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'IMP', stated as 'inpatient encounter')</p><p><b>type</b>: 13 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c\">urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'ATND' = 'ATND', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'CON' = 'CON', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ParticipationType code 'REF' = 'REF', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef\">OBS1</a></td><td>active</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 506ab3bc-8efa-40bc-a7ad-1643d467eb4f</p><p><b>identifier</b>: 2139</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>type</b>: 13 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = '13)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c\">urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 20 Oct 2010, 17:16:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>19 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = '19)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef\">OBS1</a></td><td>active</td></tr></table></div>"
   ];
   fhir:Encounter.identifier [
      fhir:index 0;
@@ -92,7 +92,7 @@
   ];
   fhir:Encounter.status [ fhir:value "in-progress"];
   fhir:Encounter.class [
-     fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ActCode" ];
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
      fhir:Coding.code [ fhir:value "IMP" ];
      fhir:Coding.display [ fhir:value "inpatient encounter" ]
   ];
@@ -120,7 +120,7 @@
        fhir:index 0;
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ParticipationType" ];
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ];
          fhir:Coding.code [ fhir:value "ATND" ];
          fhir:Coding.display [ fhir:value "attender" ]
        ]
@@ -138,7 +138,7 @@
        fhir:index 0;
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ParticipationType" ];
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ];
          fhir:Coding.code [ fhir:value "CON" ];
          fhir:Coding.display [ fhir:value "consultant" ]
        ]
@@ -156,7 +156,7 @@
        fhir:index 0;
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ParticipationType" ];
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" ];
          fhir:Coding.code [ fhir:value "REF" ];
          fhir:Coding.display [ fhir:value "referrer" ]
        ]

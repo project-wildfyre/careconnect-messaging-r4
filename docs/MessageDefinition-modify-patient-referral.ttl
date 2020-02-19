@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "modify-patient-referral"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: modify-patient-referral</p><p><b>url</b>: <a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/modify-patient-referral\">https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/modify-patient-referral</a></p><p><b>identifier</b>: c81b88dc-760e-4b1e-9cdb-c5f853630664</p><p><b>version</b>: 4.0.0</p><p><b>title</b>: Modify Patient Referral</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright © 2020 Project Wildfyre</p><p><b>category</b>: notification</p><h3>Focus</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>ServiceRequest</td><td>1</td><td>1</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: modify-patient-referral</p><p><b>url</b>: <a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/modify-patient-referral\">https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/modify-patient-referral</a></p><p><b>identifier</b>: c81b88dc-760e-4b1e-9cdb-c5f853630664</p><p><b>version</b>: 4.0.0</p><p><b>title</b>: Modify Patient Referral</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright © 2020 Project Wildfyre</p><p><b>event</b>: Modify Patient Referral (Details: https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2 code modify-patient-referral = 'modify-patient-referral', stated as 'Modify Patient Referral')</p><p><b>category</b>: notification</p><h3>Focus</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>ServiceRequest</td><td>1</td><td>1</td></tr></table></div>"
   ];
   fhir:MessageDefinition.url [ fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/modify-patient-referral"];
   fhir:MessageDefinition.identifier [
@@ -28,7 +28,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
+       fhir:ContactPoint.value [ fhir:value "mailto:kevin.mayfield@mayfield-is.co.uk" ]
      ]
   ];
   fhir:MessageDefinition.jurisdiction [
@@ -40,6 +40,11 @@
      ]
   ];
   fhir:MessageDefinition.copyright [ fhir:value "Copyright © 2020 Project Wildfyre"];
+  fhir:MessageDefinition.eventCoding [
+     fhir:Coding.system [ fhir:value "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" ];
+     fhir:Coding.code [ fhir:value "modify-patient-referral" ];
+     fhir:Coding.display [ fhir:value "Modify Patient Referral" ]
+  ];
   fhir:MessageDefinition.category [ fhir:value "notification"];
   fhir:MessageDefinition.focus [
      fhir:index 0;

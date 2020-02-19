@@ -10,11 +10,11 @@
   fhir:Resource.id [ fhir:value "nhs111ambulancerequest-information-model"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: nhs111ambulancerequest-information-model</p><p><b>url</b>: <a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model\">https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model</a></p><p><b>version</b>: 4.0.0</p><p><b>name</b>: Information Model - NHS 111 Report</p><p><b>status</b>: draft</p><p><b>date</b>: 3 Mar 2019, 00:00:00</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance.</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>start</b>: ServiceRequest</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest\">http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest</a></p><blockquote><p><b>link</b></p><p><b>id</b>: #serviceRequest</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the Composition.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'.</p><blockquote><p><b>target</b></p><p><b>type</b>: ServiceRequest</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest\">http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #patient</p><p><b>path</b>: Bundle.entry.resource[0]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Patient</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Patient</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Patient\">http://hl7.org/fhir/R4/StructureDefinition/Patient</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #author</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It holds details of how and when the author authored the document.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Practitioner</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Practitioner\">http://hl7.org/fhir/R4/StructureDefinition/Practitioner</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #custodian</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It holds details of how and when the author authored the document.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Organization</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Organization\">http://hl7.org/fhir/R4/StructureDefinition/Organization</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #recipientOrganisation</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Recieving Ambulance Service.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Organization</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Organization\">http://hl7.org/fhir/R4/StructureDefinition/Organization</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #triageOutcome</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Triage Outcome (coded)</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Observation</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Observation\">http://hl7.org/fhir/R4/StructureDefinition/Observation</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #triageDisposition</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Triage Disposition (coded)</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Observation</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Observation\">http://hl7.org/fhir/R4/StructureDefinition/Observation</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #clinicalDiscriminator</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: a concept from the NHS Pathways codes, or a text representation, to describe the clinical discriminator.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Observation</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Observation\">http://hl7.org/fhir/R4/StructureDefinition/Observation</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #permissionToView</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK Consent / ITK Permission to View Section</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Consent</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Consent\">http://hl7.org/fhir/R4/StructureDefinition/Consent</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #encompassingEncounter</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.</p><blockquote><p><b>target</b></p><p><b>type</b>: Encounter</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/Encounter\">http://hl7.org/fhir/R4/StructureDefinition/Encounter</a></p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #serviceLocation</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: This is the location where the NHS 111 encounter call was made from by the patient or third party on behalf of the patient.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Location</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Location\">http://hl7.org/fhir/R4/StructureDefinition/Location</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #traumaFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (Observation?) It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #fireFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (Observation?) It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #safeFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (Observation?) It is used to indicate information about whether the scene is safe pertinent to the ambulance request.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #policeFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (Observation?) It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #trappedFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (Observation?) It is used to indicate information about whether the patient is trapped pertinent to the ambulance request.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Flag</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Flag\">http://hl7.org/fhir/R4/StructureDefinition/Flag</a></td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #clinicalNotes</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Composition</td><td><a href=\"http://hl7.org/fhir/R4/StructureDefinition/Composition\">http://hl7.org/fhir/R4/StructureDefinition/Composition</a></td></tr></table></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: nhs111ambulancerequest-information-model</p><p><b>url</b>: <a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model\">https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model</a></p><p><b>version</b>: 4.0.0</p><p><b>name</b>: Information Model - NHS 111 Ambulance Request</p><p><b>status</b>: draft</p><p><b>date</b>: 3 Mar 2019, 00:00:00</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance.</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>start</b>: ServiceRequest</p><p><b>profile</b>: <a href=\"http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest\">http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest</a></p><blockquote><p><b>link</b></p><p><b>id</b>: #serviceRequest</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the Composition.code is simply 'Procedure Report' and the procedure was a 'colonoscopy'.</p><blockquote><p><b>target</b></p><p><b>type</b>: ServiceRequest</p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #patient</p><p><b>path</b>: Bundle.entry.resource[0]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Patient</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Patient</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #author</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It holds details of how and when the author authored the document.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Practitioner</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #custodian</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: It holds details of how and when the author authored the document.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Organization</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #recipientOrganisation</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Recieving Ambulance Service.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Organization</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #triageOutcome</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Triage Outcome (coded)</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Observation</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #triageDisposition</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: Triage Disposition (coded)</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Observation</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #clinicalDiscriminator</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: a concept from the NHS Pathways codes, or a text representation, to describe the clinical discriminator. This is the problem or serviceRequest.reasonCode</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Condition</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #permissionToView</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: *</p><p><b>description</b>: ITK Consent / ITK Permission to View Section</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Consent</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #encompassingEncounter</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: This is a component of relationship it is used to link the document header to the EncompassingEncounter that the document is documenting.</p><blockquote><p><b>target</b></p><p><b>type</b>: Encounter</p><h3>Links</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #serviceLocation</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: This is the location where the NHS 111 encounter call was made from by the patient or third party on behalf of the patient.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Location</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #traumaFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (pertinent Information Questionnaire item?) It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Flag</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #fireFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (pertinent Information Questionnaire item?) It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Flag</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #safeFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (pertinent Information Questionnaire item?) It is used to indicate information about whether the scene is safe pertinent to the ambulance request.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Flag</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #policeFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (pertinent Information Questionnaire item?) It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Flag</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #trappedFlag</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p><p><b>description</b>: (pertinent Information Questionnaire item?) It is used to indicate information about whether the patient is trapped pertinent to the ambulance request.</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Flag</td></tr></table></blockquote><blockquote><p><b>link</b></p><p><b>id</b>: #clinicalNotes</p><p><b>path</b>: Bundle.entry.resource[x]</p><p><b>min</b>: 1</p><p><b>max</b>: 1</p><p><b>description</b>: pertinent Information AdditionalNotes - this could be annotation in the serviceRequest</p><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td>Composition</td></tr></table></blockquote></div>"
   ];
   fhir:GraphDefinition.url [ fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model"];
   fhir:GraphDefinition.version [ fhir:value "4.0.0"];
-  fhir:GraphDefinition.name [ fhir:value "Information Model - NHS 111 Report"];
+  fhir:GraphDefinition.name [ fhir:value "Information Model - NHS 111 Ambulance Request"];
   fhir:GraphDefinition.status [ fhir:value "draft"];
   fhir:GraphDefinition.date [ fhir:value "2019-03-03T00:00:00+00:00"^^xsd:dateTime];
   fhir:GraphDefinition.publisher [ fhir:value "mayfield-is.co.uk"];
@@ -23,7 +23,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
+       fhir:ContactPoint.value [ fhir:value "mailto:kevin.mayfield@mayfield-is.co.uk" ]
      ]
   ];
   fhir:GraphDefinition.description [ fhir:value "This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."];
@@ -50,10 +50,6 @@
      fhir:GraphDefinition.link.target [
        fhir:index 0;
        fhir:GraphDefinition.link.target.type [ fhir:value "ServiceRequest" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest>
-       ];
        fhir:GraphDefinition.link.target.link [
          fhir:index 0;
          fhir:GraphDefinition.link.path [ fhir:value "ServiceRequest.subject" ];
@@ -67,11 +63,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#patient" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Patient" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Patient";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Patient>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Patient" ]
          ]
        ], [
          fhir:index 1;
@@ -86,11 +78,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#custodian" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Organization";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Organization>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ]
          ], [
            fhir:index 1;
            fhir:Element.extension [
@@ -98,11 +86,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#author" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Practitioner" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Practitioner";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Practitioner>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Practitioner" ]
          ]
        ], [
          fhir:index 2;
@@ -117,11 +101,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#recipientOrganisation" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Organization";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Organization>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ]
          ]
        ], [
          fhir:index 3;
@@ -131,11 +111,7 @@
          fhir:GraphDefinition.link.description [ fhir:value "It is used when the ambulance request message is being replaced by an updated version. The new and previous ambulance request must be for the same NHS 111 case.(i.e. have the same case id). The ambulance request being sent replaces the one referenced in previous ambulance request class." ];
          fhir:GraphDefinition.link.target [
            fhir:index 0;
-           fhir:GraphDefinition.link.target.type [ fhir:value "ServiceRequest" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "ServiceRequest" ]
          ]
        ], [
          fhir:index 4;
@@ -151,11 +127,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#triageOutcome" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Observation";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Observation>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ]
          ]
        ], [
          fhir:index 5;
@@ -170,17 +142,13 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#triageDisposition" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Observation";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Observation>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ]
          ]
        ], [
          fhir:index 6;
          fhir:GraphDefinition.link.path [ fhir:value "ServiceRequest.supportingInformation[x]" ];
          fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
-         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.max [ fhir:value "*" ];
          fhir:GraphDefinition.link.description [ fhir:value "Clinical Discriminator" ];
          fhir:GraphDefinition.link.target [
            fhir:index 0;
@@ -189,11 +157,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#clinicalDiscriminator" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Observation";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Observation>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Condition" ]
          ]
        ], [
          fhir:index 7;
@@ -208,11 +172,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#clinicalNotes" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Composition" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Composition";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Composition>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Composition" ]
          ]
        ], [
          fhir:index 8;
@@ -228,11 +188,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#permissionToView" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Consent" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Consent";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Consent>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Consent" ]
          ]
        ], [
          fhir:index 9;
@@ -247,11 +203,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#encompassingEncounter" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Encounter" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Encounter";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Encounter>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Encounter" ]
          ]
        ], [
          fhir:index 10;
@@ -267,11 +219,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#traumaFlag" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
          ]
        ], [
          fhir:index 11;
@@ -287,11 +235,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#fireFlag" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
          ]
        ], [
          fhir:index 12;
@@ -307,11 +251,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#safeFlag" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
          ]
        ], [
          fhir:index 13;
@@ -327,11 +267,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#policeFlag" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
          ]
        ], [
          fhir:index 14;
@@ -347,11 +283,7 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#trappedFlag" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
          ]
        ]
      ]
@@ -364,11 +296,7 @@
      fhir:GraphDefinition.link.description [ fhir:value "Patient" ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Patient" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Patient";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Patient>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Patient" ]
      ]
   ], [
      fhir:index 2;
@@ -379,11 +307,7 @@
      fhir:GraphDefinition.link.description [ fhir:value "It holds details of how and when the author authored the document." ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Practitioner" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Practitioner";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Practitioner>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Practitioner" ]
      ]
   ], [
      fhir:index 3;
@@ -394,11 +318,7 @@
      fhir:GraphDefinition.link.description [ fhir:value "It holds details of how and when the author authored the document." ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Organization";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Organization>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ]
      ]
   ], [
      fhir:index 4;
@@ -409,11 +329,7 @@
      fhir:GraphDefinition.link.description [ fhir:value "Recieving Ambulance Service." ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Organization";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Organization>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Organization" ]
      ]
   ], [
      fhir:index 5;
@@ -424,11 +340,7 @@
      fhir:GraphDefinition.link.description [ fhir:value "Triage Outcome (coded)" ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Observation";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Observation>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ]
      ]
   ], [
      fhir:index 6;
@@ -439,11 +351,7 @@
      fhir:GraphDefinition.link.description [ fhir:value "Triage Disposition (coded)" ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Observation";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Observation>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ]
      ]
   ], [
      fhir:index 7;
@@ -451,14 +359,10 @@
      fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
      fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
      fhir:GraphDefinition.link.max [ fhir:value "1" ];
-     fhir:GraphDefinition.link.description [ fhir:value "a concept from the NHS Pathways codes, or a text representation, to describe the clinical discriminator." ];
+     fhir:GraphDefinition.link.description [ fhir:value "a concept from the NHS Pathways codes, or a text representation, to describe the clinical discriminator. This is the problem or serviceRequest.reasonCode" ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Observation" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Observation";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Observation>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Condition" ]
      ]
   ], [
      fhir:index 8;
@@ -469,11 +373,7 @@
      fhir:GraphDefinition.link.description [ fhir:value "ITK Consent / ITK Permission to View Section" ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Consent" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Consent";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Consent>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Consent" ]
      ]
   ], [
      fhir:index 9;
@@ -485,10 +385,6 @@
      fhir:GraphDefinition.link.target [
        fhir:index 0;
        fhir:GraphDefinition.link.target.type [ fhir:value "Encounter" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Encounter";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Encounter>
-       ];
        fhir:GraphDefinition.link.target.link [
          fhir:index 0;
          fhir:GraphDefinition.link.path [ fhir:value "Encounter.location" ];
@@ -502,11 +398,22 @@
              fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
              fhir:Extension.valueString [ fhir:value "#serviceLocation" ]
            ];
-           fhir:GraphDefinition.link.target.type [ fhir:value "Location" ];
-           fhir:GraphDefinition.link.target.profile [
-             fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Location";
-             fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Location>
-           ]
+           fhir:GraphDefinition.link.target.type [ fhir:value "Location" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:GraphDefinition.link.path [ fhir:value "Encounter.reasonReference" ];
+         fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
+         fhir:GraphDefinition.link.max [ fhir:value "1" ];
+         fhir:GraphDefinition.link.description [ fhir:value "Possibly location of clinical discriminator (which appears to be the problem). " ];
+         fhir:GraphDefinition.link.target [
+           fhir:index 0;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId" ];
+             fhir:Extension.valueString [ fhir:value "#clinicalDiscriminator" ]
+           ];
+           fhir:GraphDefinition.link.target.type [ fhir:value "Condition" ]
          ]
        ]
      ]
@@ -519,11 +426,7 @@
      fhir:GraphDefinition.link.description [ fhir:value "This is the location where the NHS 111 encounter call was made from by the patient or third party on behalf of the patient." ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Location" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Location";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Location>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Location" ]
      ]
   ], [
      fhir:index 11;
@@ -531,14 +434,10 @@
      fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
      fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
      fhir:GraphDefinition.link.max [ fhir:value "1" ];
-     fhir:GraphDefinition.link.description [ fhir:value "(Observation?) It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request." ];
+     fhir:GraphDefinition.link.description [ fhir:value "(pertinent Information Questionnaire item?) It is used to indicate information about whether the patient has suffered trauma pertinent to the ambulance request." ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
      ]
   ], [
      fhir:index 12;
@@ -546,14 +445,10 @@
      fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
      fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
      fhir:GraphDefinition.link.max [ fhir:value "1" ];
-     fhir:GraphDefinition.link.description [ fhir:value "(Observation?) It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request." ];
+     fhir:GraphDefinition.link.description [ fhir:value "(pertinent Information Questionnaire item?) It is used to indicate information about whether there is a risk of fire at the incident scene pertinent to the ambulance request." ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
      ]
   ], [
      fhir:index 13;
@@ -561,14 +456,10 @@
      fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
      fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
      fhir:GraphDefinition.link.max [ fhir:value "1" ];
-     fhir:GraphDefinition.link.description [ fhir:value "(Observation?) It is used to indicate information about whether the scene is safe pertinent to the ambulance request." ];
+     fhir:GraphDefinition.link.description [ fhir:value "(pertinent Information Questionnaire item?) It is used to indicate information about whether the scene is safe pertinent to the ambulance request." ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
      ]
   ], [
      fhir:index 14;
@@ -576,14 +467,10 @@
      fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
      fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
      fhir:GraphDefinition.link.max [ fhir:value "1" ];
-     fhir:GraphDefinition.link.description [ fhir:value "(Observation?) It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request" ];
+     fhir:GraphDefinition.link.description [ fhir:value "(pertinent Information Questionnaire item?) It is used to indicate information about whether police are in attendance at the incident scence pertinent to the ambulance request" ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
      ]
   ], [
      fhir:index 15;
@@ -591,14 +478,10 @@
      fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
      fhir:GraphDefinition.link.min [ fhir:value "0"^^xsd:integer ];
      fhir:GraphDefinition.link.max [ fhir:value "1" ];
-     fhir:GraphDefinition.link.description [ fhir:value "(Observation?) It is used to indicate information about whether the patient is trapped pertinent to the ambulance request." ];
+     fhir:GraphDefinition.link.description [ fhir:value "(pertinent Information Questionnaire item?) It is used to indicate information about whether the patient is trapped pertinent to the ambulance request." ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Flag";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Flag>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Flag" ]
      ]
   ], [
      fhir:index 16;
@@ -606,13 +489,10 @@
      fhir:GraphDefinition.link.path [ fhir:value "Bundle.entry.resource[x]" ];
      fhir:GraphDefinition.link.min [ fhir:value "1"^^xsd:integer ];
      fhir:GraphDefinition.link.max [ fhir:value "1" ];
+     fhir:GraphDefinition.link.description [ fhir:value "pertinent Information AdditionalNotes - this could be annotation in the serviceRequest" ];
      fhir:GraphDefinition.link.target [
        fhir:index 0;
-       fhir:GraphDefinition.link.target.type [ fhir:value "Composition" ];
-       fhir:GraphDefinition.link.target.profile [
-         fhir:value "http://hl7.org/fhir/R4/StructureDefinition/Composition";
-         fhir:link <http://hl7.org/fhir/R4/StructureDefinition/Composition>
-       ]
+       fhir:GraphDefinition.link.target.type [ fhir:value "Composition" ]
      ]
   ] .
 

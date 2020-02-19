@@ -3,20 +3,20 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="careconnect-messaging-r4"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-stu3</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>
 </div></div>
   </text>
-  <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-stu3"/>
+  <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4"/>
   <version value="4.0.0"/>
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-02-19T12:50:01+00:00"/>
+  <date value="2020-02-19T15:04:48+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
       <system value="email"/>
-      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+      <value value="mailto:kevin.mayfield@mayfield-is.co.uk"/>
     </telecom>
   </contact>
   <description value="Demonstration of Care Connect STU3 Implementation Guide to support Messaging"/>

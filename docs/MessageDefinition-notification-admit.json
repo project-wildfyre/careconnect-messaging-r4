@@ -22,7 +22,7 @@
       "telecom": [
         {
           "system": "email",
-          "value": "kevin.mayfield@mayfield-is.co.uk"
+          "value": "mailto:kevin.mayfield@mayfield-is.co.uk"
         }
       ]
     }
@@ -38,6 +38,11 @@
     }
   ],
   "copyright": "Copyright © 2020 Project Wildfyre",
+  "eventCoding": {
+    "system": "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
+    "code": "notification-admit",
+    "display": "Notification Admit"
+  },
   "category": "notification",
   "focus": [
     {

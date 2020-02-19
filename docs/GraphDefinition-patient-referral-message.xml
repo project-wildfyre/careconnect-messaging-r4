@@ -14,7 +14,7 @@
   <contact>
     <telecom>
       <system value="email"/>
-      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+      <value value="mailto:kevin.mayfield@mayfield-is.co.uk"/>
     </telecom>
   </contact>
   <description value="Patient Referral Message Graph"/>

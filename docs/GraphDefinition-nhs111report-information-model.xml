@@ -14,7 +14,7 @@
   <contact>
     <telecom>
       <system value="email"/>
-      <value value="kevin.mayfield@mayfield-is.co.uk"/>
+      <value value="mailto:kevin.mayfield@mayfield-is.co.uk"/>
     </telecom>
   </contact>
   <description value="Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)."/>

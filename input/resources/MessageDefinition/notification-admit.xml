@@ -14,11 +14,11 @@
     <status value="active"></status>
     <date value="2019-08-22T12:49:51.688+01:00"></date>
     <copyright value="Copyright © 2020 Project Wildfyre"></copyright>
-    <event>
+    <eventCoding>
         <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"></system>
         <code value="notification-admit"></code>
         <display value="Notification Admit"></display>
-    </event>
+    </eventCoding>
     <category value="notification"></category>
     <focus>
         <code value="Encounter"></code>

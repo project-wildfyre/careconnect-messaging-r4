@@ -23,7 +23,7 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "kevin.mayfield@mayfield-is.co.uk" ]
+       fhir:ContactPoint.value [ fhir:value "mailto:kevin.mayfield@mayfield-is.co.uk" ]
      ]
   ];
   fhir:GraphDefinition.description [ fhir:value "Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)."];

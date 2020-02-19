@@ -1,9 +1,9 @@
 ﻿Care Connect Messaging : Validation Results
 =========================================
 
-err = 436, warn = 30, info = 68
+err = 440, warn = 30, info = 68
 IG Publisher Version: v1.0.64-SNAPSHOT Out of date - current version is v1.0.65-SNAPSHOT
-Generated Wed Feb 19 12:42:25 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Wed Feb 19 12:50:48 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
  Build Errors : 79 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-admit : 12 / 9
@@ -14,7 +14,7 @@ Generated Wed Feb 19 12:42:25 GMT 2020. FHIR version 4.0.1 for careconnect.messa
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-create-transaction : 1 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-referral : 26 / 8
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig : 4 / 1
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/graphdefinition/nhs111ambulancerequest-information-model : 49 / 2
+ /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/graphdefinition/nhs111ambulancerequest-information-model : 51 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/graphdefinition/nhs111report-information-model : 57 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/graphdefinition/patient-referral-message : 15 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/cancel-patient-referral : 3 / 1
@@ -55,9 +55,9 @@ ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/Bundle-patient-referral.ttl.html#/html/body/div/div/div/p/a at Line 465, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/Bundle-patient-referral.xml.html#/html/body/div/div/div/p/a at Line 450, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111ambulancerequest-information-model.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111ambulancerequest-information-model.json.html#/html/body/div/div/div/p/a at Line 711, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111ambulancerequest-information-model.ttl.html#/html/body/div/div/div/p/a at Line 674, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111ambulancerequest-information-model.xml.html#/html/body/div/div/div/p/a at Line 620, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111ambulancerequest-information-model.json.html#/html/body/div/div/div/p/a at Line 729, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111ambulancerequest-information-model.ttl.html#/html/body/div/div/div/p/a at Line 690, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111ambulancerequest-information-model.xml.html#/html/body/div/div/div/p/a at Line 633, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111report-information-model.html#/html/body/div/div/div/p/a at Line 183, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111report-information-model.json.html#/html/body/div/div/div/p/a at Line 731, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-nhs111report-information-model.ttl.html#/html/body/div/div/div/p/a at Line 689, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
@@ -250,6 +250,7 @@ ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[5].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Observation' does not resolve
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[6].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[6].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Observation' does not resolve
+ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[7].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[7].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Composition' does not resolve
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[8].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[8].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Consent' does not resolve
@@ -282,6 +283,7 @@ ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[13].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Flag' does not resolve
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[14].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Flag' does not resolve
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[15].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Flag' does not resolve
+ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[16].target[0].profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Composition' does not resolve
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/GraphDefinition/nhs111report-information-model.json ==
 WARNING: GraphDefinition/nhs111report-information-model: GraphDefinition: gdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.profile: URL value 'http://hl7.org/fhir/R4/StructureDefinition/Composition' does not resolve

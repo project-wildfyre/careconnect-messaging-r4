@@ -1,7 +1,7 @@
 <GraphDefinition xmlns="http://hl7.org/fhir">
     <id value="nhs111ambulancerequest-information-model"/>
     <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/GraphDefinition/nhs111ambulancerequest-information-model"/>
-    <name value="Information Model - NHS 111 Report"/>
+    <name value="Information Model - NHS 111 Ambulance Request"/>
     <status value="draft"/>
     <date value="2019-03-03T00:00:00+00:00"/>
     <publisher value="NHS Digital"/>
@@ -109,7 +109,7 @@
                 <path value="ServiceRequest.supportingInformation[x]"/>
                 <min value="0"/>
                 <max value="1"/>
-                <description value="CLinical Discriminator"/>
+                <description value="Clinical Discriminator"/>
                 <target>
                     <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
                         <valueString value="#clinicalDiscriminator"/>
@@ -119,11 +119,14 @@
                 </target>
             </link>
             <link>
-                <path value="ServiceRequest.notes"/>
+                <path value="ServiceRequest.supportingInformation[x]"/>
                 <min value="0"/>
                 <max value="1"/>
                 <description value="Used to carry additional notes pertinent to the ambulance request."/>
                 <target>
+                    <extension url="https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId">
+                        <valueString value="#clinicalNotes"/>
+                    </extension>
                     <type value="Composition"/>
                     <profile value="http://hl7.org/fhir/R4/StructureDefinition/Composition"/>
                 </target>
@@ -388,6 +391,16 @@
         <target>
             <type value="Flag"/>
             <profile value="http://hl7.org/fhir/R4/StructureDefinition/Flag"/>
+        </target>
+    </link>
+    <link id="#clinicalNotes">
+        <path value="Bundle.entry.resource[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+        <description value=""/>
+        <target>
+            <type value="Composition"/>
+            <profile value="http://hl7.org/fhir/R4/StructureDefinition/Composition"/>
         </target>
     </link>
 </GraphDefinition>

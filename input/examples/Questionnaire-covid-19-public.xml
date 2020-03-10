@@ -1,0 +1,78 @@
+<Questionnaire xmlns="http://hl7.org/fhir">
+    <id value="covid-19-public" />
+    <url value="https://fhir.nhs.uk/Questionnaire/covid-19-public"/>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Questionnaire"/>
+        <value value="covid-19-public"/>
+    </identifier>
+    <name value="NHS 111 Online COVID-19"/>
+    <title value="NHS 111 Online COVID-19"/>
+    <status value="draft"/>
+    <subjectType value="Patient"/>
+    <description value="Mock up of NHS 111 Online questionnaire as a FHIR Resource"/>
+    <item>
+        <linkId value="covid-19-1"/>
+        <text value="Have you been to or travelled through any of these areas in last 14 days?"/>
+        <type value="open-choice"/>
+        <enableBehavior value="any"/>
+        <answerOption>
+            <valueString value="Hubei province, China" />
+        </answerOption>
+        <answerOption>
+            <valueString value="locked down areas in northern Italy" />
+        </answerOption>
+        <answerOption>
+            <valueString value="H10 Costa Adeje Palace Hotel (Tenerife)" />
+        </answerOption>
+    </item>
+    <item>
+        <linkId value="covid-19-2"/>
+        <text value="Have you been to or travelled through any of these areas in last 14 days?"/>
+        <type value="open-choice"/>
+        <enableWhen>
+            <question value="covid-19-1"></question>
+            <operator value="="></operator>
+            <valueString value=""/>
+        </enableWhen>
+        <enableBehavior value="any"/>
+        <answerOption>
+            <valueString value="Italy" />
+        </answerOption>
+        <answerOption>
+            <valueString value="Daegu or Cheongdo in South Korea" />
+        </answerOption>
+        <answerOption>
+            <valueString value="Iran" />
+        </answerOption>
+        <answerOption>
+            <valueString value="Cambodia, Laos, Myanmar (Burma) or Vietnam" />
+        </answerOption>
+        <answerOption>
+            <valueString value="China, Hong Kong, Macau or Taiwan" />
+        </answerOption>
+        <answerOption>
+            <valueString value="Japan, Malaysia, South Korea, Singapore or Thailand" />
+        </answerOption>
+    </item>
+    <item>
+        <linkId value="covid-19-3"/>
+        <text value="Has someone with a confirmed case of coronavirus been in close contact with you?"/>
+        <type value="boolean"/>
+        <enableBehavior value="any"/>
+    </item>
+    <item>
+        <linkId value="covid-19-4"/>
+        <text value="Do you have any of these?"/>
+        <type value="open-choice"/>
+        <enableBehavior value="any"/>
+        <answerOption>
+            <valueString value="High Temperature" />
+        </answerOption>
+        <answerOption>
+            <valueString value="Cough" />
+        </answerOption>
+        <answerOption>
+            <valueString value="Shortness of Breath" />
+        </answerOption>
+    </item>
+</Questionnaire>

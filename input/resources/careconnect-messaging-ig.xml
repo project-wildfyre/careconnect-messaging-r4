@@ -12,7 +12,7 @@
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
       <system value="email"/>
-      <value value="mailto:kevin.mayfield@mayfield-is.co.uk"/>
+      <value value="mailto:kevin.mayfield1@nhs.net"/>
     </telecom>
   </contact>
   <description value="Demonstration of Care Connect STU3 Implementation Guide to support Messaging"/>
@@ -71,6 +71,14 @@
       </reference>
       <name value="Patient Create FHIR Message"></name>
       <description value="Patient Create FHIR Message - Add person information"></description>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/covid19-service-request"></reference>
+      </reference>
+      <name value="COVID-19 Service Request"></name>
+      <description value="COVID-19 Service Request"></description>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

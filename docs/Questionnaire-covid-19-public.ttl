@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Questionnaire/covid-19-public> a fhir:Questionnaire;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "covid-19-public"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-19-public</p><p><b>url</b>: <b>https://fhir.nhs.uk/Questionnaire/covid-19-public</b></p><p><b>identifier</b>: covid-19-public</p><p><b>version</b>: 4.0.0</p><p><b>name</b>: NHS 111 Online COVID-19</p><p><b>title</b>: NHS 111 Online COVID-19</p><p><b>status</b>: DRAFT</p><p><b>subjectType</b>: Patient</p><p><b>date</b>: 10 Mar 2020, 16:00:54</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: Mock up of NHS 111 Online questionnaire as a FHIR Resource</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-1</p><p><b>text</b>: Have you been to or travelled through any of these areas in last 14 days?</p><p><b>type</b>: OPENCHOICE</p><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: Hubei province, China</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: locked down areas in northern Italy</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: H10 Costa Adeje Palace Hotel (Tenerife)</p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-2</p><p><b>text</b>: Have you been to or travelled through any of these areas in last 14 days?</p><p><b>type</b>: OPENCHOICE</p><h3>EnableWhens</h3><table class=\"grid\"><tr><td>-</td><td><b>Question</b></td><td><b>Operator</b></td></tr><tr><td>*</td><td>covid-19-1</td><td>EQUAL</td></tr></table><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: Italy</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Daegu or Cheongdo in South Korea</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Iran</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Cambodia, Laos, Myanmar (Burma) or Vietnam</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: China, Hong Kong, Macau or Taiwan</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Japan, Malaysia, South Korea, Singapore or Thailand</p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-3</p><p><b>text</b>: Has someone with a confirmed case of coronavirus been in close contact with you?</p><p><b>type</b>: BOOLEAN</p><p><b>enableBehavior</b>: ANY</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-4</p><p><b>text</b>: Do you have any of these?</p><p><b>type</b>: OPENCHOICE</p><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: High Temperature</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Cough</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Shortness of Breath</p></blockquote></blockquote></div>"
+  ];
+  fhir:Questionnaire.url [ fhir:value "https://fhir.nhs.uk/Questionnaire/covid-19-public"];
+  fhir:Questionnaire.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Questionnaire" ];
+     fhir:Identifier.value [ fhir:value "covid-19-public" ]
+  ];
+  fhir:Questionnaire.version [ fhir:value "4.0.0"];
+  fhir:Questionnaire.name [ fhir:value "NHS 111 Online COVID-19"];
+  fhir:Questionnaire.title [ fhir:value "NHS 111 Online COVID-19"];
+  fhir:Questionnaire.status [ fhir:value "draft"];
+  fhir:Questionnaire.subjectType [
+     fhir:value "Patient";
+     fhir:index 0
+  ];
+  fhir:Questionnaire.date [ fhir:value "2020-03-10T16:00:54+00:00"^^xsd:dateTime];
+  fhir:Questionnaire.publisher [ fhir:value "mayfield-is.co.uk"];
+  fhir:Questionnaire.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:kevin.mayfield@mayfield-is.co.uk" ]
+     ]
+  ];
+  fhir:Questionnaire.description [ fhir:value "Mock up of NHS 111 Online questionnaire as a FHIR Resource"];
+  fhir:Questionnaire.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "826" ]
+     ]
+  ];
+  fhir:Questionnaire.item [
+     fhir:index 0;
+     fhir:Questionnaire.item.linkId [ fhir:value "covid-19-1" ];
+     fhir:Questionnaire.item.text [ fhir:value "Have you been to or travelled through any of these areas in last 14 days?" ];
+     fhir:Questionnaire.item.type [ fhir:value "open-choice" ];
+     fhir:Questionnaire.item.enableBehavior [ fhir:value "any" ];
+     fhir:Questionnaire.item.answerOption [
+       fhir:index 0;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "Hubei province, China" ]
+     ], [
+       fhir:index 1;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "locked down areas in northern Italy" ]
+     ], [
+       fhir:index 2;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "H10 Costa Adeje Palace Hotel (Tenerife)" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Questionnaire.item.linkId [ fhir:value "covid-19-2" ];
+     fhir:Questionnaire.item.text [ fhir:value "Have you been to or travelled through any of these areas in last 14 days?" ];
+     fhir:Questionnaire.item.type [ fhir:value "open-choice" ];
+     fhir:Questionnaire.item.enableWhen [
+       fhir:index 0;
+       fhir:Questionnaire.item.enableWhen.question [ fhir:value "covid-19-1" ];
+       fhir:Questionnaire.item.enableWhen.operator [ fhir:value "=" ]
+     ];
+     fhir:Questionnaire.item.enableBehavior [ fhir:value "any" ];
+     fhir:Questionnaire.item.answerOption [
+       fhir:index 0;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "Italy" ]
+     ], [
+       fhir:index 1;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "Daegu or Cheongdo in South Korea" ]
+     ], [
+       fhir:index 2;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "Iran" ]
+     ], [
+       fhir:index 3;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "Cambodia, Laos, Myanmar (Burma) or Vietnam" ]
+     ], [
+       fhir:index 4;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "China, Hong Kong, Macau or Taiwan" ]
+     ], [
+       fhir:index 5;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "Japan, Malaysia, South Korea, Singapore or Thailand" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Questionnaire.item.linkId [ fhir:value "covid-19-3" ];
+     fhir:Questionnaire.item.text [ fhir:value "Has someone with a confirmed case of coronavirus been in close contact with you?" ];
+     fhir:Questionnaire.item.type [ fhir:value "boolean" ];
+     fhir:Questionnaire.item.enableBehavior [ fhir:value "any" ]
+  ], [
+     fhir:index 3;
+     fhir:Questionnaire.item.linkId [ fhir:value "covid-19-4" ];
+     fhir:Questionnaire.item.text [ fhir:value "Do you have any of these?" ];
+     fhir:Questionnaire.item.type [ fhir:value "open-choice" ];
+     fhir:Questionnaire.item.enableBehavior [ fhir:value "any" ];
+     fhir:Questionnaire.item.answerOption [
+       fhir:index 0;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "High Temperature" ]
+     ], [
+       fhir:index 1;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "Cough" ]
+     ], [
+       fhir:index 2;
+       fhir:Questionnaire.item.answerOption.valueString [ fhir:value "Shortness of Breath" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://project-wildfyre.github.io/careconnect-messaging-r4/Questionnaire/covid-19-public.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

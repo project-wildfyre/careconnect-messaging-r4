@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-02-19T15:44:44+00:00",
+  "date": "2020-03-10T16:00:54+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -367,6 +367,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-covid19-service-request.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/covid19-service-request"
+        },
+        "name": "COVID-19 Service Request",
+        "description": "COVID-19 Service Request",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Bundle-patient-create-transaction.html"
           }
         ],
@@ -547,6 +565,23 @@
         },
         "name": "Information Model - NHS 111 Ambulance Request",
         "description": "This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Questionnaire-covid-19-public.html"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/covid-19-public"
+        },
+        "name": "NHS 111 Online COVID-19",
+        "description": "Mock up of NHS 111 Online questionnaire as a FHIR Resource"
       }
     ],
     "page": {

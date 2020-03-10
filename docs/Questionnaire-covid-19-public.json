@@ -1,0 +1,119 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "covid-19-public",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-19-public</p><p><b>url</b>: <b>https://fhir.nhs.uk/Questionnaire/covid-19-public</b></p><p><b>identifier</b>: covid-19-public</p><p><b>version</b>: 4.0.0</p><p><b>name</b>: NHS 111 Online COVID-19</p><p><b>title</b>: NHS 111 Online COVID-19</p><p><b>status</b>: DRAFT</p><p><b>subjectType</b>: Patient</p><p><b>date</b>: 10 Mar 2020, 16:00:54</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: Mock up of NHS 111 Online questionnaire as a FHIR Resource</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-1</p><p><b>text</b>: Have you been to or travelled through any of these areas in last 14 days?</p><p><b>type</b>: OPENCHOICE</p><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: Hubei province, China</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: locked down areas in northern Italy</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: H10 Costa Adeje Palace Hotel (Tenerife)</p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-2</p><p><b>text</b>: Have you been to or travelled through any of these areas in last 14 days?</p><p><b>type</b>: OPENCHOICE</p><h3>EnableWhens</h3><table class=\"grid\"><tr><td>-</td><td><b>Question</b></td><td><b>Operator</b></td></tr><tr><td>*</td><td>covid-19-1</td><td>EQUAL</td></tr></table><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: Italy</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Daegu or Cheongdo in South Korea</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Iran</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Cambodia, Laos, Myanmar (Burma) or Vietnam</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: China, Hong Kong, Macau or Taiwan</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Japan, Malaysia, South Korea, Singapore or Thailand</p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-3</p><p><b>text</b>: Has someone with a confirmed case of coronavirus been in close contact with you?</p><p><b>type</b>: BOOLEAN</p><p><b>enableBehavior</b>: ANY</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-4</p><p><b>text</b>: Do you have any of these?</p><p><b>type</b>: OPENCHOICE</p><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: High Temperature</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Cough</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Shortness of Breath</p></blockquote></blockquote></div>"
+  },
+  "url": "https://fhir.nhs.uk/Questionnaire/covid-19-public",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Questionnaire",
+      "value": "covid-19-public"
+    }
+  ],
+  "version": "4.0.0",
+  "name": "NHS 111 Online COVID-19",
+  "title": "NHS 111 Online COVID-19",
+  "status": "draft",
+  "subjectType": [
+    "Patient"
+  ],
+  "date": "2020-03-10T16:00:54+00:00",
+  "publisher": "mayfield-is.co.uk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kevin.mayfield@mayfield-is.co.uk"
+        }
+      ]
+    }
+  ],
+  "description": "Mock up of NHS 111 Online questionnaire as a FHIR Resource",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "covid-19-1",
+      "text": "Have you been to or travelled through any of these areas in last 14 days?",
+      "type": "open-choice",
+      "enableBehavior": "any",
+      "answerOption": [
+        {
+          "valueString": "Hubei province, China"
+        },
+        {
+          "valueString": "locked down areas in northern Italy"
+        },
+        {
+          "valueString": "H10 Costa Adeje Palace Hotel (Tenerife)"
+        }
+      ]
+    },
+    {
+      "linkId": "covid-19-2",
+      "text": "Have you been to or travelled through any of these areas in last 14 days?",
+      "type": "open-choice",
+      "enableWhen": [
+        {
+          "question": "covid-19-1",
+          "operator": "="
+        }
+      ],
+      "enableBehavior": "any",
+      "answerOption": [
+        {
+          "valueString": "Italy"
+        },
+        {
+          "valueString": "Daegu or Cheongdo in South Korea"
+        },
+        {
+          "valueString": "Iran"
+        },
+        {
+          "valueString": "Cambodia, Laos, Myanmar (Burma) or Vietnam"
+        },
+        {
+          "valueString": "China, Hong Kong, Macau or Taiwan"
+        },
+        {
+          "valueString": "Japan, Malaysia, South Korea, Singapore or Thailand"
+        }
+      ]
+    },
+    {
+      "linkId": "covid-19-3",
+      "text": "Has someone with a confirmed case of coronavirus been in close contact with you?",
+      "type": "boolean",
+      "enableBehavior": "any"
+    },
+    {
+      "linkId": "covid-19-4",
+      "text": "Do you have any of these?",
+      "type": "open-choice",
+      "enableBehavior": "any",
+      "answerOption": [
+        {
+          "valueString": "High Temperature"
+        },
+        {
+          "valueString": "Cough"
+        },
+        {
+          "valueString": "Shortness of Breath"
+        }
+      ]
+    }
+  ]
+}

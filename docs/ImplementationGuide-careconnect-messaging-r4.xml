@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-02-19T15:44:44+00:00"/>
+  <date value="2020-03-10T16:00:54+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -245,6 +245,20 @@
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-covid19-service-request.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/covid19-service-request"/>
+      </reference>
+      <name value="COVID-19 Service Request"/>
+      <description value="COVID-19 Service Request"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Bundle-patient-create-transaction.html"/>
       </extension>
       <reference>
@@ -384,6 +398,19 @@
       </reference>
       <name value="Information Model - NHS 111 Ambulance Request"/>
       <description value="This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Questionnaire-covid-19-public.html"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/covid-19-public"/>
+      </reference>
+      <name value="NHS 111 Online COVID-19"/>
+      <description value="Mock up of NHS 111 Online questionnaire as a FHIR Resource"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

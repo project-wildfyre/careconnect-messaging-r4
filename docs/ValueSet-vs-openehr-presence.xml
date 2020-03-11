@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-openehr-presence"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>All openEHR presence codes</h2><div><p>A value set that includes all presence codes</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href="CodeSystem-openehr-presence.html"><code>https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence</code></a></li></ul></div>
+  </text>
+  <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence"/>
+  <version value="4.0.0"/>
+  <name value="All openEHR presence codes"/>
+  <status value="active"/>
+  <date value="2020-03-11T00:00:00+00:00"/>
+  <publisher value="mayfield-is.co.uk"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:kevin.mayfield1@nhs.net"/>
+    </telecom>
+  </contact>
+  <description value="A value set that includes all presence codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="826"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,8 +1,8 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
     <id value="covid-19-public"/>
-    <url value="https://fhir.nhsz.uk/Questionnaire/covid-19-public"/>
+    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/Questionnaire/covid-19-public"/>
     <identifier>
-        <system value="https://fhir.nhsz.uk/Questionnaire"/>
+        <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/Questionnaire"/>
         <value value="covid-19-public"/>
     </identifier>
     <name value="COVID-19 Assessment"/>
@@ -92,6 +92,57 @@
             <text value="Date of Return"/>
             <type value="boolean"/>
             <enableBehavior value="any"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="risks"/>
+        <text value="Covid-19 infection risk assessment"/>
+        <type value="group"/>
+        <item>
+            <linkId value="contact-confirmed-case"></linkId>
+            <text value="Contact with confirmed case"/>
+            <type value="choice"/>
+            <answerValueSet value="https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence" />
+        </item>
+        <item>
+            <linkId value="contact-pneumonia"></linkId>
+            <text value="Contact with suspected pneumonia"/>
+            <type value="choice"/>
+            <answerValueSet value="https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence" />
+        </item>
+        <item>
+            <linkId value="contact-birds-china"></linkId>
+            <text value="Contact with birds in China"/>
+            <type value="choice"/>
+            <answerValueSet value="https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence" />
+        </item>
+        <item>
+            <linkId value="contact-avian-flu"></linkId>
+            <type value="choice"/>
+            <text value="Contact with Avian flu"/>
+            <answerValueSet value="https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence" />
+        </item>
+        <item>
+            <linkId value="contact-severe-resp-disease"></linkId>
+            <type value="choice"/>
+            <text value="Contact with severe resp disease"/>
+            <answerValueSet value="https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence" />
+        </item>
+        <item>
+            <linkId value="contact-locality-exposure"/>
+            <type value="group"/>
+            <repeats value="true"/>
+            <item>
+                <linkId value="contact-infected-area"></linkId>
+                <type value="choice"/>
+                <text value="Risk Area Exposure"/>
+                <answerValueSet value="https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence" />
+            </item>
+            <item>
+                <linkId value="contact-infected-area-location"></linkId>
+                <text value="Location visited"/>
+                <type value="string"/>
+            </item>
         </item>
     </item>
 </Questionnaire>

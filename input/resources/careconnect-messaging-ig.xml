@@ -95,7 +95,6 @@
       </reference>
       <name value="COVID-19 Template Definition"></name>
       <description value="COVID-19 Template Definition"></description>
-      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
@@ -175,6 +174,20 @@
       </reference>
       <name value="Information Model - NHS 111 Ambulance Request"/>
       <description value="This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/openehr-presence"/>
+      </reference>
+      <name value="CodeSystem openehr presence"/>
+      <description value="openehr presence"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/vs-openehr-presence"/>
+      </reference>
+      <name value="ValueSet openehr presence"/>
+      <description value="openehr presence"/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

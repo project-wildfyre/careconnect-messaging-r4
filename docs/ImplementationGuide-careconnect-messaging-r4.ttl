@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Care Connect Messaging"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-03-11T15:02:06+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-03-11T16:34:49+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "mayfield-is.co.uk"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -395,8 +395,7 @@
          fhir:Reference.reference [ fhir:value "Questionnaire/covid-19-public" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Template Definition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "COVID-19 Template Definition" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "COVID-19 Template Definition" ]
      ], [
        fhir:index 8;
        fhir:Element.extension [
@@ -586,6 +585,40 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Information Model - NHS 111 Ambulance Request" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance." ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-openehr-presence.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/openehr-presence" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem openehr presence" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "openehr presence" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-vs-openehr-presence.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-openehr-presence" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet openehr presence" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "openehr presence" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

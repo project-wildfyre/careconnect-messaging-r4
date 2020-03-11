@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-03-11T15:02:06+00:00"/>
+  <date value="2020-03-11T16:34:49+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -280,7 +280,6 @@
       </reference>
       <name value="COVID-19 Template Definition"/>
       <description value="COVID-19 Template Definition"/>
-      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -426,6 +425,32 @@
       </reference>
       <name value="Information Model - NHS 111 Ambulance Request"/>
       <description value="This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-openehr-presence.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/openehr-presence"/>
+      </reference>
+      <name value="CodeSystem openehr presence"/>
+      <description value="openehr presence"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-vs-openehr-presence.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-openehr-presence"/>
+      </reference>
+      <name value="ValueSet openehr presence"/>
+      <description value="openehr presence"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

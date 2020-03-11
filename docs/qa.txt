@@ -1,9 +1,9 @@
 ﻿Care Connect Messaging : Validation Results
 =========================================
 
-err = 226, warn = 42, info = 88
+err = 214, warn = 46, info = 88
 IG Publisher Version: v1.0.70-SNAPSHOT
-Generated Wed Mar 11 15:02:30 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Wed Mar 11 16:35:15 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
  Build Errors : 9 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-covid19-service-request : 15 / 9
@@ -14,9 +14,9 @@ Generated Wed Mar 11 15:02:30 GMT 2020. FHIR version 4.0.1 for careconnect.messa
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-create : 1 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-create-transaction : 1 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-referral : 15 / 8
- C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Questionnaire-covid-19-public : 0 / 1
- C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-template : 18 / 2
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-template : 12 / 3
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig : 1 / 2
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\codesystem\openehr-presence : 0 / 0
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\graphdefinition\nhs111ambulancerequest-information-model : 18 / 3
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\graphdefinition\nhs111report-information-model : 21 / 2
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\graphdefinition\patient-referral-message : 15 / 2
@@ -26,6 +26,8 @@ Generated Wed Mar 11 15:02:30 GMT 2020. FHIR version 4.0.1 for careconnect.messa
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\notification-discharge : 0 / 2
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\patient-referral : 0 / 2
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\response-patient-referral : 0 / 2
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\questionnaire\covid-19-public : 0 / 1
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\valueset\vs-openehr-presence : 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be careconnect.messaging.r4
@@ -127,8 +129,6 @@ INFORMATION: Bundle/patient-referral: Bundle.entry[2].resource.location[0].locat
 ERROR: Bundle/patient-referral: Bundle.entry[3].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
 INFORMATION: Bundle/patient-referral: Bundle.entry[3].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" is unknown so the code cannot be validated
 ERROR: Bundle/patient-referral: Bundle.entry[4].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference
-== C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Questionnaire-covid-19-public.xml ==
-WARNING: Questionnaire/covid-19-public: Questionnaire: que-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-template.xml ==
 ERROR: /f:QuestionnaireResponse/f:item: Undefined element 'type'
 ERROR: /f:QuestionnaireResponse/f:item/f:item: Undefined element 'type'
@@ -144,16 +144,12 @@ ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[1].item[
 INFORMATION: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[1].item[0].answer[0].value.ofType(Coding): Code System URI " http://snomed.info/sct" is unknown so the code cannot be validated
 ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[1].item[0].answer[0].value.ofType(Coding).system: URI values cannot have whitespace(" http://snomed.info/sct")
 ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[2].item[0].answer[0].value.ofType(Quantity): qty-3: If a code for the unit is present, the system SHALL also be present [code.empty() or system.exists()]
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[0]: LinkId "symptom-type" not found in questionnaire
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[0]: LinkId "symptom-date" not found in questionnaire
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[1]: LinkId "symptom-type" not found in questionnaire
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[1]: LinkId "symptom-date" not found in questionnaire
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(boolean): Answer value must be of type date
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(date): Answer value must be of type boolean
+WARNING: QuestionnaireResponse/covid-template: QuestionnaireResponse: The questionnaire "https://fhir.nhsz.uk/Questionnaire/covid-19-public" could not be resolved, so no validation can be performed against the base questionnaire
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig.xml ==
 WARNING: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide: ig-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide.dependsOn[0]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.dependsOn[0].uri': minimum required = 1, but only found 0
 WARNING: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide.definition.resource[6].name: value should not start or finish with whitespace
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\CodeSystem\openehr-presence.xml ==
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\GraphDefinition\nhs111ambulancerequest-information-model.xml ==
 WARNING: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition: gdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.profile: URL value "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest" does not resolve
@@ -236,3 +232,7 @@ INFORMATION: MessageDefinition/patient-referral: MessageDefinition.event.ofType(
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\response-patient-referral.xml ==
 WARNING: MessageDefinition/response-patient-referral: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 INFORMATION: MessageDefinition/response-patient-referral: MessageDefinition.event.ofType(Coding): Code System URI "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" is unknown so the code cannot be validated
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\Questionnaire\covid-19-public.xml ==
+WARNING: Questionnaire/covid-19-public: Questionnaire: que-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\ValueSet\vs-openehr-presence.xml ==
+WARNING: ValueSet/vs-openehr-presence: ValueSet: vsd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]

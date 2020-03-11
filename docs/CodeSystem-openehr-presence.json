@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "openehr-presence",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Presence CodeSystem</h2><div><p>This is a code system extracted from openEhr COVID-19 Template</p>\n</div><p>This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">present<a name=\"openehr-presence-present\"> </a></td><td>Present</td><td/></tr><tr><td style=\"white-space:nowrap\">absent<a name=\"openehr-presence-absent\"> </a></td><td>Absent</td><td/></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"openehr-presence-unknown\"> </a></td><td>Unknown</td><td/></tr></table></div>"
+  },
+  "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence",
+  "identifier": [
+    {
+      "system": "http://fhir.nhsz.uk/identifiers/codesystems",
+      "value": "openehr-presence"
+    }
+  ],
+  "version": "4.0.0",
+  "name": "Presence",
+  "title": "Presence CodeSystem",
+  "status": "draft",
+  "experimental": true,
+  "date": "2020-01-28T00:00:00+00:00",
+  "publisher": "mayfield-is.co.uk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kevin.mayfield1@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "This is a code system extracted from openEhr COVID-19 Template",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "present",
+      "display": "Present"
+    },
+    {
+      "code": "absent",
+      "display": "Absent"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    }
+  ]
+}

@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1fd82c40-b5dc-4012-a1b0-471b0ead2bb2"/>
+  <id value="09d72d63-f50c-4d04-8af1-280e73216f82"/>
   <meta>
-    <lastUpdated value="2020-03-11T15:02:06.050+00:00"/>
+    <lastUpdated value="2020-03-11T16:34:49.215+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-openehr-presence"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence version 4.0.0</p>
+            <p>All codes from system 
+              <a href="CodeSystem-openehr-presence.html">
+                <code>https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---project-wildfyre.github.io-careconnect-messaging-r4-CodeSystem-openehr-presence-present"> </a>
+                  <a href="CodeSystem-openehr-presence.html#openehr-presence-present">present</a>
+                </td>
+                <td>Present</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---project-wildfyre.github.io-careconnect-messaging-r4-CodeSystem-openehr-presence-absent"> </a>
+                  <a href="CodeSystem-openehr-presence.html#openehr-presence-absent">absent</a>
+                </td>
+                <td>Absent</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---project-wildfyre.github.io-careconnect-messaging-r4-CodeSystem-openehr-presence-unknown"> </a>
+                  <a href="CodeSystem-openehr-presence.html#openehr-presence-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence"/>
+        <version value="4.0.0"/>
+        <name value="All openEHR presence codes"/>
+        <status value="active"/>
+        <date value="2020-03-11T00:00:00+00:00"/>
+        <publisher value="mayfield-is.co.uk"/>
+        <contact>
+          <telecom>
+            <system value="email"/>
+            <value value="mailto:kevin.mayfield1@nhs.net"/>
+          </telecom>
+        </contact>
+        <description value="A value set that includes all presence codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="826"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5e657cb5-fae5-41a7-b3ea-dbfad38d62dd"/>
+          <timestamp value="2020-03-11T16:34:55+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence|4.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence"/>
+            <code value="present"/>
+            <display value="Present"/>
+          </contains>
+          <contains>
+            <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence"/>
+            <code value="absent"/>
+            <display value="Absent"/>
+          </contains>
+          <contains>
+            <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

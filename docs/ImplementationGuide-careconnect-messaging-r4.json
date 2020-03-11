@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-03-11T15:02:06+00:00",
+  "date": "2020-03-11T16:34:49+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -410,8 +410,7 @@
           "reference": "Questionnaire/covid-19-public"
         },
         "name": "COVID-19 Template Definition",
-        "description": "COVID-19 Template Definition",
-        "exampleBoolean": true
+        "description": "COVID-19 Template Definition"
       },
       {
         "extension": [
@@ -601,6 +600,40 @@
         },
         "name": "Information Model - NHS 111 Ambulance Request",
         "description": "This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-openehr-presence.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/openehr-presence"
+        },
+        "name": "CodeSystem openehr presence",
+        "description": "openehr presence"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-vs-openehr-presence.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-openehr-presence"
+        },
+        "name": "ValueSet openehr presence",
+        "description": "openehr presence"
       }
     ],
     "page": {

@@ -83,6 +83,22 @@
     </resource>
     <resource>
       <reference>
+        <reference value="QuestionnaireResponse/covid-template"></reference>
+      </reference>
+      <name value="COVID-19 Template Example "></name>
+      <description value="COVID-19 Template"></description>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Questionnaire/covid-19-public"></reference>
+      </reference>
+      <name value="COVID-19 Template Definition"></name>
+      <description value="COVID-19 Template Definition"></description>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Bundle/patient-create-transaction"></reference>
       </reference>
       <name value="Patient Create FHIR Transaction"></name>

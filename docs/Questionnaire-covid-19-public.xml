@@ -3,27 +3,27 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
   <id value="covid-19-public"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-19-public</p><p><b>url</b>: <b>https://fhir.nhs.uk/Questionnaire/covid-19-public</b></p><p><b>identifier</b>: covid-19-public</p><p><b>version</b>: 4.0.0</p><p><b>name</b>: NHS 111 Online COVID-19</p><p><b>title</b>: NHS 111 Online COVID-19</p><p><b>status</b>: DRAFT</p><p><b>subjectType</b>: Patient</p><p><b>date</b>: 10 Mar 2020, 16:00:54</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: Mock up of NHS 111 Online questionnaire as a FHIR Resource</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-1</p><p><b>text</b>: Have you been to or travelled through any of these areas in last 14 days?</p><p><b>type</b>: OPENCHOICE</p><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: Hubei province, China</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: locked down areas in northern Italy</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: H10 Costa Adeje Palace Hotel (Tenerife)</p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-2</p><p><b>text</b>: Have you been to or travelled through any of these areas in last 14 days?</p><p><b>type</b>: OPENCHOICE</p><h3>EnableWhens</h3><table class="grid"><tr><td>-</td><td><b>Question</b></td><td><b>Operator</b></td></tr><tr><td>*</td><td>covid-19-1</td><td>EQUAL</td></tr></table><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: Italy</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Daegu or Cheongdo in South Korea</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Iran</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Cambodia, Laos, Myanmar (Burma) or Vietnam</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: China, Hong Kong, Macau or Taiwan</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Japan, Malaysia, South Korea, Singapore or Thailand</p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-3</p><p><b>text</b>: Has someone with a confirmed case of coronavirus been in close contact with you?</p><p><b>type</b>: BOOLEAN</p><p><b>enableBehavior</b>: ANY</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-4</p><p><b>text</b>: Do you have any of these?</p><p><b>type</b>: OPENCHOICE</p><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: High Temperature</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Cough</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Shortness of Breath</p></blockquote></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-19-public</p><p><b>url</b>: <b>https://fhir.nhsz.uk/Questionnaire/covid-19-public</b></p><p><b>identifier</b>: covid-19-public</p><p><b>version</b>: 4.0.0</p><p><b>name</b>: COVID-19 Assessment</p><p><b>title</b>: COVID-19 Assessment</p><p><b>status</b>: DRAFT</p><p><b>subjectType</b>: Patient</p><p><b>date</b>: 11-Mar-2020 15:02:06</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: To record the information required to evaluate the potential risk of Covid-19 infection, as part of professional screening or self-assessment. This is heavily based on the current NHS-111 UK self-assessment app at https://111.nhs.uk/covid-19 and a similar risk assessment app developed for pre-hospital admission by DIPS.no. The exact risk factors are subject to continual update as the disease progresses.</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><p><b>type</b>: GROUP</p><p><b>enableBehavior</b>: ANY</p><p><b>repeats</b>: true</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: temp</p><p><b>text</b>: Body Temp</p><p><b>type</b>: GROUP</p><p><b>enableBehavior</b>: ANY</p><p><b>repeats</b>: true</p><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>LinkId</b></td><td><b>Text</b></td><td><b>Type</b></td><td><b>EnableBehavior</b></td></tr><tr><td>*</td><td>tempcel</td><td>Temperature (0-100 Celsius)</td><td>QUANTITY</td><td>ANY</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: travel</p><p><b>text</b>: Travel trip history</p><p><b>type</b>: GROUP</p><p><b>enableBehavior</b>: ANY</p><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>LinkId</b></td><td><b>Text</b></td><td><b>Type</b></td><td><b>EnableBehavior</b></td></tr><tr><td>*</td><td>recent</td><td>Recent Travel</td><td>DATE</td><td>ANY</td></tr><tr><td>*</td><td>dateofreturn</td><td>Date of Return</td><td>BOOLEAN</td><td>ANY</td></tr></table></blockquote></div>
   </text>
-  <url value="https://fhir.nhs.uk/Questionnaire/covid-19-public"/>
+  <url value="https://fhir.nhsz.uk/Questionnaire/covid-19-public"/>
   <identifier>
-    <system value="https://fhir.nhs.uk/Questionnaire"/>
+    <system value="https://fhir.nhsz.uk/Questionnaire"/>
     <value value="covid-19-public"/>
   </identifier>
   <version value="4.0.0"/>
-  <name value="NHS 111 Online COVID-19"/>
-  <title value="NHS 111 Online COVID-19"/>
+  <name value="COVID-19 Assessment"/>
+  <title value="COVID-19 Assessment"/>
   <status value="draft"/>
   <subjectType value="Patient"/>
-  <date value="2020-03-10T16:00:54+00:00"/>
+  <date value="2020-03-11T15:02:06+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
       <system value="email"/>
-      <value value="mailto:kevin.mayfield@mayfield-is.co.uk"/>
+      <value value="mailto:kevin.mayfield1@nhs.net"/>
     </telecom>
   </contact>
-  <description value="Mock up of NHS 111 Online questionnaire as a FHIR Resource"/>
+  <description value="To record the information required to evaluate the potential risk of Covid-19 infection, as part of professional screening or self-assessment. This is heavily based on the current NHS-111 UK self-assessment app at https://111.nhs.uk/covid-19 and a similar risk assessment app developed for pre-hospital admission by DIPS.no. The exact risk factors are subject to continual update as the disease progresses."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -31,67 +31,87 @@
     </coding>
   </jurisdiction>
   <item>
-    <linkId value="covid-19-1"/>
-    <text value="Have you been to or travelled through any of these areas in last 14 days?"/>
-    <type value="open-choice"/>
+    <linkId value="symptom"/>
+    <type value="group"/>
     <enableBehavior value="any"/>
-    <answerOption>
-      <valueString value="Hubei province, China"/>
-    </answerOption>
-    <answerOption>
-      <valueString value="locked down areas in northern Italy"/>
-    </answerOption>
-    <answerOption>
-      <valueString value="H10 Costa Adeje Palace Hotel (Tenerife)"/>
-    </answerOption>
+    <repeats value="true"/>
+    <item>
+      <linkId value="sympton-type"/>
+      <text value="Symptom"/>
+      <type value="open-choice"/>
+      <enableBehavior value="any"/>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="315642008"/>
+          <display value="Influenza-like symptoms"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="49727002"/>
+          <display value="Cough"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="386661006"/>
+          <display value="Fever"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="230145002"/>
+          <display value="Difficulty breathing"/>
+        </valueCoding>
+      </answerOption>
+      <answerOption>
+        <valueCoding>
+          <system value="http://snomed.info/sct"/>
+          <code value="162397003"/>
+          <display value="Pain in throat"/>
+        </valueCoding>
+      </answerOption>
+    </item>
+    <item>
+      <linkId value="sympton-date"/>
+      <text value="onset"/>
+      <type value="date"/>
+      <enableBehavior value="any"/>
+    </item>
   </item>
   <item>
-    <linkId value="covid-19-2"/>
-    <text value="Have you been to or travelled through any of these areas in last 14 days?"/>
-    <type value="open-choice"/>
-    <enableWhen>
-      <question value="covid-19-1"/>
-      <operator value="="/>
-    </enableWhen>
+    <linkId value="temp"/>
+    <text value="Body Temp"/>
+    <type value="group"/>
     <enableBehavior value="any"/>
-    <answerOption>
-      <valueString value="Italy"/>
-    </answerOption>
-    <answerOption>
-      <valueString value="Daegu or Cheongdo in South Korea"/>
-    </answerOption>
-    <answerOption>
-      <valueString value="Iran"/>
-    </answerOption>
-    <answerOption>
-      <valueString value="Cambodia, Laos, Myanmar (Burma) or Vietnam"/>
-    </answerOption>
-    <answerOption>
-      <valueString value="China, Hong Kong, Macau or Taiwan"/>
-    </answerOption>
-    <answerOption>
-      <valueString value="Japan, Malaysia, South Korea, Singapore or Thailand"/>
-    </answerOption>
+    <repeats value="true"/>
+    <item>
+      <linkId value="tempcel"/>
+      <text value="Temperature (0-100 Celsius)"/>
+      <type value="quantity"/>
+      <enableBehavior value="any"/>
+    </item>
   </item>
   <item>
-    <linkId value="covid-19-3"/>
-    <text value="Has someone with a confirmed case of coronavirus been in close contact with you?"/>
-    <type value="boolean"/>
+    <linkId value="travel"/>
+    <text value="Travel trip history"/>
+    <type value="group"/>
     <enableBehavior value="any"/>
-  </item>
-  <item>
-    <linkId value="covid-19-4"/>
-    <text value="Do you have any of these?"/>
-    <type value="open-choice"/>
-    <enableBehavior value="any"/>
-    <answerOption>
-      <valueString value="High Temperature"/>
-    </answerOption>
-    <answerOption>
-      <valueString value="Cough"/>
-    </answerOption>
-    <answerOption>
-      <valueString value="Shortness of Breath"/>
-    </answerOption>
+    <item>
+      <linkId value="recent"/>
+      <text value="Recent Travel"/>
+      <type value="date"/>
+      <enableBehavior value="any"/>
+    </item>
+    <item>
+      <linkId value="dateofreturn"/>
+      <text value="Date of Return"/>
+      <type value="boolean"/>
+      <enableBehavior value="any"/>
+    </item>
   </item>
 </Questionnaire>

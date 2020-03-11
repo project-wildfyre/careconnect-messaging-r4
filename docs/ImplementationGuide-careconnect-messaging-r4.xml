@@ -11,12 +11,12 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-03-10T16:00:54+00:00"/>
+  <date value="2020-03-11T15:02:06+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
       <system value="email"/>
-      <value value="mailto:kevin.mayfield@mayfield-is.co.uk"/>
+      <value value="mailto:kevin.mayfield1@nhs.net"/>
     </telecom>
   </contact>
   <description value="Demonstration of Care Connect STU3 Implementation Guide to support Messaging"/>
@@ -256,6 +256,34 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="QuestionnaireResponse-covid-template.html"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/covid-template"/>
+      </reference>
+      <name value="COVID-19 Template Example "/>
+      <description value="COVID-19 Template"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Questionnaire-covid-19-public.html"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/covid-19-public"/>
+      </reference>
+      <name value="COVID-19 Template Definition"/>
+      <description value="COVID-19 Template Definition"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -398,19 +426,6 @@
       </reference>
       <name value="Information Model - NHS 111 Ambulance Request"/>
       <description value="This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Questionnaire-covid-19-public.html"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/covid-19-public"/>
-      </reference>
-      <name value="NHS 111 Online COVID-19"/>
-      <description value="Mock up of NHS 111 Online questionnaire as a FHIR Resource"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

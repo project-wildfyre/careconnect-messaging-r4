@@ -6,6 +6,12 @@
   "extensions": [],
   "profiles": {},
   "usage": {
+    "http://fhir.openhealth.co.uk/Location": [
+      "QuestionnaireResponse"
+    ],
+    "http://fhir.openhealth.co.uk/LocationType": [
+      "QuestionnaireResponse"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],

@@ -1,78 +1,97 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
-    <id value="covid-19-public" />
-    <url value="https://fhir.nhs.uk/Questionnaire/covid-19-public"/>
+    <id value="covid-19-public"/>
+    <url value="https://fhir.nhsz.uk/Questionnaire/covid-19-public"/>
     <identifier>
-        <system value="https://fhir.nhs.uk/Questionnaire"/>
+        <system value="https://fhir.nhsz.uk/Questionnaire"/>
         <value value="covid-19-public"/>
     </identifier>
-    <name value="NHS 111 Online COVID-19"/>
-    <title value="NHS 111 Online COVID-19"/>
+    <name value="COVID-19 Assessment"/>
+    <title value="COVID-19 Assessment"/>
     <status value="draft"/>
     <subjectType value="Patient"/>
-    <description value="Mock up of NHS 111 Online questionnaire as a FHIR Resource"/>
+    <description value="To record the information required to evaluate the potential risk of Covid-19 infection, as part of professional screening or self-assessment. This is heavily based on the current NHS-111 UK self-assessment app at https://111.nhs.uk/covid-19 and a similar risk assessment app developed for pre-hospital admission by DIPS.no. The exact risk factors are subject to continual update as the disease progresses."/>
     <item>
-        <linkId value="covid-19-1"/>
-        <text value="Have you been to or travelled through any of these areas in last 14 days?"/>
-        <type value="open-choice"/>
+        <linkId value="symptom"/>
+        <type value="group"/>
         <enableBehavior value="any"/>
-        <answerOption>
-            <valueString value="Hubei province, China" />
-        </answerOption>
-        <answerOption>
-            <valueString value="locked down areas in northern Italy" />
-        </answerOption>
-        <answerOption>
-            <valueString value="H10 Costa Adeje Palace Hotel (Tenerife)" />
-        </answerOption>
+        <repeats value="true"/>
+        <item>
+            <linkId value="sympton-type"/>
+            <text value="Symptom"/>
+            <type value="open-choice"/>
+            <enableBehavior value="any"/>
+            <answerOption>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="315642008"/>
+                    <display value="Influenza-like symptoms"/>
+                </valueCoding>
+            </answerOption>
+            <answerOption>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="49727002"/>
+                    <display value="Cough"/>
+                </valueCoding>
+            </answerOption>
+            <answerOption>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="386661006"/>
+                    <display value="Fever"/>
+                </valueCoding>
+            </answerOption>
+            <answerOption>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="230145002"/>
+                    <display value="Difficulty breathing"/>
+                </valueCoding>
+            </answerOption>
+            <answerOption>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="162397003"/>
+                    <display value="Pain in throat"/>
+                </valueCoding>
+            </answerOption>
+        </item>
+        <item>
+            <linkId value="sympton-date"/>
+            <text value="onset"/>
+            <type value="date"/>
+            <enableBehavior value="any"/>
+        </item>
     </item>
     <item>
-        <linkId value="covid-19-2"/>
-        <text value="Have you been to or travelled through any of these areas in last 14 days?"/>
-        <type value="open-choice"/>
-        <enableWhen>
-            <question value="covid-19-1"></question>
-            <operator value="="></operator>
-            <valueString value=""/>
-        </enableWhen>
+        <linkId value="temp"/>
+        <text value="Body Temp"/>
+        <type value="group"/>
         <enableBehavior value="any"/>
-        <answerOption>
-            <valueString value="Italy" />
-        </answerOption>
-        <answerOption>
-            <valueString value="Daegu or Cheongdo in South Korea" />
-        </answerOption>
-        <answerOption>
-            <valueString value="Iran" />
-        </answerOption>
-        <answerOption>
-            <valueString value="Cambodia, Laos, Myanmar (Burma) or Vietnam" />
-        </answerOption>
-        <answerOption>
-            <valueString value="China, Hong Kong, Macau or Taiwan" />
-        </answerOption>
-        <answerOption>
-            <valueString value="Japan, Malaysia, South Korea, Singapore or Thailand" />
-        </answerOption>
+        <repeats value="true"/>
+        <item>
+            <linkId value="tempcel"/>
+            <text value="Temperature (0-100 Celsius)"/>
+            <type value="quantity"/>
+            <enableBehavior value="any"/>
+        </item>
     </item>
     <item>
-        <linkId value="covid-19-3"/>
-        <text value="Has someone with a confirmed case of coronavirus been in close contact with you?"/>
-        <type value="boolean"/>
+        <linkId value="travel"/>
+        <text value="Travel trip history"/>
+        <type value="group"/>
         <enableBehavior value="any"/>
-    </item>
-    <item>
-        <linkId value="covid-19-4"/>
-        <text value="Do you have any of these?"/>
-        <type value="open-choice"/>
-        <enableBehavior value="any"/>
-        <answerOption>
-            <valueString value="High Temperature" />
-        </answerOption>
-        <answerOption>
-            <valueString value="Cough" />
-        </answerOption>
-        <answerOption>
-            <valueString value="Shortness of Breath" />
-        </answerOption>
+        <item>
+            <linkId value="recent"/>
+            <text value="Recent Travel"/>
+            <type value="date"/>
+            <enableBehavior value="any"/>
+        </item>
+        <item>
+            <linkId value="dateofreturn"/>
+            <text value="Date of Return"/>
+            <type value="boolean"/>
+            <enableBehavior value="any"/>
+        </item>
     </item>
 </Questionnaire>

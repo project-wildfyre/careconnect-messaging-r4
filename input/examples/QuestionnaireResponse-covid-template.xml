@@ -1,0 +1,124 @@
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+    <!--   Please not that in this questionnaire, the questions are mostly unnamed, that is, the
+     questions are not identified using the <name> element. It will therefore
+      be hard to extract useful information in an automated way from this questionnaire.
+     This is, however, quite often the case when modeling existing questionnaires   -->
+    <id value="covid-template"/>
+    <extension url="http://fhir.openhealth.co.uk/Location">
+        <extension url="ID">
+            <valueString value="4884"/>
+        </extension>
+        <extension url="GUID">
+            <valueString value="37088C97-82FC-4B3E-BDBC-28F2C03B6CB8"/>
+        </extension>
+        <extension url="Name">
+            <valueString value="Partner Programme Test 17"/>
+        </extension>
+    </extension>
+    <extension url="http://fhir.openhealth.co.uk/LocationType">
+        <extension url="ID">
+            <valueString value="1672871000006114"/>
+        </extension>
+        <extension url="GUID">
+            <valueString value="357EFD4F-7912-DE6E-13B8-D3FACED28522"/>
+        </extension>
+        <extension url="Name">
+            <valueString value="G.P.Surgery"/>
+        </extension>
+    </extension>
+    <identifier>
+        <system value="urn:uuid" />
+        <value value="ebd4bc35-1369-4ae6-9909-0a12c7462d04" />
+    </identifier>
+    <questionnaire value="https://fhir.nhsz.uk/Questionnaire/covid-19-public" />
+    <subject>
+        <reference value="Patient/377" />
+    </subject>
+    <encounter>
+        <display value="Suspected Covid-19 assessment.v0"/>
+    </encounter>
+    <authored value="2020-03-11T14:15:00+10:00" />
+    <author id="A716058C-F9D5-4537-B1E7-D021BD2185A3">
+        <reference value="Practitioner/4620" />
+    </author>
+    <!--   Many groups left out of this example   -->
+    <item>
+        <linkId value="symptom" />
+        <item>
+            <linkId value="symptom-type"></linkId>
+            <text value="Symptom"/>
+            <answer>
+                <valueCoding>
+                    <system value="	http://snomed.info/sct"/>
+                    <code value="162397003" />
+                    <display value="Pain in throat"/>
+                </valueCoding>
+            </answer>
+        </item>
+        <item>
+            <linkId value="symptom-date"></linkId>
+            <text value="Onset"/>
+            <answer>
+                <valueDate value="2020-03-01">
+                </valueDate>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="symptom" />
+        <item>
+            <linkId value="symptom-type"></linkId>
+            <text value="Symptom"/>
+            <answer>
+                <valueCoding>
+                    <system value="	http://snomed.info/sct"/>
+                    <code value="315642008" />
+                    <display value="Influenza-like symptoms"/>
+                </valueCoding>
+            </answer>
+        </item>
+        <item>
+            <linkId value="symptom-date"></linkId>
+            <text value="Onset"/>
+            <answer>
+                <valueDate value="2020-03-01">
+                </valueDate>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="temp"></linkId>
+        <text value="Body Temp"/>
+        <item>
+            <linkId value="tempcel"></linkId>
+            <text value="Temperature (0-100 Celsius)"/>
+            <answer>
+                <valueQuantity>
+                    <value value="35"/>
+                    <code value="Cel"/>
+                </valueQuantity>
+            </answer>
+        </item>
+    </item>
+    <item>
+        <linkId value="travel"></linkId>
+        <type value="group"/>
+        <item>
+            <linkId value="recent"></linkId>
+            <text value="Recent Travel"/>
+            <type value="boolean"/>
+            <answer>
+                <valueBoolean value="true"/>
+            </answer>
+        </item>
+        <item>
+            <linkId value="dateofreturn"></linkId>
+            <text value="Date of Return"/>
+            <type value="date"/>
+            <answer>
+                <valueDate value="2020-03-02">
+                </valueDate>
+            </answer>
+        </item>
+    </item>
+</QuestionnaireResponse>

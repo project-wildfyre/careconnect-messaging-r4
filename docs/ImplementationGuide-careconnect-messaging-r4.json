@@ -10,14 +10,14 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-03-10T16:00:54+00:00",
+  "date": "2020-03-11T15:02:06+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
       "telecom": [
         {
           "system": "email",
-          "value": "mailto:kevin.mayfield@mayfield-is.co.uk"
+          "value": "mailto:kevin.mayfield1@nhs.net"
         }
       ]
     }
@@ -381,6 +381,42 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-covid-template.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/covid-template"
+        },
+        "name": "COVID-19 Template Example ",
+        "description": "COVID-19 Template",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Questionnaire-covid-19-public.html"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/covid-19-public"
+        },
+        "name": "COVID-19 Template Definition",
+        "description": "COVID-19 Template Definition",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           },
           {
@@ -565,23 +601,6 @@
         },
         "name": "Information Model - NHS 111 Ambulance Request",
         "description": "This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Questionnaire"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Questionnaire-covid-19-public.html"
-          }
-        ],
-        "reference": {
-          "reference": "Questionnaire/covid-19-public"
-        },
-        "name": "NHS 111 Online COVID-19",
-        "description": "Mock up of NHS 111 Online questionnaire as a FHIR Resource"
       }
     ],
     "page": {

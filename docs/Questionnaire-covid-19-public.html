@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CARECONNECT-MESSAGING-R4\NHS 111 Online COVID-19 - FHIR v4.0.1</title>
+    <title>CARECONNECT-MESSAGING-R4\COVID-19 Template Definition - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,8 +37,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"10.10"}
-    h3,h4,h5,h6{--heading-prefix:"10.10"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.17"}
+    h3,h4,h5,h6{--heading-prefix:"10.17"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         
@@ -122,7 +122,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NHS 111 Online COVID-19</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>COVID-19 Template Definition</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -137,7 +137,7 @@
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <a name="root"> </a>
-  <h2 id="root">NHS 111 Online COVID-19</h2>
+  <h2 id="root">COVID-19 Template Definition</h2>
   <p>
     Format(s):
   </p>
@@ -165,7 +165,7 @@
   <p>
     <b>Narrative view</b>
   </p>
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-19-public</p><p><b>url</b>: <b>https://fhir.nhs.uk/Questionnaire/covid-19-public</b></p><p><b>identifier</b>: covid-19-public</p><p><b>version</b>: 4.0.0</p><p><b>name</b>: NHS 111 Online COVID-19</p><p><b>title</b>: NHS 111 Online COVID-19</p><p><b>status</b>: DRAFT</p><p><b>subjectType</b>: Patient</p><p><b>date</b>: 10 Mar 2020, 16:00:54</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: Mock up of NHS 111 Online questionnaire as a FHIR Resource</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-1</p><p><b>text</b>: Have you been to or travelled through any of these areas in last 14 days?</p><p><b>type</b>: OPENCHOICE</p><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: Hubei province, China</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: locked down areas in northern Italy</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: H10 Costa Adeje Palace Hotel (Tenerife)</p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-2</p><p><b>text</b>: Have you been to or travelled through any of these areas in last 14 days?</p><p><b>type</b>: OPENCHOICE</p><h3>EnableWhens</h3><table class="grid"><tr><td>-</td><td><b>Question</b></td><td><b>Operator</b></td></tr><tr><td>*</td><td>covid-19-1</td><td>EQUAL</td></tr></table><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: Italy</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Daegu or Cheongdo in South Korea</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Iran</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Cambodia, Laos, Myanmar (Burma) or Vietnam</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: China, Hong Kong, Macau or Taiwan</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Japan, Malaysia, South Korea, Singapore or Thailand</p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-3</p><p><b>text</b>: Has someone with a confirmed case of coronavirus been in close contact with you?</p><p><b>type</b>: BOOLEAN</p><p><b>enableBehavior</b>: ANY</p></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: covid-19-4</p><p><b>text</b>: Do you have any of these?</p><p><b>type</b>: OPENCHOICE</p><p><b>enableBehavior</b>: ANY</p><blockquote><p><b>answerOption</b></p><p><b>value</b>: High Temperature</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Cough</p></blockquote><blockquote><p><b>answerOption</b></p><p><b>value</b>: Shortness of Breath</p></blockquote></blockquote></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-19-public</p><p><b>url</b>: <b>https://fhir.nhsz.uk/Questionnaire/covid-19-public</b></p><p><b>identifier</b>: covid-19-public</p><p><b>version</b>: 4.0.0</p><p><b>name</b>: COVID-19 Assessment</p><p><b>title</b>: COVID-19 Assessment</p><p><b>status</b>: DRAFT</p><p><b>subjectType</b>: Patient</p><p><b>date</b>: 11-Mar-2020 15:02:06</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>description</b>: To record the information required to evaluate the potential risk of Covid-19 infection, as part of professional screening or self-assessment. This is heavily based on the current NHS-111 UK self-assessment app at https://111.nhs.uk/covid-19 and a similar risk assessment app developed for pre-hospital admission by DIPS.no. The exact risk factors are subject to continual update as the disease progresses.</p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><p><b>type</b>: GROUP</p><p><b>enableBehavior</b>: ANY</p><p><b>repeats</b>: true</p><blockquote><p><b>item</b></p></blockquote><blockquote><p><b>item</b></p></blockquote></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: temp</p><p><b>text</b>: Body Temp</p><p><b>type</b>: GROUP</p><p><b>enableBehavior</b>: ANY</p><p><b>repeats</b>: true</p><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>LinkId</b></td><td><b>Text</b></td><td><b>Type</b></td><td><b>EnableBehavior</b></td></tr><tr><td>*</td><td>tempcel</td><td>Temperature (0-100 Celsius)</td><td>QUANTITY</td><td>ANY</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: travel</p><p><b>text</b>: Travel trip history</p><p><b>type</b>: GROUP</p><p><b>enableBehavior</b>: ANY</p><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>LinkId</b></td><td><b>Text</b></td><td><b>Type</b></td><td><b>EnableBehavior</b></td></tr><tr><td>*</td><td>recent</td><td>Recent Travel</td><td>DATE</td><td>ANY</td></tr><tr><td>*</td><td>dateofreturn</td><td>Date of Return</td><td>BOOLEAN</td><td>ANY</td></tr></table></blockquote></div>
 
   
   
@@ -180,7 +180,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 10, 2020 16:00+0000">2020-03-10</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 11, 2020 15:02+0000">2020-03-11</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -189,6 +189,22 @@
       <name value="ValueSet openehr presence"/>
       <description value="openehr presence"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/news2-report"></reference>
+      </reference>
+      <name value="NEWS2 Diagnostic Report FHIR Message Example"></name>
+      <description value="NEWS2 Diagnostic Report FHIR Message Example"></description>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/news2-report-transaction"></reference>
+      </reference>
+      <name value="NEWS2 Diagnostic Report FHIR Transaction Example"></name>
+      <description value="NEWS2 Diagnostic Report FHIR Transaction Example"></description>
+      <exampleBoolean value="true"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -212,6 +228,11 @@
       <page>
         <nameUrl value="referrals.html"/>
         <title value="Referrals (inc Handovers)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="diagnostics.html"/>
+        <title value="Diagnostic Reports"/>
         <generation value="markdown"/>
       </page>
       <page>

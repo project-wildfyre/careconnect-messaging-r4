@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-03-19T06:04:00+00:00",
+  "date": "2020-03-19T06:41:34+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -634,6 +634,42 @@
         },
         "name": "ValueSet openehr presence",
         "description": "openehr presence"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-news2-report.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/news2-report"
+        },
+        "name": "NEWS2 Diagnostic Report FHIR Message Example",
+        "description": "NEWS2 Diagnostic Report FHIR Message Example",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-news2-report-transaction.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/news2-report-transaction"
+        },
+        "name": "NEWS2 Diagnostic Report FHIR Transaction Example",
+        "description": "NEWS2 Diagnostic Report FHIR Transaction Example",
+        "exampleBoolean": true
       }
     ],
     "page": {
@@ -659,6 +695,11 @@
         {
           "nameUrl": "referrals.html",
           "title": "Referrals (inc Handovers)",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "diagnostics.html",
+          "title": "Diagnostic Reports",
           "generation": "markdown"
         },
         {

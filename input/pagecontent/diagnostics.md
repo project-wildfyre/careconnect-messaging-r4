@@ -1,0 +1,28 @@
+### Diagnostic Report
+
+
+#### ORU^R01 - HL7 v2 
+
+NEWS2 Diagnostic Report
+
+```
+MSH|^~\&|PAS|RCB|ROUTE|ROUTE|20180521134512||ORU^R01|14038913245354|P|2.4||201011011512|||GBR|UNICODE|EN||
+PID|1||3333333333^^^NHS||SMITH^FREDRICA^J^^MRS^^L|SCHMIDT^HELGAR^Y|196512131515|2|||29 WEST AVENUE^BURYTHORPE^MALTON^NORTH YORKSHIRE^YO32 5TT^GBR^H||+441234567890||EN|M|C22|||||A|Berlin|||GBR||DEU
+PD1|||MALTON GP PRACTICE^^Y06601|G5612908^Townley^Gregory^^^Dr^^^GMC
+OBR|1||108512374|118227000^Vital Signs^SNM||20180519140034|20180521134505|||||||||||||||||||||||||||||||||||
+OBX|1|NM|364075005^Heart Rate^SNM||73|/min|60-100|N|||F|||20180511220525
+OBX|2|NM|103228002^Blood oxygen saturation^SNM||98|%|94-100|L|||F|||20180511220525
+OBX|3|CE|722742002^Breathing room air^SNM||||||||F|||
+OBX|4|CE|1104441000000107^ACVPU (Alert Confusion Voice Pain Unresponsive) scale score^SNM||248234008^Mentally alert^SNM||||||F|||
+OBX|5|NM|86290005^Respiratory rate^SNM||20|/min|||||F|||
+OBX|6|NM|72313002^Systolic arterial pressure^SNOMED-CT|BP|132|mm[Hg]|90-120|H|||F|||20180511220525
+OBX|7|NM|1091811000000102^Diastolic arterial pressure^SNM|BP|86|mm[Hg]|60-80|H|||F|||20180511220525
+```
+
+#### FHIR Message  
+
+[NEWS2 FHIR Message](Bundle-news2-report.html)
+
+#### FHIR Transaction
+
+[NEWS2 FHIR Transaction](Bundle-news2-report-transaction.html)

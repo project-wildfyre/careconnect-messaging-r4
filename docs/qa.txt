@@ -1,12 +1,14 @@
 ﻿Care Connect Messaging : Validation Results
 =========================================
 
-err = 180, warn = 46, info = 76
+err = 192, warn = 50, info = 120
 IG Publisher Version: v1.0.72-SNAPSHOT
-Generated Thu Mar 19 06:04:24 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Thu Mar 19 06:41:52 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
  Build Errors : 5 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-covid19-service-request : 7 / 5
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-news2-report : 3 / 12
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-news2-report-transaction : 3 / 12
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-admit : 2 / 7
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-admit-transaction : 2 / 7
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-discharge : 2 / 4
@@ -31,11 +33,11 @@ Generated Thu Mar 19 06:04:24 GMT 2020. FHIR version 4.0.1 for careconnect.messa
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be careconnect.messaging.r4
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/blockquote/p/a at Line 168, column 1902: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 3645: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 5654: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 380: The link 'urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c' for "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 508: The link 'urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f' for "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f" cannot be resolved
+ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/blockquote/p/a at Line 171, column 1902: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest" cannot be resolved
+ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 171, column 3645: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService" cannot be resolved
+ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 171, column 5654: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" cannot be resolved
+ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 380: The link 'urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c' for "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c" cannot be resolved
+ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 508: The link 'urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f' for "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f" cannot be resolved
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-covid19-service-request.json ==
 ERROR: Bundle.entry[0].resource: Unrecognised property '@timestamp'
 ERROR: Bundle.entry[1].resource.requester: Unrecognised property '@agent'
@@ -49,6 +51,38 @@ INFORMATION: Bundle/covid19-service-request: Bundle.entry[2].resource.type[1].co
 INFORMATION: Bundle/covid19-service-request: Bundle.entry[2].resource.hospitalization.admitSource: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)
 WARNING: Bundle/covid19-service-request: Bundle.entry[2].resource.hospitalization.admitSource.coding[0]: Display Name for https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19 should be one of 'Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode.' instead of 'Usual place of residence'
 WARNING: Bundle/covid19-service-request: Bundle.entry[5].resource: The questionnaire "https://fhir.nhsz.uk/Questionnaire/covid-19-public" could not be resolved, so no validation can be performed against the base questionnaire
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-news2-report.json ==
+INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.code: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes, and a code is recommended to come from this value set) (codes = http://snomed.info/sct#118227000)
+WARNING: Bundle/news2-report: Bundle.entry[1].resource.code.coding[0]: The display "Vital Signs" is not a valid display for the code {http://snomed.info/sct}118227000 - should be one of ["Vital signs finding","Vital signs finding (finding)"]
+INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.result[3]: Details for urn:oid:87e13a1f-0173-415a-9f5d-66ac2746b382 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.result[5]: Details for urn:oid:6c87c7b5-632f-431d-b15d-fad1d93d360c matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/news2-report: Bundle.entry[2].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report: Bundle.entry[3].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report: Bundle.entry[4].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/news2-report: Bundle.entry[5].resource.code.coding[0]: unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for "http://snomed.info/sct#1104441000000107"
+INFORMATION: Bundle/news2-report: Bundle.entry[5].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report: Bundle.entry[6].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report: Bundle.entry[7].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/news2-report: Bundle.entry[7].resource.component[1].code.coding[0]: unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for "http://snomed.info/sct#1091811000000102"
+ERROR: Bundle/news2-report: Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
+INFORMATION: Bundle/news2-report: Bundle.entry[8].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" is unknown so the code cannot be validated
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-news2-report-transaction.json ==
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[1].resource.code: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes, and a code is recommended to come from this value set) (codes = http://snomed.info/sct#118227000)
+WARNING: Bundle/news2-report-transaction: Bundle.entry[1].resource.code.coding[0]: The display "Vital Signs" is not a valid display for the code {http://snomed.info/sct}118227000 - should be one of ["Vital signs finding","Vital signs finding (finding)"]
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[1].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[1].resource.result[3]: Details for urn:oid:87e13a1f-0173-415a-9f5d-66ac2746b382 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[1].resource.result[5]: Details for urn:oid:6c87c7b5-632f-431d-b15d-fad1d93d360c matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[2].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[3].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[4].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/news2-report-transaction: Bundle.entry[5].resource.code.coding[0]: unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for "http://snomed.info/sct#1104441000000107"
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[5].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[6].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[7].resource.subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/news2-report-transaction: Bundle.entry[7].resource.component[1].code.coding[0]: unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for "http://snomed.info/sct#1091811000000102"
+ERROR: Bundle/news2-report-transaction: Bundle.entry[8].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
+INFORMATION: Bundle/news2-report-transaction: Bundle.entry[8].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" is unknown so the code cannot be validated
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-admit.json ==
 INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.type[1].coding[0]: Code System URI "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1" is unknown so the code cannot be validated
 INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.subject: Details for urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient

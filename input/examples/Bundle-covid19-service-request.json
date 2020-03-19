@@ -11,22 +11,23 @@
             "resource": {
                 "resourceType": "MessageHeader",
                 "id": "3d4a07cc-ff85-45c2-8f60-202d5506db02",
-                "event": {
+                "eventCoding": {
                     "code": "patient-referral",
                     "display": "patient-referral"
                 },
                 "destination": [
                     {
-                        "name": "ROUTE"
+                        "name": "ROUTE",
+                        "endpoint" : "http://fhirserver-env-1.eba-aepmzc4d.eu-west-2.elasticbeanstalk.com:8186/R4",
+                        "receiver": {
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-site-code",
+                                "value": "NNJ"
+                            },
+                            "display": "DHU HEALTH CARE C.I.C"
+                        }
                     }
                 ],
-                "receiver": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-site-code",
-                        "value": "NNJ"
-                    },
-                    "display": "DHU HEALTH CARE C.I.C"
-                },
                 "sender": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -34,6 +35,11 @@
                     },
                     "display": "YORKSHIRE AMBULANCE SERVICE NHS TRUST"
                 },
+                "source": {
+                    "name" : "YORKSHIRE AMBULANCE SERVICE NHS TRUST",
+                    "endpoint" : "http://fhirserver-env-1.eba-aepmzc4d.eu-west-2.yas.com/R4"
+                },
+
                 "timestamp": "2010-11-01T15:12:00.000+00:00",
                 "focus": [
                     {
@@ -82,7 +88,7 @@
                     "reference": "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4",
                     "display": "MRS FREDICA SMITH"
                 },
-                "context": {
+                "encounter": {
                     "reference": "urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c"
                 },
                 "authoredOn": "2018-11-08T12:30:00+00:00",
@@ -129,6 +135,11 @@
                                 "display": "Exposure to severe acute respiratory syndrome coronavirus 2 (event)"
                             }
                         ]
+                    }
+                ],
+                "supportingInfo": [
+                    {
+                        "reference" : "urn:oid:19e6fd1e-cdb6-4b35-8d76-be67d2b9812d"
                     }
                 ]
             }
@@ -287,11 +298,11 @@
                     {
                         "extension": [
                             {
-                                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
                                 "valueCodeableConcept": {
                                     "coding": [
                                         {
-                                            "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus",
                                             "code": "01"
                                         }
                                     ]
@@ -374,17 +385,167 @@
                 "id": "335f4089-8979-4bd2-96db-6137c1483ecc",
                 "identifier": [
                     {
-                        "system": "htttps://fhir.yas.cas/Identifier",
-                        "value": "SHEF-TRIAGE"
+                        "system": "https://fhir.yas.cas/Identifier",
+                        "value": "123543"
                     }
                 ],
-                "name": "South Yorks 999",
-                "partOf": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-site-code",
-                        "value": "RX8"
+                "name": "Contact Location",
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                                "code": "PTRES",
+                                "display": "Patient's Residence"
+                            }
+                        ]
                     }
+                ],
+                "physicalType": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                            "code": "ho",
+                            "display": "House"
+                        }
+                    ]
+                },
+                "position": {
+                    "longitude": -51.5034,
+                    "latitude": 0.1276,
+                    "altitude": 0
                 }
+            }
+        },
+        {
+            "fullUrl": "urn:oid:19e6fd1e-cdb6-4b35-8d76-be67d2b9812d",
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "19e6fd1e-cdb6-4b35-8d76-be67d2b9812d",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2020-03-18T15:42:27.744+00:00",
+                    "source": "#hzOOFYogzlto4aJM"
+                },
+                "identifier": {
+                    "system": "urn:uuid",
+                    "value": "ebd4bc35-1369-4ae6-9909-0a12c7462d04"
+                },
+                "questionnaire": "https://fhir.nhsz.uk/Questionnaire/covid-19-public",
+                "status": "completed",
+                "subject": {
+                    "reference": "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4"
+                },
+                "encounter": {
+                    "reference": "urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c"
+                },
+                "authored": "2020-03-11T14:15:00+10:00",
+                "author": {
+                    "id": "A716058C-F9D5-4537-B1E7-D021BD2185A3",
+                    "identifier": {
+                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                        "value": "G5612908"
+                    },
+                    "display": "Dr Gregory Townley"
+                },
+                "item": [
+                    {
+                        "linkId": "symptom",
+                        "item": [
+                            {
+                                "linkId": "symptom-type",
+                                "text": "Symptom",
+                                "answer": [
+                                    {
+                                        "valueCoding": {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "162397003",
+                                            "display": "Pain in throat"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "linkId": "symptom-date",
+                                "text": "Onset",
+                                "answer": [
+                                    {
+                                        "valueDate": "2020-03-01"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "symptom",
+                        "item": [
+                            {
+                                "linkId": "symptom-type",
+                                "text": "Symptom",
+                                "answer": [
+                                    {
+                                        "valueCoding": {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "315642008",
+                                            "display": "Influenza-like symptoms"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "linkId": "symptom-date",
+                                "text": "Onset",
+                                "answer": [
+                                    {
+                                        "valueDate": "2020-03-01"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "temp",
+                        "text": "Body Temp",
+                        "item": [
+                            {
+                                "linkId": "tempcel",
+                                "text": "Temperature (0-100 Celsius)",
+                                "answer": [
+                                    {
+                                        "valueQuantity": {
+                                            "value": 35,
+                                            "system": "http://unitsofmeasure.org",
+                                            "code": "Cel"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "linkId": "travel",
+                        "item": [
+                            {
+                                "linkId": "recent",
+                                "text": "Recent Travel",
+                                "answer": [
+                                    {
+                                        "valueBoolean": true
+                                    }
+                                ]
+                            },
+                            {
+                                "linkId": "dateofreturn",
+                                "text": "Date of Return",
+                                "answer": [
+                                    {
+                                        "valueDate": "2020-03-02"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         }
     ]

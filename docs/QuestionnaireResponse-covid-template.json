@@ -3,59 +3,28 @@
   "id": "covid-template",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-template</p><p><b>identifier</b>: ebd4bc35-1369-4ae6-9909-0a12c7462d04</p><p><b>questionnaire</b>: <a href=\"https://fhir.nhsz.uk/Questionnaire/covid-19-public\">https://fhir.nhsz.uk/Questionnaire/covid-19-public</a></p><p><b>subject</b>: <a href=\"Patient/377\">Patient/377</a></p><p><b>encounter</b>: Suspected Covid-19 assessment.v0</p><p><b>authored</b>: 11-Mar-2020 04:15:00</p><p><b>author</b>: <a href=\"Practitioner/4620\">Practitioner/4620</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: temp</p><p><b>text</b>: Body Temp</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: travel</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-template</p><p><b>identifier</b>: ebd4bc35-1369-4ae6-9909-0a12c7462d04</p><p><b>questionnaire</b>: <a href=\"https://fhir.nhsz.uk/Questionnaire/covid-19-public\">https://fhir.nhsz.uk/Questionnaire/covid-19-public</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c\">urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</a></p><p><b>encounter</b>: <a href=\"urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f\">urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f</a></p><p><b>authored</b>: 11 Mar 2020, 04:15:00</p><p><b>author</b>: Dr Gregory Townley</p><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: temp</p><p><b>text</b>: Body Temp</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: travel</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>"
   },
-  "extension": [
-    {
-      "url": "http://fhir.openhealth.co.uk/Location",
-      "extension": [
-        {
-          "url": "ID",
-          "valueString": "4884"
-        },
-        {
-          "url": "GUID",
-          "valueString": "37088C97-82FC-4B3E-BDBC-28F2C03B6CB8"
-        },
-        {
-          "url": "Name",
-          "valueString": "Partner Programme Test 17"
-        }
-      ]
-    },
-    {
-      "url": "http://fhir.openhealth.co.uk/LocationType",
-      "extension": [
-        {
-          "url": "ID",
-          "valueString": "1672871000006114"
-        },
-        {
-          "url": "GUID",
-          "valueString": "357EFD4F-7912-DE6E-13B8-D3FACED28522"
-        },
-        {
-          "url": "Name",
-          "valueString": "G.P.Surgery"
-        }
-      ]
-    }
-  ],
   "identifier": {
     "system": "urn:uuid",
     "value": "ebd4bc35-1369-4ae6-9909-0a12c7462d04"
   },
   "questionnaire": "https://fhir.nhsz.uk/Questionnaire/covid-19-public",
+  "status": "completed",
   "subject": {
-    "reference": "Patient/377"
+    "reference": "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"
   },
   "encounter": {
-    "display": "Suspected Covid-19 assessment.v0"
+    "reference": "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"
   },
   "authored": "2020-03-11T14:15:00+10:00",
   "author": {
     "id": "A716058C-F9D5-4537-B1E7-D021BD2185A3",
-    "reference": "Practitioner/4620"
+    "identifier": {
+      "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+      "value": "G5612908"
+    },
+    "display": "Dr Gregory Townley"
   },
   "item": [
     {
@@ -67,7 +36,7 @@
           "answer": [
             {
               "valueCoding": {
-                "system": " http://snomed.info/sct",
+                "system": "http://snomed.info/sct",
                 "code": "162397003",
                 "display": "Pain in throat"
               }
@@ -94,7 +63,7 @@
           "answer": [
             {
               "valueCoding": {
-                "system": " http://snomed.info/sct",
+                "system": "http://snomed.info/sct",
                 "code": "315642008",
                 "display": "Influenza-like symptoms"
               }
@@ -122,6 +91,7 @@
           "answer": [
             {
               "valueQuantity": {
+                "system": "http://unitsofmeasure.org",
                 "value": 35,
                 "code": "Cel"
               }

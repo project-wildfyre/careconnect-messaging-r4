@@ -1,12 +1,12 @@
 ﻿Care Connect Messaging : Validation Results
 =========================================
 
-err = 214, warn = 46, info = 88
-IG Publisher Version: v1.0.70-SNAPSHOT
-Generated Wed Mar 11 16:35:15 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+err = 180, warn = 46, info = 76
+IG Publisher Version: v1.0.72-SNAPSHOT
+Generated Thu Mar 19 06:04:24 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
- Build Errors : 9 / 1
- C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-covid19-service-request : 15 / 9
+ Build Errors : 5 / 1
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-covid19-service-request : 7 / 5
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-admit : 2 / 7
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-admit-transaction : 2 / 7
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-discharge : 2 / 4
@@ -14,7 +14,7 @@ Generated Wed Mar 11 16:35:15 GMT 2020. FHIR version 4.0.1 for careconnect.messa
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-create : 1 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-create-transaction : 1 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-referral : 15 / 8
- C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-template : 12 / 3
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-template : 3 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig : 1 / 2
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\codesystem\openehr-presence : 0 / 0
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\graphdefinition\nhs111ambulancerequest-information-model : 18 / 3
@@ -34,37 +34,21 @@ WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be 
 ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/blockquote/p/a at Line 168, column 1902: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest" cannot be resolved
 ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 3645: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService" cannot be resolved
 ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 5654: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\MessageDefinition-cancel-patient-referral.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1382: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\MessageDefinition-modify-patient-referral.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1382: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\MessageDefinition-patient-referral.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1349: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\MessageDefinition-response-patient-referral.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1386: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 349: The link 'Patient/377' for "Patient/377" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 509: The link 'Practitioner/4620' for "Practitioner/4620" cannot be resolved
+ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 380: The link 'urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c' for "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c" cannot be resolved
+ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 508: The link 'urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f' for "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f" cannot be resolved
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-covid19-service-request.json ==
-ERROR: Bundle.entry[0].resource: Unrecognised property '@event'
-ERROR: Bundle.entry[0].resource: Unrecognised property '@receiver'
 ERROR: Bundle.entry[0].resource: Unrecognised property '@timestamp'
 ERROR: Bundle.entry[1].resource.requester: Unrecognised property '@agent'
 ERROR: Bundle.entry[1].resource.requester: Unrecognised property '@onBehalfOf'
 ERROR: Bundle.entry[1].resource: Unrecognised property '@type'
 ERROR: Bundle.entry[1].resource: Unrecognised property '@serviceRequested'
-ERROR: Bundle.entry[1].resource: Unrecognised property '@context'
 ERROR: Bundle.entry[1].resource: Unrecognised property '@specialty'
 ERROR: Bundle.entry[1].resource: Unrecognised property '@recipient'
-ERROR: Bundle/covid19-service-request: Bundle.entry[0].resource: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.event[x]': minimum required = 1, but only found 0
-ERROR: Bundle/covid19-service-request: Bundle.entry[0].resource: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0
-ERROR: Bundle/covid19-service-request: Bundle.entry[0].resource.destination[0]: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0
-INFORMATION: Bundle/covid19-service-request: Bundle.entry[1].resource.subject: Details for urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
 WARNING: Bundle/covid19-service-request: Bundle.entry[1].resource.requester: A Reference without an actual reference or identifier should have a display
-WARNING: Bundle/covid19-service-request: Bundle.entry[1].resource.reasonCode[0].coding[0]: The display "Exposure to severe acute respiratory syndrome coronavirus 2 (event)" is not a valid display for the code {http://snomed.info/sct}840546002 - should be one of ["Exposure to 2019 novel coronavirus (event)","Exposure to 2019 novel coronavirus","Exposure to Wuhan coronavirus","Exposure to 2019-nCoV"]
 INFORMATION: Bundle/covid19-service-request: Bundle.entry[2].resource.type[1].coding[0]: Code System URI "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1" is unknown so the code cannot be validated
-INFORMATION: Bundle/covid19-service-request: Bundle.entry[2].resource.subject: Details for urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
 INFORMATION: Bundle/covid19-service-request: Bundle.entry[2].resource.hospitalization.admitSource: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)
 WARNING: Bundle/covid19-service-request: Bundle.entry[2].resource.hospitalization.admitSource.coding[0]: Display Name for https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19 should be one of 'Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode.' instead of 'Usual place of residence'
-INFORMATION: Bundle/covid19-service-request: Bundle.entry[2].resource.location[0].location: Details for urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location
-ERROR: Bundle/covid19-service-request: Bundle.entry[3].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
-INFORMATION: Bundle/covid19-service-request: Bundle.entry[3].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" is unknown so the code cannot be validated
-ERROR: Bundle/covid19-service-request: Bundle.entry[4].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+WARNING: Bundle/covid19-service-request: Bundle.entry[5].resource: The questionnaire "https://fhir.nhsz.uk/Questionnaire/covid-19-public" could not be resolved, so no validation can be performed against the base questionnaire
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-admit.json ==
 INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.type[1].coding[0]: Code System URI "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1" is unknown so the code cannot be validated
 INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.subject: Details for urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
@@ -132,18 +116,7 @@ ERROR: Bundle/patient-referral: Bundle.entry[4].resource.identifier[0]: Identifi
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-template.xml ==
 ERROR: /f:QuestionnaireResponse/f:item: Undefined element 'type'
 ERROR: /f:QuestionnaireResponse/f:item/f:item: Undefined element 'type'
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse: Profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse, Element 'QuestionnaireResponse.status': minimum required = 1, but only found 0
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.extension[0]: The extension http://fhir.openhealth.co.uk/Location is unknown, and not allowed here
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.extension[1]: The extension http://fhir.openhealth.co.uk/LocationType is unknown, and not allowed here
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.subject: Unable to resolve resource "Patient/377"
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.author: Unable to resolve resource "Practitioner/4620"
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(Coding): Coding.system must be an absolute reference, not a local reference
-INFORMATION: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(Coding): Code System URI " http://snomed.info/sct" is unknown so the code cannot be validated
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[0].item[0].answer[0].value.ofType(Coding).system: URI values cannot have whitespace(" http://snomed.info/sct")
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[1].item[0].answer[0].value.ofType(Coding): Coding.system must be an absolute reference, not a local reference
-INFORMATION: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[1].item[0].answer[0].value.ofType(Coding): Code System URI " http://snomed.info/sct" is unknown so the code cannot be validated
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[1].item[0].answer[0].value.ofType(Coding).system: URI values cannot have whitespace(" http://snomed.info/sct")
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[2].item[0].answer[0].value.ofType(Quantity): qty-3: If a code for the unit is present, the system SHALL also be present [code.empty() or system.exists()]
+ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[2].item[0].answer[0].value.ofType(Quantity).value: As specified by profile http://hl7.org/fhir/StructureDefinition/Quantity, Element "value" is out of order
 WARNING: QuestionnaireResponse/covid-template: QuestionnaireResponse: The questionnaire "https://fhir.nhsz.uk/Questionnaire/covid-19-public" could not be resolved, so no validation can be performed against the base questionnaire
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig.xml ==
 WARNING: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide: ig-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]

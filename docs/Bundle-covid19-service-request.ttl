@@ -33,17 +33,33 @@
      fhir:index 4;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc" ];
      fhir:Bundle.entry.resource <urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:oid:19e6fd1e-cdb6-4b35-8d76-be67d2b9812d" ];
+     fhir:Bundle.entry.resource <urn:oid:19e6fd1e-cdb6-4b35-8d76-be67d2b9812d>
   ] .
 
 <urn:oid:3d4a07cc-ff85-45c2-8f60-202d5506db02> a fhir:MessageHeader;
   fhir:Resource.id [ fhir:value "3d4a07cc-ff85-45c2-8f60-202d5506db02"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d4a07cc-ff85-45c2-8f60-202d5506db02</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>ROUTE</td></tr></table><p><b>sender</b>: YORKSHIRE AMBULANCE SERVICE NHS TRUST</p><p><b>focus</b>: <a href=\"#backboneelement_6eb72362-cc88-4c54-bd05-a49885d370be\">Generated Summary: unknown resource entry</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d4a07cc-ff85-45c2-8f60-202d5506db02</p><p><b>event</b>: patient-referral (Details: [not stated] code patient-referral = 'patient-referral', stated as 'patient-referral')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>ROUTE</td><td><a href=\"http://fhirserver-env-1.eba-aepmzc4d.eu-west-2.elasticbeanstalk.com:8186/R4\">http://fhirserver-env-1.eba-aepmzc4d.eu-west-2.elasticbeanstalk.com:8186/R4</a></td><td>DHU HEALTH CARE C.I.C</td></tr></table><p><b>sender</b>: YORKSHIRE AMBULANCE SERVICE NHS TRUST</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>YORKSHIRE AMBULANCE SERVICE NHS TRUST</td><td><a href=\"http://fhirserver-env-1.eba-aepmzc4d.eu-west-2.yas.com/R4\">http://fhirserver-env-1.eba-aepmzc4d.eu-west-2.yas.com/R4</a></td></tr></table><p><b>focus</b>: <a href=\"#backboneelement_6eb72362-cc88-4c54-bd05-a49885d370be\">Generated Summary: unknown resource entry</a></p></div>"
+  ];
+  fhir:MessageHeader.eventCoding [
+     fhir:Coding.code [ fhir:value "patient-referral" ];
+     fhir:Coding.display [ fhir:value "patient-referral" ]
   ];
   fhir:MessageHeader.destination [
      fhir:index 0;
-     fhir:MessageHeader.destination.name [ fhir:value "ROUTE" ]
+     fhir:MessageHeader.destination.name [ fhir:value "ROUTE" ];
+     fhir:MessageHeader.destination.endpoint [ fhir:value "http://fhirserver-env-1.eba-aepmzc4d.eu-west-2.elasticbeanstalk.com:8186/R4" ];
+     fhir:MessageHeader.destination.receiver [
+       fhir:Reference.identifier [
+         fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/ods-site-code" ];
+         fhir:Identifier.value [ fhir:value "NNJ" ]
+       ];
+       fhir:Reference.display [ fhir:value "DHU HEALTH CARE C.I.C" ]
+     ]
   ];
   fhir:MessageHeader.sender [
      fhir:Reference.identifier [
@@ -51,6 +67,10 @@
        fhir:Identifier.value [ fhir:value "RX8" ]
      ];
      fhir:Reference.display [ fhir:value "YORKSHIRE AMBULANCE SERVICE NHS TRUST" ]
+  ];
+  fhir:MessageHeader.source [
+     fhir:MessageHeader.source.name [ fhir:value "YORKSHIRE AMBULANCE SERVICE NHS TRUST" ];
+     fhir:MessageHeader.source.endpoint [ fhir:value "http://fhirserver-env-1.eba-aepmzc4d.eu-west-2.yas.com/R4" ]
   ];
   fhir:MessageHeader.focus [
      fhir:index 0;
@@ -64,7 +84,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6eb72362-cc88-4c54-bd05-a49885d370be</p><p><b>meta</b>: </p><p><b>identifier</b>: R3</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"#backboneelement_a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\">MRS FREDICA SMITH. Generated Summary: unknown resource entry</a></p><p><b>authoredOn</b>: 08-Nov-2018 12:30:00</p><p><b>requester</b>: </p><p><b>reasonCode</b>: Exposure to severe acute respiratory syndrome coronavirus 2 (event) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '840546002' = 'Exposure to 2019 novel coronavirus (event)', given as 'Exposure to severe acute respiratory syndrome coronavirus 2 (event)'})</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6eb72362-cc88-4c54-bd05-a49885d370be</p><p><b>meta</b>: </p><p><b>identifier</b>: R3</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href=\"#backboneelement_a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\">MRS FREDICA SMITH. Generated Summary: unknown resource entry</a></p><p><b>encounter</b>: <a href=\"#backboneelement_38eeb5d7-e689-4ec5-81d2-f51f3011c72c\">Generated Summary: unknown resource entry</a></p><p><b>authoredOn</b>: 8 Nov 2018, 12:30:00</p><p><b>requester</b>: </p><p><b>reasonCode</b>: Exposure to severe acute respiratory syndrome coronavirus 2 (event) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '840546002' = 'Exposure to 2019 novel coronavirus', given as 'Exposure to severe acute respiratory syndrome coronavirus 2 (event)'})</span></p><p><b>supportingInfo</b>: <a href=\"#backboneelement_19e6fd1e-cdb6-4b35-8d76-be67d2b9812d\">Generated Summary: unknown resource entry</a></p></div>"
   ];
   fhir:ServiceRequest.identifier [
      fhir:index 0;
@@ -77,6 +97,9 @@
      fhir:Reference.reference [ fhir:value "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4" ];
      fhir:Reference.display [ fhir:value "MRS FREDICA SMITH" ]
   ];
+  fhir:ServiceRequest.encounter [
+     fhir:Reference.reference [ fhir:value "urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c" ]
+  ];
   fhir:ServiceRequest.authoredOn [ fhir:value "2018-11-08T12:30:00+00:00"^^xsd:dateTime];
   fhir:ServiceRequest.requester [];
   fhir:ServiceRequest.reasonCode [
@@ -88,13 +111,17 @@
        fhir:Coding.code [ fhir:value "840546002" ];
        fhir:Coding.display [ fhir:value "Exposure to severe acute respiratory syndrome coronavirus 2 (event)" ]
      ]
+  ];
+  fhir:ServiceRequest.supportingInfo [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:oid:19e6fd1e-cdb6-4b35-8d76-be67d2b9812d" ]
   ] .
 
 <urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c> a fhir:Encounter;
   fhir:Resource.id [ fhir:value "38eeb5d7-e689-4ec5-81d2-f51f3011c72c"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p><b>identifier</b>: 2141</p><p><b>status</b>: in-progress</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Planned <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = 'Planned)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"#backboneelement_a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\">Generated Summary: unknown resource entry</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'ADM' = 'admitter', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 01-Nov-2010 16:00:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>Usual place of residence <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = 'Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode.', given as 'Usual place of residence'})</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_335f4089-8979-4bd2-96db-6137c1483ecc\">South Yorks 999. Generated Summary: unknown resource entry</a></td><td>active</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p><b>identifier</b>: 2141</p><p><b>status</b>: in-progress</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Planned <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod code '13' = 'Planned)</span>, 300 <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1 code '300' = '300)</span></p><p><b>subject</b>: <a href=\"#backboneelement_a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\">Generated Summary: unknown resource entry</a></p><blockquote><p><b>participant</b></p><p><b>type</b>: attender <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'ATND' = 'attender', given as 'attender'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: admitter <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'ADM' = 'admitter', given as 'admitter'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: consultant <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'CON' = 'consultant', given as 'consultant'})</span></p><p><b>individual</b>: Dr Samuel Darwin</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: referrer <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ParticipationType code 'REF' = 'referrer', given as 'referrer'})</span></p><p><b>individual</b>: Dr Gregory Townley</p></blockquote><p><b>period</b>: 1 Nov 2010, 16:00:00 --&gt; (ongoing)</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>AdmitSource</b></td></tr><tr><td>*</td><td>Usual place of residence <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission code '19' = 'Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode.', given as 'Usual place of residence'})</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_335f4089-8979-4bd2-96db-6137c1483ecc\">South Yorks 999. Generated Summary: unknown resource entry</a></td><td>active</td></tr></table></div>"
   ];
   fhir:Encounter.identifier [
      fhir:index 0;
@@ -230,11 +257,11 @@
      fhir:index 0;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1" ];
+       fhir:Extension.url [ fhir:value "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" ];
+           fhir:Coding.system [ fhir:value "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" ];
            fhir:Coding.code [ fhir:value "01" ]
          ]
        ]
@@ -309,18 +336,158 @@
   fhir:Resource.id [ fhir:value "335f4089-8979-4bd2-96db-6137c1483ecc"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 335f4089-8979-4bd2-96db-6137c1483ecc</p><p><b>identifier</b>: SHEF-TRIAGE</p><p><b>name</b>: South Yorks 999</p><p><b>partOf</b>: </p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 335f4089-8979-4bd2-96db-6137c1483ecc</p><p><b>identifier</b>: 123543</p><p><b>name</b>: Contact Location</p><p><b>type</b>: Patient's Residence <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-RoleCode code 'PTRES' = 'Patient's Residence', given as 'Patient's Residence'})</span></p><p><b>physicalType</b>: House <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/location-physical-type code 'ho' = 'House', given as 'House'})</span></p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td><td><b>Altitude</b></td></tr><tr><td>*</td><td>-51.5034</td><td>0.1276</td><td>0</td></tr></table></div>"
   ];
   fhir:Location.identifier [
      fhir:index 0;
-     fhir:Identifier.system [ fhir:value "htttps://fhir.yas.cas/Identifier" ];
-     fhir:Identifier.value [ fhir:value "SHEF-TRIAGE" ]
+     fhir:Identifier.system [ fhir:value "https://fhir.yas.cas/Identifier" ];
+     fhir:Identifier.value [ fhir:value "123543" ]
   ];
-  fhir:Location.name [ fhir:value "South Yorks 999"];
-  fhir:Location.partOf [
+  fhir:Location.name [ fhir:value "Contact Location"];
+  fhir:Location.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "PTRES" ];
+       fhir:Coding.display [ fhir:value "Patient's Residence" ]
+     ]
+  ];
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+       fhir:Coding.code [ fhir:value "ho" ];
+       fhir:Coding.display [ fhir:value "House" ]
+     ]
+  ];
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "-51.5034"^^xsd:decimal ];
+     fhir:Location.position.latitude [ fhir:value "0.1276"^^xsd:decimal ];
+     fhir:Location.position.altitude [ fhir:value "0"^^xsd:decimal ]
+  ] .
+
+<urn:oid:19e6fd1e-cdb6-4b35-8d76-be67d2b9812d> a fhir:QuestionnaireResponse;
+  fhir:Resource.id [ fhir:value "19e6fd1e-cdb6-4b35-8d76-be67d2b9812d"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2020-03-18T15:42:27.744+00:00"^^xsd:dateTime ];
+     fhir:Meta.source [ fhir:value "#hzOOFYogzlto4aJM" ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 19e6fd1e-cdb6-4b35-8d76-be67d2b9812d</p><p><b>meta</b>: </p><p><b>identifier</b>: ebd4bc35-1369-4ae6-9909-0a12c7462d04</p><p><b>questionnaire</b>: <a href=\"https://fhir.nhsz.uk/Questionnaire/covid-19-public\">https://fhir.nhsz.uk/Questionnaire/covid-19-public</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"#backboneelement_a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4\">Generated Summary: unknown resource entry</a></p><p><b>encounter</b>: <a href=\"#backboneelement_38eeb5d7-e689-4ec5-81d2-f51f3011c72c\">Generated Summary: unknown resource entry</a></p><p><b>authored</b>: 11 Mar 2020, 04:15:00</p><p><b>author</b>: Dr Gregory Townley</p><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: temp</p><p><b>text</b>: Body Temp</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: travel</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.identifier [
+     fhir:Identifier.system [ fhir:value "urn:uuid" ];
+     fhir:Identifier.value [ fhir:value "ebd4bc35-1369-4ae6-9909-0a12c7462d04" ]
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "https://fhir.nhsz.uk/Questionnaire/covid-19-public";
+     fhir:link <https://fhir.nhsz.uk/Questionnaire/covid-19-public>
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.subject [
+     fhir:Reference.reference [ fhir:value "urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4" ]
+  ];
+  fhir:QuestionnaireResponse.encounter [
+     fhir:Reference.reference [ fhir:value "urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c" ]
+  ];
+  fhir:QuestionnaireResponse.authored [ fhir:value "2020-03-11T14:15:00+10:00"^^xsd:dateTime];
+  fhir:QuestionnaireResponse.author [
+     fhir:Element.id [ fhir:value "A716058C-F9D5-4537-B1E7-D021BD2185A3" ];
      fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/ods-site-code" ];
-       fhir:Identifier.value [ fhir:value "RX8" ]
+       fhir:Identifier.system [ fhir:value "https://fhir.hl7.org.uk/Id/gmc-number" ];
+       fhir:Identifier.value [ fhir:value "G5612908" ]
+     ];
+     fhir:Reference.display [ fhir:value "Dr Gregory Townley" ]
+  ];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "symptom" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "symptom-type" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Symptom" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueCoding [
+           a sct:162397003;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "162397003" ];
+           fhir:Coding.display [ fhir:value "Pain in throat" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "symptom-date" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Onset" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2020-03-01"^^xsd:date ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "symptom" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "symptom-type" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Symptom" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueCoding [
+           a sct:315642008;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "315642008" ];
+           fhir:Coding.display [ fhir:value "Influenza-like symptoms" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "symptom-date" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Onset" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2020-03-01"^^xsd:date ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "temp" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Body Temp" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "tempcel" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Temperature (0-100 Celsius)" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueQuantity [
+           fhir:Quantity.value [ fhir:value "35"^^xsd:decimal ];
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+           fhir:Quantity.code [ fhir:value "Cel" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "travel" ];
+     fhir:QuestionnaireResponse.item.item [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "recent" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Recent Travel" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "dateofreturn" ];
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Date of Return" ];
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2020-03-02"^^xsd:date ]
+       ]
      ]
   ] .
 

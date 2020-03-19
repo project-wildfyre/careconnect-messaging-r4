@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "vs-openehr-presence"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>All openEHR presence codes</h2><div><p>A value set that includes all presence codes</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-openehr-presence.html\"><code>https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>All openEHR presence codes</h2><div><p>A value set that includes all presence codes</p>\n</div><ul><li>Include all codes defined in <a href=\"CodeSystem-openehr-presence.html\"><code>https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence"];
   fhir:ValueSet.version [ fhir:value "4.0.0"];

@@ -4,42 +4,25 @@
       be hard to extract useful information in an automated way from this questionnaire.
      This is, however, quite often the case when modeling existing questionnaires   -->
     <id value="covid-template"/>
-    <extension url="http://fhir.openhealth.co.uk/Location">
-        <extension url="ID">
-            <valueString value="4884"/>
-        </extension>
-        <extension url="GUID">
-            <valueString value="37088C97-82FC-4B3E-BDBC-28F2C03B6CB8"/>
-        </extension>
-        <extension url="Name">
-            <valueString value="Partner Programme Test 17"/>
-        </extension>
-    </extension>
-    <extension url="http://fhir.openhealth.co.uk/LocationType">
-        <extension url="ID">
-            <valueString value="1672871000006114"/>
-        </extension>
-        <extension url="GUID">
-            <valueString value="357EFD4F-7912-DE6E-13B8-D3FACED28522"/>
-        </extension>
-        <extension url="Name">
-            <valueString value="G.P.Surgery"/>
-        </extension>
-    </extension>
     <identifier>
         <system value="urn:uuid" />
         <value value="ebd4bc35-1369-4ae6-9909-0a12c7462d04" />
     </identifier>
     <questionnaire value="https://fhir.nhsz.uk/Questionnaire/covid-19-public" />
+    <status value="completed"/>
     <subject>
-        <reference value="Patient/377" />
+        <reference value="urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c"/>
     </subject>
     <encounter>
-        <display value="Suspected Covid-19 assessment.v0"/>
+        <reference value="urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f"/>
     </encounter>
     <authored value="2020-03-11T14:15:00+10:00" />
     <author id="A716058C-F9D5-4537-B1E7-D021BD2185A3">
-        <reference value="Practitioner/4620" />
+        <identifier>
+            <system value="https://fhir.hl7.org.uk/Id/gmc-number"/>
+            <value value="G5612908"/>
+        </identifier>
+        <display value="Dr Gregory Townley"/>
     </author>
     <!--   Many groups left out of this example   -->
     <item>
@@ -49,7 +32,7 @@
             <text value="Symptom"/>
             <answer>
                 <valueCoding>
-                    <system value="	http://snomed.info/sct"/>
+                    <system value="http://snomed.info/sct"/>
                     <code value="162397003" />
                     <display value="Pain in throat"/>
                 </valueCoding>
@@ -71,7 +54,7 @@
             <text value="Symptom"/>
             <answer>
                 <valueCoding>
-                    <system value="	http://snomed.info/sct"/>
+                    <system value="http://snomed.info/sct"/>
                     <code value="315642008" />
                     <display value="Influenza-like symptoms"/>
                 </valueCoding>
@@ -94,6 +77,7 @@
             <text value="Temperature (0-100 Celsius)"/>
             <answer>
                 <valueQuantity>
+                    <system value="http://unitsofmeasure.org"/>
                     <value value="35"/>
                     <code value="Cel"/>
                 </valueQuantity>

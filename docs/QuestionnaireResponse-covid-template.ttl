@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -10,40 +11,7 @@
   fhir:Resource.id [ fhir:value "covid-template"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-template</p><p><b>identifier</b>: ebd4bc35-1369-4ae6-9909-0a12c7462d04</p><p><b>questionnaire</b>: <a href=\"https://fhir.nhsz.uk/Questionnaire/covid-19-public\">https://fhir.nhsz.uk/Questionnaire/covid-19-public</a></p><p><b>subject</b>: <a href=\"Patient/377\">Patient/377</a></p><p><b>encounter</b>: Suspected Covid-19 assessment.v0</p><p><b>authored</b>: 11-Mar-2020 04:15:00</p><p><b>author</b>: <a href=\"Practitioner/4620\">Practitioner/4620</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: temp</p><p><b>text</b>: Body Temp</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: travel</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>"
-  ];
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://fhir.openhealth.co.uk/Location" ];
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "ID" ];
-       fhir:Extension.valueString [ fhir:value "4884" ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "GUID" ];
-       fhir:Extension.valueString [ fhir:value "37088C97-82FC-4B3E-BDBC-28F2C03B6CB8" ]
-     ], [
-       fhir:index 2;
-       fhir:Extension.url [ fhir:value "Name" ];
-       fhir:Extension.valueString [ fhir:value "Partner Programme Test 17" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://fhir.openhealth.co.uk/LocationType" ];
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "ID" ];
-       fhir:Extension.valueString [ fhir:value "1672871000006114" ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "GUID" ];
-       fhir:Extension.valueString [ fhir:value "357EFD4F-7912-DE6E-13B8-D3FACED28522" ]
-     ], [
-       fhir:index 2;
-       fhir:Extension.url [ fhir:value "Name" ];
-       fhir:Extension.valueString [ fhir:value "G.P.Surgery" ]
-     ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-template</p><p><b>identifier</b>: ebd4bc35-1369-4ae6-9909-0a12c7462d04</p><p><b>questionnaire</b>: <a href=\"https://fhir.nhsz.uk/Questionnaire/covid-19-public\">https://fhir.nhsz.uk/Questionnaire/covid-19-public</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c\">urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</a></p><p><b>encounter</b>: <a href=\"urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f\">urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f</a></p><p><b>authored</b>: 11 Mar 2020, 04:15:00</p><p><b>author</b>: Dr Gregory Townley</p><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: temp</p><p><b>text</b>: Body Temp</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: travel</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>"
   ];
   fhir:QuestionnaireResponse.identifier [
      fhir:Identifier.system [ fhir:value "urn:uuid" ];
@@ -53,18 +21,21 @@
      fhir:value "https://fhir.nhsz.uk/Questionnaire/covid-19-public";
      fhir:link <https://fhir.nhsz.uk/Questionnaire/covid-19-public>
   ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
   fhir:QuestionnaireResponse.subject [
-     fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/Patient/377>;
-     fhir:Reference.reference [ fhir:value "Patient/377" ]
+     fhir:Reference.reference [ fhir:value "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c" ]
   ];
   fhir:QuestionnaireResponse.encounter [
-     fhir:Reference.display [ fhir:value "Suspected Covid-19 assessment.v0" ]
+     fhir:Reference.reference [ fhir:value "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f" ]
   ];
   fhir:QuestionnaireResponse.authored [ fhir:value "2020-03-11T14:15:00+10:00"^^xsd:dateTime];
   fhir:QuestionnaireResponse.author [
-     fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/Practitioner/4620>;
      fhir:Element.id [ fhir:value "A716058C-F9D5-4537-B1E7-D021BD2185A3" ];
-     fhir:Reference.reference [ fhir:value "Practitioner/4620" ]
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "https://fhir.hl7.org.uk/Id/gmc-number" ];
+       fhir:Identifier.value [ fhir:value "G5612908" ]
+     ];
+     fhir:Reference.display [ fhir:value "Dr Gregory Townley" ]
   ];
   fhir:QuestionnaireResponse.item [
      fhir:index 0;
@@ -76,7 +47,8 @@
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
          fhir:QuestionnaireResponse.item.answer.valueCoding [
-           fhir:Coding.system [ fhir:value " http://snomed.info/sct" ];
+           a sct:162397003;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
            fhir:Coding.code [ fhir:value "162397003" ];
            fhir:Coding.display [ fhir:value "Pain in throat" ]
          ]
@@ -100,7 +72,8 @@
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
          fhir:QuestionnaireResponse.item.answer.valueCoding [
-           fhir:Coding.system [ fhir:value " http://snomed.info/sct" ];
+           a sct:315642008;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
            fhir:Coding.code [ fhir:value "315642008" ];
            fhir:Coding.display [ fhir:value "Influenza-like symptoms" ]
          ]
@@ -125,6 +98,7 @@
        fhir:QuestionnaireResponse.item.answer [
          fhir:index 0;
          fhir:QuestionnaireResponse.item.answer.valueQuantity [
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
            fhir:Quantity.value [ fhir:value "35"^^xsd:decimal ];
            fhir:Quantity.code [ fhir:value "Cel" ]
          ]

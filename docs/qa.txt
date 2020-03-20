@@ -1,9 +1,9 @@
 ﻿Care Connect Messaging : Validation Results
 =========================================
 
-err = 192, warn = 50, info = 120
+err = 192, warn = 48, info = 120
 IG Publisher Version: v1.0.72-SNAPSHOT
-Generated Thu Mar 19 06:41:52 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Fri Mar 20 11:23:58 GMT 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
  Build Errors : 5 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-covid19-service-request : 7 / 5
@@ -16,8 +16,8 @@ Generated Thu Mar 19 06:41:52 GMT 2020. FHIR version 4.0.1 for careconnect.messa
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-create : 1 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-create-transaction : 1 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-referral : 15 / 8
- C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-template : 3 / 1
- C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig : 1 / 2
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-19 : 3 / 1
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig : 1 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\codesystem\openehr-presence : 0 / 0
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\graphdefinition\nhs111ambulancerequest-information-model : 18 / 3
  C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\graphdefinition\nhs111report-information-model : 21 / 2
@@ -36,8 +36,8 @@ WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be 
 ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/blockquote/p/a at Line 171, column 1902: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest" cannot be resolved
 ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 171, column 3645: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService" cannot be resolved
 ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 171, column 5654: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 380: The link 'urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c' for "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c" cannot be resolved
-ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-template.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 508: The link 'urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f' for "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f" cannot be resolved
+ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-19.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 374: The link 'urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c' for "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c" cannot be resolved
+ERROR: C:\Development\Wildfyre\careconnect-messaging-r4\output\QuestionnaireResponse-covid-19.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 502: The link 'urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f' for "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f" cannot be resolved
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-covid19-service-request.json ==
 ERROR: Bundle.entry[0].resource: Unrecognised property '@timestamp'
 ERROR: Bundle.entry[1].resource.requester: Unrecognised property '@agent'
@@ -147,15 +147,14 @@ INFORMATION: Bundle/patient-referral: Bundle.entry[2].resource.location[0].locat
 ERROR: Bundle/patient-referral: Bundle.entry[3].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
 INFORMATION: Bundle/patient-referral: Bundle.entry[3].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" is unknown so the code cannot be validated
 ERROR: Bundle/patient-referral: Bundle.entry[4].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference
-== C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-template.xml ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\QuestionnaireResponse-covid-19.xml ==
 ERROR: /f:QuestionnaireResponse/f:item: Undefined element 'type'
 ERROR: /f:QuestionnaireResponse/f:item/f:item: Undefined element 'type'
-ERROR: QuestionnaireResponse/covid-template: QuestionnaireResponse.item[2].item[0].answer[0].value.ofType(Quantity).value: As specified by profile http://hl7.org/fhir/StructureDefinition/Quantity, Element "value" is out of order
-WARNING: QuestionnaireResponse/covid-template: QuestionnaireResponse: The questionnaire "https://fhir.nhsz.uk/Questionnaire/covid-19-public" could not be resolved, so no validation can be performed against the base questionnaire
+ERROR: QuestionnaireResponse/covid-19: QuestionnaireResponse.item[2].item[0].answer[0].value.ofType(Quantity).value: As specified by profile http://hl7.org/fhir/StructureDefinition/Quantity, Element "value" is out of order
+WARNING: QuestionnaireResponse/covid-19: QuestionnaireResponse: The questionnaire "https://fhir.nhsz.uk/Questionnaire/covid-19-public" could not be resolved, so no validation can be performed against the base questionnaire
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig.xml ==
 WARNING: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide: ig-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide.dependsOn[0]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.dependsOn[0].uri': minimum required = 1, but only found 0
-WARNING: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide.definition.resource[6].name: value should not start or finish with whitespace
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\CodeSystem\openehr-presence.xml ==
 == C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\GraphDefinition\nhs111ambulancerequest-information-model.xml ==
 WARNING: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition: gdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]

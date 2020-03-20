@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-03-19T06:41:34+00:00",
+  "date": "2020-03-20T11:23:41+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -381,24 +381,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "QuestionnaireResponse-covid-template.html"
-          }
-        ],
-        "reference": {
-          "reference": "QuestionnaireResponse/covid-template"
-        },
-        "name": "COVID-19 Template Example ",
-        "description": "COVID-19 Template",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Questionnaire"
           },
           {
@@ -409,8 +391,8 @@
         "reference": {
           "reference": "Questionnaire/covid-19-public"
         },
-        "name": "COVID-19 Template Definition",
-        "description": "COVID-19 Template Definition"
+        "name": "Sample COVID-19 Questionnaire Definition",
+        "description": "Sample COVID-19 Questionnaire Definition"
       },
       {
         "extension": [
@@ -669,6 +651,24 @@
         },
         "name": "NEWS2 Diagnostic Report FHIR Transaction Example",
         "description": "NEWS2 Diagnostic Report FHIR Transaction Example",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "QuestionnaireResponse-covid-19.html"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/covid-19"
+        },
+        "name": "Sample Covid-19 Completed Questionnaire",
+        "description": "Sample Covid-19 Completed Questionnaire",
         "exampleBoolean": true
       }
     ],

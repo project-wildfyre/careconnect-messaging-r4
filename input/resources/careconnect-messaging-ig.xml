@@ -83,18 +83,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="QuestionnaireResponse/covid-template"></reference>
-      </reference>
-      <name value="COVID-19 Template Example "></name>
-      <description value="COVID-19 Template"></description>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Questionnaire/covid-19-public"></reference>
       </reference>
-      <name value="COVID-19 Template Definition"></name>
-      <description value="COVID-19 Template Definition"></description>
+      <name value="Sample COVID-19 Questionnaire Definition"></name>
+      <description value="Sample COVID-19 Questionnaire Definition"></description>
     </resource>
     <resource>
       <reference>
@@ -203,6 +195,14 @@
       </reference>
       <name value="NEWS2 Diagnostic Report FHIR Transaction Example"></name>
       <description value="NEWS2 Diagnostic Report FHIR Transaction Example"></description>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="QuestionnaireResponse/covid-19"></reference>
+      </reference>
+      <name value="Sample Covid-19 Completed Questionnaire"></name>
+      <description value="Sample Covid-19 Completed Questionnaire"></description>
       <exampleBoolean value="true"/>
     </resource>
     <page>

@@ -6,12 +6,12 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://project-wildfyre.github.io/careconnect-messaging-r4/QuestionnaireResponse/covid-template> a fhir:QuestionnaireResponse;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/QuestionnaireResponse/covid-19> a fhir:QuestionnaireResponse;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "covid-template"];
+  fhir:Resource.id [ fhir:value "covid-19"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-template</p><p><b>identifier</b>: ebd4bc35-1369-4ae6-9909-0a12c7462d04</p><p><b>questionnaire</b>: <a href=\"https://fhir.nhsz.uk/Questionnaire/covid-19-public\">https://fhir.nhsz.uk/Questionnaire/covid-19-public</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c\">urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</a></p><p><b>encounter</b>: <a href=\"urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f\">urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f</a></p><p><b>authored</b>: 11 Mar 2020, 04:15:00</p><p><b>author</b>: Dr Gregory Townley</p><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: temp</p><p><b>text</b>: Body Temp</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: travel</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: covid-19</p><p><b>identifier</b>: ebd4bc35-1369-4ae6-9909-0a12c7462d04</p><p><b>questionnaire</b>: <a href=\"https://fhir.nhsz.uk/Questionnaire/covid-19-public\">https://fhir.nhsz.uk/Questionnaire/covid-19-public</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c\">urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</a></p><p><b>encounter</b>: <a href=\"urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f\">urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f</a></p><p><b>authored</b>: 11 Mar 2020, 04:15:00</p><p><b>author</b>: Dr Gregory Townley</p><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: symptom</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: temp</p><p><b>text</b>: Body Temp</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: travel</p><h3>Items</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr><tr><td>*</td></tr></table></blockquote></div>"
   ];
   fhir:QuestionnaireResponse.identifier [
      fhir:Identifier.system [ fhir:value "urn:uuid" ];
@@ -128,7 +128,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://project-wildfyre.github.io/careconnect-messaging-r4/QuestionnaireResponse/covid-template.ttl> a owl:Ontology;
+<https://project-wildfyre.github.io/careconnect-messaging-r4/QuestionnaireResponse/covid-19.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

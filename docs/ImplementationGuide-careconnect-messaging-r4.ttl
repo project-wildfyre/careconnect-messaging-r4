@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Care Connect Messaging"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-03-19T06:41:34+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-03-20T11:23:41+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "mayfield-is.co.uk"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -366,24 +366,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-covid-template.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/QuestionnaireResponse/covid-template>;
-         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/covid-template" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Template Example " ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "COVID-19 Template" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Questionnaire" ]
        ], [
          fhir:index 1;
@@ -394,10 +376,10 @@
          fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/Questionnaire/covid-19-public>;
          fhir:Reference.reference [ fhir:value "Questionnaire/covid-19-public" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Template Definition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "COVID-19 Template Definition" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sample COVID-19 Questionnaire Definition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample COVID-19 Questionnaire Definition" ]
      ], [
-       fhir:index 8;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -415,7 +397,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Create FHIR Transaction - Add person information" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -433,7 +415,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Referral Example" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -450,7 +432,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Referral" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Referral" ]
      ], [
-       fhir:index 11;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -467,7 +449,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Response Patient Referral" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Response Patient Referral" ]
      ], [
-       fhir:index 12;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -484,7 +466,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modify Patient Referral" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modify Patient Referral" ]
      ], [
-       fhir:index 13;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -501,7 +483,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Cancel Patient Referral" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cancel Patient Referral" ]
      ], [
-       fhir:index 14;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -518,7 +500,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Notitification Admission" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Admission Notification - care provision started" ]
      ], [
-       fhir:index 15;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -535,7 +517,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Notitification Discharge" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Discharge Notification - patient handed over." ]
      ], [
-       fhir:index 16;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -552,7 +534,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Referral Message Definition" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "For handover, service request or referral" ]
      ], [
-       fhir:index 17;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -569,7 +551,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Information Model - NHS 111 Report" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)." ]
      ], [
-       fhir:index 18;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -586,7 +568,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Information Model - NHS 111 Ambulance Request" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance." ]
      ], [
-       fhir:index 19;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -603,7 +585,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem openehr presence" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "openehr presence" ]
      ], [
-       fhir:index 20;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -620,7 +602,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet openehr presence" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "openehr presence" ]
      ], [
-       fhir:index 21;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -638,7 +620,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NEWS2 Diagnostic Report FHIR Message Example" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -654,6 +636,24 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NEWS2 Diagnostic Report FHIR Transaction Example" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NEWS2 Diagnostic Report FHIR Transaction Example" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "QuestionnaireResponse-covid-19.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/QuestionnaireResponse/covid-19>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/covid-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sample Covid-19 Completed Questionnaire" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample Covid-19 Completed Questionnaire" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

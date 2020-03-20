@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-03-19T06:41:34+00:00"/>
+  <date value="2020-03-20T11:23:41+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -256,20 +256,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-covid-template.html"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/covid-template"/>
-      </reference>
-      <name value="COVID-19 Template Example "/>
-      <description value="COVID-19 Template"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -278,8 +264,8 @@
       <reference>
         <reference value="Questionnaire/covid-19-public"/>
       </reference>
-      <name value="COVID-19 Template Definition"/>
-      <description value="COVID-19 Template Definition"/>
+      <name value="Sample COVID-19 Questionnaire Definition"/>
+      <description value="Sample COVID-19 Questionnaire Definition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -478,6 +464,20 @@
       </reference>
       <name value="NEWS2 Diagnostic Report FHIR Transaction Example"/>
       <description value="NEWS2 Diagnostic Report FHIR Transaction Example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="QuestionnaireResponse-covid-19.html"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/covid-19"/>
+      </reference>
+      <name value="Sample Covid-19 Completed Questionnaire"/>
+      <description value="Sample Covid-19 Completed Questionnaire"/>
       <exampleBoolean value="true"/>
     </resource>
     <page>

@@ -3,7 +3,7 @@
      questions are not identified using the <name> element. It will therefore
       be hard to extract useful information in an automated way from this questionnaire.
      This is, however, quite often the case when modeling existing questionnaires   -->
-    <id value="covid-template"/>
+    <id value="covid-19"/>
     <identifier>
         <system value="urn:uuid" />
         <value value="ebd4bc35-1369-4ae6-9909-0a12c7462d04" />

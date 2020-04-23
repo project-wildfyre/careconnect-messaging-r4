@@ -30,7 +30,7 @@
   <dependsOn>
     <uri value="https://project-wildfyre.github.io/uk-testcore-r4/ImplementationGuide/uk.testcore.r4" />
     <packageId value="uk.testcore.r4"/>
-    <version value="4.0.0"/>
+    <version value="dev"/>
   </dependsOn>
   <definition>
     <resource>

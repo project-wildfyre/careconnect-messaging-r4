@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Care Connect Messaging"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-23T06:37:08+01:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-23T06:54:17+01:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "mayfield-is.co.uk"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -49,7 +49,7 @@
        fhir:link <https://project-wildfyre.github.io/uk-testcore-r4/ImplementationGuide/uk.testcore.r4>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "uk.testcore.r4" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "dev" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [

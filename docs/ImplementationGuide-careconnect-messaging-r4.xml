@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-04-23T06:37:08+01:00"/>
+  <date value="2020-04-23T06:54:17+01:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -32,7 +32,7 @@
   <dependsOn>
     <uri value="https://project-wildfyre.github.io/uk-testcore-r4/ImplementationGuide/uk.testcore.r4"/>
     <packageId value="uk.testcore.r4"/>
-    <version value="4.0.0"/>
+    <version value="dev"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

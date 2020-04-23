@@ -1,0 +1,51 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "message-events",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Message Events</h2><div><p>NHS Greater Manchester Messages</p>\n</div><p>This code system https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unsolicited-observation-message<a name=\"message-events-unsolicited-observation-message\"> </a></td><td>Unsolicited transmission of an observation message</td><td/></tr></table></div>"
+  },
+  "url": "https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence",
+  "identifier": [
+    {
+      "system": "http://fhir.gmdigitalplatforms.nhs.uk/identifiers/codesystems",
+      "value": "message-events"
+    }
+  ],
+  "version": "4.0.0",
+  "name": "Message Events",
+  "title": "Message Events",
+  "status": "draft",
+  "experimental": true,
+  "date": "2020-01-28T00:00:00+00:00",
+  "publisher": "mayfield-is.co.uk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:kevin.mayfield1@nhs.net"
+        }
+      ]
+    }
+  ],
+  "description": "NHS Greater Manchester Messages",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "826"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "unsolicited-observation-message",
+      "display": "Unsolicited transmission of an observation message"
+    }
+  ]
+}

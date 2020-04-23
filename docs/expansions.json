@@ -1,66 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8dceb8c5-8df5-4bdc-a04f-307847a65687",
+  "id" : "c6177b93-7a80-4755-aae8-a05e4cc4b382",
   "meta" : {
-    "lastUpdated" : "2020-04-23T06:54:17.294+01:00"
+    "lastUpdated" : "2020-04-23T14:26:40.066+01:00"
   },
-  "type" : "collection",
-  "entry" : [{
-    "fullUrl" : "https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-openehr-presence",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-openehr-presence.html\">Presence CodeSystem v4.0.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-openehr-presence.html\"><code>https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---project-wildfyre.github.io-careconnect-messaging-r4-CodeSystem-openehr-presence-present\"> </a><a href=\"CodeSystem-openehr-presence.html#openehr-presence-present\">present</a></td><td>Present</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---project-wildfyre.github.io-careconnect-messaging-r4-CodeSystem-openehr-presence-absent\"> </a><a href=\"CodeSystem-openehr-presence.html#openehr-presence-absent\">absent</a></td><td>Absent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---project-wildfyre.github.io-careconnect-messaging-r4-CodeSystem-openehr-presence-unknown\"> </a><a href=\"CodeSystem-openehr-presence.html#openehr-presence-unknown\">unknown</a></td><td>Unknown</td><td/></tr></table></div>"
-      },
-      "url" : "https://project-wildfyre.github.io/careconnect-messaging-r4/ValueSet/vs-openehr-presence",
-      "version" : "4.0.0",
-      "name" : "All openEHR presence codes",
-      "status" : "active",
-      "date" : "2020-03-11T00:00:00+00:00",
-      "publisher" : "mayfield-is.co.uk",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "email",
-          "value" : "mailto:kevin.mayfield1@nhs.net"
-        }]
-      }],
-      "description" : "A value set that includes all presence codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "826"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:384b72d5-9352-4730-9bd8-517342ea0a4f",
-        "timestamp" : "2020-04-23T06:54:23+01:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence|4.0.0"
-        }],
-        "contains" : [{
-          "system" : "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence",
-          "code" : "present",
-          "display" : "Present"
-        },
-        {
-          "system" : "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence",
-          "code" : "absent",
-          "display" : "Absent"
-        },
-        {
-          "system" : "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence",
-          "code" : "unknown",
-          "display" : "Unknown"
-        }]
-      }
-    }
-  }]
+  "type" : "collection"
 }

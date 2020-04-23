@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message> a fhir:MessageDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "unsolicited-observation-message"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: unsolicited-observation-message</p><p><b>url</b>: <a href=\"https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message\">https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message</a></p><p><b>version</b>: 4.0.0</p><p><b>title</b>: Unsolicited Observation Message</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: mayfield-is.co.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright © 2020 Greater Manchester NHS</p><p><b>event</b>: Unsolicited Observation Message (Details: https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/message-events code unsolicited-observation-message = 'unsolicited-observation-message', stated as 'Unsolicited Observation Message')</p><p><b>category</b>: notification</p><h3>Focus</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Profile</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>DiagnosticReport</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport</a></td><td>1</td><td>1</td></tr></table></div>"
+  ];
+  fhir:MessageDefinition.url [ fhir:value "https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message"];
+  fhir:MessageDefinition.version [ fhir:value "4.0.0"];
+  fhir:MessageDefinition.title [ fhir:value "Unsolicited Observation Message"];
+  fhir:MessageDefinition.status [ fhir:value "active"];
+  fhir:MessageDefinition.date [ fhir:value "2019-08-22T12:49:51+01:00"^^xsd:dateTime];
+  fhir:MessageDefinition.publisher [ fhir:value "mayfield-is.co.uk"];
+  fhir:MessageDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:kevin.mayfield1@nhs.net" ]
+     ]
+  ];
+  fhir:MessageDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "826" ]
+     ]
+  ];
+  fhir:MessageDefinition.copyright [ fhir:value "Copyright © 2020 Greater Manchester NHS"];
+  fhir:MessageDefinition.eventCoding [
+     fhir:Coding.system [ fhir:value "https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/message-events" ];
+     fhir:Coding.code [ fhir:value "unsolicited-observation-message" ];
+     fhir:Coding.display [ fhir:value "Unsolicited Observation Message" ]
+  ];
+  fhir:MessageDefinition.category [ fhir:value "notification"];
+  fhir:MessageDefinition.focus [
+     fhir:index 0;
+     fhir:MessageDefinition.focus.code [ fhir:value "DiagnosticReport" ];
+     fhir:MessageDefinition.focus.profile [
+       fhir:value "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport";
+       fhir:link <https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport>
+     ];
+     fhir:MessageDefinition.focus.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+     fhir:MessageDefinition.focus.max [ fhir:value "1" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

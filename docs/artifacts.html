@@ -152,22 +152,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Behavior: Message Definitions</a>
+         <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Graph Definitions</a>
+         <a href="#2">Behavior: Message Definitions</a>
       </li>
       <li>
-         <a href="#3">Structures: Questionnaires</a>
+         <a href="#3">Structures: Graph Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
+         <a href="#4">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -176,6 +173,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+   <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems complying with the implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-diagnostic-messaging.html"
+                     title="CapabilityStatement/diagnostic-messaging">Server conformance for Diagnostic Message Handling</a>
+               </td>
+               <td>Server conformance for Diagnostic Message Handling</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
    <h3>Behavior: Message Definitions </h3>
    <p>These define the types of messages that can be sent and/or received by systems complying with this implementation guide</p>
    <p>
@@ -224,10 +238,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>Discharge Notification - patient handed over.</td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageDefinition-unsolicited-observation-message.html"
+                     title="MessageDefinition/unsolicited-observation-message">Diagnostic Messaging</a>
+               </td>
+               <td>Unsolicited transmission of an observation message</td>
+            </tr>
          </tbody>
       </table>
    </p>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Graph Definitions </h3>
    <p>These define collections of interrelated resources that are useful to pass around as a group</p>
    <p>
@@ -241,58 +262,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>For handover, service request or referral</td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="GraphDefinition-nhs111report-information-model.html"
-                     title="GraphDefinition/nhs111report-information-model">Information Model - NHS 111 Report</a>
-               </td>
-               <td>Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html).</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="GraphDefinition-nhs111ambulancerequest-information-model.html"
-                     title="GraphDefinition/nhs111ambulancerequest-information-model">Information Model - NHS 111 Ambulance Request</a>
-               </td>
-               <td>This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance.</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="3"> </a>
-   <h3>Structures: Questionnaires </h3>
-   <p>These define forms used by systems conforming with this implementation guide to capture or expose data to end users</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Questionnaire-covid-19-public.html"
-                     title="Questionnaire/covid-19-public">Sample COVID-19 Questionnaire Definition</a>
-               </td>
-               <td>Sample COVID-19 Questionnaire Definition</td>
-            </tr>
          </tbody>
       </table>
    </p>
    <a name="4"> </a>
-   <h3>Terminology: Value Sets </h3>
-   <p>These define sets of codes used by systems conforming with this implementation guide</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-openehr-presence.html"
-                     title="ValueSet/vs-openehr-presence">ValueSet openehr presence</a>
-               </td>
-               <td>openehr presence</td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>These define new code systems used by systems conforming with this implementation guide</p>
    <p>
@@ -301,15 +274,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-openehr-presence.html"
-                     title="CodeSystem/openehr-presence">CodeSystem openehr presence</a>
+                  <a href="CodeSystem-message-events.html" title="CodeSystem/message-events">Messaging Events</a>
                </td>
-               <td>openehr presence</td>
+               <td>NHS Greater Manchester Messaging Events</td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
    <p>
@@ -351,13 +323,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-covid19-service-request.html"
-                     title="Bundle/covid19-service-request">COVID-19 Service Request</a>
-               </td>
-               <td>COVID-19 Service Request</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Bundle-patient-create-transaction.html"
                      title="Bundle/patient-create-transaction">Patient Create FHIR Transaction</a>
                </td>
@@ -382,13 +347,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>NEWS2 Diagnostic Report FHIR Transaction Example</td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-covid-19.html"
-                     title="QuestionnaireResponse/covid-19">Sample Covid-19 Completed Questionnaire</a>
-               </td>
-               <td>Sample Covid-19 Completed Questionnaire</td>
-            </tr>
          </tbody>
       </table>
    </p>
@@ -405,7 +363,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2020 06:54+0100">2020-04-23</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2020 14:26+0100">2020-04-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -17,9 +17,6 @@
     ],
     "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId": [
       "GraphDefinition.link.target.link.target"
-    ],
-    "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus": [
-      "Bundle.entry.resource.identifier"
     ]
   }
 }

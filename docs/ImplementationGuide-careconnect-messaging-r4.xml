@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-04-23T06:54:17+01:00"/>
+  <date value="2020-04-23T14:26:40+01:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -270,33 +270,6 @@
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-covid19-service-request.html"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/covid19-service-request"/>
-      </reference>
-      <name value="COVID-19 Service Request"/>
-      <description value="COVID-19 Service Request"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Questionnaire-covid-19-public.html"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/covid-19-public"/>
-      </reference>
-      <name value="Sample COVID-19 Questionnaire Definition"/>
-      <description value="Sample COVID-19 Questionnaire Definition"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Bundle-patient-create-transaction.html"/>
       </extension>
       <reference>
@@ -413,58 +386,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="GraphDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="GraphDefinition-nhs111report-information-model.html"/>
-      </extension>
-      <reference>
-        <reference value="GraphDefinition/nhs111report-information-model"/>
-      </reference>
-      <name value="Information Model - NHS 111 Report"/>
-      <description value="Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="GraphDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="GraphDefinition-nhs111ambulancerequest-information-model.html"/>
-      </extension>
-      <reference>
-        <reference value="GraphDefinition/nhs111ambulancerequest-information-model"/>
-      </reference>
-      <name value="Information Model - NHS 111 Ambulance Request"/>
-      <description value="This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="CodeSystem-openehr-presence.html"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/openehr-presence"/>
-      </reference>
-      <name value="CodeSystem openehr presence"/>
-      <description value="openehr presence"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-vs-openehr-presence.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-openehr-presence"/>
-      </reference>
-      <name value="ValueSet openehr presence"/>
-      <description value="openehr presence"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -493,17 +414,42 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
+        <valueString value="CapabilityStatement"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="QuestionnaireResponse-covid-19.html"/>
+        <valueUri value="CapabilityStatement-diagnostic-messaging.html"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/covid-19"/>
+        <reference value="CapabilityStatement/diagnostic-messaging"/>
       </reference>
-      <name value="Sample Covid-19 Completed Questionnaire"/>
-      <description value="Sample Covid-19 Completed Questionnaire"/>
-      <exampleBoolean value="true"/>
+      <name value="Server conformance for Diagnostic Message Handling"/>
+      <description value="Server conformance for Diagnostic Message Handling"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CodeSystem-message-events.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/message-events"/>
+      </reference>
+      <name value="Messaging Events"/>
+      <description value="NHS Greater Manchester Messaging Events"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MessageDefinition-unsolicited-observation-message.html"/>
+      </extension>
+      <reference>
+        <reference value="MessageDefinition/unsolicited-observation-message"/>
+      </reference>
+      <name value="Diagnostic Messaging"/>
+      <description value="Unsolicited transmission of an observation message"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

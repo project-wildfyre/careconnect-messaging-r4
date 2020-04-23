@@ -1,12 +1,11 @@
 ﻿Care Connect Messaging : Validation Results
 =========================================
 
-err = 95, warn = 33, info = 60
-IG Publisher Version: v1.0.81-SNAPSHOT
-Generated Thu Apr 23 06:54:44 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+err = 54, warn = 25, info = 59
+IG Publisher Version: v1.0.81-SNAPSHOT Out of date - current version is v1.0.82-SNAPSHOT
+Generated Thu Apr 23 14:27:04 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
- Build Errors : 3 / 1
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-covid19-service-request : 7 / 6
+ Build Errors : 1 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report : 3 / 13
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report-transaction : 3 / 13
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-admit : 2 / 8
@@ -16,11 +15,9 @@ Generated Thu Apr 23 06:54:44 BST 2020. FHIR version 4.0.1 for careconnect.messa
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-create : 1 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-create-transaction : 1 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-referral : 15 / 8
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/QuestionnaireResponse-covid-19 : 4 / 1
+ /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/capabilitystatement/diagnostic-messaging : 4 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig : 0 / 1
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/codesystem/openehr-presence : 0 / 0
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/graphdefinition/nhs111ambulancerequest-information-model : 18 / 3
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/graphdefinition/nhs111report-information-model : 21 / 2
+ /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/codesystem/message-events : 2 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/graphdefinition/patient-referral-message : 15 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/cancel-patient-referral : 0 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/modify-patient-referral : 0 / 2
@@ -28,28 +25,11 @@ Generated Thu Apr 23 06:54:44 BST 2020. FHIR version 4.0.1 for careconnect.messa
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/notification-discharge : 0 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/patient-referral : 0 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/response-patient-referral : 0 / 2
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/questionnaire/covid-19-public : 0 / 1
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/valueset/vs-openehr-presence : 0 / 1
+ /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/unsolicited-observation-message : 2 / 2
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[21].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be careconnect.messaging.r4
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/QuestionnaireResponse-covid-19.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 374: The link 'urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c' for "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/QuestionnaireResponse-covid-19.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 502: The link 'urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f' for "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f" cannot be resolved
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-covid19-service-request.json ==
-ERROR: Bundle.entry[0].resource: Unrecognised property '@timestamp'
-ERROR: Bundle.entry[1].resource.requester: Unrecognised property '@agent'
-ERROR: Bundle.entry[1].resource.requester: Unrecognised property '@onBehalfOf'
-ERROR: Bundle.entry[1].resource: Unrecognised property '@type'
-ERROR: Bundle.entry[1].resource: Unrecognised property '@serviceRequested'
-ERROR: Bundle.entry[1].resource: Unrecognised property '@specialty'
-ERROR: Bundle.entry[1].resource: Unrecognised property '@recipient'
-WARNING: Bundle/covid19-service-request: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/covid19-service-request: Bundle.entry[1].resource.ofType(ServiceRequest).requester: A Reference without an actual reference or identifier should have a display
-INFORMATION: Bundle/covid19-service-request: Bundle.entry[2].resource.ofType(Encounter).type[1].coding[0]: Code System URI "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1" is unknown so the code cannot be validated
-INFORMATION: Bundle/covid19-service-request: Bundle.entry[2].resource.ofType(Encounter).hospitalization.admitSource: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source), and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)
-WARNING: Bundle/covid19-service-request: Bundle.entry[2].resource.ofType(Encounter).hospitalization.admitSource.coding[0]: Display Name for https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19 should be one of 'Usual place of residence unless listed below, for example, a private dwelling whether owner occupied or owned by Local Authority, housing association or other landlord. This includes wardened accommodation but not residential accommodation where health care is provided. It also includes Patients with no fixed abode.' instead of 'Usual place of residence'
-WARNING: Bundle/covid19-service-request: Bundle.entry[5].resource.ofType(QuestionnaireResponse): The questionnaire "https://fhir.nhsz.uk/Questionnaire/covid-19-public" could not be resolved, so no validation can be performed against the base questionnaire
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report.json ==
 WARNING: Bundle/news2-report: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).code: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes), and a code is recommended to come from this value set) (codes = http://snomed.info/sct#118227000)
@@ -154,60 +134,19 @@ INFORMATION: Bundle/patient-referral: Bundle.entry[2].resource.ofType(Encounter)
 ERROR: Bundle/patient-referral: Bundle.entry[3].resource.ofType(Patient).identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
 INFORMATION: Bundle/patient-referral: Bundle.entry[3].resource.ofType(Patient).identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" is unknown so the code cannot be validated
 ERROR: Bundle/patient-referral: Bundle.entry[4].resource.ofType(Location).identifier[0]: Identifier.system must be an absolute reference, not a local reference
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/QuestionnaireResponse-covid-19.xml ==
-ERROR: /f:QuestionnaireResponse/f:item: Undefined element 'type'
-ERROR: /f:QuestionnaireResponse/f:item/f:item: Undefined element 'type'
-ERROR: QuestionnaireResponse/covid-19: QuestionnaireResponse.item[2].item[0].answer[0].value.ofType(Quantity).value: As specified by profile http://hl7.org/fhir/StructureDefinition/Quantity, Element "value" is out of order
-WARNING: QuestionnaireResponse/covid-19: QuestionnaireResponse: The questionnaire "https://fhir.nhsz.uk/Questionnaire/covid-19-public" could not be resolved, so no validation can be performed against the base questionnaire
+== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CapabilityStatement/diagnostic-messaging.xml ==
+ERROR: /f:CapabilityStatement/f:messaging/f:supportedMessage/f:mode: Undefined element 'system'
+ERROR: /f:CapabilityStatement/f:messaging/f:supportedMessage/f:mode: Undefined element 'code'
+WARNING: CapabilityStatement/diagnostic-messaging: CapabilityStatement: cpb-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+ERROR: CapabilityStatement/diagnostic-messaging: CapabilityStatement: cpb-14: If kind = instance, implementation must be present and software may be present [(kind != 'instance') or implementation.exists()]
+WARNING: CapabilityStatement/diagnostic-messaging: CapabilityStatement.rest[0].security.service[0]: Display Name for http://terminology.hl7.org/CodeSystem/restful-security-service#OAuth should be one of 'OAuth' instead of 'OAuth2 Token'
+ERROR: CapabilityStatement/diagnostic-messaging: CapabilityStatement.messaging[0].supportedMessage[0]: Profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement, Element 'CapabilityStatement.messaging[0].supportedMessage[0].mode': minimum required = 1, but only found 0
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig.xml ==
 WARNING: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide: ig-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CodeSystem/openehr-presence.xml ==
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/GraphDefinition/nhs111ambulancerequest-information-model.xml ==
-WARNING: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition: gdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.profile: URL value "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest" does not resolve
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[0].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[1].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[1].target[1].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[2].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-WARNING: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[4].description: value should not start or finish with whitespace
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[4].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[5].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[6].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[7].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[8].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[9].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[10].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[11].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[12].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[13].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[0].target[0].link[14].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[9].target[0].link[0].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-WARNING: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[9].target[0].link[1].description: value should not start or finish with whitespace
-ERROR: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition.link[9].target[0].link[1].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/GraphDefinition/nhs111report-information-model.json ==
-WARNING: GraphDefinition/nhs111report-information-model: GraphDefinition: gdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[0].target[0].profile: URL value "http://hl7.org/fhir/R4/StructureDefinition/Person" does not resolve
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[0].target[1].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[1].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[2].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-WARNING: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[3].description: value should not start or finish with whitespace
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[3].target[1].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[3].target[1].type: The value provided ("HeathcareService") is not in the value set http://hl7.org/fhir/ValueSet/resource-types|4.0.1 (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#HeathcareService in http://hl7.org/fhir/resource-types)
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[6].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[8].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[9].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[10].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[11].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[0].target[0].link[12].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[6].target[0].profile: URL value "http://hl7.org/fhir/R4/StructureDefinition/ServiceRequest" does not resolve
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[6].target[0].link[0].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[6].target[0].link[1].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[6].target[0].link[2].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[6].target[0].link[2].target[1].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[6].target[0].link[3].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[6].target[0].link[4].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[6].target[0].link[5].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
-ERROR: GraphDefinition/nhs111report-information-model: GraphDefinition.link[6].target[0].link[6].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
+== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CodeSystem/message-events.xml ==
+ERROR: https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence: Conformance resource /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CodeSystem/message-events.xml - the canonical URL (https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events) does not match the URL (https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence)
+WARNING: CodeSystem/message-events: CodeSystem: csd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/codesystem/message-events: URL Mismatch https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events vs https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/GraphDefinition/patient-referral-message.xml ==
 WARNING: GraphDefinition/patient-referral-message: GraphDefinition: gdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: GraphDefinition/patient-referral-message: GraphDefinition.link[0].target[0].link[0].target[0].extension[0]: The extension https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId is unknown, and not allowed here
@@ -244,7 +183,8 @@ INFORMATION: MessageDefinition/patient-referral: MessageDefinition.event.ofType(
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/response-patient-referral.xml ==
 WARNING: MessageDefinition/response-patient-referral: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 INFORMATION: MessageDefinition/response-patient-referral: MessageDefinition.event.ofType(Coding): Code System URI "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" is unknown so the code cannot be validated
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/Questionnaire/covid-19-public.xml ==
-WARNING: Questionnaire/covid-19-public: Questionnaire: que-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/ValueSet/vs-openehr-presence.xml ==
-WARNING: ValueSet/vs-openehr-presence: ValueSet: vsd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/unsolicited-observation-message.xml ==
+ERROR: https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message: Conformance resource /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/unsolicited-observation-message.xml - the canonical URL (https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message) does not match the URL (https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message)
+WARNING: MessageDefinition/unsolicited-observation-message: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+INFORMATION: MessageDefinition/unsolicited-observation-message: MessageDefinition.event.ofType(Coding): Code System URI "https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/message-events" is unknown so the code cannot be validated
+ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/unsolicited-observation-message: URL Mismatch https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message vs https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message

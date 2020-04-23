@@ -75,21 +75,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/covid19-service-request"></reference>
-      </reference>
-      <name value="COVID-19 Service Request"></name>
-      <description value="COVID-19 Service Request"></description>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Questionnaire/covid-19-public"></reference>
-      </reference>
-      <name value="Sample COVID-19 Questionnaire Definition"></name>
-      <description value="Sample COVID-19 Questionnaire Definition"></description>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Bundle/patient-create-transaction"></reference>
       </reference>
       <name value="Patient Create FHIR Transaction"></name>
@@ -155,34 +140,6 @@
   </resource>
     <resource>
       <reference>
-        <reference value="GraphDefinition/nhs111report-information-model"/>
-      </reference>
-      <name value="Information Model - NHS 111 Report"/>
-      <description value="Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)."/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="GraphDefinition/nhs111ambulancerequest-information-model"/>
-      </reference>
-      <name value="Information Model - NHS 111 Ambulance Request"/>
-      <description value="This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/openehr-presence"/>
-      </reference>
-      <name value="CodeSystem openehr presence"/>
-      <description value="openehr presence"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/vs-openehr-presence"/>
-      </reference>
-      <name value="ValueSet openehr presence"/>
-      <description value="openehr presence"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Bundle/news2-report"></reference>
       </reference>
       <name value="NEWS2 Diagnostic Report FHIR Message Example"></name>
@@ -199,11 +156,24 @@
     </resource>
     <resource>
       <reference>
-        <reference value="QuestionnaireResponse/covid-19"></reference>
+        <reference value="CapabilityStatement/diagnostic-messaging"></reference>
       </reference>
-      <name value="Sample Covid-19 Completed Questionnaire"></name>
-      <description value="Sample Covid-19 Completed Questionnaire"></description>
-      <exampleBoolean value="true"/>
+      <name value="Server conformance for Diagnostic Message Handling"></name>
+      <description value="Server conformance for Diagnostic Message Handling"></description>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/message-events"></reference>
+      </reference>
+      <name value="Messaging Events"></name>
+      <description value="NHS Greater Manchester Messaging Events"></description>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/unsolicited-observation-message"></reference>
+      </reference>
+      <name value="Diagnostic Messaging"></name>
+      <description value="Unsolicited transmission of an observation message"></description>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

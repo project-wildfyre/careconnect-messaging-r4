@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-04-23T06:54:17+01:00",
+  "date": "2020-04-23T14:26:40+01:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -407,41 +407,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bundle-covid19-service-request.html"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/covid19-service-request"
-        },
-        "name": "COVID-19 Service Request",
-        "description": "COVID-19 Service Request",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Questionnaire"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Questionnaire-covid-19-public.html"
-          }
-        ],
-        "reference": {
-          "reference": "Questionnaire/covid-19-public"
-        },
-        "name": "Sample COVID-19 Questionnaire Definition",
-        "description": "Sample COVID-19 Questionnaire Definition"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Bundle-patient-create-transaction.html"
           }
         ],
@@ -593,74 +558,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "GraphDefinition"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "GraphDefinition-nhs111report-information-model.html"
-          }
-        ],
-        "reference": {
-          "reference": "GraphDefinition/nhs111report-information-model"
-        },
-        "name": "Information Model - NHS 111 Report",
-        "description": "Information model based on the NHS 111 ITK Report [Specification](https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/IntegratedUrgentCare/Tabular%20View/POCD_RM200001GB02.html)."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "GraphDefinition"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "GraphDefinition-nhs111ambulancerequest-information-model.html"
-          }
-        ],
-        "reference": {
-          "reference": "GraphDefinition/nhs111ambulancerequest-information-model"
-        },
-        "name": "Information Model - NHS 111 Ambulance Request",
-        "description": "This message is a request for an ambulance to be dispatched. It contains the information from a NHS 111 encounter required for an ambulance service to be able to dispatch an ambulance."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "CodeSystem-openehr-presence.html"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/openehr-presence"
-        },
-        "name": "CodeSystem openehr presence",
-        "description": "openehr presence"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-vs-openehr-presence.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/vs-openehr-presence"
-        },
-        "name": "ValueSet openehr presence",
-        "description": "openehr presence"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           },
           {
@@ -697,19 +594,52 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "QuestionnaireResponse"
+            "valueString": "CapabilityStatement"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "QuestionnaireResponse-covid-19.html"
+            "valueUri": "CapabilityStatement-diagnostic-messaging.html"
           }
         ],
         "reference": {
-          "reference": "QuestionnaireResponse/covid-19"
+          "reference": "CapabilityStatement/diagnostic-messaging"
         },
-        "name": "Sample Covid-19 Completed Questionnaire",
-        "description": "Sample Covid-19 Completed Questionnaire",
-        "exampleBoolean": true
+        "name": "Server conformance for Diagnostic Message Handling",
+        "description": "Server conformance for Diagnostic Message Handling"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-message-events.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/message-events"
+        },
+        "name": "Messaging Events",
+        "description": "NHS Greater Manchester Messaging Events"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageDefinition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MessageDefinition-unsolicited-observation-message.html"
+          }
+        ],
+        "reference": {
+          "reference": "MessageDefinition/unsolicited-observation-message"
+        },
+        "name": "Diagnostic Messaging",
+        "description": "Unsolicited transmission of an observation message"
       }
     ],
     "page": {

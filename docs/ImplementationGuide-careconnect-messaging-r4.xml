@@ -11,8 +11,8 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-04-23T14:26:40+01:00"/>
-  <publisher value="mayfield-is.co.uk"/>
+  <date value="2020-04-23T15:29:57+01:00"/>
+  <publisher value="gmdigitialplatforms.nhs.uk"/>
   <contact>
     <telecom>
       <system value="email"/>
@@ -281,72 +281,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-patient-referral.html"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/patient-referral"/>
-      </reference>
-      <name value="Patient Referral Example"/>
-      <description value="Patient Referral Example"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MessageDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MessageDefinition-patient-referral.html"/>
-      </extension>
-      <reference>
-        <reference value="MessageDefinition/patient-referral"/>
-      </reference>
-      <name value="Patient Referral"/>
-      <description value="Patient Referral"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MessageDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MessageDefinition-response-patient-referral.html"/>
-      </extension>
-      <reference>
-        <reference value="MessageDefinition/response-patient-referral"/>
-      </reference>
-      <name value="Response Patient Referral"/>
-      <description value="Response Patient Referral"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MessageDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MessageDefinition-modify-patient-referral.html"/>
-      </extension>
-      <reference>
-        <reference value="MessageDefinition/modify-patient-referral"/>
-      </reference>
-      <name value="Modify Patient Referral"/>
-      <description value="Modify Patient Referral"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MessageDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MessageDefinition-cancel-patient-referral.html"/>
-      </extension>
-      <reference>
-        <reference value="MessageDefinition/cancel-patient-referral"/>
-      </reference>
-      <name value="Cancel Patient Referral"/>
-      <description value="Cancel Patient Referral"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MessageDefinition"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -370,19 +304,6 @@
       </reference>
       <name value="Notitification Discharge"/>
       <description value="Discharge Notification - patient handed over."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="GraphDefinition"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="GraphDefinition-patient-referral-message.html"/>
-      </extension>
-      <reference>
-        <reference value="GraphDefinition/patient-referral-message"/>
-      </reference>
-      <name value="Patient Referral Message Definition"/>
-      <description value="For handover, service request or referral"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -468,11 +389,6 @@
       <page>
         <nameUrl value="adt.html"/>
         <title value="HL7 v2 and FHIR Admission, Discharge and Transfers"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="referrals.html"/>
-        <title value="Referrals (inc Handovers)"/>
         <generation value="markdown"/>
       </page>
       <page>

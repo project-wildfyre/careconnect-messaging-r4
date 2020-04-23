@@ -200,11 +200,11 @@
      fhir:index 0;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1" ];
+       fhir:Extension.url [ fhir:value "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" ];
+           fhir:Coding.system [ fhir:value "https://fhir.hl7.org.ukR4/CodeSystem/UKCore-NHSNumberVerificationStatus" ];
            fhir:Coding.code [ fhir:value "01" ]
          ]
        ]

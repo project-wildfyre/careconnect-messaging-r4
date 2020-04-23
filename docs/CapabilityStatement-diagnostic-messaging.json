@@ -9,8 +9,8 @@
   "version": "4.0.0",
   "name": "Diagnostic Messaging Support",
   "status": "active",
-  "date": "2020-04-23T14:26:40+01:00",
-  "publisher": "mayfield-is.co.uk",
+  "date": "2020-04-23T15:29:57+01:00",
+  "publisher": "gmdigitialplatforms.nhs.uk",
   "contact": [
     {
       "telecom": [
@@ -70,7 +70,8 @@
     {
       "supportedMessage": [
         {
-          "definition": "https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message"
+          "mode": "receiver",
+          "definition": "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message"
         }
       ]
     }

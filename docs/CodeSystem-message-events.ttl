@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "message-events"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Message Events</h2><div><p>NHS Greater Manchester Messages</p>\n</div><p>This code system https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unsolicited-observation-message<a name=\"message-events-unsolicited-observation-message\"> </a></td><td>Unsolicited transmission of an observation message</td><td/></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Message Events</h2><div><p>NHS Greater Manchester Messages</p>\n</div><p>This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unsolicited-observation-message<a name=\"message-events-unsolicited-observation-message\"> </a></td><td>Unsolicited transmission of an observation message</td><td/></tr><tr><td style=\"white-space:nowrap\">notification-admit<a name=\"message-events-notification-admit\"> </a></td><td>Admission Notification</td><td/></tr><tr><td style=\"white-space:nowrap\">notification-discharge<a name=\"message-events-notification-discharge\"> </a></td><td>Discharge Notification</td><td/></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence"];
+  fhir:CodeSystem.url [ fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events"];
   fhir:CodeSystem.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://fhir.gmdigitalplatforms.nhs.uk/identifiers/codesystems" ];
@@ -24,7 +24,7 @@
   fhir:CodeSystem.status [ fhir:value "draft"];
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean];
   fhir:CodeSystem.date [ fhir:value "2020-01-28T00:00:00+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "mayfield-is.co.uk"];
+  fhir:CodeSystem.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:CodeSystem.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
@@ -48,6 +48,14 @@
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "unsolicited-observation-message" ];
      fhir:CodeSystem.concept.display [ fhir:value "Unsolicited transmission of an observation message" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "notification-admit" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Admission Notification" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "notification-discharge" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Discharge Notification" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

@@ -10,8 +10,8 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-04-23T14:26:40+01:00",
-  "publisher": "mayfield-is.co.uk",
+  "date": "2020-04-23T15:29:57+01:00",
+  "publisher": "gmdigitialplatforms.nhs.uk",
   "contact": [
     {
       "telecom": [
@@ -421,92 +421,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bundle-patient-referral.html"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/patient-referral"
-        },
-        "name": "Patient Referral Example",
-        "description": "Patient Referral Example",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MessageDefinition"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "MessageDefinition-patient-referral.html"
-          }
-        ],
-        "reference": {
-          "reference": "MessageDefinition/patient-referral"
-        },
-        "name": "Patient Referral",
-        "description": "Patient Referral"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MessageDefinition"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "MessageDefinition-response-patient-referral.html"
-          }
-        ],
-        "reference": {
-          "reference": "MessageDefinition/response-patient-referral"
-        },
-        "name": "Response Patient Referral",
-        "description": "Response Patient Referral"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MessageDefinition"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "MessageDefinition-modify-patient-referral.html"
-          }
-        ],
-        "reference": {
-          "reference": "MessageDefinition/modify-patient-referral"
-        },
-        "name": "Modify Patient Referral",
-        "description": "Modify Patient Referral"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MessageDefinition"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "MessageDefinition-cancel-patient-referral.html"
-          }
-        ],
-        "reference": {
-          "reference": "MessageDefinition/cancel-patient-referral"
-        },
-        "name": "Cancel Patient Referral",
-        "description": "Cancel Patient Referral"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MessageDefinition"
           },
           {
@@ -536,23 +450,6 @@
         },
         "name": "Notitification Discharge",
         "description": "Discharge Notification - patient handed over."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "GraphDefinition"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "GraphDefinition-patient-referral-message.html"
-          }
-        ],
-        "reference": {
-          "reference": "GraphDefinition/patient-referral-message"
-        },
-        "name": "Patient Referral Message Definition",
-        "description": "For handover, service request or referral"
       },
       {
         "extension": [
@@ -660,11 +557,6 @@
         {
           "nameUrl": "adt.html",
           "title": "HL7 v2 and FHIR Admission, Discharge and Transfers",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "referrals.html",
-          "title": "Referrals (inc Handovers)",
           "generation": "markdown"
         },
         {

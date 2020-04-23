@@ -12,11 +12,8 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1": [
+    "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus": [
       "Bundle.entry.resource.identifier"
-    ],
-    "https://fhir.mayfield-is.co.uk/extension-GraphDefinition.targetLinkId": [
-      "GraphDefinition.link.target.link.target"
     ]
   }
 }

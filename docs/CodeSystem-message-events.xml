@@ -4,9 +4,9 @@
   <id value="message-events"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Message Events</h2><div><p>NHS Greater Manchester Messages</p>
-</div><p>This code system https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">unsolicited-observation-message<a name="message-events-unsolicited-observation-message"> </a></td><td>Unsolicited transmission of an observation message</td><td/></tr></table></div>
+</div><p>This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">unsolicited-observation-message<a name="message-events-unsolicited-observation-message"> </a></td><td>Unsolicited transmission of an observation message</td><td/></tr><tr><td style="white-space:nowrap">notification-admit<a name="message-events-notification-admit"> </a></td><td>Admission Notification</td><td/></tr><tr><td style="white-space:nowrap">notification-discharge<a name="message-events-notification-discharge"> </a></td><td>Discharge Notification</td><td/></tr></table></div>
   </text>
-  <url value="https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence"/>
+  <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events"/>
   <identifier>
     <system value="http://fhir.gmdigitalplatforms.nhs.uk/identifiers/codesystems"/>
     <value value="message-events"/>
@@ -17,7 +17,7 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2020-01-28T00:00:00+00:00"/>
-  <publisher value="mayfield-is.co.uk"/>
+  <publisher value="gmdigitialplatforms.nhs.uk"/>
   <contact>
     <telecom>
       <system value="email"/>
@@ -36,5 +36,13 @@
   <concept>
     <code value="unsolicited-observation-message"/>
     <display value="Unsolicited transmission of an observation message"/>
+  </concept>
+  <concept>
+    <code value="notification-admit"/>
+    <display value="Admission Notification"/>
+  </concept>
+  <concept>
+    <code value="notification-discharge"/>
+    <display value="Discharge Notification"/>
   </concept>
 </CodeSystem>

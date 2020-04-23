@@ -16,7 +16,7 @@
   "title": "Patient Admission Notification",
   "status": "active",
   "date": "2019-08-22T12:49:51+01:00",
-  "publisher": "mayfield-is.co.uk",
+  "publisher": "gmdigitialplatforms.nhs.uk",
   "contact": [
     {
       "telecom": [
@@ -39,7 +39,7 @@
   ],
   "copyright": "Copyright © 2020 Project Wildfyre",
   "eventCoding": {
-    "system": "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
+    "system": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
     "code": "notification-admit",
     "display": "Notification Admit"
   },

@@ -2,7 +2,7 @@
 
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="message-events"/>
-    <url value="https://fhir.gmdigitalplatforms.nhs.uk/CodeSystem/openehr-presence"/>
+    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events"/>
     <identifier>
         <system value="http://fhir.gmdigitalplatforms.nhs.uk/identifiers/codesystems"/>
         <value value="message-events"/>
@@ -29,5 +29,13 @@
     <concept>
         <code value="unsolicited-observation-message"/>
         <display value="Unsolicited transmission of an observation message"/>
+    </concept>
+    <concept>
+        <code value="notification-admit"/>
+        <display value="Admission Notification"/>
+    </concept>
+    <concept>
+        <code value="notification-discharge"/>
+        <display value="Discharge Notification"/>
     </concept>
 </CodeSystem>

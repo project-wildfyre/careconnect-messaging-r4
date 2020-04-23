@@ -37,8 +37,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"11.6"}
-    h3,h4,h5,h6{--heading-prefix:"11.6"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.2"}
+    h3,h4,h5,h6{--heading-prefix:"10.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         
@@ -86,9 +86,6 @@
       </li>
         <li>
             <a href="adt.html">Admission, Discharge and Transfers</a>
-        </li>
-        <li>
-            <a href="referrals.html">Referrals (inc Handover)</a>
         </li>
         <li>
             <a href="diagnostics.html">Diagnostic Reports</a>
@@ -169,7 +166,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient Admission Notification&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-08-22T12:49:51+01:00&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;mayfield-is.co.uk&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;gmdigitialplatforms.nhs.uk&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
@@ -184,7 +181,8 @@
   &lt;/jurisdiction&gt;
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.copyright">copyright</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Copyright © 2020 Project Wildfyre&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.event[x]">eventCoding</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+            <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;notification-admit&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Notification Admit&quot;/&gt;
   &lt;/eventCoding&gt;
@@ -211,7 +209,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">mayfield-is.co.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2020 14:26+0100">2020-04-23</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Apr 23, 2020 15:29+0100">2020-04-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

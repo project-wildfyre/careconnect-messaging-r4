@@ -7,7 +7,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <publisher value="mayfield-is.co.uk"/>
+  <publisher value="gmdigitialplatforms.nhs.uk"/>
   <contact>
     <telecom>
       <!-- Or whatever URL and/or email address(es) are appropriate -->
@@ -83,42 +83,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/patient-referral"></reference>
-      </reference>
-      <name value="Patient Referral Example"></name>
-      <description value="Patient Referral Example"></description>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MessageDefinition/patient-referral"/>
-      </reference>
-      <name value="Patient Referral"/>
-      <description value="Patient Referral"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MessageDefinition/response-patient-referral"/>
-      </reference>
-      <name value="Response Patient Referral"/>
-      <description value="Response Patient Referral"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MessageDefinition/modify-patient-referral"/>
-      </reference>
-      <name value="Modify Patient Referral"/>
-      <description value="Modify Patient Referral"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MessageDefinition/cancel-patient-referral"/>
-      </reference>
-      <name value="Cancel Patient Referral"/>
-      <description value="Cancel Patient Referral"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="MessageDefinition/notification-admit"/>
       </reference>
       <name value="Notitification Admission"/>
@@ -131,13 +95,6 @@
       <name value="Notitification Discharge"/>
       <description value="Discharge Notification - patient handed over."/>
     </resource>
-    <resource>
-    <reference>
-      <reference value="GraphDefinition/patient-referral-message"/>
-    </reference>
-    <name value="Patient Referral Message Definition"/>
-    <description value="For handover, service request or referral"/>
-  </resource>
     <resource>
       <reference>
         <reference value="Bundle/news2-report"></reference>
@@ -193,11 +150,6 @@
       <page>
         <nameUrl value="adt.html"/>
         <title value="HL7 v2 and FHIR Admission, Discharge and Transfers"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="referrals.html"/>
-        <title value="Referrals (inc Handovers)"/>
         <generation value="markdown"/>
       </page>
       <page>

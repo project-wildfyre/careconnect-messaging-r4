@@ -31,11 +31,8 @@
     </rest>
     <messaging>
         <supportedMessage>
-            <mode>
-                <system value="http://hl7.org/fhir/event-capability-mode"/>
-                <code value="receiver"/>
-            </mode>
-            <definition value="https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message"/>
+            <mode value="receiver" />
+            <definition value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message"/>
         </supportedMessage>
     </messaging>
 </CapabilityStatement>

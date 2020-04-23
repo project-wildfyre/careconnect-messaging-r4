@@ -14,7 +14,7 @@
   <title value="Patient Admission Notification"/>
   <status value="active"/>
   <date value="2019-08-22T12:49:51+01:00"/>
-  <publisher value="mayfield-is.co.uk"/>
+  <publisher value="gmdigitialplatforms.nhs.uk"/>
   <contact>
     <telecom>
       <system value="email"/>
@@ -29,7 +29,7 @@
   </jurisdiction>
   <copyright value="Copyright &#xA9; 2020 Project Wildfyre"/>
   <eventCoding>
-    <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+    <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events"/>
     <code value="notification-admit"/>
     <display value="Notification Admit"/>
   </eventCoding>

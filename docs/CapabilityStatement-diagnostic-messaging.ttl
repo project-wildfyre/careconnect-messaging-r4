@@ -16,8 +16,8 @@
   fhir:CapabilityStatement.version [ fhir:value "4.0.0"];
   fhir:CapabilityStatement.name [ fhir:value "Diagnostic Messaging Support"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
-  fhir:CapabilityStatement.date [ fhir:value "2020-04-23T14:26:40+01:00"^^xsd:dateTime];
-  fhir:CapabilityStatement.publisher [ fhir:value "mayfield-is.co.uk"];
+  fhir:CapabilityStatement.date [ fhir:value "2020-04-23T15:29:57+01:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
@@ -78,9 +78,10 @@
      fhir:index 0;
      fhir:CapabilityStatement.messaging.supportedMessage [
        fhir:index 0;
+       fhir:CapabilityStatement.messaging.supportedMessage.mode [ fhir:value "receiver" ];
        fhir:CapabilityStatement.messaging.supportedMessage.definition [
-         fhir:value "https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message";
-         fhir:link <https://fhir.gmdigitalplatforms.nhs.uk/MessageDefinition/unsolicited-observation-message>
+         fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message";
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message>
        ]
      ]
   ] .

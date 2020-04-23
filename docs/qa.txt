@@ -1,11 +1,11 @@
 ﻿Care Connect Messaging : Validation Results
 =========================================
 
-err = 96, warn = 33, info = 60
+err = 95, warn = 33, info = 60
 IG Publisher Version: v1.0.81-SNAPSHOT
-Generated Thu Apr 23 06:20:22 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Thu Apr 23 06:37:33 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
- Build Errors : 6 / 1
+ Build Errors : 3 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-covid19-service-request : 7 / 6
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report : 3 / 13
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report-transaction : 3 / 13
@@ -17,7 +17,7 @@ Generated Thu Apr 23 06:20:22 BST 2020. FHIR version 4.0.1 for careconnect.messa
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-create-transaction : 1 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-referral : 15 / 8
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/QuestionnaireResponse-covid-19 : 4 / 1
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig : 1 / 1
+ /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig : 0 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/codesystem/openehr-presence : 0 / 0
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/graphdefinition/nhs111ambulancerequest-information-model : 18 / 3
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/graphdefinition/nhs111report-information-model : 21 / 2
@@ -34,9 +34,6 @@ Generated Thu Apr 23 06:20:22 BST 2020. FHIR version 4.0.1 for careconnect.messa
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[21].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be careconnect.messaging.r4
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/blockquote/p/a at Line 171, column 1902: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ProcedureRequest" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 171, column 3645: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-HealthcareService" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/GraphDefinition-patient-referral-message.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 171, column 5654: The link 'https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent' for "https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Consent" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/QuestionnaireResponse-covid-19.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 374: The link 'urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c' for "urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/output/QuestionnaireResponse-covid-19.html#/html/body/div/div/div/div/div/div/p/a at Line 171, column 502: The link 'urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f' for "urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f" cannot be resolved
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-covid19-service-request.json ==
@@ -164,7 +161,6 @@ ERROR: QuestionnaireResponse/covid-19: QuestionnaireResponse.item[2].item[0].ans
 WARNING: QuestionnaireResponse/covid-19: QuestionnaireResponse: The questionnaire "https://fhir.nhsz.uk/Questionnaire/covid-19-public" could not be resolved, so no validation can be performed against the base questionnaire
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig.xml ==
 WARNING: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide: ig-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide.dependsOn[0]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.dependsOn[0].uri': minimum required = 1, but only found 0
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CodeSystem/openehr-presence.xml ==
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/GraphDefinition/nhs111ambulancerequest-information-model.xml ==
 WARNING: GraphDefinition/nhs111ambulancerequest-information-model: GraphDefinition: gdf-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]

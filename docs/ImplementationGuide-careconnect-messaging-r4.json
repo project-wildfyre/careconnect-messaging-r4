@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-03-20T11:23:41+00:00",
+  "date": "2020-04-23T06:19:40+01:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -41,7 +41,7 @@
   "dependsOn": [
     {
       "packageId": "uk.testcore.r4",
-      "version": "dev"
+      "version": "4.0.0"
     }
   ],
   "definition": {
@@ -81,6 +81,32 @@
           {
             "url": "value",
             "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -133,6 +159,19 @@
           {
             "url": "value",
             "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "https://project-wildfyre.github.io/careconnect-messaging-r4/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -761,6 +800,14 @@
       {
         "code": "path-resource",
         "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
       },
       {
         "code": "path-pages",

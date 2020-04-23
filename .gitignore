@@ -3,4 +3,4 @@
 temp/
 template/
 output/
-input-cache/*.jar
+input-cache/*.*

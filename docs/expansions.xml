@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a84a637f-90d2-4f67-8f01-d330d3e7fd8c"/>
+  <id value="ef39f053-31be-4c9f-8d3a-9fd65a681e11"/>
   <meta>
-    <lastUpdated value="2020-03-20T11:23:41.290+00:00"/>
+    <lastUpdated value="2020-04-23T06:19:40.834+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px">Expansion based on https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence version 4.0.0</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-openehr-presence.html">Presence CodeSystem v4.0.0 (CodeSystem)</a>
+            </p>
             <p>All codes from system 
               <a href="CodeSystem-openehr-presence.html">
                 <code>https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/openehr-presence</code>
@@ -80,8 +82,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:05c879a2-74e0-4c7c-9972-5517988b7a19"/>
-          <timestamp value="2020-03-20T11:23:45+00:00"/>
+          <identifier value="urn:uuid:77c0359c-e4de-435a-a34c-728b6d43e585"/>
+          <timestamp value="2020-04-23T06:19:58+01:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

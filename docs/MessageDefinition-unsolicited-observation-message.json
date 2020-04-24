@@ -1,11 +1,11 @@
 {
   "resourceType": "MessageDefinition",
-  "id": "unsolicited-observation-message",
+  "id": "unsolicited-observation",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: unsolicited-observation-message</p><p><b>url</b>: <a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message\">https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message</a></p><p><b>version</b>: 4.0.0</p><p><b>title</b>: Unsolicited Observation Message</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: gmdigitialplatforms.nhs.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright © 2020 Greater Manchester NHS</p><p><b>event</b>: Unsolicited Observation Message (Details: https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events code unsolicited-observation-message = 'Unsolicited transmission of an observation message', stated as 'Unsolicited Observation Message')</p><p><b>category</b>: notification</p><h3>Focus</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Profile</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>DiagnosticReport</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport</a></td><td>1</td><td>1</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: unsolicited-observation</p><p><b>url</b>: <a href=\"https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation\">https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation</a></p><p><b>version</b>: 4.0.0</p><p><b>title</b>: Unsolicited Observation Message</p><p><b>status</b>: active</p><p><b>date</b>: 22 Aug 2019, 12:49:51</p><p><b>publisher</b>: gmdigitialplatforms.nhs.uk</p><p><b>contact</b>: </p><p><b>jurisdiction</b>: United Kingdom of Great Britain and Northern Ireland (GBR) <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))</span></p><p><b>copyright</b>: Copyright © 2020 Greater Manchester NHS</p><p><b>event</b>: Unsolicited Observation Message (Details: https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events code unsolicited-observation = 'Unsolicited transmission of an observation message', stated as 'Unsolicited Observation Message')</p><p><b>category</b>: notification</p><h3>Focus</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Profile</b></td><td><b>Min</b></td><td><b>Max</b></td></tr><tr><td>*</td><td>DiagnosticReport</td><td><a href=\"https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport\">https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport</a></td><td>1</td><td>1</td></tr></table></div>"
   },
-  "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message",
+  "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation",
   "version": "4.0.0",
   "title": "Unsolicited Observation Message",
   "status": "active",
@@ -34,7 +34,7 @@
   "copyright": "Copyright © 2020 Greater Manchester NHS",
   "eventCoding": {
     "system": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
-    "code": "unsolicited-observation-message",
+    "code": "unsolicited-observation",
     "display": "Unsolicited Observation Message"
   },
   "category": "notification",

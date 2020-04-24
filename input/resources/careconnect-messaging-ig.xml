@@ -134,7 +134,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="MessageDefinition/unsolicited-observation-message"></reference>
+        <reference value="MessageDefinition/unsolicited-observation"></reference>
       </reference>
       <name value="Diagnostic Messaging"></name>
       <description value="Unsolicited transmission of an observation message"></description>

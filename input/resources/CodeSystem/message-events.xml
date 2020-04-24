@@ -27,7 +27,7 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
-        <code value="unsolicited-observation-message"/>
+        <code value="unsolicited-observation"/>
         <display value="Unsolicited transmission of an observation message"/>
     </concept>
     <concept>

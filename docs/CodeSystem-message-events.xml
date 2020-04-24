@@ -4,7 +4,7 @@
   <id value="message-events"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Message Events</h2><div><p>NHS Greater Manchester Messages</p>
-</div><p>This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">unsolicited-observation-message<a name="message-events-unsolicited-observation-message"> </a></td><td>Unsolicited transmission of an observation message</td><td/></tr><tr><td style="white-space:nowrap">notification-admit<a name="message-events-notification-admit"> </a></td><td>Admission Notification</td><td/></tr><tr><td style="white-space:nowrap">notification-discharge<a name="message-events-notification-discharge"> </a></td><td>Discharge Notification</td><td/></tr></table></div>
+</div><p>This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">unsolicited-observation<a name="message-events-unsolicited-observation"> </a></td><td>Unsolicited transmission of an observation message</td><td/></tr><tr><td style="white-space:nowrap">notification-admit<a name="message-events-notification-admit"> </a></td><td>Admission Notification</td><td/></tr><tr><td style="white-space:nowrap">notification-discharge<a name="message-events-notification-discharge"> </a></td><td>Discharge Notification</td><td/></tr></table></div>
   </text>
   <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events"/>
   <identifier>
@@ -34,7 +34,7 @@
   <caseSensitive value="true"/>
   <content value="complete"/>
   <concept>
-    <code value="unsolicited-observation-message"/>
+    <code value="unsolicited-observation"/>
     <display value="Unsolicited transmission of an observation message"/>
   </concept>
   <concept>

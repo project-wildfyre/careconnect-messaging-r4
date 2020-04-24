@@ -546,11 +546,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "MessageDefinition-unsolicited-observation-message.html"
+            "valueUri": "MessageDefinition-unsolicited-observation.html"
           }
         ],
         "reference": {
-          "reference": "MessageDefinition/unsolicited-observation-message"
+          "reference": "MessageDefinition/unsolicited-observation"
         },
         "name": "Diagnostic Messaging",
         "description": "Unsolicited transmission of an observation message"

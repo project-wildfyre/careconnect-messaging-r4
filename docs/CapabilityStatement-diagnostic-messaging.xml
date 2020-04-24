@@ -52,7 +52,7 @@
   <messaging>
     <supportedMessage>
       <mode value="receiver"/>
-      <definition value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message"/>
+      <definition value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation"/>
     </supportedMessage>
   </messaging>
 </CapabilityStatement>

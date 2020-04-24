@@ -80,8 +80,8 @@
        fhir:index 0;
        fhir:CapabilityStatement.messaging.supportedMessage.mode [ fhir:value "receiver" ];
        fhir:CapabilityStatement.messaging.supportedMessage.definition [
-         fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message";
-         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message>
+         fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation";
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation>
        ]
      ]
   ] .

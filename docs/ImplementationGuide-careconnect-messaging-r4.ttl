@@ -531,11 +531,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "MessageDefinition-unsolicited-observation-message.html" ]
+         fhir:Extension.valueUri [ fhir:value "MessageDefinition-unsolicited-observation.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message>;
-         fhir:Reference.reference [ fhir:value "MessageDefinition/unsolicited-observation-message" ]
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation>;
+         fhir:Reference.reference [ fhir:value "MessageDefinition/unsolicited-observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnostic Messaging" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unsolicited transmission of an observation message" ]

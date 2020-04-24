@@ -1,6 +1,6 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
-    <id value="unsolicited-observation-message"></id>
-    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message"></url>
+    <id value="unsolicited-observation"></id>
+    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation"></url>
     <version value="1.0.0"></version>
     <title value="Unsolicited Observation Message"></title>
     <status value="active"></status>
@@ -8,7 +8,7 @@
     <copyright value="Copyright © 2020 Greater Manchester NHS"></copyright>
     <eventCoding>
         <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events"></system>
-        <code value="unsolicited-observation-message"></code>
+        <code value="unsolicited-observation"></code>
         <display value="Unsolicited Observation Message"></display>
     </eventCoding>
     <category value="notification"></category>

@@ -377,10 +377,10 @@
         <valueString value="MessageDefinition"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="MessageDefinition-unsolicited-observation-message.html"/>
+        <valueUri value="MessageDefinition-unsolicited-observation.html"/>
       </extension>
       <reference>
-        <reference value="MessageDefinition/unsolicited-observation-message"/>
+        <reference value="MessageDefinition/unsolicited-observation"/>
       </reference>
       <name value="Diagnostic Messaging"/>
       <description value="Unsolicited transmission of an observation message"/>

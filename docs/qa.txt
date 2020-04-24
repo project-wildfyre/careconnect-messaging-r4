@@ -20,7 +20,7 @@ Generated Fri Apr 24 06:00:06 BST 2020. FHIR version 4.0.1 for careconnect.messa
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/codesystem/message-events : 0 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/notification-admit : 0 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/notification-discharge : 0 / 2
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/unsolicited-observation-message : 0 / 2
+ /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/unsolicited-observation : 0 / 2
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[21].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
@@ -123,6 +123,6 @@ WARNING: MessageDefinition/notification-admit: MessageDefinition.event.ofType(Co
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/notification-discharge.xml ==
 WARNING: MessageDefinition/notification-discharge: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: MessageDefinition/notification-discharge: MessageDefinition.event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-discharge should be one of 'Discharge Notification' instead of 'Notification Discharge'
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/unsolicited-observation-message.xml ==
-WARNING: MessageDefinition/unsolicited-observation-message: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-WARNING: MessageDefinition/unsolicited-observation-message: MessageDefinition.event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation-message should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observation Message'
+== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/unsolicited-observation.xml ==
+WARNING: MessageDefinition/unsolicited-observation: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+WARNING: MessageDefinition/unsolicited-observation: MessageDefinition.event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observation Message'

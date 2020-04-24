@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
-  "code" : "unsolicited-observation-message"
+  "code" : "unsolicited-observation"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "The code system \"https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events\" is not known (encountered paired with code = \"unsolicited-observation-message\"); The code provided (https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation-message) is not  valid in the value set All codes known to the system"
+  "error" : "The code system \"https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events\" is not known (encountered paired with code = \"unsolicited-observation\"); The code provided (https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------

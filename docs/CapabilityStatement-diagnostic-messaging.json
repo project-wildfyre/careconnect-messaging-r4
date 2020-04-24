@@ -71,7 +71,7 @@
       "supportedMessage": [
         {
           "mode": "receiver",
-          "definition": "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation-message"
+          "definition": "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation"
         }
       ]
     }

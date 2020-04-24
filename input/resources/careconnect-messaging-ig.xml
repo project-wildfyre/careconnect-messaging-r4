@@ -120,6 +120,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CapabilityStatement/encounter-messaging"></reference>
+      </reference>
+      <name value="Server conformance for Encounter Message Handling"></name>
+      <description value="Server conformance for Encounter Message Handling"></description>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/message-events"></reference>
       </reference>
       <name value="Messaging Events"></name>

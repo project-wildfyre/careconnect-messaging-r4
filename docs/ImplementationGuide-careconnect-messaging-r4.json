@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-04-23T15:29:57+01:00",
+  "date": "2020-04-24T05:59:23+01:00",
   "publisher": "gmdigitialplatforms.nhs.uk",
   "contact": [
     {
@@ -503,6 +503,23 @@
         },
         "name": "Server conformance for Diagnostic Message Handling",
         "description": "Server conformance for Diagnostic Message Handling"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CapabilityStatement-encounter-messaging.html"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/encounter-messaging"
+        },
+        "name": "Server conformance for Encounter Message Handling",
+        "description": "Server conformance for Encounter Message Handling"
       },
       {
         "extension": [

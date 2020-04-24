@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-04-23T15:29:57+01:00"/>
+  <date value="2020-04-24T05:59:23+01:00"/>
   <publisher value="gmdigitialplatforms.nhs.uk"/>
   <contact>
     <telecom>
@@ -345,6 +345,19 @@
       </reference>
       <name value="Server conformance for Diagnostic Message Handling"/>
       <description value="Server conformance for Diagnostic Message Handling"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-encounter-messaging.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/encounter-messaging"/>
+      </reference>
+      <name value="Server conformance for Encounter Message Handling"/>
+      <description value="Server conformance for Encounter Message Handling"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

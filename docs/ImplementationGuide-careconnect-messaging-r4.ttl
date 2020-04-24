@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Care Connect Messaging"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-23T15:29:57+01:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-24T05:59:23+01:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -493,6 +493,23 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-encounter-messaging.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/CapabilityStatement/encounter-messaging>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/encounter-messaging" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Server conformance for Encounter Message Handling" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Server conformance for Encounter Message Handling" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ], [
          fhir:index 1;
@@ -506,7 +523,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Messaging Events" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NHS Greater Manchester Messaging Events" ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

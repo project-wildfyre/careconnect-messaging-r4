@@ -1,9 +1,9 @@
 ﻿Care Connect Messaging : Validation Results
 =========================================
 
-err = 17, warn = 20, info = 46
+err = 18, warn = 22, info = 46
 IG Publisher Version: v1.0.81-SNAPSHOT Out of date - current version is v1.0.82-SNAPSHOT
-Generated Thu Apr 23 15:30:24 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Fri Apr 24 06:00:06 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
  Build Errors : 1 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report : 3 / 13
@@ -15,6 +15,7 @@ Generated Thu Apr 23 15:30:24 BST 2020. FHIR version 4.0.1 for careconnect.messa
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-create : 1 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-create-transaction : 1 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/capabilitystatement/diagnostic-messaging : 1 / 2
+ /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/capabilitystatement/encounter-messaging : 1 / 2
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig : 0 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/codesystem/message-events : 0 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/notification-admit : 0 / 2
@@ -108,6 +109,10 @@ INFORMATION: Bundle/patient-create-transaction: Bundle.entry[1].resource.ofType(
 WARNING: CapabilityStatement/diagnostic-messaging: CapabilityStatement: cpb-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: CapabilityStatement/diagnostic-messaging: CapabilityStatement: cpb-14: If kind = instance, implementation must be present and software may be present [(kind != 'instance') or implementation.exists()]
 WARNING: CapabilityStatement/diagnostic-messaging: CapabilityStatement.rest[0].security.service[0]: Display Name for http://terminology.hl7.org/CodeSystem/restful-security-service#OAuth should be one of 'OAuth' instead of 'OAuth2 Token'
+== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CapabilityStatement/encounter-messaging.xml ==
+WARNING: CapabilityStatement/encounter-messaging: CapabilityStatement: cpb-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
+ERROR: CapabilityStatement/encounter-messaging: CapabilityStatement: cpb-14: If kind = instance, implementation must be present and software may be present [(kind != 'instance') or implementation.exists()]
+WARNING: CapabilityStatement/encounter-messaging: CapabilityStatement.rest[0].security.service[0]: Display Name for http://terminology.hl7.org/CodeSystem/restful-security-service#OAuth should be one of 'OAuth' instead of 'OAuth2 Token'
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig.xml ==
 WARNING: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide: ig-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CodeSystem/message-events.xml ==

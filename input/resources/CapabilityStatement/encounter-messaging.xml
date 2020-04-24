@@ -1,0 +1,42 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="encounter-messaging"/>
+    <version value="4.0.0"/>
+    <name value="Encounter Messaging Support"/>
+    <status value="active"/>
+    <publisher value="https://gmdigitalplatform.nhs.uk"/>
+    <description value="Minimal conformance requirements for a encounter messaging service"/>
+    <kind value="instance"/>
+    <fhirVersion value="4.0.1"/>
+    <format value="application/fhir+json"/>
+    <format value="application/fhir+json"/>
+    <rest>
+        <mode value="server"/>
+        <security>
+            <service>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+                    <code value="OAuth"/>
+                    <display value="OAuth2 Token"/>
+                </coding>
+            </service>
+        </security>
+        <operation>
+            <name value="validate"/>
+            <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        </operation>
+        <operation>
+            <name value="process-message"/>
+            <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message"/>
+        </operation>
+    </rest>
+    <messaging>
+        <supportedMessage>
+            <mode value="receiver" />
+            <definition value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-admit"/>
+        </supportedMessage>
+        <supportedMessage>
+            <mode value="receiver" />
+            <definition value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge"/>
+        </supportedMessage>
+    </messaging>
+</CapabilityStatement>

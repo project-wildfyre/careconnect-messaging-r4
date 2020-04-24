@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 2, errors = 17, warn = 20, info = 46 -->
+<!-- broken links = 2, errors = 18, warn = 22, info = 46 -->
 <head>
   <title>Care Connect Messaging : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Care Connect Messaging</h1>
- <p>Generated Thu Apr 23 15:30:24 BST 2020, FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = <a href="https://project-wildfyre.github.io/careconnect-messaging-r4">https://project-wildfyre.github.io/careconnect-messaging-r4</a> (<a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">history</a>))</p>
+ <p>Generated Fri Apr 24 06:00:05 BST 2020, FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = <a href="https://project-wildfyre.github.io/careconnect-messaging-r4">https://project-wildfyre.github.io/careconnect-messaging-r4</a> (<a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">history</a>))</p>
 <p style="background-color: #ffcccc">IG Publisher Version: v1.0.81-SNAPSHOT, which is out of date. The current version is v1.0.82-SNAPSHOT <a href="https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar">Download Latest</a></p>
 <p><a href="#suppressed">5 Suppressed Errors</a></p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
@@ -61,6 +61,9 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-messaging-r4_input_resources_capabilitystatement_diagnostic-messaging"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/capabilitystatement/diagnostic-messaging</b></a></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-messaging-r4_input_resources_capabilitystatement_encounter-messaging"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/capabilitystatement/encounter-messaging</b></a></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_Users_kevinmayfield_Development_wildfyre_careconnect-messaging-r4_input_resources_careconnect-messaging-ig"><b>/Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig</b></a></td><td><b>0</b></td><td><b>1</b></td>
@@ -384,6 +387,23 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CapabilityStatement/diagnostic-messaging: CapabilityStatement.rest[0].security.service[0]</b></td><td><b>warning</b></td><td><b>Display Name for http://terminology.hl7.org/CodeSystem/restful-security-service#OAuth should be one of 'OAuth' instead of 'OAuth2 Token'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_wildfyre_careconnect-messaging-r4_input_resources_capabilitystatement_encounter-messaging"> </a>
+<h2><a href="CapabilityStatement-encounter-messaging.html">/Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CapabilityStatement/encounter-messaging.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/encounter-messaging: CapabilityStatement</b></td><td><b>warning</b></td><td><b>cpb-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/encounter-messaging: CapabilityStatement</b></td><td><b>error</b></td><td><b>cpb-14: If kind = instance, implementation must be present and software may be present [(kind != 'instance') or implementation.exists()]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/encounter-messaging: CapabilityStatement.rest[0].security.service[0]</b></td><td><b>warning</b></td><td><b>Display Name for http://terminology.hl7.org/CodeSystem/restful-security-service#OAuth should be one of 'OAuth' instead of 'OAuth2 Token'</b></td>
    </tr>
 </table>
 <hr/>

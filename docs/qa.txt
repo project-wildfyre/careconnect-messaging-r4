@@ -3,7 +3,7 @@
 
 err = 18, warn = 22, info = 46
 IG Publisher Version: v1.0.81-SNAPSHOT Out of date - current version is v1.0.82-SNAPSHOT
-Generated Fri Apr 24 06:35:46 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Fri Apr 24 08:29:56 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
  Build Errors : 1 / 1
  /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report : 3 / 13
@@ -26,7 +26,7 @@ Generated Fri Apr 24 06:35:46 BST 2020. FHIR version 4.0.1 for careconnect.messa
 ERROR: ImplementationGuide.definition.parameter[21].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be careconnect.messaging.r4
 == /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report.json ==
-WARNING: Bundle/news2-report: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/news2-report: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observations'
 INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).code: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes), and a code is recommended to come from this value set) (codes = http://snomed.info/sct#118227000)
 WARNING: Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).code.coding[0]: The display "Vital Signs" is not a valid display for the code {http://snomed.info/sct}118227000 - should be one of ["Vital signs finding","Vital signs finding (finding)"]
 INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).subject: Details for urn:oid:d980f514-8d01-4d6b-9b52-29436fda1231 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient

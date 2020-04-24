@@ -14,11 +14,12 @@
         "id": "22ed2deb-effa-408c-9437-d3c4975ff448",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 22ed2deb-effa-408c-9437-d3c4975ff448</p><p><b>event</b>: ORU^R01 (Details: [not stated] code ORU^R01 = 'ORU^R01', stated as 'ORU^R01')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href=\"ROUTE\">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>focus</b>: <a href=\"#backboneelement_3915b469-57b7-470f-942f-e276c4458d63\">Generated Summary: unknown resource entry</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 22ed2deb-effa-408c-9437-d3c4975ff448</p><p><b>event</b>: Unsolicited Observations (Details: https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events code unsolicited-observation = 'Unsolicited transmission of an observation message', stated as 'Unsolicited Observations')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href=\"ROUTE\">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>focus</b>: <a href=\"#backboneelement_3915b469-57b7-470f-942f-e276c4458d63\">Generated Summary: unknown resource entry</a></p></div>"
         },
         "eventCoding": {
-          "code": "ORU^R01",
-          "display": "ORU^R01"
+          "system": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
+          "code": "unsolicited-observation",
+          "display": "Unsolicited Observations"
         },
         "destination": [
           {

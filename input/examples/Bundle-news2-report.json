@@ -13,8 +13,9 @@
                 "resourceType": "MessageHeader",
                 "id": "22ed2deb-effa-408c-9437-d3c4975ff448",
                 "eventCoding": {
-                    "code": "ORU^R01",
-                    "display": "ORU^R01"
+                    "system": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
+                    "code": "unsolicited-observation",
+                    "display": "Unsolicited Observations"
                 },
                 "destination": [
                     {

@@ -35,9 +35,10 @@
   fhir:Resource.id [ fhir:value "1e1e200b-8410-48b7-abe7-9e9e59eab067"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1e1e200b-8410-48b7-abe7-9e9e59eab067</p><p><b>event</b>: notification-discharge (Details: [not stated] code notification-discharge = 'notification-discharge', stated as 'notification-discharge')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>MATSYSTEM</td><td><a href=\"MATSYSTEM\">MATSYSTEM</a></td></tr></table><p><b>focus</b>: <a href=\"#backboneelement_d183a526-a507-458b-ac79-5c09b62e5c76\">Generated Summary: unknown resource entry</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1e1e200b-8410-48b7-abe7-9e9e59eab067</p><p><b>event</b>: notification-discharge (Details: https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events code notification-discharge = 'Discharge Notification', stated as 'notification-discharge')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>MATSYSTEM</td><td><a href=\"MATSYSTEM\">MATSYSTEM</a></td></tr></table><p><b>focus</b>: <a href=\"#backboneelement_d183a526-a507-458b-ac79-5c09b62e5c76\">Generated Summary: unknown resource entry</a></p></div>"
   ];
   fhir:MessageHeader.eventCoding [
+     fhir:Coding.system [ fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events" ];
      fhir:Coding.code [ fhir:value "notification-discharge" ];
      fhir:Coding.display [ fhir:value "notification-discharge" ]
   ];
@@ -198,7 +199,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://fhir.hl7.org.ukR4/CodeSystem/UKCore-NHSNumberVerificationStatus" ];
+           fhir:Coding.system [ fhir:value "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" ];
            fhir:Coding.code [ fhir:value "01" ]
          ]
        ]

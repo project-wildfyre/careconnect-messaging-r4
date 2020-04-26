@@ -360,7 +360,7 @@
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "https://fhir.hl7.org.ukR4/CodeSystem/UKCore-NHSNumberVerificationStatus" ];
+           fhir:Coding.system [ fhir:value "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" ];
            fhir:Coding.code [ fhir:value "01" ]
          ]
        ]

@@ -202,21 +202,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="MessageDefinition-notification-admit.html"
                      title="MessageDefinition/notification-admit">Notitification Admission</a>
                </td>
-               <td>Admission Notification - care provision started</td>
+               <td>Admission Notification - care provision started. FHIR equivalent of HL7v2 ADT^A01</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MessageDefinition-notification-discharge.html"
                      title="MessageDefinition/notification-discharge">Notitification Discharge</a>
                </td>
-               <td>Discharge Notification - patient handed over.</td>
+               <td>Discharge Notification - patient handed over. FHIR equivalent of HL7v2 ADT^A03</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="MessageDefinition-unsolicited-observation.html"
                      title="MessageDefinition/unsolicited-observation">Diagnostic Messaging</a>
                </td>
-               <td>Unsolicited transmission of an observation message</td>
+               <td>Unsolicited transmission of an observation message. FHIR equivalent of HL7v2 ORU^R01</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageDefinition-patient-create.html"
+                     title="MessageDefinition/patient-create">Patient Create</a>
+               </td>
+               <td>Patient Create. FHIR equivalent of HL7v2 ADT^A28</td>
             </tr>
          </tbody>
       </table>
@@ -252,24 +259,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-notification-admit-transaction.html"
-                     title="Bundle/notification-admit-transaction">notification-admit-transaction</a>
-               </td>
-               <td>Notifiation Admission FHIR Transaction - Admit a patient</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Bundle-notification-discharge.html"
                      title="Bundle/notification-discharge">Notification Discharge FHIR Message</a>
                </td>
                <td>Notification Discharge FHIR Message - Discharge a patient</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-notification-discharge-transaction.html"
-                     title="Bundle/notification-discharge-transaction">Notification Discharge FHIR Transaction</a>
-               </td>
-               <td>Notification Discharge FHIR Transaction - Discharge a patient</td>
             </tr>
             <tr>
                <td style="column-width:30%">
@@ -279,23 +272,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-patient-create-transaction.html"
-                     title="Bundle/patient-create-transaction">Patient Create FHIR Transaction</a>
-               </td>
-               <td>Patient Create FHIR Transaction - Add person information</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Bundle-news2-report.html" title="Bundle/news2-report">NEWS2 Diagnostic Report FHIR Message Example</a>
                </td>
                <td>NEWS2 Diagnostic Report FHIR Message Example</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-news2-report-transaction.html"
-                     title="Bundle/news2-report-transaction">NEWS2 Diagnostic Report FHIR Transaction Example</a>
-               </td>
-               <td>NEWS2 Diagnostic Report FHIR Transaction Example</td>
             </tr>
          </tbody>
       </table>
@@ -313,7 +292,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 24, 2020 08:29+0100">2020-04-24</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Apr 26, 2020 08:33+0100">2020-04-26</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

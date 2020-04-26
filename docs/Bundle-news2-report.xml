@@ -312,7 +312,7 @@
           <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
             <valueCodeableConcept>
               <coding>
-                <system value="https://fhir.hl7.org.ukR4/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+                <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
                 <code value="01"/>
               </coding>
             </valueCodeableConcept>

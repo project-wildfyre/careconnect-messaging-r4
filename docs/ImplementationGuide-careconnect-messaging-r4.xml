@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-04-24T08:29:28+01:00"/>
+  <date value="2020-04-26T08:33:02+01:00"/>
   <publisher value="gmdigitialplatforms.nhs.uk"/>
   <contact>
     <telecom>
@@ -214,20 +214,6 @@
         <valueString value="Bundle"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-notification-admit-transaction.html"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/notification-admit-transaction"/>
-      </reference>
-      <name value="notification-admit-transaction"/>
-      <description value="Notifiation Admission FHIR Transaction - Admit a patient"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Bundle-notification-discharge.html"/>
       </extension>
       <reference>
@@ -235,20 +221,6 @@
       </reference>
       <name value="Notification Discharge FHIR Message"/>
       <description value="Notification Discharge FHIR Message - Discharge a patient"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-notification-discharge-transaction.html"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/notification-discharge-transaction"/>
-      </reference>
-      <name value="Notification Discharge FHIR Transaction"/>
-      <description value="Notification Discharge FHIR Transaction - Discharge a patient"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -267,20 +239,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-patient-create-transaction.html"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/patient-create-transaction"/>
-      </reference>
-      <name value="Patient Create FHIR Transaction"/>
-      <description value="Patient Create FHIR Transaction - Add person information"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MessageDefinition"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -290,7 +248,7 @@
         <reference value="MessageDefinition/notification-admit"/>
       </reference>
       <name value="Notitification Admission"/>
-      <description value="Admission Notification - care provision started"/>
+      <description value="Admission Notification - care provision started. FHIR equivalent of HL7v2 ADT^A01"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -303,7 +261,7 @@
         <reference value="MessageDefinition/notification-discharge"/>
       </reference>
       <name value="Notitification Discharge"/>
-      <description value="Discharge Notification - patient handed over."/>
+      <description value="Discharge Notification - patient handed over. FHIR equivalent of HL7v2 ADT^A03"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -317,20 +275,6 @@
       </reference>
       <name value="NEWS2 Diagnostic Report FHIR Message Example"/>
       <description value="NEWS2 Diagnostic Report FHIR Message Example"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bundle-news2-report-transaction.html"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/news2-report-transaction"/>
-      </reference>
-      <name value="NEWS2 Diagnostic Report FHIR Transaction Example"/>
-      <description value="NEWS2 Diagnostic Report FHIR Transaction Example"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -383,7 +327,20 @@
         <reference value="MessageDefinition/unsolicited-observation"/>
       </reference>
       <name value="Diagnostic Messaging"/>
-      <description value="Unsolicited transmission of an observation message"/>
+      <description value="Unsolicited transmission of an observation message. FHIR equivalent of HL7v2 ORU^R01"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MessageDefinition-patient-create.html"/>
+      </extension>
+      <reference>
+        <reference value="MessageDefinition/patient-create"/>
+      </reference>
+      <name value="Patient Create"/>
+      <description value="Patient Create. FHIR equivalent of HL7v2 ADT^A28"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

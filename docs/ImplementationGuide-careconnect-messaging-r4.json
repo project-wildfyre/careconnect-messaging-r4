@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-04-24T08:29:28+01:00",
+  "date": "2020-04-26T08:33:02+01:00",
   "publisher": "gmdigitialplatforms.nhs.uk",
   "contact": [
     {
@@ -335,24 +335,6 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bundle-notification-admit-transaction.html"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/notification-admit-transaction"
-        },
-        "name": "notification-admit-transaction",
-        "description": "Notifiation Admission FHIR Transaction - Admit a patient",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Bundle-notification-discharge.html"
           }
         ],
@@ -361,24 +343,6 @@
         },
         "name": "Notification Discharge FHIR Message",
         "description": "Notification Discharge FHIR Message - Discharge a patient",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bundle-notification-discharge-transaction.html"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/notification-discharge-transaction"
-        },
-        "name": "Notification Discharge FHIR Transaction",
-        "description": "Notification Discharge FHIR Transaction - Discharge a patient",
         "exampleBoolean": true
       },
       {
@@ -403,24 +367,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bundle-patient-create-transaction.html"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/patient-create-transaction"
-        },
-        "name": "Patient Create FHIR Transaction",
-        "description": "Patient Create FHIR Transaction - Add person information",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MessageDefinition"
           },
           {
@@ -432,7 +378,7 @@
           "reference": "MessageDefinition/notification-admit"
         },
         "name": "Notitification Admission",
-        "description": "Admission Notification - care provision started"
+        "description": "Admission Notification - care provision started. FHIR equivalent of HL7v2 ADT^A01"
       },
       {
         "extension": [
@@ -449,7 +395,7 @@
           "reference": "MessageDefinition/notification-discharge"
         },
         "name": "Notitification Discharge",
-        "description": "Discharge Notification - patient handed over."
+        "description": "Discharge Notification - patient handed over. FHIR equivalent of HL7v2 ADT^A03"
       },
       {
         "extension": [
@@ -467,24 +413,6 @@
         },
         "name": "NEWS2 Diagnostic Report FHIR Message Example",
         "description": "NEWS2 Diagnostic Report FHIR Message Example",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bundle-news2-report-transaction.html"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/news2-report-transaction"
-        },
-        "name": "NEWS2 Diagnostic Report FHIR Transaction Example",
-        "description": "NEWS2 Diagnostic Report FHIR Transaction Example",
         "exampleBoolean": true
       },
       {
@@ -553,7 +481,24 @@
           "reference": "MessageDefinition/unsolicited-observation"
         },
         "name": "Diagnostic Messaging",
-        "description": "Unsolicited transmission of an observation message"
+        "description": "Unsolicited transmission of an observation message. FHIR equivalent of HL7v2 ORU^R01"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageDefinition"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MessageDefinition-patient-create.html"
+          }
+        ],
+        "reference": {
+          "reference": "MessageDefinition/patient-create"
+        },
+        "name": "Patient Create",
+        "description": "Patient Create. FHIR equivalent of HL7v2 ADT^A28"
       }
     ],
     "page": {

@@ -43,26 +43,10 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/notification-admit-transaction"></reference>
-      </reference>
-      <name value="notification-admit-transaction"></name>
-      <description value="Notifiation Admission FHIR Transaction - Admit a patient"></description>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Bundle/notification-discharge"></reference>
       </reference>
       <name value="Notification Discharge FHIR Message"></name>
       <description value="Notification Discharge FHIR Message - Discharge a patient"></description>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/notification-discharge-transaction"></reference>
-      </reference>
-      <name value="Notification Discharge FHIR Transaction"></name>
-      <description value="Notification Discharge FHIR Transaction - Discharge a patient"></description>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -75,25 +59,17 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/patient-create-transaction"></reference>
-      </reference>
-      <name value="Patient Create FHIR Transaction"></name>
-      <description value="Patient Create FHIR Transaction - Add person information"></description>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="MessageDefinition/notification-admit"/>
       </reference>
       <name value="Notitification Admission"/>
-      <description value="Admission Notification - care provision started"/>
+      <description value="Admission Notification - care provision started. FHIR equivalent of HL7v2 ADT^A01"/>
     </resource>
     <resource>
       <reference>
         <reference value="MessageDefinition/notification-discharge"/>
       </reference>
       <name value="Notitification Discharge"/>
-      <description value="Discharge Notification - patient handed over."/>
+      <description value="Discharge Notification - patient handed over. FHIR equivalent of HL7v2 ADT^A03"/>
     </resource>
     <resource>
       <reference>
@@ -101,14 +77,6 @@
       </reference>
       <name value="NEWS2 Diagnostic Report FHIR Message Example"></name>
       <description value="NEWS2 Diagnostic Report FHIR Message Example"></description>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/news2-report-transaction"></reference>
-      </reference>
-      <name value="NEWS2 Diagnostic Report FHIR Transaction Example"></name>
-      <description value="NEWS2 Diagnostic Report FHIR Transaction Example"></description>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -137,7 +105,14 @@
         <reference value="MessageDefinition/unsolicited-observation"></reference>
       </reference>
       <name value="Diagnostic Messaging"></name>
-      <description value="Unsolicited transmission of an observation message"></description>
+      <description value="Unsolicited transmission of an observation message. FHIR equivalent of HL7v2 ORU^R01"></description>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/patient-create"></reference>
+      </reference>
+      <name value="Patient Create"></name>
+      <description value="Patient Create. FHIR equivalent of HL7v2 ADT^A28"></description>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

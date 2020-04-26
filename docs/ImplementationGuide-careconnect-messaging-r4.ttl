@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Care Connect Messaging"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-24T08:29:28+01:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-26T08:33:02+01:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -320,24 +320,6 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Bundle-notification-admit-transaction.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/notification-admit-transaction>;
-         fhir:Reference.reference [ fhir:value "Bundle/notification-admit-transaction" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "notification-admit-transaction" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Notifiation Admission FHIR Transaction - Admit a patient" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "Bundle-notification-discharge.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -348,25 +330,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Notification Discharge FHIR Message - Discharge a patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Bundle-notification-discharge-transaction.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/notification-discharge-transaction>;
-         fhir:Reference.reference [ fhir:value "Bundle/notification-discharge-transaction" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Notification Discharge FHIR Transaction" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Notification Discharge FHIR Transaction - Discharge a patient" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 4;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -384,25 +348,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Create FHIR Message - Add person information" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Bundle-patient-create-transaction.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/patient-create-transaction>;
-         fhir:Reference.reference [ fhir:value "Bundle/patient-create-transaction" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Create FHIR Transaction" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Create FHIR Transaction - Add person information" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -417,9 +363,9 @@
          fhir:Reference.reference [ fhir:value "MessageDefinition/notification-admit" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Notitification Admission" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Admission Notification - care provision started" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Admission Notification - care provision started. FHIR equivalent of HL7v2 ADT^A01" ]
      ], [
-       fhir:index 7;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -434,9 +380,9 @@
          fhir:Reference.reference [ fhir:value "MessageDefinition/notification-discharge" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Notitification Discharge" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Discharge Notification - patient handed over." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Discharge Notification - patient handed over. FHIR equivalent of HL7v2 ADT^A03" ]
      ], [
-       fhir:index 8;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -454,25 +400,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NEWS2 Diagnostic Report FHIR Message Example" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ], [
-         fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Bundle-news2-report-transaction.html" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/Bundle/news2-report-transaction>;
-         fhir:Reference.reference [ fhir:value "Bundle/news2-report-transaction" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NEWS2 Diagnostic Report FHIR Transaction Example" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NEWS2 Diagnostic Report FHIR Transaction Example" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 10;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -489,7 +417,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Server conformance for Diagnostic Message Handling" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Server conformance for Diagnostic Message Handling" ]
      ], [
-       fhir:index 11;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -506,7 +434,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Server conformance for Encounter Message Handling" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Server conformance for Encounter Message Handling" ]
      ], [
-       fhir:index 12;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -523,7 +451,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Messaging Events" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NHS Greater Manchester Messaging Events" ]
      ], [
-       fhir:index 13;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -538,7 +466,24 @@
          fhir:Reference.reference [ fhir:value "MessageDefinition/unsolicited-observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnostic Messaging" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unsolicited transmission of an observation message" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unsolicited transmission of an observation message. FHIR equivalent of HL7v2 ORU^R01" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageDefinition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "MessageDefinition-patient-create.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/patient-create>;
+         fhir:Reference.reference [ fhir:value "MessageDefinition/patient-create" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Create" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Create. FHIR equivalent of HL7v2 ADT^A28" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

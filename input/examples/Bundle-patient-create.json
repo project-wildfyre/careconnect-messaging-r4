@@ -13,6 +13,7 @@
                 "resourceType": "MessageHeader",
                 "id": "844ebe20-78f0-4d77-8890-44d588717ca9",
                 "eventCoding": {
+                    "system": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
                     "code": "patient-create",
                     "display": "patient-create"
                 },
@@ -56,7 +57,7 @@
                                 "valueCodeableConcept": {
                                     "coding": [
                                         {
-                                            "system": "https://fhir.hl7.org.ukR4/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus",
                                             "code": "01"
                                         }
                                     ]

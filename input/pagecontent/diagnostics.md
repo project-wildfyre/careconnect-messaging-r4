@@ -22,7 +22,3 @@ OBX|7|NM|1091811000000102^Diastolic arterial pressure^SNM|BP|86|mm[Hg]|60-80|H||
 #### FHIR Message  
 
 [NEWS2 FHIR Message](Bundle-news2-report.html)
-
-#### FHIR Transaction
-
-[NEWS2 FHIR Transaction](Bundle-news2-report-transaction.html)

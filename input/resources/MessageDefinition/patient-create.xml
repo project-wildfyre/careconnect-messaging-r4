@@ -1,0 +1,25 @@
+<MessageDefinition xmlns="http://hl7.org/fhir">
+    <id value="patient-create"></id>
+    <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/patient-create"></url>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"></system>
+        <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664"></value>
+    </identifier>
+    <version value="1.0.0"></version>
+    <title value="Patient Create"></title>
+    <status value="active"></status>
+    <date value="2020-04-26T04:49:51.688+01:00"></date>
+    <copyright value="Copyright © 2020 Project Wildfyre"></copyright>
+    <eventCoding>
+        <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events"></system>
+        <code value="patient-create"></code>
+        <display value="Patient Create"></display>
+    </eventCoding>
+    <category value="notification"></category>
+    <focus>
+        <code value="Patient"></code>
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient"/>
+        <min value="1"/>
+        <max value="1"/>
+    </focus>
+</MessageDefinition>

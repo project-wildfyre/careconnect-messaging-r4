@@ -28,12 +28,6 @@ ZU8|Z|1|No
 
 [Notification Admit FHIR Message](Bundle-notification-admit.html)
 
-#### HL7 FHIR Notifcation Admit Transaction
-
-(for use with pure FHIR Server)
-
-[Notification Admit FHIR Transaction](Bundle-notification-admit-transaction.html)
-
 ### Notification Discharge Patient
 
 #### HL7 v2 ADT^A03 Patient Discharge
@@ -50,12 +44,6 @@ PV2|||Labour||||||||||||||||||||||2|||||||||||||C
 #### HL7 FHIR Notifcation Discharge Message
 
 [Notification Discharge FHIR Message](Bundle-notification-discharge.html)
-
-#### HL7 FHIR Notifcation Discharge Transaction
-
-(for use with pure FHIR Server)
-
-[Notification Discharge FHIR Transaction](Bundle-notification-discharge-transaction.html)
 
 
 ### Create New Patient
@@ -76,6 +64,3 @@ ZU8|U|1|Yes|
 
 [Patient Create FHIR Message](Bundle-patient-create.html)
 
-#### HL7 FHIR Patient Create Transaction
-
-[Patient Create FHIR Transaction](Bundle-patient-create-transaction.html)

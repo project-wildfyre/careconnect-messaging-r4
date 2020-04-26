@@ -13,6 +13,7 @@
                 "resourceType": "MessageHeader",
                 "id": "1e1e200b-8410-48b7-abe7-9e9e59eab067",
                 "eventCoding": {
+                    "system": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
                     "code": "notification-discharge",
                     "display": "notification-discharge"
                 },
@@ -189,7 +190,7 @@
                                 "valueCodeableConcept": {
                                     "coding": [
                                         {
-                                            "system": "https://fhir.hl7.org.ukR4/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus",
                                             "code": "01"
                                         }
                                     ]

@@ -16,7 +16,7 @@
   fhir:CapabilityStatement.version [ fhir:value "4.0.0"];
   fhir:CapabilityStatement.name [ fhir:value "Diagnostic Messaging Support"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
-  fhir:CapabilityStatement.date [ fhir:value "2020-04-26T08:33:02+01:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.date [ fhir:value "2020-04-30T09:14:36+01:00"^^xsd:dateTime];
   fhir:CapabilityStatement.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;

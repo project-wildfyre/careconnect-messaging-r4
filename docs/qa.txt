@@ -2,27 +2,27 @@
 =========================================
 
 err = 8, warn = 17, info = 8
-IG Publisher Version: v1.0.82-SNAPSHOT
-Generated Sun Apr 26 08:33:25 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+IG Publisher Version: v1.0.85-SNAPSHOT
+Generated Thu Apr 30 09:14:50 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
  Build Errors : 1 / 1
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report : 2 / 5
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-admit : 1 / 4
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-discharge : 1 / 3
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-create : 1 / 0
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/capabilitystatement/diagnostic-messaging : 1 / 2
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/capabilitystatement/encounter-messaging : 1 / 2
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig : 0 / 1
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/codesystem/message-events : 0 / 1
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/notification-admit : 0 / 2
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/notification-discharge : 0 / 2
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/patient-create : 1 / 1
- /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/messagedefinition/unsolicited-observation : 0 / 2
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-news2-report : 2 / 5
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-admit : 1 / 4
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-discharge : 1 / 3
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-create : 1 / 0
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\capabilitystatement\diagnostic-messaging : 1 / 2
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\capabilitystatement\encounter-messaging : 1 / 2
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig : 0 / 1
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\codesystem\message-events : 0 / 1
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\notification-admit : 0 / 2
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\notification-discharge : 0 / 2
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\patient-create : 1 / 1
+ C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\unsolicited-observation : 0 / 2
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[21].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be careconnect.messaging.r4
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-news2-report.json ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-news2-report.json ==
 WARNING: Bundle/news2-report: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observations'
 INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).code: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes), and a code is recommended to come from this value set) (codes = http://snomed.info/sct#118227000)
 WARNING: Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).code.coding[0]: The display "Vital Signs" is not a valid display for the code {http://snomed.info/sct}118227000 - should be one of ["Vital signs finding","Vital signs finding (finding)"]
@@ -30,40 +30,40 @@ INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticRepo
 INFORMATION: Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).result[5]: Details for urn:oid:6c87c7b5-632f-431d-b15d-fad1d93d360c matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation
 ERROR: Bundle/news2-report: Bundle.entry[5].resource.ofType(Observation).code.coding[0]: unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for "http://snomed.info/sct#1104441000000107"
 ERROR: Bundle/news2-report: Bundle.entry[7].resource.ofType(Observation).component[1].code.coding[0]: unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for "http://snomed.info/sct#1091811000000102"
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-admit.json ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-admit.json ==
 WARNING: Bundle/notification-admit: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-admit should be one of 'Admission Notification' instead of 'notification-admit'
 INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.ofType(Encounter).type[1].coding[0]: Code System URI "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1" is unknown so the code cannot be validated
 INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.ofType(Encounter).hospitalization.admitSource: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source), and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)
 ERROR: Bundle/notification-admit: Bundle.entry[4].resource.ofType(Condition).code.coding[0]: Code "N39.3" not found; The code "N39.3" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#N39.3) is not  valid in the value set All codes known to the system for "http://hl7.org/fhir/sid/icd-10#N39.3"
 INFORMATION: Bundle/notification-admit: Bundle.entry[5].resource.ofType(Procedure).code.coding[0]: Code System URI "https://fhir.nhs.uk/Id/opcs-4" is unknown so the code cannot be validated
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-notification-discharge.json ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-discharge.json ==
 WARNING: Bundle/notification-discharge: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-discharge should be one of 'Discharge Notification' instead of 'notification-discharge'
 INFORMATION: Bundle/notification-discharge: Bundle.entry[1].resource.ofType(Encounter).type[1].coding[0]: Code System URI "https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1" is unknown so the code cannot be validated
 INFORMATION: Bundle/notification-discharge: Bundle.entry[1].resource.ofType(Encounter).hospitalization.admitSource: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source), and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#79)
 ERROR: Bundle/notification-discharge: Bundle.entry[1].resource.ofType(Encounter).hospitalization.dischargeDisposition.coding[0]: Unknown Code https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod#19 in https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod for "https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod#19"
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/examples/Bundle-patient-create.json ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-create.json ==
 ERROR: Bundle/patient-create: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): Unknown Code https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#patient-create in https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events for "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#patient-create"
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CapabilityStatement/diagnostic-messaging.xml ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\CapabilityStatement\diagnostic-messaging.xml ==
 WARNING: CapabilityStatement/diagnostic-messaging: CapabilityStatement: cpb-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: CapabilityStatement/diagnostic-messaging: CapabilityStatement: cpb-14: If kind = instance, implementation must be present and software may be present [(kind != 'instance') or implementation.exists()]
 WARNING: CapabilityStatement/diagnostic-messaging: CapabilityStatement.rest[0].security.service[0]: Display Name for http://terminology.hl7.org/CodeSystem/restful-security-service#OAuth should be one of 'OAuth' instead of 'OAuth2 Token'
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CapabilityStatement/encounter-messaging.xml ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\CapabilityStatement\encounter-messaging.xml ==
 WARNING: CapabilityStatement/encounter-messaging: CapabilityStatement: cpb-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: CapabilityStatement/encounter-messaging: CapabilityStatement: cpb-14: If kind = instance, implementation must be present and software may be present [(kind != 'instance') or implementation.exists()]
 WARNING: CapabilityStatement/encounter-messaging: CapabilityStatement.rest[0].security.service[0]: Display Name for http://terminology.hl7.org/CodeSystem/restful-security-service#OAuth should be one of 'OAuth' instead of 'OAuth2 Token'
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/careconnect-messaging-ig.xml ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig.xml ==
 WARNING: ImplementationGuide/careconnect-messaging-r4: ImplementationGuide: ig-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/CodeSystem/message-events.xml ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\CodeSystem\message-events.xml ==
 WARNING: CodeSystem/message-events: CodeSystem: csd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/notification-admit.xml ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\notification-admit.xml ==
 WARNING: MessageDefinition/notification-admit: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: MessageDefinition/notification-admit: MessageDefinition.event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-admit should be one of 'Admission Notification' instead of 'Notification Admit'
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/notification-discharge.xml ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\notification-discharge.xml ==
 WARNING: MessageDefinition/notification-discharge: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: MessageDefinition/notification-discharge: MessageDefinition.event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-discharge should be one of 'Discharge Notification' instead of 'Notification Discharge'
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/patient-create.xml ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\patient-create.xml ==
 WARNING: MessageDefinition/patient-create: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 ERROR: MessageDefinition/patient-create: MessageDefinition.event.ofType(Coding): Unknown Code https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#patient-create in https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events for "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#patient-create"
-== /Users/kevinmayfield/Development/wildfyre/careconnect-messaging-r4/input/resources/MessageDefinition/unsolicited-observation.xml ==
+== C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\unsolicited-observation.xml ==
 WARNING: MessageDefinition/unsolicited-observation: MessageDefinition: msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
 WARNING: MessageDefinition/unsolicited-observation: MessageDefinition.event.ofType(Coding): Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observation Message'

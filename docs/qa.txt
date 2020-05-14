@@ -3,7 +3,7 @@
 
 err = 6, warn = 18, info = 8
 IG Publisher Version: v1.0.85-SNAPSHOT Out of date - current version is v1.0.94-SNAPSHOT
-Generated Thu May 14 11:07:20 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
+Generated Thu May 14 12:00:19 BST 2020. FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = https://project-wildfyre.github.io/careconnect-messaging-r4)
 
  Build Errors : 1 / 1
  C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-news2-report : 2 / 5

@@ -15,7 +15,7 @@
   "version": "4.0.0",
   "title": "Patient Admission Notification",
   "status": "active",
-  "date": "2020-05-14T11:06:53+01:00",
+  "date": "2020-05-14T11:59:58+01:00",
   "publisher": "gmdigitialplatforms.nhs.uk",
   "contact": [
     {
@@ -37,7 +37,6 @@
       ]
     }
   ],
-  "copyright": "Copyright © 2020 Project Wildfyre",
   "eventCoding": {
     "system": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
     "code": "notification-admit",

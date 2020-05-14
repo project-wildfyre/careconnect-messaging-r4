@@ -8,7 +8,6 @@
     <version value="1.0.0"></version>
     <title value="Patient Discharge Notification"></title>
     <status value="active"></status>
-    <copyright value="Copyright © 2020 Project Wildfyre"></copyright>
     <eventCoding>
         <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events"></system>
         <code value="notification-discharge"></code>

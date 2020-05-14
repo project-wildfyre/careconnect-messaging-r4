@@ -21,7 +21,7 @@
   fhir:MessageDefinition.version [ fhir:value "4.0.0"];
   fhir:MessageDefinition.title [ fhir:value "Patient Admission Notification"];
   fhir:MessageDefinition.status [ fhir:value "active"];
-  fhir:MessageDefinition.date [ fhir:value "2020-05-14T11:06:53+01:00"^^xsd:dateTime];
+  fhir:MessageDefinition.date [ fhir:value "2020-05-14T11:59:58+01:00"^^xsd:dateTime];
   fhir:MessageDefinition.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:MessageDefinition.contact [
      fhir:index 0;
@@ -39,7 +39,6 @@
        fhir:Coding.code [ fhir:value "826" ]
      ]
   ];
-  fhir:MessageDefinition.copyright [ fhir:value "Copyright © 2020 Project Wildfyre"];
   fhir:MessageDefinition.eventCoding [
      fhir:Coding.system [ fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events" ];
      fhir:Coding.code [ fhir:value "notification-admit" ];

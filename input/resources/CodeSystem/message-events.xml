@@ -7,9 +7,7 @@
         <system value="http://fhir.gmdigitalplatforms.nhs.uk/identifiers/codesystems"/>
         <value value="message-events"/>
     </identifier>
-
     <version value="4.0.0"/>
-
     <name value="Message Events"/>
     <title value="Message Events"/>
     <status value="draft"/>

@@ -8,7 +8,7 @@
     <kind value="instance"/>
     <fhirVersion value="4.0.1"/>
     <format value="application/fhir+json"/>
-    <format value="application/fhir+json"/>
+    <format value="application/fhir+xml"/>
     <rest>
         <mode value="server"/>
         <security>

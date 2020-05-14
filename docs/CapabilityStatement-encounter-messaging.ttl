@@ -16,7 +16,7 @@
   fhir:CapabilityStatement.version [ fhir:value "4.0.0"];
   fhir:CapabilityStatement.name [ fhir:value "Encounter Messaging Support"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
-  fhir:CapabilityStatement.date [ fhir:value "2020-04-30T09:14:36+01:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.date [ fhir:value "2020-05-14T11:01:21+01:00"^^xsd:dateTime];
   fhir:CapabilityStatement.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;
@@ -41,7 +41,7 @@
      fhir:value "application/fhir+json";
      fhir:index 0
   ], [
-     fhir:value "application/fhir+json";
+     fhir:value "application/fhir+xml";
      fhir:index 1
   ];
   fhir:CapabilityStatement.rest [

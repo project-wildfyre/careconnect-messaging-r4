@@ -38,4 +38,8 @@
         <code value="notification-discharge"/>
         <display value="Discharge Notification"/>
     </concept>
+    <concept>
+        <code value="patient-create"/>
+        <display value="Patient Create"/>
+    </concept>
 </CodeSystem>

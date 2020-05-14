@@ -3,9 +3,9 @@
   "name": "Care Connect Messaging",
   "package-id": "careconnect.messaging.r4",
   "ig-ver": "4.0.0",
-  "date": "Thu, 14 May, 2020 11:01:21 +0100",
-  "errs": 8,
-  "warnings": 17,
+  "date": "Thu, 14 May, 2020 11:06:53 +0100",
+  "errs": 6,
+  "warnings": 18,
   "hints": 8,
   "version": "4.0.1",
   "tool": "4.2.0 (3)"

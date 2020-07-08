@@ -9,14 +9,14 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "encounter-messaging"];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Encounter Messaging Support</h2><div><p>Minimal conformance requirements for a encounter messaging service</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr></table></div>"
   ];
   fhir:CapabilityStatement.url [ fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/CapabilityStatement/encounter-messaging"];
   fhir:CapabilityStatement.version [ fhir:value "4.0.0"];
   fhir:CapabilityStatement.name [ fhir:value "Encounter Messaging Support"];
   fhir:CapabilityStatement.status [ fhir:value "active"];
-  fhir:CapabilityStatement.date [ fhir:value "2020-05-14T11:59:58+01:00"^^xsd:dateTime];
+  fhir:CapabilityStatement.date [ fhir:value "2020-07-08T15:03:26+01:00"^^xsd:dateTime];
   fhir:CapabilityStatement.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;

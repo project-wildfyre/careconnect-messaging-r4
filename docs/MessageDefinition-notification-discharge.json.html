@@ -1,3 +1,5 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -37,11 +39,12 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"10.4"}
-    h3,h4,h5,h6{--heading-prefix:"10.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.5"}
+    h3,h4,h5,h6{--heading-prefix:"10.5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
@@ -131,30 +134,65 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <a name="root"> </a>
-  <h2 id="root">Notitification Discharge - JSON Representation</h2>
-  <p>
-    <a href="MessageDefinition-notification-discharge.html">(back to description)</a>
-  </p>
-  <p>
-    <a href="MessageDefinition-notification-discharge.json">Raw json</a>
-  </p>
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="MessageDefinition-notification-discharge.html">Narrative Content</a>
+  </li>
+
+
   
+    <li>
+      <a href="MessageDefinition-notification-discharge.xml.html">XML</a>
+    </li>
   
+
+
   
-  <p>
-    <b>Source view</b>
-  </p>
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
   
+
+
+  
+    <li>
+      <a href="MessageDefinition-notification-discharge.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Notitification Discharge - JSON Representation</h2>
+
+<p><a href="MessageDefinition-notification-discharge.json" no-download="true">Raw json</a> | <a href="MessageDefinition-notification-discharge.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
   <pre class="json">
 {
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition">resourceType</a>" : "MessageDefinition",
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.id">id</a>" : "notification-discharge",
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: notification-discharge&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\&quot;https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge\&quot;&gt;https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: c81b88dc-760e-4b1e-9cdb-c5f853630664&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 4.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Patient Discharge Notification&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 14 May 2020, 11:59:58&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: gmdigitialplatforms.nhs.uk&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: mailto:kevin.mayfield1@nhs.net&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United Kingdom of Great Britain and Northern Ireland (GBR) &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '826' = 'United Kingdom of Great Britain and Northern Ireland (GBR))&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: Notification Discharge (Details: https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events code notification-discharge = 'Discharge Notification', stated as 'Notification Discharge')&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: notification&lt;/p&gt;&lt;h3&gt;Focus&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Max&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Encounter&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter\&quot;&gt;https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter&lt;/a&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: notification-discharge&lt;/p&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;a href=\&quot;https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge\&quot;&gt;https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: c81b88dc-760e-4b1e-9cdb-c5f853630664&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 4.0.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: Patient Discharge Notification&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 8 Jul 2020, 15:03:26&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: gmdigitialplatforms.nhs.uk&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: mailto:kevin.mayfield1@nhs.net&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 826}\&quot;&gt;United Kingdom of Great Britain and Northern Ireland (GBR)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: &lt;span title=\&quot;{https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events notification-discharge}\&quot;&gt;Notification Discharge&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: notification&lt;/p&gt;&lt;h3&gt;Focus&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Max&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Encounter&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter\&quot;&gt;https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter&lt;/a&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.url">url</a>" : "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge",
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.identifier">identifier</a>" : [
@@ -166,7 +204,7 @@
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.version">version</a>" : "4.0.0",
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.title">title</a>" : "Patient Discharge Notification",
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.date">date</a>" : "2020-05-14T11:59:58+01:00",
+  "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.date">date</a>" : "2020-07-08T15:03:26+01:00",
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.publisher">publisher</a>" : "gmdigitialplatforms.nhs.uk",
   "<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.contact">contact</a>" : [
     {
@@ -205,20 +243,32 @@
 }</pre>
 
 
+  <!-- insert notes if present -->
   
-  
+
+
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 14, 2020 11:59+0100">2020-05-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 8, 2020 15:03+0100">2020-07-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -238,7 +288,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

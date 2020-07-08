@@ -1,3 +1,5 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -41,7 +43,8 @@
     h3,h4,h5,h6{--heading-prefix:"10.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
@@ -131,36 +134,71 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <a name="root"> </a>
-  <h2 id="root">Server conformance for Diagnostic Message Handling - JSON Representation</h2>
-  <p>
-    <a href="CapabilityStatement-diagnostic-messaging.html">(back to description)</a>
-  </p>
-  <p>
-    <a href="CapabilityStatement-diagnostic-messaging.json">Raw json</a>
-  </p>
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CapabilityStatement-diagnostic-messaging.html">Narrative Content</a>
+  </li>
+
+
   
+    <li>
+      <a href="CapabilityStatement-diagnostic-messaging.xml.html">XML</a>
+    </li>
   
+
+
   
-  <p>
-    <b>Source view</b>
-  </p>
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
   
+
+
+  
+    <li>
+      <a href="CapabilityStatement-diagnostic-messaging.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Server conformance for Diagnostic Message Handling - JSON Representation</h2>
+
+<p><a href="CapabilityStatement-diagnostic-messaging.json" no-download="true">Raw json</a> | <a href="CapabilityStatement-diagnostic-messaging.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
   <pre class="json">
 {
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement">resourceType</a>" : "CapabilityStatement",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a>" : "diagnostic-messaging",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Diagnostic Messaging Support&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Minimal conformance requirements for a diagnostic messaging service&lt;/p&gt;\n&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Mode&lt;/td&gt;&lt;td&gt;SERVER&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Description&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Transaction&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System History&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System Search&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;&lt;b&gt;Resource Type&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET a resource (read interaction)\&quot;&gt;Read&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;GET all set of resources of the type (search interaction)\&quot;&gt;Search&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;PUT a new resource version (update interaction)\&quot;&gt;Update&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b title=\&quot;POST a new resource (create interaction)\&quot;&gt;Create&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a>" : "https://project-wildfyre.github.io/careconnect-messaging-r4/CapabilityStatement/diagnostic-messaging",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a>" : "4.0.0",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">name</a>" : "Diagnostic Messaging Support",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2020-05-14T11:59:58+01:00",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a>" : "2020-07-08T15:03:26+01:00",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a>" : "gmdigitialplatforms.nhs.uk",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>" : [
     {
@@ -230,20 +268,32 @@
 }</pre>
 
 
+  <!-- insert notes if present -->
   
-  
+
+
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 14, 2020 11:59+0100">2020-05-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 8, 2020 15:03+0100">2020-07-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -263,7 +313,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

@@ -37,11 +37,12 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"10.7"}
-    h3,h4,h5,h6{--heading-prefix:"10.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.10"}
+    h3,h4,h5,h6{--heading-prefix:"10.10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
@@ -133,10 +134,51 @@
           <div class="inner-wrapper">
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CodeSystem-message-events.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-message-events.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-message-events.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
   <a name="root"> </a>
-  <h2 id="root">Messaging Events</h2>
+  <h2 id="root">CodeSystem: Messaging Events</h2>
+
+  <!-- insert intro if present -->
   
-  
+
+
+
   <p>
     <b>Summary</b>
   </p>
@@ -159,29 +201,41 @@
   <p>
   This Code system is referenced in the content logical definition of the following value sets:
   </p>
-  
-  
-<p>This CodeSystem is not used</p>
-
-
-  <div xmlns="http://www.w3.org/1999/xhtml"><h2>Message Events</h2><div><p>NHS Greater Manchester Messages</p>
-</div><p>This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">unsolicited-observation<a name="message-events-unsolicited-observation"> </a></td><td>Unsolicited transmission of an observation message</td><td></td></tr><tr><td style="white-space:nowrap">notification-admit<a name="message-events-notification-admit"> </a></td><td>Admission Notification</td><td></td></tr><tr><td style="white-space:nowrap">notification-discharge<a name="message-events-notification-discharge"> </a></td><td>Discharge Notification</td><td></td></tr><tr><td style="white-space:nowrap">patient-create<a name="message-events-patient-create"> </a></td><td>Patient Create</td><td></td></tr></table></div>
 
   
+<p>This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">unsolicited-observation<a name="message-events-unsolicited-observation"> </a></td><td>Unsolicited transmission of an observation message</td><td></td></tr><tr><td style="white-space:nowrap">notification-admit<a name="message-events-notification-admit"> </a></td><td>Admission Notification</td><td></td></tr><tr><td style="white-space:nowrap">notification-discharge<a name="message-events-notification-discharge"> </a></td><td>Discharge Notification</td><td></td></tr><tr><td style="white-space:nowrap">patient-create<a name="message-events-patient-create"> </a></td><td>Patient Create</td><td></td></tr></table></div>
+
+  <!-- insert notes if present -->
   
+
+
+
   
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 14, 2020 11:59+0100">2020-05-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 8, 2020 15:03+0100">2020-07-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -201,7 +255,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

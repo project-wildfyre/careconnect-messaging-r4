@@ -88,6 +88,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CapabilityStatement/prescribing-messaging"></reference>
+      </reference>
+      <name value="Server conformance for prescription Message Handling"></name>
+      <description value="Server conformance for prescription Message Handling"></description>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CapabilityStatement/encounter-messaging"></reference>
       </reference>
       <name value="Server conformance for Encounter Message Handling"></name>
@@ -113,6 +120,20 @@
       </reference>
       <name value="Patient Create"></name>
       <description value="Patient Create. FHIR equivalent of HL7v2 ADT^A28"></description>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/prescription-order"></reference>
+      </reference>
+      <name value="prescription-order"></name>
+      <description value="prescription-order"></description>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MessageDefinition/prescription-order-update"></reference>
+      </reference>
+      <name value="prescription-order-update"></name>
+      <description value="prescription-order-update"></description>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

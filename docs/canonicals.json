@@ -1,0 +1,73 @@
+[
+  {
+    "url": "https://fhir.nhs.uk/R4/MessageDefinition/prescription-order",
+    "id": "prescription-order",
+    "type": "MessageDefinition",
+    "version": "4.0.0"
+  },
+  {
+    "url": "https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update",
+    "id": "prescription-order-update",
+    "type": "MessageDefinition",
+    "version": "4.0.0"
+  },
+  {
+    "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/CapabilityStatement/diagnostic-messaging",
+    "id": "diagnostic-messaging",
+    "type": "CapabilityStatement",
+    "version": "4.0.0",
+    "name": "Diagnostic Messaging Support"
+  },
+  {
+    "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/CapabilityStatement/encounter-messaging",
+    "id": "encounter-messaging",
+    "type": "CapabilityStatement",
+    "version": "4.0.0",
+    "name": "Encounter Messaging Support"
+  },
+  {
+    "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/CapabilityStatement/prescribing-messaging",
+    "id": "prescribing-messaging",
+    "type": "CapabilityStatement",
+    "version": "4.0.0",
+    "name": "Prescribing Messaging Support"
+  },
+  {
+    "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
+    "id": "message-events",
+    "type": "CodeSystem",
+    "version": "4.0.0",
+    "name": "Message Events"
+  },
+  {
+    "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4",
+    "id": "careconnect-messaging-r4",
+    "type": "ImplementationGuide",
+    "version": "4.0.0",
+    "name": "Care Connect Messaging"
+  },
+  {
+    "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-admit",
+    "id": "notification-admit",
+    "type": "MessageDefinition",
+    "version": "4.0.0"
+  },
+  {
+    "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/notification-discharge",
+    "id": "notification-discharge",
+    "type": "MessageDefinition",
+    "version": "4.0.0"
+  },
+  {
+    "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/patient-create",
+    "id": "patient-create",
+    "type": "MessageDefinition",
+    "version": "4.0.0"
+  },
+  {
+    "url": "https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/unsolicited-observation",
+    "id": "unsolicited-observation",
+    "type": "MessageDefinition",
+    "version": "4.0.0"
+  }
+]

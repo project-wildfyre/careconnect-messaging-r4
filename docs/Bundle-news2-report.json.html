@@ -1,3 +1,5 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -37,11 +39,12 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"10.11"}
-    h3,h4,h5,h6{--heading-prefix:"10.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.14"}
+    h3,h4,h5,h6{--heading-prefix:"10.14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
@@ -131,23 +134,58 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <a name="root"> </a>
-  <h2 id="root">NEWS2 Diagnostic Report FHIR Message Example - JSON Representation</h2>
-  <p>
-    <a href="Bundle-news2-report.html">(back to description)</a>
-  </p>
-  <p>
-    <a href="Bundle-news2-report.json">Raw json</a>
-  </p>
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-news2-report.html">Narrative Content</a>
+  </li>
+
+
   
+    <li>
+      <a href="Bundle-news2-report.xml.html">XML</a>
+    </li>
   
+
+
   
-  <p>
-    <b>Source view</b>
-  </p>
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
   
+
+
+  
+    <li>
+      <a href="Bundle-news2-report.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: NEWS2 Diagnostic Report FHIR Message Example - JSON Representation</h2>
+
+<p><a href="Bundle-news2-report.json" no-download="true">Raw json</a> | <a href="Bundle-news2-report.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
   <pre class="json">
 {
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
@@ -165,7 +203,7 @@
         "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.id">id</a>" : "22ed2deb-effa-408c-9437-d3c4975ff448",
         "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 22ed2deb-effa-408c-9437-d3c4975ff448&lt;/p&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: Unsolicited Observations (Details: https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events code unsolicited-observation = 'Unsolicited transmission of an observation message', stated as 'Unsolicited Observations')&lt;/p&gt;&lt;h3&gt;Destinations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;ROUTE&lt;/td&gt;&lt;td&gt;ROUTE&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;ROUTE\&quot;&gt;ROUTE&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;sender&lt;/b&gt;: RCB&lt;/p&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;PAS&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;PAS\&quot;&gt;PAS&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;#backboneelement_3915b469-57b7-470f-942f-e276c4458d63\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.event[x]">eventCoding</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
@@ -206,7 +244,7 @@
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.id">id</a>" : "3915b469-57b7-470f-942f-e276c4458d63",
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 3915b469-57b7-470f-942f-e276c4458d63&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 108512374&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: unknown&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Vital Signs &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '118227000' = 'Vital signs finding', given as 'Vital Signs'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 21 May 2018, 13:45:05 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;result&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#backboneelement_11842d63-f473-4374-a00d-4caffc94c0f5\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#backboneelement_926b9534-c247-45da-916c-b5bbbfb3da6d\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#backboneelement_ac30fbfd-a166-4ebf-acd0-89fc6a8e5e46\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#backboneelement_87e13a1f-0173-415a-9f5d-66ac2746b382\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#backboneelement_3d69129a-7c83-4fa4-adbb-d21a8d5d7d92\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#backboneelement_6c87c7b5-632f-431d-b15d-fad1d93d360c\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.identifier">identifier</a>" : [
           {
@@ -259,7 +297,7 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "11842d63-f473-4374-a00d-4caffc94c0f5",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 11842d63-f473-4374-a00d-4caffc94c0f5&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 108512374-1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Heart Rate &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '364075005' = 'Heart rate', given as 'Heart Rate'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 11 May 2018, 22:05:25&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 73.0 /min&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;60-100&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>" : [
           {
@@ -299,7 +337,7 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "926b9534-c247-45da-916c-b5bbbfb3da6d",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 926b9534-c247-45da-916c-b5bbbfb3da6d&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 108512374-2&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Blood oxygen saturation &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '103228002' = 'Hemoglobin saturation with oxygen', given as 'Blood oxygen saturation'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 11 May 2018, 22:05:25&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 98.0 %&lt;/p&gt;&lt;h3&gt;ReferenceRanges&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Text&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;94-100&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>" : [
           {
@@ -339,7 +377,7 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "ac30fbfd-a166-4ebf-acd0-89fc6a8e5e46",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: ac30fbfd-a166-4ebf-acd0-89fc6a8e5e46&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 108512374-3&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Breathing room air &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '722742002' = 'Breathing room air (finding)', given as 'Breathing room air'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>" : [
           {
@@ -369,7 +407,7 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "87e13a1f-0173-415a-9f5d-66ac2746b382",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 87e13a1f-0173-415a-9f5d-66ac2746b382&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 108512374-4&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ACVPU (Alert Confusion Voice Pain Unresponsive) scale score &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '1104441000000107' = '1104441000000107', given as 'ACVPU (Alert Confusion Voice Pain Unresponsive) scale score'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Mentally alert &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '248234008' = 'Mentally alert', given as 'Mentally alert'})&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>" : [
           {
@@ -408,7 +446,7 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "3d69129a-7c83-4fa4-adbb-d21a8d5d7d92",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 3d69129a-7c83-4fa4-adbb-d21a8d5d7d92&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 108512374-5&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Respiratory rate &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '86290005' = 'Respiratory rate', given as 'Respiratory rate'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 20.0 /min&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>" : [
           {
@@ -442,7 +480,7 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "6c87c7b5-632f-431d-b15d-fad1d93d360c",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 6c87c7b5-632f-431d-b15d-fad1d93d360c&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 108512374-BP&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Blood Pressure &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '75367002' = 'Blood pressure', given as 'Blood Pressure'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\&quot;&gt;Generated Summary: unknown resource entry&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Systolic arterial pressure &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '72313002' = 'Systolic arterial pressure', given as 'Systolic arterial pressure'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 132.0 mm[Hg]&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diastolic arterial pressure &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '1091811000000102' = '1091811000000102', given as 'Diastolic arterial pressure'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 86.0 mm[Hg]&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.identifier">identifier</a>" : [
           {
@@ -504,7 +542,7 @@
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "d980f514-8d01-4d6b-9b52-29436fda1231",
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: d980f514-8d01-4d6b-9b52-29436fda1231&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 3333333333&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: FREDRICA SMITH &lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: +441234567890(HOME)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1965-12-13&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: MALTON YO32 5TT (HOME)&lt;/p&gt;&lt;p&gt;&lt;b&gt;generalPractitioner&lt;/b&gt;: Dr Gregory Townley&lt;/p&gt;&lt;p&gt;&lt;b&gt;managingOrganization&lt;/b&gt;: MALTON GP PRACTICE&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
           {
@@ -575,20 +613,32 @@
 }</pre>
 
 
+  <!-- insert notes if present -->
   
-  
+
+
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 14, 2020 11:59+0100">2020-05-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 8, 2020 15:03+0100">2020-07-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -608,7 +658,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

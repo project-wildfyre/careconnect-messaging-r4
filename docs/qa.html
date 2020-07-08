@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 2, errors = 6, warn = 18, info = 8 -->
+<!-- broken links = 0, errors = 12, warn = 23, info = 10 -->
 <head>
   <title>Care Connect Messaging : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,11 +23,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for Care Connect Messaging</h1>
- <p>Generated Thu May 14 12:00:19 BST 2020, FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = <a href="https://project-wildfyre.github.io/careconnect-messaging-r4">https://project-wildfyre.github.io/careconnect-messaging-r4</a> (<a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">history</a>))</p>
-<p style="background-color: #ffcccc">IG Publisher Version: v1.0.85-SNAPSHOT, which is out of date. The current version is v1.0.94-SNAPSHOT <a href="https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar">Download Latest</a></p>
+ <p>Generated Wed Jul 08 15:03:42 BST 2020, FHIR version 4.0.1 for careconnect.messaging.r4#4.0.0 (canonical = <a href="https://project-wildfyre.github.io/careconnect-messaging-r4">https://project-wildfyre.github.io/careconnect-messaging-r4</a> (<a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">history</a>))</p>
+<p style="background-color: #ffcccc">IG Publisher Version: v1.1.0, which is out of date. The current version is v1.0.101-SNAPSHOT <a href="https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar">Download Latest</a></p>
 <p><a href="#suppressed">5 Suppressed Errors</a></p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
 
+ <p>Realm check:</p> <ul><li>n/a</li></ul>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
@@ -53,6 +54,9 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#C__Development_Wildfyre_careconnect-messaging-r4_input_resources_capabilitystatement_encounter-messaging"><b>C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\capabilitystatement\encounter-messaging</b></a></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Development_Wildfyre_careconnect-messaging-r4_input_resources_capabilitystatement_prescribing-messaging"><b>C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\capabilitystatement\prescribing-messaging</b></a></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Development_Wildfyre_careconnect-messaging-r4_input_resources_careconnect-messaging-ig"><b>C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
@@ -68,6 +72,12 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Development_Wildfyre_careconnect-messaging-r4_input_resources_messagedefinition_patient-create"><b>C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\patient-create</b></a></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Development_Wildfyre_careconnect-messaging-r4_input_resources_messagedefinition_prescription-order"><b>C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\prescription-order</b></a></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Development_Wildfyre_careconnect-messaging-r4_input_resources_messagedefinition_prescription-order-update"><b>C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\prescription-order-update</b></a></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Development_Wildfyre_careconnect-messaging-r4_input_resources_messagedefinition_unsolicited-observation"><b>C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\unsolicited-observation</b></a></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
@@ -77,7 +87,7 @@
 <h2><a href="">n/a</a></h2>
  <table class="grid">
    <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide.definition.parameter[21].value</b></td><td><b>error</b></td><td><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
+     <td><b>ImplementationGuide.definition.parameter[22].value</b></td><td><b>error</b></td><td><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td><b>The Implementation Guide Resource id should be careconnect.messaging.r4</b></td>
@@ -91,25 +101,25 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle/news2-report: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l16/c119)</b></td><td><b>warning</b></td><td><b>Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observations'</b></td>
+     <td><b>Bundle/news2-report: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l16/c119)</b></td><td><b>warning</b></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observations'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).code (l60/c32)</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes), and a code is recommended to come from this value set) (codes = http://snomed.info/sct#118227000)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).code.coding[0] (l61/c26)</b></td><td><b>warning</b></td><td><b>The display &quot;Vital Signs&quot; is not a valid display for the code {http://snomed.info/sct}118227000 - should be one of [&quot;Vital signs finding&quot;,&quot;Vital signs finding (finding)&quot;]</b></td>
+     <td><b>Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).code.coding[0] (l61/c26)</b></td><td><b>warning</b></td><td><b>Internal error: The display &quot;Vital Signs&quot; is not a valid display for the code {http://snomed.info/sct}118227000 - should be one of [&quot;Vital signs finding&quot;,&quot;Vital signs finding (finding)&quot;]</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).result[3] (l84/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:87e13a1f-0173-415a-9f5d-66ac2746b382 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation</b> <span id="sl5" class="flip" onclick="flip('l5')">Show Reasoning</span><div id="l5" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[5].resource.ofType(Observation).code.coding[0]: unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for &quot;http://snomed.info/sct#1104441000000107&quot;</li></ul></div></td>
+     <td><b><a href="">Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).result[3] (l84/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:87e13a1f-0173-415a-9f5d-66ac2746b382 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation</b> <span id="sl5" class="flip" onclick="flip('l5')">Show Reasoning</span><div id="l5" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[5].resource.ofType(Observation).code.coding[0]: Unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309); The code &quot;1104441000000107&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1104441000000107) is not  valid in the value set All codes known to the system for &quot;http://snomed.info/sct#1104441000000107&quot;</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).result[5] (l90/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:6c87c7b5-632f-431d-b15d-fad1d93d360c matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation</b> <span id="sl6" class="flip" onclick="flip('l6')">Show Reasoning</span><div id="l6" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[7].resource.ofType(Observation).component[1].code.coding[0]: unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for &quot;http://snomed.info/sct#1091811000000102&quot;</li></ul></div></td>
+     <td><b><a href="">Bundle/news2-report: Bundle.entry[1].resource.ofType(DiagnosticReport).result[5] (l90/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:6c87c7b5-632f-431d-b15d-fad1d93d360c matching against Profilehttp://hl7.org/fhir/StructureDefinition/Observation</b> <span id="sl6" class="flip" onclick="flip('l6')">Show Reasoning</span><div id="l6" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[7].resource.ofType(Observation).component[1].code.coding[0]: Unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309); The code &quot;1091811000000102&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1091811000000102) is not  valid in the value set All codes known to the system for &quot;http://snomed.info/sct#1091811000000102&quot;</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle/news2-report: Bundle.entry[5].resource.ofType(Observation).code.coding[0] (l208/c26)</b></td><td><b>error</b></td><td><b>unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for &quot;http://snomed.info/sct#1104441000000107&quot;</b></td>
+     <td><b>Bundle/news2-report: Bundle.entry[5].resource.ofType(Observation).code.coding[0] (l208/c26)</b></td><td><b>error</b></td><td><b>Unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309); The code &quot;1104441000000107&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1104441000000107) is not  valid in the value set All codes known to the system for &quot;http://snomed.info/sct#1104441000000107&quot;</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle/news2-report: Bundle.entry[7].resource.ofType(Observation).component[1].code.coding[0] (l302/c34)</b></td><td><b>error</b></td><td><b>unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309) for &quot;http://snomed.info/sct#1091811000000102&quot;</b></td>
+     <td><b>Bundle/news2-report: Bundle.entry[7].resource.ofType(Observation).component[1].code.coding[0] (l302/c34)</b></td><td><b>error</b></td><td><b>Unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200309); The code &quot;1091811000000102&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1091811000000102) is not  valid in the value set All codes known to the system for &quot;http://snomed.info/sct#1091811000000102&quot;</b></td>
    </tr>
 </table>
 <hr/>
@@ -120,7 +130,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle/notification-admit: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l16/c119)</b></td><td><b>warning</b></td><td><b>Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-admit should be one of 'Admission Notification' instead of 'notification-admit'</b></td>
+     <td><b>Bundle/notification-admit: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l16/c119)</b></td><td><b>warning</b></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-admit should be one of 'Admission Notification' instead of 'notification-admit'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle/notification-admit: Bundle.entry[1].resource.ofType(Encounter).type[1].coding[0] (l81/c30)</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1&quot; is unknown so the code cannot be validated</b></td>
@@ -143,7 +153,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle/notification-discharge: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l16/c119)</b></td><td><b>warning</b></td><td><b>Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-discharge should be one of 'Discharge Notification' instead of 'notification-discharge'</b></td>
+     <td><b>Bundle/notification-discharge: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l16/c119)</b></td><td><b>warning</b></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-discharge should be one of 'Discharge Notification' instead of 'notification-discharge'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.ofType(Encounter).type[1].coding[0] (l75/c30)</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1&quot; is unknown so the code cannot be validated</b></td>
@@ -163,7 +173,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle/patient-create: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l16/c119)</b></td><td><b>warning</b></td><td><b>Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#patient-create should be one of 'Patient Create' instead of 'patient-create'</b></td>
+     <td><b>Bundle/patient-create: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l16/c119)</b></td><td><b>warning</b></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#patient-create should be one of 'Patient Create' instead of 'patient-create'</b></td>
    </tr>
 </table>
 <hr/>
@@ -201,6 +211,23 @@
    </tr>
 </table>
 <hr/>
+<a name="C__Development_Wildfyre_careconnect-messaging-r4_input_resources_capabilitystatement_prescribing-messaging"> </a>
+<h2><a href="CapabilityStatement-prescribing-messaging.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\CapabilityStatement\prescribing-messaging.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/prescribing-messaging: CapabilityStatement</b></td><td><b>warning</b></td><td><b>cpb-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/prescribing-messaging: CapabilityStatement</b></td><td><b>error</b></td><td><b>cpb-14: If kind = instance, implementation must be present and software may be present [(kind != 'instance') or implementation.exists()]</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CapabilityStatement/prescribing-messaging: CapabilityStatement.rest[0].security.service[0]</b></td><td><b>warning</b></td><td><b>Display Name for http://terminology.hl7.org/CodeSystem/restful-security-service#OAuth should be one of 'OAuth' instead of 'OAuth2 Token'</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="C__Development_Wildfyre_careconnect-messaging-r4_input_resources_careconnect-messaging-ig"> </a>
 <h2><a href="ImplementationGuide-careconnect-messaging-r4.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\careconnect-messaging-ig.xml</a></h2>
  <table class="grid">
@@ -233,7 +260,7 @@
      <td><b>MessageDefinition/notification-admit: MessageDefinition</b></td><td><b>warning</b></td><td><b>msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MessageDefinition/notification-admit: MessageDefinition.event.ofType(Coding)</b></td><td><b>warning</b></td><td><b>Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-admit should be one of 'Admission Notification' instead of 'Notification Admit'</b></td>
+     <td><b>MessageDefinition/notification-admit: MessageDefinition.event.ofType(Coding)</b></td><td><b>warning</b></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-admit should be one of 'Admission Notification' instead of 'Notification Admit'</b></td>
    </tr>
 </table>
 <hr/>
@@ -247,7 +274,7 @@
      <td><b>MessageDefinition/notification-discharge: MessageDefinition</b></td><td><b>warning</b></td><td><b>msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MessageDefinition/notification-discharge: MessageDefinition.event.ofType(Coding)</b></td><td><b>warning</b></td><td><b>Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-discharge should be one of 'Discharge Notification' instead of 'Notification Discharge'</b></td>
+     <td><b>MessageDefinition/notification-discharge: MessageDefinition.event.ofType(Coding)</b></td><td><b>warning</b></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-discharge should be one of 'Discharge Notification' instead of 'Notification Discharge'</b></td>
    </tr>
 </table>
 <hr/>
@@ -262,6 +289,46 @@
    </tr>
 </table>
 <hr/>
+<a name="C__Development_Wildfyre_careconnect-messaging-r4_input_resources_messagedefinition_prescription-order"> </a>
+<h2><a href="MessageDefinition-prescription-order.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageDefinition.where(url = 'https://fhir.nhs.uk/R4/MessageDefinition/prescription-order')</b></td><td><b>error</b></td><td><b>Conformance resource C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order.xml - the canonical URL (https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order) does not match the URL (https://fhir.nhs.uk/R4/MessageDefinition/prescription-order)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MessageDefinition/prescription-order: MessageDefinition</b></td><td><b>warning</b></td><td><b>msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/prescription-order: MessageDefinition.event.ofType(Coding)</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://fhir.nhs.uk/R4/CodeSystem/message-event&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\prescription-order</b></td><td><b>error</b></td><td><b>URL Mismatch https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order vs https://fhir.nhs.uk/R4/MessageDefinition/prescription-order</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Development_Wildfyre_careconnect-messaging-r4_input_resources_messagedefinition_prescription-order-update"> </a>
+<h2><a href="MessageDefinition-prescription-order-update.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order-update.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>MessageDefinition.where(url = 'https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update')</b></td><td><b>error</b></td><td><b>Conformance resource C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order-update.xml - the canonical URL (https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order-update) does not match the URL (https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MessageDefinition/prescription-order-update: MessageDefinition</b></td><td><b>warning</b></td><td><b>msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/prescription-order-update: MessageDefinition.event.ofType(Coding)</b></td><td><b>information</b></td><td><b>Code System URI &quot;https://fhir.nhs.uk/R4/CodeSystem/message-event&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\messagedefinition\prescription-order-update</b></td><td><b>error</b></td><td><b>URL Mismatch https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order-update vs https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="C__Development_Wildfyre_careconnect-messaging-r4_input_resources_messagedefinition_unsolicited-observation"> </a>
 <h2><a href="MessageDefinition-unsolicited-observation.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\unsolicited-observation.xml</a></h2>
  <table class="grid">
@@ -272,11 +339,11 @@
      <td><b>MessageDefinition/unsolicited-observation: MessageDefinition</b></td><td><b>warning</b></td><td><b>msd-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MessageDefinition/unsolicited-observation: MessageDefinition.event.ofType(Coding)</b></td><td><b>warning</b></td><td><b>Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observation Message'</b></td>
+     <td><b>MessageDefinition/unsolicited-observation: MessageDefinition.event.ofType(Coding)</b></td><td><b>warning</b></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observation Message'</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
-<p><b>Suppressed Error Messages</b></p>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p><b>?pub-msg-2?</b></p><ul>
  <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/somepatientprofile: Profiles SHOULD state their own version</li>
  <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/ext-myExtension: Profiles SHOULD state their own version</li>
@@ -284,6 +351,48 @@
  <li>// We define the version on a global basis, so don't need it on the individual source definitions</li>
  <li>// Add warning and/or information messages here after you've confirmed that they aren't really a problem</li>
 </ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Internal_error"> </a>
+<h2>Internal_error</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-news2-report.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-news2-report.json</a></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observations'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-news2-report.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-news2-report.json</a></td><td><b>Internal error: The display &quot;Vital Signs&quot; is not a valid display for the code {http://snomed.info/sct}118227000 - should be one of [&quot;Vital signs finding&quot;,&quot;Vital signs finding (finding)&quot;]</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-notification-admit.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-admit.json</a></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-admit should be one of 'Admission Notification' instead of 'notification-admit'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-notification-discharge.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-discharge.json</a></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-discharge should be one of 'Discharge Notification' instead of 'notification-discharge'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-patient-create.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-patient-create.json</a></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#patient-create should be one of 'Patient Create' instead of 'patient-create'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MessageDefinition-notification-admit.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\notification-admit.xml</a></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-admit should be one of 'Admission Notification' instead of 'Notification Admit'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MessageDefinition-notification-discharge.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\notification-discharge.xml</a></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#notification-discharge should be one of 'Discharge Notification' instead of 'Notification Discharge'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MessageDefinition-unsolicited-observation.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\unsolicited-observation.xml</a></td><td><b>Internal error: Display Name for https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events#unsolicited-observation should be one of 'Unsolicited transmission of an observation message' instead of 'Unsolicited Observation Message'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageDefinition-prescription-order.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order.xml</a></td><td><b>Conformance resource C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order.xml - the canonical URL (https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order) does not match the URL (https://fhir.nhs.uk/R4/MessageDefinition/prescription-order)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="MessageDefinition-prescription-order-update.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order-update.xml</a></td><td><b>Conformance resource C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order-update.xml - the canonical URL (https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order-update) does not match the URL (https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update)</b></td>
+   </tr>
+</table>
 <hr/>
 <a name="Terminology_TX_NoValid_3"> </a>
 <h2>Terminology_TX_NoValid_3</h2>
@@ -310,6 +419,12 @@
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="Bundle-notification-discharge.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\examples\Bundle-notification-discharge.json</a></td><td><b>Code System URI &quot;https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MessageDefinition-prescription-order.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order.xml</a></td><td><b>Code System URI &quot;https://fhir.nhs.uk/R4/CodeSystem/message-event&quot; is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="MessageDefinition-prescription-order-update.html">C:\Development\Wildfyre\careconnect-messaging-r4\input\resources\MessageDefinition\prescription-order-update.xml</a></td><td><b>Code System URI &quot;https://fhir.nhs.uk/R4/CodeSystem/message-event&quot; is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 </body>

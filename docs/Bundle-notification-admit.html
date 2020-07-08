@@ -37,11 +37,12 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"10.8"}
-    h3,h4,h5,h6{--heading-prefix:"10.8"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.11"}
+    h3,h4,h5,h6{--heading-prefix:"10.11"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
@@ -131,57 +132,87 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <a name="root"> </a>
-  <h2 id="root">notification-admit</h2>
-  <p>
-    Format(s):
-  </p>
-  <ul>
 
+  
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
     <li>
       <a href="Bundle-notification-admit.xml.html">XML</a>
     </li>
-
-
-    <li>
-      <a href="Bundle-notification-admit.json.html">JSON</a> 
-    </li>
-
-
-    <li>
-      <a href="Bundle-notification-admit.ttl.html">Turtle</a>
-    </li>
-
-  </ul>
-
-  
   
 
-  <p>
-    <b>Narrative view</b>
-  </p>
+
+  
+    <li>
+      <a href="Bundle-notification-admit.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-notification-admit.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: notification-admit</h2>
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
   <div><p>Bundle notification-admit of type message</p><a name="urn-oid-95675fed-25a6-4d75-8351-49707f9d3360"> </a><a name="messageheader_95675fed-25a6-4d75-8351-49707f9d3360"> </a><hr/><p>Entry 1 - Full URL = urn:oid:95675fed-25a6-4d75-8351-49707f9d3360</p><p>Resource MessageHeader:</p><a name="urn-oid-506ab3bc-8efa-40bc-a7ad-1643d467eb4f"> </a><a name="encounter_506ab3bc-8efa-40bc-a7ad-1643d467eb4f"> </a><hr/><p>Entry 2 - Full URL = urn:oid:506ab3bc-8efa-40bc-a7ad-1643d467eb4f</p><p>Resource Encounter:</p><a name="urn-oid-29703a7e-238a-4510-a249-ec68ffc8d69c"> </a><a name="patient_29703a7e-238a-4510-a249-ec68ffc8d69c"> </a><hr/><p>Entry 3 - Full URL = urn:oid:29703a7e-238a-4510-a249-ec68ffc8d69c</p><p>Resource Patient:</p><a name="urn-oid-dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef"> </a><a name="location_dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef"> </a><hr/><p>Entry 4 - Full URL = urn:oid:dadd1c2a-e09e-4b86-b3e3-81da2d3ac5ef</p><p>Resource Location:</p><a name="urn-oid-a1cf4e55-a7bb-4867-a2bb-07619a67edd7"> </a><a name="condition_a1cf4e55-a7bb-4867-a2bb-07619a67edd7"> </a><hr/><p>Entry 5 - Full URL = urn:oid:a1cf4e55-a7bb-4867-a2bb-07619a67edd7</p><p>Resource Condition:</p><a name="urn-oid-1af1046d-f398-41d6-8ecc-be8ecf4c9ccd"> </a><a name="procedure_1af1046d-f398-41d6-8ecc-be8ecf4c9ccd"> </a><hr/><p>Entry 6 - Full URL = urn:oid:1af1046d-f398-41d6-8ecc-be8ecf4c9ccd</p><p>Resource Procedure:</p></div>
 
+  <!-- insert notes if present -->
   
-  
-  
+
+
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 14, 2020 11:59+0100">2020-05-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 8, 2020 15:03+0100">2020-07-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -201,7 +232,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

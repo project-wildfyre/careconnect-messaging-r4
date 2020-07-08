@@ -9,7 +9,7 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "careconnect-messaging-r4"];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4"];
@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "Care Connect Messaging"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2020-05-14T11:59:58+01:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-07-08T15:03:26+01:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -425,6 +425,23 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CapabilityStatement-prescribing-messaging.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/CapabilityStatement/prescribing-messaging>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/prescribing-messaging" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Server conformance for prescription Message Handling" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Server conformance for prescription Message Handling" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "CapabilityStatement-encounter-messaging.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -434,7 +451,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Server conformance for Encounter Message Handling" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Server conformance for Encounter Message Handling" ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -451,7 +468,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Messaging Events" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NHS Greater Manchester Messaging Events" ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -468,7 +485,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnostic Messaging" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unsolicited transmission of an observation message. FHIR equivalent of HL7v2 ORU^R01" ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -484,6 +501,40 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Create" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient Create. FHIR equivalent of HL7v2 ADT^A28" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageDefinition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "MessageDefinition-prescription-order.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order>;
+         fhir:Reference.reference [ fhir:value "MessageDefinition/prescription-order" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "prescription-order" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "prescription-order" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MessageDefinition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "MessageDefinition-prescription-order-update.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order-update>;
+         fhir:Reference.reference [ fhir:value "MessageDefinition/prescription-order-update" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "prescription-order-update" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "prescription-order-update" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -578,14 +629,18 @@
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
      ], [
        fhir:index 10;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
      ], [
        fhir:index 11;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
      ], [
        fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 13;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]

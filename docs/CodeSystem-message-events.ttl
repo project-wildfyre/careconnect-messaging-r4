@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "message-events"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Message Events</h2><div><p>NHS Greater Manchester Messages</p>\n</div><p>This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unsolicited-observation<a name=\"message-events-unsolicited-observation\"> </a></td><td>Unsolicited transmission of an observation message</td><td/></tr><tr><td style=\"white-space:nowrap\">notification-admit<a name=\"message-events-notification-admit\"> </a></td><td>Admission Notification</td><td/></tr><tr><td style=\"white-space:nowrap\">notification-discharge<a name=\"message-events-notification-discharge\"> </a></td><td>Discharge Notification</td><td/></tr><tr><td style=\"white-space:nowrap\">patient-create<a name=\"message-events-patient-create\"> </a></td><td>Patient Create</td><td/></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unsolicited-observation<a name=\"message-events-unsolicited-observation\"> </a></td><td>Unsolicited transmission of an observation message</td><td/></tr><tr><td style=\"white-space:nowrap\">notification-admit<a name=\"message-events-notification-admit\"> </a></td><td>Admission Notification</td><td/></tr><tr><td style=\"white-space:nowrap\">notification-discharge<a name=\"message-events-notification-discharge\"> </a></td><td>Discharge Notification</td><td/></tr><tr><td style=\"white-space:nowrap\">patient-create<a name=\"message-events-patient-create\"> </a></td><td>Patient Create</td><td/></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events"];
   fhir:CodeSystem.identifier [
@@ -23,7 +23,7 @@
   fhir:CodeSystem.title [ fhir:value "Message Events"];
   fhir:CodeSystem.status [ fhir:value "draft"];
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2020-01-28T00:00:00+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-01-28"^^xsd:date];
   fhir:CodeSystem.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:CodeSystem.contact [
      fhir:index 0;

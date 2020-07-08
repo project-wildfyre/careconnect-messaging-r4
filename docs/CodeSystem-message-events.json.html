@@ -1,3 +1,5 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -37,11 +39,12 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"10.7"}
-    h3,h4,h5,h6{--heading-prefix:"10.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.10"}
+    h3,h4,h5,h6{--heading-prefix:"10.10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
@@ -131,30 +134,65 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <a name="root"> </a>
-  <h2 id="root">Messaging Events - JSON Representation</h2>
-  <p>
-    <a href="CodeSystem-message-events.html">(back to description)</a>
-  </p>
-  <p>
-    <a href="CodeSystem-message-events.json">Raw json</a>
-  </p>
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-message-events.html">Narrative Content</a>
+  </li>
+
+
   
+    <li>
+      <a href="CodeSystem-message-events.xml.html">XML</a>
+    </li>
   
+
+
   
-  <p>
-    <b>Source view</b>
-  </p>
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
   
+
+
+  
+    <li>
+      <a href="CodeSystem-message-events.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Messaging Events - JSON Representation</h2>
+
+<p><a href="CodeSystem-message-events.json" no-download="true">Raw json</a> | <a href="CodeSystem-message-events.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
   <pre class="json">
 {
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "message-events",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Message Events&lt;/h2&gt;&lt;div&gt;&lt;p&gt;NHS Greater Manchester Messages&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;unsolicited-observation&lt;a name=\&quot;message-events-unsolicited-observation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unsolicited transmission of an observation message&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;notification-admit&lt;a name=\&quot;message-events-notification-admit\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Admission Notification&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;notification-discharge&lt;a name=\&quot;message-events-notification-discharge\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Discharge Notification&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;patient-create&lt;a name=\&quot;message-events-patient-create\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient Create&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;unsolicited-observation&lt;a name=\&quot;message-events-unsolicited-observation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unsolicited transmission of an observation message&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;notification-admit&lt;a name=\&quot;message-events-notification-admit\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Admission Notification&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;notification-discharge&lt;a name=\&quot;message-events-notification-discharge\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Discharge Notification&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;patient-create&lt;a name=\&quot;message-events-patient-create\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient Create&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.identifier">identifier</a>" : [
@@ -168,7 +206,7 @@
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Message Events",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2020-01-28T00:00:00+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2020-01-28",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "gmdigitialplatforms.nhs.uk",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -214,20 +252,32 @@
 }</pre>
 
 
+  <!-- insert notes if present -->
   
-  
+
+
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 14, 2020 11:59+0100">2020-05-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 8, 2020 15:03+0100">2020-07-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -247,7 +297,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

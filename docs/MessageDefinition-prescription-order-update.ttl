@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order-update> a fhir:MessageDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "prescription-order-update"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: prescription-order-update</p><p><b>url</b>: <a href=\"https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update\">https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update</a></p><p><b>identifier</b>: c81b88dc-760e-4b1e-9cdb-c5f853630664</p><p><b>version</b>: 4.0.0</p><p><b>title</b>: Pharmacy/Treatment Encoded Order</p><p><b>status</b>: active</p><p><b>date</b>: 2020-05-27</p><p><b>publisher</b>: gmdigitialplatforms.nhs.uk</p><p><b>contact</b>: mailto:kevin.mayfield1@nhs.net</p><p><b>jurisdiction</b>: <span title=\"Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 826}\">United Kingdom of Great Britain and Northern Ireland (GBR)</span></p><p><b>event</b>: <span title=\"{https://fhir.nhs.uk/R4/CodeSystem/message-event prescription-order-update}\">Prescription Order Update</span></p><p><b>category</b>: consequence</p><blockquote><p><b>focus</b></p><p><b>code</b>: MessageHeader</p><p><b>profile</b>: <a href=\"https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader\">https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader</a></p><p><b>min</b>: 1</p><p><b>max</b>: 1</p></blockquote><blockquote><p><b>focus</b></p><p><b>code</b>: MedicationRequest</p><p><b>profile</b>: <a href=\"https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest\">https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest</a></p><p><b>min</b>: 1</p><p><b>max</b>: 4</p></blockquote><blockquote><p><b>focus</b></p><p><b>code</b>: Patient</p><p><b>profile</b>: <a href=\"https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient\">https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient</a></p><p><b>min</b>: 1</p><p><b>max</b>: 1</p></blockquote><blockquote><p><b>focus</b></p><p><b>code</b>: Provenance</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p></blockquote></div>"
+  ];
+  fhir:MessageDefinition.url [ fhir:value "https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update"];
+  fhir:MessageDefinition.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://tools.ietf.org/html/rfc4122" ];
+     fhir:Identifier.value [ fhir:value "c81b88dc-760e-4b1e-9cdb-c5f853630664" ]
+  ];
+  fhir:MessageDefinition.version [ fhir:value "4.0.0"];
+  fhir:MessageDefinition.title [ fhir:value "Pharmacy/Treatment Encoded Order"];
+  fhir:MessageDefinition.status [ fhir:value "active"];
+  fhir:MessageDefinition.date [ fhir:value "2020-05-27"^^xsd:date];
+  fhir:MessageDefinition.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
+  fhir:MessageDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:kevin.mayfield1@nhs.net" ]
+     ]
+  ];
+  fhir:MessageDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "826" ]
+     ]
+  ];
+  fhir:MessageDefinition.eventCoding [
+     fhir:Coding.system [ fhir:value "https://fhir.nhs.uk/R4/CodeSystem/message-event" ];
+     fhir:Coding.code [ fhir:value "prescription-order-update" ];
+     fhir:Coding.display [ fhir:value "Prescription Order Update" ]
+  ];
+  fhir:MessageDefinition.category [ fhir:value "consequence"];
+  fhir:MessageDefinition.focus [
+     fhir:index 0;
+     fhir:MessageDefinition.focus.code [ fhir:value "MessageHeader" ];
+     fhir:MessageDefinition.focus.profile [
+       fhir:value "https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader";
+       fhir:link <https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader>
+     ];
+     fhir:MessageDefinition.focus.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+     fhir:MessageDefinition.focus.max [ fhir:value "1" ]
+  ], [
+     fhir:index 1;
+     fhir:MessageDefinition.focus.code [ fhir:value "MedicationRequest" ];
+     fhir:MessageDefinition.focus.profile [
+       fhir:value "https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest";
+       fhir:link <https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest>
+     ];
+     fhir:MessageDefinition.focus.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+     fhir:MessageDefinition.focus.max [ fhir:value "4" ]
+  ], [
+     fhir:index 2;
+     fhir:MessageDefinition.focus.code [ fhir:value "Patient" ];
+     fhir:MessageDefinition.focus.profile [
+       fhir:value "https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient";
+       fhir:link <https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient>
+     ];
+     fhir:MessageDefinition.focus.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+     fhir:MessageDefinition.focus.max [ fhir:value "1" ]
+  ], [
+     fhir:index 3;
+     fhir:MessageDefinition.focus.code [ fhir:value "Provenance" ];
+     fhir:MessageDefinition.focus.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+     fhir:MessageDefinition.focus.max [ fhir:value "1" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://project-wildfyre.github.io/careconnect-messaging-r4/MessageDefinition/prescription-order-update.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

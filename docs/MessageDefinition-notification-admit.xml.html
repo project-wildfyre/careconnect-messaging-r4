@@ -1,3 +1,5 @@
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -37,11 +39,12 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"10.3"}
-    h3,h4,h5,h6{--heading-prefix:"10.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.4"}
+    h3,h4,h5,h6{--heading-prefix:"10.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span><br/>4.0.0 - CI Build</p>
@@ -131,23 +134,58 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-<div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <a name="root"> </a>
-  <h2 id="root">Notitification Admission - XML Representation</h2>
-  <p>
-    <a href="MessageDefinition-notification-admit.html">(back to description)</a>
-  </p>
-  <p>
-    <a href="MessageDefinition-notification-admit.xml">Raw xml</a>
-  </p>
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Care Connect Messaging - Local Development build (v4.0.0). See the <a href="https://project-wildfyre.github.io/careconnect-messaging-r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="MessageDefinition-notification-admit.html">Narrative Content</a>
+  </li>
+
+
   
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
   
+
+
   
-  <p>
-    <b>Source view</b>
-  </p>
+    <li>
+      <a href="MessageDefinition-notification-admit.json.html">JSON</a>
+    </li>
   
+
+
+  
+    <li>
+      <a href="MessageDefinition-notification-admit.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Notitification Admission - XML Representation</h2>
+
+<p><a href="MessageDefinition-notification-admit.xml" no-download="true">Raw xml</a> | <a href="MessageDefinition-notification-admit.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
   <pre class="xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition">MessageDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
@@ -165,7 +203,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;4.0.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient Admission Notification&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2020-05-14T11:59:58+01:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2020-07-08T15:03:26+01:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;gmdigitialplatforms.nhs.uk&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/messagedefinition.html#MessageDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -195,20 +233,32 @@
 &lt;/MessageDefinition&gt;</pre>
 
 
+  <!-- insert notes if present -->
   
-  
+
+
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 14, 2020 11:59+0100">2020-05-14</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="mailto:kevin.mayfield1@nhs.net">gmdigitialplatforms.nhs.uk</a>.  Package careconnect.messaging.r4#4.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 8, 2020 15:03+0100">2020-07-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -228,7 +278,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

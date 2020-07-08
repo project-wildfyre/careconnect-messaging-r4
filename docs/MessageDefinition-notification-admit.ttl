@@ -21,7 +21,7 @@
   fhir:MessageDefinition.version [ fhir:value "4.0.0"];
   fhir:MessageDefinition.title [ fhir:value "Patient Admission Notification"];
   fhir:MessageDefinition.status [ fhir:value "active"];
-  fhir:MessageDefinition.date [ fhir:value "2020-05-14T11:59:58+01:00"^^xsd:dateTime];
+  fhir:MessageDefinition.date [ fhir:value "2020-07-08T15:03:26+01:00"^^xsd:dateTime];
   fhir:MessageDefinition.publisher [ fhir:value "gmdigitialplatforms.nhs.uk"];
   fhir:MessageDefinition.contact [
      fhir:index 0;

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MessageDefinition xmlns="http://hl7.org/fhir">
+  <id value="prescription-order-update"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>id</b>: prescription-order-update</p><p><b>url</b>: <a href="https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update">https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update</a></p><p><b>identifier</b>: c81b88dc-760e-4b1e-9cdb-c5f853630664</p><p><b>version</b>: 4.0.0</p><p><b>title</b>: Pharmacy/Treatment Encoded Order</p><p><b>status</b>: active</p><p><b>date</b>: 2020-05-27</p><p><b>publisher</b>: gmdigitialplatforms.nhs.uk</p><p><b>contact</b>: mailto:kevin.mayfield1@nhs.net</p><p><b>jurisdiction</b>: <span title="Codes: {http://unstats.un.org/unsd/methods/m49/m49.htm 826}">United Kingdom of Great Britain and Northern Ireland (GBR)</span></p><p><b>event</b>: <span title="{https://fhir.nhs.uk/R4/CodeSystem/message-event prescription-order-update}">Prescription Order Update</span></p><p><b>category</b>: consequence</p><blockquote><p><b>focus</b></p><p><b>code</b>: MessageHeader</p><p><b>profile</b>: <a href="https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader">https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader</a></p><p><b>min</b>: 1</p><p><b>max</b>: 1</p></blockquote><blockquote><p><b>focus</b></p><p><b>code</b>: MedicationRequest</p><p><b>profile</b>: <a href="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest">https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest</a></p><p><b>min</b>: 1</p><p><b>max</b>: 4</p></blockquote><blockquote><p><b>focus</b></p><p><b>code</b>: Patient</p><p><b>profile</b>: <a href="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient">https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient</a></p><p><b>min</b>: 1</p><p><b>max</b>: 1</p></blockquote><blockquote><p><b>focus</b></p><p><b>code</b>: Provenance</p><p><b>min</b>: 0</p><p><b>max</b>: 1</p></blockquote></div>
+  </text>
+  <url value="https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update"/>
+  <identifier>
+    <system value="https://tools.ietf.org/html/rfc4122"/>
+    <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664"/>
+  </identifier>
+  <version value="4.0.0"/>
+  <title value="Pharmacy/Treatment Encoded Order"/>
+  <status value="active"/>
+  <date value="2020-05-27"/>
+  <publisher value="gmdigitialplatforms.nhs.uk"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:kevin.mayfield1@nhs.net"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="826"/>
+    </coding>
+  </jurisdiction>
+  <eventCoding>
+    <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event"/>
+    <code value="prescription-order-update"/>
+    <display value="Prescription Order Update"/>
+  </eventCoding>
+  <category value="consequence"/>
+  <focus>
+    <code value="MessageHeader"/>
+    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader"/>
+    <min value="1"/>
+    <max value="1"/>
+  </focus>
+  <focus>
+    <code value="MedicationRequest"/>
+    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest"/>
+    <min value="1"/>
+    <max value="4"/>
+  </focus>
+  <focus>
+    <code value="Patient"/>
+    <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient"/>
+    <min value="1"/>
+    <max value="1"/>
+  </focus>
+  <focus>
+    <code value="Provenance"/>
+    <min value="0"/>
+    <max value="1"/>
+  </focus>
+</MessageDefinition>

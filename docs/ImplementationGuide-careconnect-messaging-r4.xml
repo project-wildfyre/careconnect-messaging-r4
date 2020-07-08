@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="careconnect-messaging-r4"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Care Connect Messaging</h2><p>The official URL for this implementation guide is: </p><pre>https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4</pre><div><p>Demonstration of Care Connect STU3 Implementation Guide to support Messaging</p>
 </div></div>
   </text>
   <url value="https://project-wildfyre.github.io/careconnect-messaging-r4/ImplementationGuide/careconnect-messaging-r4"/>
@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-05-14T11:59:58+01:00"/>
+  <date value="2020-07-08T15:03:26+01:00"/>
   <publisher value="gmdigitialplatforms.nhs.uk"/>
   <contact>
     <telecom>
@@ -295,6 +295,19 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-prescribing-messaging.html"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/prescribing-messaging"/>
+      </reference>
+      <name value="Server conformance for prescription Message Handling"/>
+      <description value="Server conformance for prescription Message Handling"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-encounter-messaging.html"/>
       </extension>
       <reference>
@@ -341,6 +354,32 @@
       </reference>
       <name value="Patient Create"/>
       <description value="Patient Create. FHIR equivalent of HL7v2 ADT^A28"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MessageDefinition-prescription-order.html"/>
+      </extension>
+      <reference>
+        <reference value="MessageDefinition/prescription-order"/>
+      </reference>
+      <name value="prescription-order"/>
+      <description value="prescription-order"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageDefinition"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MessageDefinition-prescription-order-update.html"/>
+      </extension>
+      <reference>
+        <reference value="MessageDefinition/prescription-order-update"/>
+      </reference>
+      <name value="prescription-order-update"/>
+      <description value="prescription-order-update"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -431,6 +470,10 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

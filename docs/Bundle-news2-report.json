@@ -14,7 +14,7 @@
         "id": "22ed2deb-effa-408c-9437-d3c4975ff448",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 22ed2deb-effa-408c-9437-d3c4975ff448</p><p><b>event</b>: Unsolicited Observations (Details: https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events code unsolicited-observation = 'Unsolicited transmission of an observation message', stated as 'Unsolicited Observations')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Target</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>ROUTE</td><td>ROUTE</td><td><a href=\"ROUTE\">ROUTE</a></td></tr></table><p><b>sender</b>: RCB</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>PAS</td><td><a href=\"PAS\">PAS</a></td></tr></table><p><b>focus</b>: <a href=\"#backboneelement_3915b469-57b7-470f-942f-e276c4458d63\">Generated Summary: unknown resource entry</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
         },
         "eventCoding": {
           "system": "https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events",
@@ -55,7 +55,7 @@
         "id": "3915b469-57b7-470f-942f-e276c4458d63",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3915b469-57b7-470f-942f-e276c4458d63</p><p><b>identifier</b>: 108512374</p><p><b>status</b>: unknown</p><p><b>code</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '118227000' = 'Vital signs finding', given as 'Vital Signs'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: 21 May 2018, 13:45:05 --&gt; (ongoing)</p><p><b>result</b>: </p><ul><li><a href=\"#backboneelement_11842d63-f473-4374-a00d-4caffc94c0f5\">Generated Summary: unknown resource entry</a></li><li><a href=\"#backboneelement_926b9534-c247-45da-916c-b5bbbfb3da6d\">Generated Summary: unknown resource entry</a></li><li><a href=\"#backboneelement_ac30fbfd-a166-4ebf-acd0-89fc6a8e5e46\">Generated Summary: unknown resource entry</a></li><li><a href=\"#backboneelement_87e13a1f-0173-415a-9f5d-66ac2746b382\">Generated Summary: unknown resource entry</a></li><li><a href=\"#backboneelement_3d69129a-7c83-4fa4-adbb-d21a8d5d7d92\">Generated Summary: unknown resource entry</a></li><li><a href=\"#backboneelement_6c87c7b5-632f-431d-b15d-fad1d93d360c\">Generated Summary: unknown resource entry</a></li></ul></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
         },
         "identifier": [
           {
@@ -108,7 +108,7 @@
         "id": "11842d63-f473-4374-a00d-4caffc94c0f5",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 11842d63-f473-4374-a00d-4caffc94c0f5</p><p><b>identifier</b>: 108512374-1</p><p><b>status</b>: final</p><p><b>code</b>: Heart Rate <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '364075005' = 'Heart rate', given as 'Heart Rate'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 73.0 /min</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>60-100</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
         },
         "identifier": [
           {
@@ -148,7 +148,7 @@
         "id": "926b9534-c247-45da-916c-b5bbbfb3da6d",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 926b9534-c247-45da-916c-b5bbbfb3da6d</p><p><b>identifier</b>: 108512374-2</p><p><b>status</b>: final</p><p><b>code</b>: Blood oxygen saturation <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '103228002' = 'Hemoglobin saturation with oxygen', given as 'Blood oxygen saturation'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\">Generated Summary: unknown resource entry</a></p><p><b>effective</b>: 11 May 2018, 22:05:25</p><p><b>value</b>: 98.0 %</p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>94-100</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
         },
         "identifier": [
           {
@@ -188,7 +188,7 @@
         "id": "ac30fbfd-a166-4ebf-acd0-89fc6a8e5e46",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ac30fbfd-a166-4ebf-acd0-89fc6a8e5e46</p><p><b>identifier</b>: 108512374-3</p><p><b>status</b>: final</p><p><b>code</b>: Breathing room air <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '722742002' = 'Breathing room air (finding)', given as 'Breathing room air'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\">Generated Summary: unknown resource entry</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
         },
         "identifier": [
           {
@@ -218,7 +218,7 @@
         "id": "87e13a1f-0173-415a-9f5d-66ac2746b382",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 87e13a1f-0173-415a-9f5d-66ac2746b382</p><p><b>identifier</b>: 108512374-4</p><p><b>status</b>: final</p><p><b>code</b>: ACVPU (Alert Confusion Voice Pain Unresponsive) scale score <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '1104441000000107' = '1104441000000107', given as 'ACVPU (Alert Confusion Voice Pain Unresponsive) scale score'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\">Generated Summary: unknown resource entry</a></p><p><b>value</b>: Mentally alert <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '248234008' = 'Mentally alert', given as 'Mentally alert'})</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
         },
         "identifier": [
           {
@@ -257,7 +257,7 @@
         "id": "3d69129a-7c83-4fa4-adbb-d21a8d5d7d92",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3d69129a-7c83-4fa4-adbb-d21a8d5d7d92</p><p><b>identifier</b>: 108512374-5</p><p><b>status</b>: final</p><p><b>code</b>: Respiratory rate <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '86290005' = 'Respiratory rate', given as 'Respiratory rate'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\">Generated Summary: unknown resource entry</a></p><p><b>value</b>: 20.0 /min</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
         },
         "identifier": [
           {
@@ -291,7 +291,7 @@
         "id": "6c87c7b5-632f-431d-b15d-fad1d93d360c",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6c87c7b5-632f-431d-b15d-fad1d93d360c</p><p><b>identifier</b>: 108512374-BP</p><p><b>status</b>: final</p><p><b>code</b>: Blood Pressure <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '75367002' = 'Blood pressure', given as 'Blood Pressure'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_d980f514-8d01-4d6b-9b52-29436fda1231\">Generated Summary: unknown resource entry</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic arterial pressure <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '72313002' = 'Systolic arterial pressure', given as 'Systolic arterial pressure'})</span></p><p><b>value</b>: 132.0 mm[Hg]</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic arterial pressure <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '1091811000000102' = '1091811000000102', given as 'Diastolic arterial pressure'})</span></p><p><b>value</b>: 86.0 mm[Hg]</p></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
         },
         "identifier": [
           {
@@ -353,7 +353,7 @@
         "id": "d980f514-8d01-4d6b-9b52-29436fda1231",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: d980f514-8d01-4d6b-9b52-29436fda1231</p><p><b>identifier</b>: 3333333333</p><p><b>name</b>: FREDRICA SMITH </p><p><b>telecom</b>: ph: +441234567890(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1965-12-13</p><p><b>address</b>: MALTON YO32 5TT (HOME)</p><p><b>generalPractitioner</b>: Dr Gregory Townley</p><p><b>managingOrganization</b>: MALTON GP PRACTICE</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p></div>"
         },
         "identifier": [
           {
